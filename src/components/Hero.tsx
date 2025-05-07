@@ -68,11 +68,14 @@ const Hero = () => {
           <p className="text-base md:text-lg mb-6">
             {slides[index].description}
           </p>
-          <button className="relative inline-block px-6 py-2 border border-white group overflow-hidden transition-all">
-            <span className="relative z-10 text-white group-hover:text-black transition-colors duration-300">
+          <button className="relative inline-block px-6 py-2 border border-[var(--primary-color)] font-light group overflow-hidden transition-all">
+            <span className="relative z-10 text-[var(--primary-color)] group-hover:text-black transition-colors duration-300">
               {slides[index].buttonText}
             </span>
-            <span className="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0" />
+            <span
+              className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
+              style={{ backgroundImage: "var(--bg-primary-gradient)" }}
+            />
           </button>
         </motion.div>
       </div>

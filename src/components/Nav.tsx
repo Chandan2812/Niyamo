@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, Moon, Sun, ChevronDown } from "lucide-react";
 
 const navItems = [
@@ -15,18 +15,21 @@ const Navbar = () => {
   const [mobileDropdowns, setMobileDropdowns] = useState<
     Record<number, boolean>
   >({});
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("theme")
+      ? localStorage.getItem("theme") === "dark"
+      : true; // default to dark
+  });
 
-  const toggleTheme = () => {
-    const newMode = !darkMode;
-    setDarkMode(newMode);
-
-    if (newMode) {
+  useEffect(() => {
+    if (darkMode) {
       document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
-  };
+  }, [darkMode]);
 
   const toggleMobileDropdown = (idx: number) => {
     setMobileDropdowns((prev) => ({ ...prev, [idx]: !prev[idx] }));
@@ -91,11 +94,19 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <button onClick={toggleTheme}>
-            {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="text-xl text-inherit"
+            title="Toggle Theme"
+          >
+            {darkMode ? <Sun /> : <Moon />}
           </button>
-          <span className="text-sm">Follow Us</span>
-          <span className="text-sm ">Call Us</span>
+          <span className="text-sm text-[var(--primary-color)] font-light">
+            Follow Us
+          </span>
+          <span className="text-sm  text-[var(--primary-color)] font-light">
+            Call Us
+          </span>
         </div>
       </div>
 
@@ -103,8 +114,12 @@ const Navbar = () => {
       <div className="md:hidden flex justify-between items-center px-4 py-3">
         <div className="text-lg font-semibold">Niyamo</div>
         <div className="flex items-center gap-3">
-          <button onClick={toggleTheme}>
-            {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="text-xl text-inherit"
+            title="Toggle Theme"
+          >
+            {darkMode ? <Sun /> : <Moon />}
           </button>
           <button onClick={() => setMobileMenu(!mobileMenu)}>
             <Menu size={24} />

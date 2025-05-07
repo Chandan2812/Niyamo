@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,6 +23,7 @@ import logo7 from "../Assets/logos/Ly-La.svg";
 import logo8 from "../Assets/logos/NYX.svg";
 import logo9 from "../Assets/logos/Piatti (1).svg";
 import logo10 from "../Assets/logos/Shm.svg";
+import "../App.css";
 
 const concepts = [
   {
@@ -78,14 +79,20 @@ const concepts = [
 ];
 
 const HospitalityConcepts: React.FC = () => {
+  const sliderRef = useRef<Slider>(null); // Ref to control the slider programmatically
+  const [currentSlide, setCurrentSlide] = useState(0); // State to track current slide
+
   const settings = {
-    dots: true,
+    dots: false, // Disable default dots
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     swipeToSlide: true,
     arrows: false,
+    beforeChange: (_current: number, next: number) => {
+      setCurrentSlide(next); // Update the active slide
+    },
     responsive: [
       {
         breakpoint: 1024,
@@ -102,12 +109,20 @@ const HospitalityConcepts: React.FC = () => {
     ],
   };
 
+  // Function to handle dot click and move to the clicked slide
+  const handleDotClick = (index: number) => {
+    if (sliderRef.current) {
+      sliderRef.current.slickGoTo(index); // Navigate to the clicked slide
+    }
+    setCurrentSlide(index); // Update the active slide state
+  };
+
   return (
-    <div className=" bg-white dark:bg-black text-black dark:text-white font-raleway font-light dark:font-thin ">
+    <div className="bg-white dark:bg-black text-black dark:text-white font-raleway font-light dark:font-thin">
       <div className="w-11/12 mx-auto py-10 px-5">
-        <div className="flex justify-between items-center mb-6  px-3">
+        <div className="flex justify-between items-center mb-6 px-3">
           <div>
-            <p className="text-xs text-gray-500 font-semibold uppercase tracking-widest ">
+            <p className="text-xs text-gray-500 font-semibold uppercase tracking-widest">
               Dubai
             </p>
             <h2 className="text-2xl md:text-4xl font-semibold text-[#0C3C5C] dark:text-white mt-2">
@@ -116,15 +131,18 @@ const HospitalityConcepts: React.FC = () => {
           </div>
 
           {/* Button with border and fill-on-hover */}
-          <button className="relative group flex items-center text-blue-700 border border-blue-700 text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
-            <span className="z-10 relative flex items-center gap-1 group-hover:text-white transition-colors duration-300">
+          <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
+            <span className="z-10 relative flex items-center gap-1 group-hover:text-white transition-colors duration-300 font-light">
               SEE ALL CONCEPTS <ArrowRight size={16} />
             </span>
-            <span className="absolute inset-0 bg-blue-700 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"></span>
+            <span
+              className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
+              style={{ backgroundImage: "var(--bg-primary-gradient)" }}
+            ></span>
           </button>
         </div>
 
-        <Slider {...settings}>
+        <Slider ref={sliderRef} {...settings}>
           {concepts.map((concept, index) => (
             <div key={index} className="px-3">
               <img
@@ -148,6 +166,21 @@ const HospitalityConcepts: React.FC = () => {
             </div>
           ))}
         </Slider>
+
+        {/* Custom navigation indicators */}
+        <div className="flex justify-center mt-6 space-x-3">
+          {concepts.map((_, index) => (
+            <div
+              key={index}
+              onClick={() => handleDotClick(index)} // Use the click handler to navigate
+              className={`w-4 h-1 cursor-pointer rounded-full transition-all duration-300 ${
+                index === currentSlide
+                  ? "bg-[var(--primary-color)]" // Active dot color
+                  : "bg-gray-400 dark:bg-gray-600" // Inactive dot color
+              }`}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

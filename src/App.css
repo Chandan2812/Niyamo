@@ -1,1 +1,4 @@
-
+:root {
+  --primary-color: #d6a572;
+  --bg-primary-gradient: linear-gradient(to right, #d6a572, #ecd1b2, #d6a572);
+}

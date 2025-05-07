@@ -10,8 +10,10 @@ function Landing() {
     <div>
       <Navbar />
       <Hero />
+      <DiningExperienceSection />
       <HospitalityConcepts />
       <GlobalFootprintSection />
+
       <FundamentalsSection />
     </div>
   );
