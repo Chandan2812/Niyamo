@@ -120,7 +120,7 @@ const HospitalityConcepts: React.FC = () => {
   return (
     <div className="bg-white dark:bg-black text-black dark:text-white font-raleway font-light dark:font-thin">
       <div className="w-11/12 mx-auto py-10 md:px-5">
-        <div className="flex justify-between items-center mb-6 px-3">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6 px-3">
           <div>
             <p className="text-xs text-gray-700 dark:text-gray-300 font-semibold uppercase tracking-widest">
               Dubai
@@ -131,7 +131,7 @@ const HospitalityConcepts: React.FC = () => {
           </div>
 
           {/* Button with border and fill-on-hover */}
-          <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
+          <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden w-fit">
             <span className="z-10 relative flex items-center gap-1 group-hover:text-white transition-colors duration-300 font-light">
               SEE ALL CONCEPTS <ArrowRight size={16} />
             </span>
