@@ -1,3 +1,4 @@
+import ConceptInFocusSection from "../components/ConceptInFocusSection";
 import DiningExperienceSection from "../components/DineWithUs";
 import FundamentalsSection from "../components/Fundamental";
 import Hero from "../components/Hero";
@@ -12,6 +13,7 @@ function Landing() {
       <Hero />
       <DiningExperienceSection />
       <HospitalityConcepts />
+      <ConceptInFocusSection />
       <GlobalFootprintSection />
 
       <FundamentalsSection />
