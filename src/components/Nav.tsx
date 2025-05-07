@@ -3,10 +3,32 @@ import { Menu, Moon, Sun, ChevronDown } from "lucide-react";
 
 const navItems = [
   { title: "Group", dropdown: ["About us", "Management", "NC Expansion"] },
-  { title: "NC Concepts", dropdown: ["Concept 1", "Concept 2"] },
-  { title: "Partnership Concepts", dropdown: ["Partner 1", "Partner 2"] },
-  { title: "NC Lifestyle", dropdown: ["Lifestyle 1", "Lifestyle 2"] },
-  { title: "NC World", dropdown: ["World 1", "World 2"] },
+  {
+    title: "NC Concepts",
+    dropdown: [
+      "Gaia",
+      "Sanghai Me",
+      "Alaya",
+      "Piatti",
+      "La Maison Ani",
+      "La Petite Ani",
+    ],
+  },
+  {
+    title: "Partnership Concepts",
+    dropdown: [
+      "Cipriani",
+      "Cipriani Dolci",
+      "Scalini",
+      "Scalini Cucina",
+      "Socialista",
+    ],
+  },
+  {
+    title: "NC Lifestyle",
+    dropdown: ["Reservations", "Group Dinning", "Private Events", "News"],
+  },
+  { title: "NC World", dropdown: ["Careers", "Press", "Contact"] },
 ];
 
 const Navbar = () => {
@@ -66,7 +88,7 @@ const Navbar = () => {
 
                 {/* Dropdown */}
                 <div
-                  className={`absolute left-0 min-w-[180px] shadow-lg z-50 transition-all duration-200
+                  className={`absolute left-0 min-w-[220px] shadow-lg z-50 transition-all duration-200
                   ${
                     activeDropdown === idx
                       ? "opacity-100 translate-y-0 pointer-events-auto"
@@ -81,7 +103,9 @@ const Navbar = () => {
                     <div
                       key={subIdx}
                       className={`px-4 py-2 hover:${
-                        darkMode ? "bg-gray-700" : "bg-gray-100"
+                        darkMode
+                          ? "bg-gray-700 hover:bg-gray-600"
+                          : "bg-gray-100 hover:bg-gray-300"
                       } cursor-pointer`}
                     >
                       {sub}
@@ -101,10 +125,10 @@ const Navbar = () => {
           >
             {darkMode ? <Sun /> : <Moon />}
           </button>
-          <span className="text-sm text-[var(--primary-color)] font-light">
+          <span className="text-sm text-[var(--primary-color)] font-medium">
             Follow Us
           </span>
-          <span className="text-sm  text-[var(--primary-color)] font-light">
+          <span className="text-sm  text-[var(--primary-color)] font-medium">
             Call Us
           </span>
         </div>
