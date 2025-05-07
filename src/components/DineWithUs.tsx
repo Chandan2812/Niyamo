@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import diningImage from "../Assets/hero2.svg";
+import diningImage from "../assets/hero2.svg";
 import { ArrowRight } from "lucide-react";
 
 const DiningExperienceSection: React.FC = () => {

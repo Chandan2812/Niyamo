@@ -1,4 +1,4 @@
-import gaiaImage from "../Assets/recepnist.png"; // replace with your actual image path
+import gaiaImage from "../assets/recepnist.png"; // replace with your actual image path
 
 const ConceptInFocusSection = () => {
   return (

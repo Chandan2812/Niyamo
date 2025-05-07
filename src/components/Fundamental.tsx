@@ -1,11 +1,11 @@
 import React from "react";
-import img1 from "../Assets/hospitalityconcept/PAGE-8-DOHA.jpg";
-import img2 from "../Assets/hospitalityconcept/Bar-8.jpg";
-import img3 from "../Assets/hospitalityconcept/PAGE-8-DUBAI.jpg";
-import img4 from "../Assets/hospitalityconcept/Gaia-marbella_olive-press-1.jpg";
-import img5 from "../Assets/hospitalityconcept/PAGE-8-MONACO.jpg";
-import img6 from "../Assets/hospitalityconcept/PAGE-8-RIYADH.jpg";
-import img7 from "../Assets/hospitalityconcept/PAGE-8-MIAMI.jpg";
+import img1 from "../assets/hospitalityconcept/PAGE-8-DOHA.jpg";
+import img2 from "../assets/hospitalityconcept/Bar-8.jpg";
+import img3 from "../assets/hospitalityconcept/PAGE-8-DUBAI.jpg";
+import img4 from "../assets/hospitalityconcept/Gaia-marbella_olive-press-1.jpg";
+import img5 from "../assets/hospitalityconcept/PAGE-8-MONACO.jpg";
+import img6 from "../assets/hospitalityconcept/PAGE-8-RIYADH.jpg";
+import img7 from "../assets/hospitalityconcept/PAGE-8-MIAMI.jpg";
 import { ArrowRight } from "lucide-react";
 
 // Rearranged to place "DUBAI" first
