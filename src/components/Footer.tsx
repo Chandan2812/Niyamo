@@ -70,7 +70,7 @@ const Footer = () => {
             <FaInstagram />
             <FaYoutube />
           </div>
-          <div className="flex justify-end">
+          <div className="flex md:justify-end">
             <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden w-fit">
               <span className="z-10 relative flex items-center gap-1 group-hover:text-white transition-colors duration-300 font-light">
                 CALL US
