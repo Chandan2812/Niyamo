@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,6 +24,8 @@ import logo8 from "../assets/logos/NYX.svg";
 import logo9 from "../assets/logos/Piatti (1).svg";
 import logo10 from "../assets/logos/Shm.svg";
 import "../App.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const concepts = [
   {
@@ -81,6 +83,9 @@ const concepts = [
 const HospitalityConcepts: React.FC = () => {
   const sliderRef = useRef<Slider>(null); // Ref to control the slider programmatically
   const [currentSlide, setCurrentSlide] = useState(0); // State to track current slide
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
 
   const settings = {
     dots: false, // Disable default dots
@@ -147,6 +152,7 @@ const HospitalityConcepts: React.FC = () => {
             <div
               key={index}
               className="px-4 focus:outline-none focus:ring-0 focus:border-0 outline-none"
+              data-aos="zoom-in"
             >
               <img
                 src={concept.image}

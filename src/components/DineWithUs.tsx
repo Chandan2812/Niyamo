@@ -1,12 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import dinningImage from "../assets/hero2.svg";
 import { ArrowRight } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DiningExperienceSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [hasAnimated, setHasAnimated] = useState(false);
   const [guests, setGuests] = useState(0);
   const [venues, setVenues] = useState(0);
+
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -58,14 +64,23 @@ const DiningExperienceSection: React.FC = () => {
         {/* Text Content */}
         <div className="z-10">
           <div className=" mb-2">
-            <p className="uppercase tracking-widest font-semibold mt-2 text-xs text-gray-700 dark:text-gray-300">
+            <p
+              className="uppercase tracking-widest font-semibold mt-2 text-xs text-gray-700 dark:text-gray-300"
+              data-aos="fade-right"
+            >
               Dine With Us
             </p>
           </div>
-          <h2 className="text-2xl md:text-4xl font-semibold text-black dark:text-white mt-2">
+          <h2
+            className="text-2xl md:text-4xl font-semibold text-black dark:text-white mt-2"
+            data-aos="fade-right"
+          >
             An elevated dining experience in each and every restaurant
           </h2>
-          <p className="text-gray-700 dark:text-gray-300 text-base mb-8 mt-4">
+          <p
+            className="text-gray-700 dark:text-gray-300 text-base mb-8 mt-4"
+            data-aos="fade-right"
+          >
             With innovation and excellence at our core, we strive to exceed
             expectations with every guest. Our restaurant and nightlife venues
             are dynamic – where we understand every moving part of an

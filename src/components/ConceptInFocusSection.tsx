@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import gaiaImage from "../assets/recepnist.png"; // replace with your actual image path
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ConceptInFocusSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
     <section className="relative bg-white dark:bg-black text-black dark:text-white font-raleway font-light dark:font-thin overflow-hidden">
       <div className="w-11/12 mx-auto  px-3 md:px-8 py-10 ">
@@ -33,7 +39,10 @@ const ConceptInFocusSection = () => {
           </div>
 
           {/* Text Section */}
-          <div className="md:w-1/2 w-full bg-[#eaf3f7] dark:bg-gray-900 p-6 md:p-12 flex flex-col justify-center  z-10">
+          <div
+            className="md:w-1/2 w-full bg-[#eaf3f7] dark:bg-gray-900 p-6 md:p-12 flex flex-col justify-center  z-10"
+            data-aos="fade-up"
+          >
             <h3 className="text-2xl md:text-4xl font-semibold text-black dark:text-white mb-4 relative">
               GAIA
             </h3>

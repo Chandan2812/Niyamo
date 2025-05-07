@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../assets/hospitalityconcept/PAGE-8-DOHA.jpg";
 import img2 from "../assets/hospitalityconcept/Bar-8.jpg";
 import img3 from "../assets/hospitalityconcept/PAGE-8-DUBAI.jpg";
@@ -7,6 +7,8 @@ import img5 from "../assets/hospitalityconcept/PAGE-8-MONACO.jpg";
 import img6 from "../assets/hospitalityconcept/PAGE-8-RIYADH.jpg";
 import img7 from "../assets/hospitalityconcept/PAGE-8-MIAMI.jpg";
 import { ArrowRight } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Rearranged to place "DUBAI" first
 const fundamentals = [
@@ -20,6 +22,9 @@ const fundamentals = [
 ];
 
 const FundamentalsSection: React.FC = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
     <section className="bg-white dark:bg-black text-black dark:text-white  font-raleway font-light dark:font-thin">
       <div className="w-11/12 mx-auto  px-3 md:px-8 py-10">
@@ -56,6 +61,7 @@ const FundamentalsSection: React.FC = () => {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
+              data-aos="zoom-in"
             >
               <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex items-start justify-start">
                 <h3 className="text-white text-sm font-bold m-4 uppercase">
