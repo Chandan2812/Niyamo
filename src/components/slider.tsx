@@ -109,11 +109,11 @@ const HospitalityConcepts: React.FC = () => {
           <p className="text-xs text-gray-500 font-semibold uppercase tracking-widest">
             Dubai
           </p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#0C3C5C] mt-2">
+          <h2 className="text-2xl md:text-4xl font-semibold text-[#0C3C5C] mt-2">
             Fundamental Hospitality Concepts
           </h2>
         </div>
-        <button className="hidden md:flex items-center gap-2 bg-[#0070C0] text-white px-4 py-2 text-sm font-semibold">
+        <button className="flex items-center bg-blue-700 text-white text-[12px] px-8 py-2 uppercase tracking-widest">
           SEE ALL CONCEPTS <ArrowRight size={16} />
         </button>
       </div>

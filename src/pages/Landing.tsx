@@ -1,3 +1,4 @@
+import FundamentalsSection from "../components/Fundamental";
 import GlobalFootprintSection from "../components/HospitalityConcepts";
 import Navbar from "../components/Nav";
 import HospitalityConcepts from "../components/slider";
@@ -8,6 +9,7 @@ function Landing() {
       <Navbar />
       <HospitalityConcepts />
       <GlobalFootprintSection />
+      <FundamentalsSection />
     </div>
   );
 }
