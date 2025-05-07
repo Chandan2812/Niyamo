@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import diningImage from "../assets/hero2.svg";
+import dinningImage from "../assets/hero2.svg";
 import { ArrowRight } from "lucide-react";
 
 const DiningExperienceSection: React.FC = () => {
@@ -115,7 +115,7 @@ const DiningExperienceSection: React.FC = () => {
           <div className="absolute top-10 right-6 w-full h-full bg-[radial-gradient(#ccc_2.5px,transparent_2.5px)] bg-[length:28px_28px] z-0" />
           <div className="absolute right-10 top-44 md:bottom-0 md:right-0 w-[90%] h-[90%] md:w-[90%] md:h-[80%] bg-[#eaf3f7] dark:bg-gray-900 z-0"></div>
           <img
-            src={diningImage}
+            src={dinningImage}
             alt="Dining"
             className="relative z-10 w-full h-[300px] md:h-[400px] object-cover"
           />
