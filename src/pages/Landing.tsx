@@ -1,3 +1,4 @@
+import FundamentalsSection from "../components/Fundamental";
 import Hero from "../components/Hero";
 import GlobalFootprintSection from "../components/HospitalityConcepts";
 import Navbar from "../components/Nav";
@@ -10,6 +11,7 @@ function Landing() {
       <Hero />
       <HospitalityConcepts />
       <GlobalFootprintSection />
+      <FundamentalsSection />
     </div>
   );
 }
