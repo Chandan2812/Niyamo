@@ -42,7 +42,7 @@ const Navbar = () => {
                 onMouseEnter={() => setActiveDropdown(idx)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="flex items-center gap-1 py-6">
+                <button className="flex items-center gap-1 py-8">
                   {item.title}
                   <ChevronDown
                     size={16}

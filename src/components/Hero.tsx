@@ -39,7 +39,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[80vh] overflow-hidden font-raleway font-thin">
+    <div className="relative w-full h-[100vh] overflow-hidden font-raleway font-thin">
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={slides[index].image}
