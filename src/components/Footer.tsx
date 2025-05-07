@@ -18,7 +18,9 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start">
           <div className="flex items-center gap-4">
             <div className="w-16 border-t border-[var(--primary-color)]" />
-            <p className="text-2xl md:text-4xl py-6">Niyamo Capital</p>
+            <p className="text-2xl md:text-4xl py-6 font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
+              Niyamo Capital
+            </p>
             <div className="w-20 border-t border-[var(--primary-color)]" />
           </div>
         </div>

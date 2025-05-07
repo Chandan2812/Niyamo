@@ -95,7 +95,10 @@ const Navbar = () => {
       {/* Desktop View */}
       <div className="hidden md:flex justify-between items-center px-10">
         <div className="flex items-center gap-6  ">
-          <div className="text-xl font-bold">Niyamo Capital</div>
+          <div className="text-2xl font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
+            Niyamo Capital
+          </div>
+
           <div className="border-l self-stretch border-gray-400"></div>
           <ul className="flex gap-6">
             {navItems.map((item, idx) => (
@@ -165,7 +168,9 @@ const Navbar = () => {
 
       {/* Mobile View */}
       <div className="md:hidden flex justify-between items-center px-4 py-3">
-        <div className="text-lg font-semibold">Niyamo</div>
+        <div className="text-xl font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
+          Niyamo Capital
+        </div>
         <div className="flex items-center gap-3">
           <button
             onClick={() => setDarkMode(!darkMode)}
