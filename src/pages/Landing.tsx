@@ -1,5 +1,6 @@
 import ConceptInFocusSection from "../components/ConceptInFocusSection";
 import DiningExperienceSection from "../components/DineWithUs";
+import Footer from "../components/Footer";
 import FundamentalsSection from "../components/Fundamental";
 import GlobalFootprintSection from "../components/GlobalFootprint";
 import Hero from "../components/Hero";
@@ -17,6 +18,7 @@ function Landing() {
       <GlobalFootprintSection />
 
       <FundamentalsSection />
+      <Footer />
     </div>
   );
 }
