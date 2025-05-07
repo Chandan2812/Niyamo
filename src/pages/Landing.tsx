@@ -9,7 +9,7 @@ function Landing() {
     <div>
       <Navbar />
       <Hero />
-      <HospitalityConcepts />
+      <HospitalityConcepts darkMode={true} />
       <GlobalFootprintSection />
       <FundamentalsSection />
     </div>

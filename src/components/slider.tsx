@@ -103,48 +103,52 @@ const HospitalityConcepts: React.FC = () => {
   };
 
   return (
-    <div className="bg-white py-10 px-4 md:px-16">
-      <div className="flex justify-between items-center mb-6">
-        <div>
-          <p className="text-xs text-gray-500 font-semibold uppercase tracking-widest">
-            Dubai
-          </p>
-          <h2 className="text-2xl md:text-4xl font-semibold text-[#0C3C5C] mt-2">
-            Fundamental Hospitality Concepts
-          </h2>
-        </div>
-        <button className="flex items-center bg-blue-700 text-white text-[12px] px-8 py-2 uppercase tracking-widest">
-          SEE ALL CONCEPTS <ArrowRight size={16} />
-        </button>
-      </div>
-
-      <Slider {...settings}>
-        {concepts.map((concept, index) => (
-          <div
-            key={index}
-            className="px-4 focus:outline-none focus:ring-0 focus:border-0 outline-none"
-          >
-            <img
-              src={concept.image}
-              alt={concept.title}
-              className="w-full h-[450px] object-cover rounded-md shadow-lg"
-            />
-            <div className="flex justify-center items-center mt-4">
-              {concept.logo ? (
-                <img
-                  src={concept.logo}
-                  alt={concept.title}
-                  className="h-8 object-contain"
-                />
-              ) : (
-                <p className="text-lg font-semibold tracking-wide">
-                  {concept.title}
-                </p>
-              )}
-            </div>
+    <div className=" bg-white dark:bg-black text-black dark:text-white font-raleway font-light dark:font-thin ">
+      <div className="w-11/12 mx-auto py-10 px-5">
+        <div className="flex justify-between items-center mb-6  px-3">
+          <div>
+            <p className="text-xs text-gray-500 font-semibold uppercase tracking-widest ">
+              Dubai
+            </p>
+            <h2 className="text-2xl md:text-4xl font-semibold text-[#0C3C5C] dark:text-white mt-2">
+              Fundamental Hospitality Concepts
+            </h2>
           </div>
-        ))}
-      </Slider>
+
+          {/* Button with border and fill-on-hover */}
+          <button className="relative group flex items-center text-blue-700 border border-blue-700 text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
+            <span className="z-10 relative flex items-center gap-1 group-hover:text-white transition-colors duration-300">
+              SEE ALL CONCEPTS <ArrowRight size={16} />
+            </span>
+            <span className="absolute inset-0 bg-blue-700 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"></span>
+          </button>
+        </div>
+
+        <Slider {...settings}>
+          {concepts.map((concept, index) => (
+            <div key={index} className="px-3">
+              <img
+                src={concept.image}
+                alt={concept.title}
+                className="w-full h-[450px] object-cover rounded-md shadow-lg"
+              />
+              <div className="flex justify-center items-center mt-4">
+                {concept.logo ? (
+                  <img
+                    src={concept.logo}
+                    alt={concept.title}
+                    className="h-8 object-contain"
+                  />
+                ) : (
+                  <p className="text-lg font-semibold tracking-wide">
+                    {concept.title}
+                  </p>
+                )}
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };

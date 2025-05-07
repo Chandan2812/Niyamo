@@ -17,7 +17,16 @@ const Navbar = () => {
   >({});
   const [darkMode, setDarkMode] = useState(true);
 
-  const toggleTheme = () => setDarkMode(!darkMode);
+  const toggleTheme = () => {
+    const newMode = !darkMode;
+    setDarkMode(newMode);
+
+    if (newMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  };
 
   const toggleMobileDropdown = (idx: number) => {
     setMobileDropdowns((prev) => ({ ...prev, [idx]: !prev[idx] }));
