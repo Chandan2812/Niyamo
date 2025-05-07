@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full border-b font-raleway font-light dark:font-thin shadow-sm ${
+      className={`fixed top-0 left-0 z-50 w-full font-raleway font-light dark:font-thin shadow-sm ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
     >
@@ -42,7 +42,7 @@ const Navbar = () => {
                 onMouseEnter={() => setActiveDropdown(idx)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="flex items-center gap-1 py-4">
+                <button className="flex items-center gap-1 py-6">
                   {item.title}
                   <ChevronDown
                     size={16}
