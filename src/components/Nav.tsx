@@ -71,7 +71,6 @@ const Navbar = () => {
         {
           pageLanguage: "en",
           autoDisplay: false,
-          includedLanguages: "en,ru,ar,fr", // Only these languages will show
         },
         "google_translate_element"
       );
@@ -236,7 +235,7 @@ const Navbar = () => {
 
       <div
         id="google_translate_element"
-        className="fixed top-8 left-2/3 -translate-x-1/2 z-[9990] md:left-1/3 md:top-12 lg:top-12 lg:left-auto lg:right-10 lg:translate-x-0"
+        className="fixed top-2 right-[20px] -translate-x-1/2 z-[9990] md:top-7 md:right-[160px]"
       ></div>
     </nav>
   );
