@@ -1,3 +1,4 @@
+import DiningExperienceSection from "../components/DineWithUs";
 import FundamentalsSection from "../components/Fundamental";
 import Hero from "../components/Hero";
 import GlobalFootprintSection from "../components/HospitalityConcepts";
@@ -9,7 +10,7 @@ function Landing() {
     <div>
       <Navbar />
       <Hero />
-      <HospitalityConcepts darkMode={true} />
+      <HospitalityConcepts />
       <GlobalFootprintSection />
       <FundamentalsSection />
     </div>
