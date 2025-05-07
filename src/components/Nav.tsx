@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, Moon, Sun } from "lucide-react";
+import { Menu, Moon, Sun, ChevronDown } from "lucide-react";
 
 const navItems = [
   { title: "Group", dropdown: ["About us", "Management", "NC Expansion"] },
@@ -11,26 +11,29 @@ const navItems = [
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
-
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [mobileDropdowns, setMobileDropdowns] = useState<
+    Record<number, boolean>
+  >({});
+  const [darkMode, setDarkMode] = useState(true);
 
   const toggleTheme = () => setDarkMode(!darkMode);
 
+  const toggleMobileDropdown = (idx: number) => {
+    setMobileDropdowns((prev) => ({ ...prev, [idx]: !prev[idx] }));
+  };
+
   return (
     <nav
-      className={`w-full border-b shadow-sm ${
+      className={`w-full border-b font-raleway font-light dark:font-thin shadow-sm ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
       }`}
     >
       {/* Desktop View */}
-      <div className="hidden md:flex justify-between items-center px-6 py-4">
-        {/* Left: Logo + Nav */}
-        <div className="flex items-center gap-6">
-          {/* Logo */}
+      <div className="hidden md:flex justify-between items-center px-10">
+        <div className="flex items-center gap-6  ">
           <div className="text-xl font-bold">Niyamo Capital</div>
-          <div className="border-l h-6 border-gray-400"></div>
-          {/* Navigation */}
+          <div className="border-l self-stretch border-gray-400"></div>
           <ul className="flex gap-6">
             {navItems.map((item, idx) => (
               <li
@@ -39,77 +42,112 @@ const Navbar = () => {
                 onMouseEnter={() => setActiveDropdown(idx)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="hover:underline">{item.title}</button>
-                {activeDropdown === idx && (
-                  <div className="absolute bg-white text-black shadow-lg mt-2 py-2 px-4 rounded z-50">
-                    {item.dropdown.map((sub, subIdx) => (
-                      <div
-                        key={subIdx}
-                        className="hover:bg-gray-100 px-2 py-1 rounded cursor-pointer"
-                      >
-                        {sub}
-                      </div>
-                    ))}
-                  </div>
-                )}
+                <button className="flex items-center gap-1 py-4">
+                  {item.title}
+                  <ChevronDown
+                    size={16}
+                    className={`transition-transform duration-300 ${
+                      activeDropdown === idx ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                {/* Dropdown */}
+                <div
+                  className={`absolute left-0 min-w-[180px] shadow-lg z-50 transition-all duration-200
+                  ${
+                    activeDropdown === idx
+                      ? "opacity-100 translate-y-0 pointer-events-auto"
+                      : "opacity-0 -translate-y-2 pointer-events-none"
+                  }
+                  ${darkMode ? "bg-gray-800 text-white" : "bg-white text-black"}
+                `}
+                  // optional: add a slight top padding inside dropdown to reduce flicker on slow mouse
+                  style={{ paddingTop: "0.25rem" }}
+                >
+                  {item.dropdown.map((sub, subIdx) => (
+                    <div
+                      key={subIdx}
+                      className={`px-4 py-2 hover:${
+                        darkMode ? "bg-gray-700" : "bg-gray-100"
+                      } cursor-pointer`}
+                    >
+                      {sub}
+                    </div>
+                  ))}
+                </div>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Right: Theme + Contact */}
         <div className="flex items-center gap-4">
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700"
-          >
+          <button onClick={toggleTheme}>
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
           <span className="text-sm">Follow Us</span>
-          <span className="text-sm font-medium">Call Us</span>
+          <span className="text-sm ">Call Us</span>
         </div>
       </div>
 
       {/* Mobile View */}
       <div className="md:hidden flex justify-between items-center px-4 py-3">
-        {/* Logo */}
         <div className="text-lg font-semibold">Niyamo</div>
-
         <div className="flex items-center gap-3">
-          {/* Theme Toggle */}
           <button onClick={toggleTheme}>
             {darkMode ? <Sun size={20} /> : <Moon size={20} />}
           </button>
-
-          {/* Hamburger */}
           <button onClick={() => setMobileMenu(!mobileMenu)}>
             <Menu size={24} />
           </button>
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
       {mobileMenu && (
         <div
-          className={`md:hidden px-4 pb-4 ${
+          className={`md:hidden fixed top-12 left-0 w-full h-[calc(100vh-3rem)] overflow-y-auto px-4 pt-4 pb-4 z-40 ${
             darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
           }`}
         >
-          {navItems.map((item, idx) => (
-            <div key={idx} className="mb-4">
-              <div className="font-semibold">{item.title}</div>
-              <ul className="pl-4 mt-1 space-y-1 text-sm">
-                {item.dropdown.map((sub, subIdx) => (
-                  <li key={subIdx} className="hover:underline">
-                    {sub}
-                  </li>
-                ))}
-              </ul>
+          <div className="space-y-6">
+            {navItems.map((item, idx) => (
+              <div key={idx}>
+                <button
+                  className="flex justify-between w-full items-center font-light"
+                  onClick={() => toggleMobileDropdown(idx)}
+                >
+                  {item.title}
+                  <ChevronDown
+                    size={16}
+                    className={`transition-transform duration-300 ${
+                      mobileDropdowns[idx] ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {mobileDropdowns[idx] && (
+                  <ul className="pl-4 mt-1 space-y-1 text-sm">
+                    {item.dropdown.map((sub, subIdx) => (
+                      <li
+                        key={subIdx}
+                        className="hover:underline font-light dark:font-thin"
+                      >
+                        {sub}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Two side-by-side boxes */}
+          <div className="mt-8 flex w-full">
+            <div className="flex-1 border border-gray-500 text-center py-2">
+              Follow Us
             </div>
-          ))}
-          <div className="mt-4 flex justify-between text-sm">
-            <span>Follow Us</span>
-            <span>Call Us</span>
+            <div className="flex-1 border border-gray-500 text-center py-2">
+              Call Us
+            </div>
           </div>
         </div>
       )}
