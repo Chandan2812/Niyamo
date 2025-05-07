@@ -31,6 +31,13 @@ const navItems = [
   { title: "NC World", dropdown: ["Careers", "Press", "Contact"] },
 ];
 
+declare global {
+  interface Window {
+    googleTranslateElementInit: () => void;
+    google: any;
+  }
+}
+
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -56,6 +63,33 @@ const Navbar = () => {
   const toggleMobileDropdown = (idx: number) => {
     setMobileDropdowns((prev) => ({ ...prev, [idx]: !prev[idx] }));
   };
+
+  useEffect(() => {
+    const googleTranslateElementInit = () => {
+      // @ts-ignore
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          autoDisplay: false,
+          includedLanguages: "en,ru,ar,fr", // Only these languages will show
+        },
+        "google_translate_element"
+      );
+    };
+    // Check if the script has already been added
+    const loadGoogleTranslateScript = () => {
+      if (!window.googleTranslateElementInit) {
+        const script = document.createElement("script");
+        script.src =
+          "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        script.async = true;
+        document.body.appendChild(script);
+        window.googleTranslateElementInit = googleTranslateElementInit;
+      }
+    };
+
+    loadGoogleTranslateScript();
+  }, []);
 
   return (
     <nav
@@ -199,6 +233,11 @@ const Navbar = () => {
           </div>
         </div>
       )}
+
+      <div
+        id="google_translate_element"
+        className="fixed top-8 left-2/3 -translate-x-1/2 z-[9990] md:left-1/3 md:top-12 lg:top-12 lg:left-auto lg:right-10 lg:translate-x-0"
+      ></div>
     </nav>
   );
 };

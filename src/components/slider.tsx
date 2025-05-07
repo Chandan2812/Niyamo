@@ -144,7 +144,10 @@ const HospitalityConcepts: React.FC = () => {
 
         <Slider ref={sliderRef} {...settings}>
           {concepts.map((concept, index) => (
-            <div key={index} className="px-3">
+            <div
+              key={index}
+              className="px-4 focus:outline-none focus:ring-0 focus:border-0 outline-none"
+            >
               <img
                 src={concept.image}
                 alt={concept.title}
