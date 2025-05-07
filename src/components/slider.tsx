@@ -126,7 +126,7 @@ const HospitalityConcepts: React.FC = () => {
               Dubai
             </p>
             <h2 className="text-2xl md:text-4xl font-semibold text-[#0C3C5C] dark:text-white mt-2">
-              Fundamental Hospitality Concepts
+              NC Concepts
             </h2>
           </div>
 

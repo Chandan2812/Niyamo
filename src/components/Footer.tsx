@@ -1,108 +1,102 @@
-import topPattern from "../assets/footer texture.jpg";
-import bottomImage from "../assets/footerbottom.png";
+import {
+  FaEnvelope,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaWhatsapp,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="text-white">
-      {/* Top Signup Section with Background Pattern */}
-      <div
-        className="bg-no-repeat bg-cover bg-center px-4 md:px-16 py-12"
-        style={{ backgroundImage: `url(${topPattern})` }}
-      >
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div className="flex-1">
-            <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
-              Sign up for exclusive <br /> offers from us
-            </h2>
+    <footer className="bg-white dark:bg-black text-black dark:text-white font-raleway text-sm">
+      {/* Top horizontal line */}
+      <div className="border-t border-gray-300 dark:border-gray-700 w-full" />
+
+      {/* Logo and CONTACTS Title */}
+      <div className="w-11/12 mx-auto  px-3 md:px-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col items-center md:items-start">
+          <div className="flex items-center gap-4">
+            <div className="w-16 border-t border-[var(--primary-color)]" />
+            <p className="text-2xl md:text-4xl py-6">Niyamo Capital</p>
+            <div className="w-20 border-t border-[var(--primary-color)]" />
           </div>
-          <div className="flex-1">
-            <p className="mb-4 text-sm">
-              Sign up to our newsletter for all the latest news and events.
-            </p>
-            <form className="flex flex-col sm:flex-row items-center">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="w-full sm:w-auto flex-1 px-4 py-2 rounded-l-md text-black outline-none"
-              />
-              <button
-                type="submit"
-                className="bg-blue-600 text-white px-6 py-2 rounded-r-md font-semibold"
-              >
-                SUBSCRIBE
-              </button>
-            </form>
+        </div>
+        <h2 className="text-2xl font-thin md:mt-0">CONTACTS</h2>
+      </div>
+
+      {/* Mid horizontal line */}
+      <div className="w-11/12 mx-auto px-3 md:px-10  border-t border-gray-300 dark:border-gray-700 mb-8" />
+
+      {/* Main content */}
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between px-6 sm:px-12 lg:px-6 gap-8 pb-10 font-light dark:font-thin ">
+        {/* Left: Navigation Columns */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+          {[
+            ["Our Concepts", "GAIA", "Shanghai Me", "La Maison Ani"],
+            [
+              "Dubai Venues",
+              "International Venues",
+              "Events",
+              "Private Dining",
+            ],
+            ["Reservations", "Careers", "Press"],
+            ["About Us", "Contact Us"],
+          ].map((group, idx) => (
+            <ul key={idx} className="space-y-2">
+              {group.map((item, i) => (
+                <li
+                  key={i}
+                  className="cursor-pointer hover:text-[var(--primary-color)] transition"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          ))}
+        </div>
+
+        {/* Right: Contact Info */}
+        <div className="space-y-4 lg:text-right">
+          <h3 className="text-lg">London, UK</h3>
+          <p className="text-gray-700 dark:text-gray-200">
+            1 Bell Street, London, London, United Kingdom, NW1 5BY
+          </p>
+          <div className="flex justify-start lg:justify-end gap-4 pt-2 text-[var(--primary-color)] text-xl">
+            <FaEnvelope />
+            <FaFacebookF />
+            <FaLinkedinIn />
+            <FaWhatsapp />
+            <FaInstagram />
+            <FaYoutube />
+          </div>
+          <div className="flex justify-end">
+            <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden w-fit">
+              <span className="z-10 relative flex items-center gap-1 group-hover:text-white transition-colors duration-300 font-light">
+                CALL US
+              </span>
+              <span
+                className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
+                style={{ backgroundImage: "var(--bg-primary-gradient)" }}
+              ></span>
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Bottom Footer Section with Lounge Image */}
-
-      <div
-        className="relative bg-no-repeat bg-cover bg-bottom pt-12 pb-4 h-full md:h-[500px]"
-        style={{
-          backgroundImage: `url(${bottomImage})`,
-        }}
-      >
-        {/* Gradient fade background */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#002f3c] via-[#002f3c]/80 to-transparent pointer-events-none z-[-1]" />
-
-        {/* Foreground content */}
-        <div className="relative px-4 md:px-16 py-12 text-white">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm">
-            <div>
-              <p className="mb-2">Instagram</p>
-            </div>
-            <div>
-              <p className="font-semibold mb-2">Discover</p>
-              <ul className="space-y-1">
-                <li>
-                  <a href="#">FH Concepts</a>
-                </li>
-                <li>
-                  <a href="#">News</a>
-                </li>
-                <li>
-                  <a href="#">Reservations</a>
-                </li>
-                <li>
-                  <a href="#">Careers</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold mb-2">Useful Links</p>
-              <ul className="space-y-1">
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Press</a>
-                </li>
-                <li>
-                  <a href="#">Management</a>
-                </li>
-                <li>
-                  <a href="#">Contact us</a>
-                </li>
-                <li>
-                  <a href="#">Privacy</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold mb-2">Get In Touch</p>
-              <p>
-                <a href="mailto:enquiries@fundamentalhospitality.com">
-                  enquiries@fundamentalhospitality.com
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-12 text-center text-xs text-white/70">
-            Copyright © 2025 Fundamental Hospitality. All rights reserved
-          </div>
+      {/* Footer Bottom Links */}
+      <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-6 py-6 text-xs text-gray-600 dark:text-gray-400 flex flex-col sm:flex-row justify-between gap-2">
+        <span>Niyamo Capital ©2025 All Rights Reserved</span>
+        <div className="flex gap-4">
+          {["Terms of Use", "Privacy Policy", "Sitemap"].map((item, idx) => (
+            <a
+              key={idx}
+              href="#"
+              className="cursor-pointer hover:text-[var(--primary-color)] transition"
+            >
+              {item}
+            </a>
+          ))}
         </div>
       </div>
     </footer>
