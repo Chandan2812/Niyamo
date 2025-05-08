@@ -127,7 +127,7 @@ const Bkc: React.FC = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="16 Charles St, London W1J 5BH, UK"
+              title="7 Edgware Rd, Tyburnia, London W2 2ER, United Kingdom"
             ></iframe>
           </div>
         </div>
