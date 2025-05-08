@@ -10,6 +10,7 @@ import AboutUs from "./pages/group/About";
 import Management from "./pages/group/Management";
 import Coupette from "./pages/nc_concepts/Coupette";
 import GroupDining from "./pages/lifestyle/GroupDinning";
+import Garden from "./pages/nc_concepts/Garden";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
         <Route path="/biryani-kebab-chai-(bkc)" element={<Bkc />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/management" element={<Management />} />
-        <Route path="coupette" element={<Coupette />} />
+        <Route path="/coupette" element={<Coupette />} />
+        <Route path="/24-&-30-sussex-gardens" element={<Garden />} />
         <Route path="/group-dinning" element={<GroupDining />} />
       </Routes>
     </Router>
