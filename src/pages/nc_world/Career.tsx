@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Navbar from "../components/Nav";
-import Footer from "../components/Footer";
-import groupphoto from "../assets/career.png";
+import Navbar from "../../components/Nav";
+import Footer from "../../components/Footer";
+import groupphoto from "../../assets/career.png";
 import { ArrowRight } from "lucide-react";
 
 const CareersSection: React.FC = () => {
