@@ -60,7 +60,7 @@ const CareersSection: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <div className="bg-white dark:bg-black py-28 px-4 sm:px-6 lg:px-8">
+      <div className="bg-white dark:bg-black py-28 px-4 sm:px-6 lg:px-8 mt-10">
         <h2 className="text-4xl font-semibold text-center mb-12 text-black dark:text-white">
           Careers
         </h2>

@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div>
       <Navbar />
-      <section className="bg-white dark:bg-black text-black dark:text-white py-24 px-6">
+      <section className="bg-white dark:bg-black text-black dark:text-white py-24 px-6 mt-10">
         <div className="w-11/12 mx-auto flex flex-col lg:flex-row gap-12 items-center font-raleway font-light dark:font-thin">
           {/* Left: Contact Info */}
           <div className="flex-1">

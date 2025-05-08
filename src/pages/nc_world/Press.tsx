@@ -62,10 +62,10 @@ const pressItems = [
 
 const PressPage: React.FC = () => {
   return (
-    <div className="bg-white dark:bg-black text-black dark:text-white font-raleway font-light dark:font-thin">
+    <div className="bg-white dark:bg-black text-black dark:text-white font-raleway font-light dark:font-thin mt-10">
       <Navbar />
       <section className="w-11/12 px-4 md:px-12 lg:px-20 mx-auto py-28">
-        <h1 className="text-3xl font-semibold text-center mb-8 text-black dark:text-white">
+        <h1 className="text-4xl font-semibold text-center mb-8 text-black dark:text-white">
           Press
         </h1>
 
