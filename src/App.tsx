@@ -6,6 +6,8 @@ import PressPage from "./pages/nc_world/Press";
 import Contact from "./pages/nc_world/Contact";
 import Charles from "./pages/nc_concepts/Charles-street";
 import Bkc from "./pages/nc_concepts/Bkc";
+import AboutUs from "./pages/group/About";
+import Management from "./pages/group/Management";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/16-charles-street" element={<Charles />} />
         <Route path="/biryani-kebab-chai-(bkc)" element={<Bkc />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/management" element={<Management />} />
       </Routes>
     </Router>
   );
