@@ -47,28 +47,33 @@ const Joyce: React.FC = () => {
         </div>
 
         {/* Cuisine Section */}
-        <div className="mb-16 grid md:grid-cols-2 gap-8 items-start">
-          <div className="w-1/3 ">
-            <img
-              src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/62526TheJoyce_1120244082.jpg"
-              alt="Cuisine 1"
-              className="w-full  object-cover rounded"
-            />
-          </div>
-          <div className="w-2/3">
-            <h2 className="text-2xl font-semibold mb-4">
-              James Taylor The Chef
-            </h2>
-            <p className="text-sm leading-relaxed">
-              Chef James Taylor has enchanted culinary enthusiasts and food
-              critics across the U.S. for over a decade. After training at Le
-              Cordon Bleu Chicago, he honed his epicurean skills and expertise
-              at Bavette’s Bar and Boeuf Steakhouse (Hogsalt Hospitality),
-              followed by leadership roles at Michelin-starred havens Roister
-              (★) and Alinea (★★★). Since 2021, James has captivated the
-              discerning palates of esteemed private clients, who encouraged
-              James to share his talents with the world.
-            </p>
+        <div className="mb-16">
+          <div className="flex flex-col md:flex-row gap-6 items-start">
+            {/* Image */}
+            <div className="md:w-1/3 w-full">
+              <img
+                src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/62526TheJoyce_1120244082.jpg"
+                alt="Cuisine 1"
+                className="w-full h-[400px] object-contain rounded-lg shadow-md"
+              />
+            </div>
+
+            {/* Text */}
+            <div className="md:w-2/3 w-full space-y-4">
+              <h2 className="text-2xl md:text-3xl font-semibold">
+                James Taylor The Chef
+              </h2>
+              <p className="text-sm md:text-base leading-relaxed">
+                Chef James Taylor has enchanted culinary enthusiasts and food
+                critics across the U.S. for over a decade. After training at Le
+                Cordon Bleu Chicago, he honed his epicurean skills at Bavette’s
+                Bar and Boeuf Steakhouse (Hogsalt Hospitality), followed by
+                leadership roles at Michelin-starred Roister (★) and Alinea
+                (★★★). Since 2021, James has captivated the discerning palates
+                of esteemed private clients, who encouraged him to share his
+                talents with the world.
+              </p>
+            </div>
           </div>
         </div>
 
