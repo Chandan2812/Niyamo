@@ -62,10 +62,10 @@ const pressItems = [
 
 const PressPage: React.FC = () => {
   return (
-    <div>
+    <div className="bg-white dark:bg-black text-black dark:text-white font-raleway font-light dark:font-thin">
       <Navbar />
-      <section className="px-4 md:px-12 lg:px-20 max-w-screen-xl mx-auto py-28">
-        <h1 className="text-3xl font-semibold text-center mb-8 text-[#003D5B]">
+      <section className="w-11/12 px-4 md:px-12 lg:px-20 mx-auto py-28">
+        <h1 className="text-3xl font-semibold text-center mb-8 text-black dark:text-white">
           Press
         </h1>
 
@@ -75,7 +75,7 @@ const PressPage: React.FC = () => {
             <PressCard key={index} item={item} size="large" />
           ))}
 
-          {/* Next 2 large cards in custom layout */}
+          {/* Next 2 large cards */}
           {pressItems.length > 4 && (
             <>
               <div className="md:col-span-2">
@@ -87,7 +87,7 @@ const PressPage: React.FC = () => {
             </>
           )}
 
-          {/* Remaining medium cards */}
+          {/* Remaining cards */}
           {pressItems.slice(5).map((item, index) => (
             <PressCard key={index + 5} item={item} size="large" />
           ))}
@@ -107,17 +107,17 @@ const PressCard: React.FC<PressCardProps> = ({ item, size }) => {
   const heightClass = size === "large" ? "h-96" : "h-64";
 
   return (
-    <div className="group relative overflow-hidden rounded shadow-md">
+    <div className="group relative overflow-hidden rounded shadow-md bg-white dark:bg-gray-900 text-black dark:text-white transition-colors">
       <img
         src={item.image}
         alt={item.title}
         className={`w-full ${heightClass} object-cover transition-transform duration-300 group-hover:scale-105`}
       />
       <div className="p-4">
-        <p className="text-xs uppercase text-gray-500 font-semibold mb-1">
+        <p className="text-xs uppercase text-gray-500 dark:text-gray-400 font-semibold mb-1">
           {item.source}
         </p>
-        <h2 className="text-sm text-[#003D5B] font-medium leading-tight">
+        <h2 className="text-sm  leading-tight text-black dark:text-white">
           {item.title}
         </h2>
       </div>
