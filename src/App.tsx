@@ -8,6 +8,7 @@ import Charles from "./pages/nc_concepts/Charles-street";
 import Bkc from "./pages/nc_concepts/Bkc";
 import AboutUs from "./pages/group/About";
 import Management from "./pages/group/Management";
+import Coupette from "./pages/nc_concepts/Coupette";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/biryani-kebab-chai-(bkc)" element={<Bkc />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/management" element={<Management />} />
+        <Route path="coupette" element={<Coupette />} />
       </Routes>
     </Router>
   );
