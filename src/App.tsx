@@ -9,6 +9,7 @@ import Bkc from "./pages/nc_concepts/Bkc";
 import AboutUs from "./pages/group/About";
 import Management from "./pages/group/Management";
 import Coupette from "./pages/nc_concepts/Coupette";
+import GroupDining from "./pages/lifestyle/GroupDinning";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/management" element={<Management />} />
         <Route path="coupette" element={<Coupette />} />
+        <Route path="/group-dinning" element={<GroupDining />} />
       </Routes>
     </Router>
   );
