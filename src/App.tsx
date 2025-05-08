@@ -11,6 +11,7 @@ import Management from "./pages/group/Management";
 import Coupette from "./pages/nc_concepts/Coupette";
 import GroupDining from "./pages/lifestyle/GroupDinning";
 import Garden from "./pages/nc_concepts/Garden";
+import PrivateEvents from "./pages/lifestyle/PrivateEvents";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/coupette" element={<Coupette />} />
         <Route path="/24-&-30-sussex-gardens" element={<Garden />} />
         <Route path="/group-dinning" element={<GroupDining />} />
+        <Route path="/private-events" element={<PrivateEvents />} />
       </Routes>
     </Router>
   );
