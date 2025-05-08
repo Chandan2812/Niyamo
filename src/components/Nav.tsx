@@ -1,32 +1,32 @@
 import { useEffect, useState } from "react";
-import { Menu, Moon, Sun, ChevronDown } from "lucide-react";
+import {
+  Menu,
+  Moon,
+  Sun,
+  ChevronDown,
+  Twitter,
+  Instagram,
+  Facebook,
+  Linkedin,
+  Youtube,
+} from "lucide-react";
 
 const navItems = [
   { title: "Group", dropdown: ["About us", "Management", "NC Expansion"] },
   {
     title: "NC Concepts",
     dropdown: [
-      "Gaia",
-      "Sanghai Me",
-      "Alaya",
-      "Piatti",
-      "La Maison Ani",
-      "La Petite Ani",
-    ],
-  },
-  {
-    title: "Partnership Concepts",
-    dropdown: [
-      "Cipriani",
-      "Cipriani Dolci",
-      "Scalini",
-      "Scalini Cucina",
-      "Socialista",
+      "16 Charles Street",
+      "Biryani Kebab Chai (BKC)",
+      "Coupette",
+      "24 & 30 Sussex Gardens",
+      "The Joyce Restaurant",
+      "Dorsia",
     ],
   },
   {
     title: "NC Lifestyle",
-    dropdown: ["Reservations", "Group Dinning", "Private Events", "News"],
+    dropdown: ["Group Dinning", "Private Events", "News"],
   },
   { title: "NC World", dropdown: ["Careers", "Press", "Contact"] },
 ];
@@ -96,7 +96,7 @@ const Navbar = () => {
       <div className="hidden md:flex justify-between items-center px-10">
         <div className="flex items-center gap-6  ">
           <div className="text-2xl font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
-            Niyamo Capital
+            <a href="/">Niyamo Capital</a>
           </div>
 
           <div className="border-l self-stretch border-gray-400"></div>
@@ -132,16 +132,17 @@ const Navbar = () => {
                   style={{ paddingTop: "0.25rem" }}
                 >
                   {item.dropdown.map((sub, subIdx) => (
-                    <div
+                    <a
                       key={subIdx}
-                      className={`px-4 py-2 hover:${
+                      href={`/${sub.toLowerCase().replace(/\s+/g, "-")}`}
+                      className={`block px-4 py-2 hover:${
                         darkMode
                           ? "bg-gray-700 hover:bg-gray-600"
                           : "bg-gray-100 hover:bg-gray-300"
                       } cursor-pointer`}
                     >
                       {sub}
-                    </div>
+                    </a>
                   ))}
                 </div>
               </li>
@@ -157,11 +158,66 @@ const Navbar = () => {
           >
             {darkMode ? <Sun /> : <Moon />}
           </button>
-          <span className="text-sm text-[var(--primary-color)] font-medium">
-            Follow Us
-          </span>
-          <span className="text-sm  text-[var(--primary-color)] font-medium">
-            Call Us
+          <div className="relative group">
+            <span className="text-sm text-[var(--primary-color)] font-medium cursor-pointer py-8">
+              Follow Us
+            </span>
+
+            <div
+              className={`absolute top-14 -right-20 min-w-[150px] rounded shadow-lg z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none group-hover:pointer-events-auto ${
+                darkMode ? "bg-gray-800 text-white" : "bg-white text-black"
+              }`}
+            >
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 hover:text-white"
+              >
+                <Facebook size={16} />
+                Facebook
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 hover:text-white"
+              >
+                <Instagram size={16} />
+                Instagram
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 hover:text-white"
+              >
+                <Twitter size={16} />
+                Twitter
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 hover:text-white"
+              >
+                <Linkedin size={16} />
+                Linkedin
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 hover:text-white"
+              >
+                <Youtube size={16} />
+                Youtube
+              </a>
+            </div>
+          </div>
+
+          <span className="text-sm  text-[var(--primary-color)] font-medium cursor-pointer">
+            <a href="tel:+1234567890">Call Us</a>
           </span>
         </div>
       </div>
@@ -169,7 +225,7 @@ const Navbar = () => {
       {/* Mobile View */}
       <div className="md:hidden flex justify-between items-center px-4 py-3">
         <div className="text-xl font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
-          Niyamo Capital
+          <a href="/">Niyamo Capital</a>
         </div>
         <div className="flex items-center gap-3">
           <button
@@ -209,11 +265,13 @@ const Navbar = () => {
                 {mobileDropdowns[idx] && (
                   <ul className="pl-4 mt-1 space-y-1 text-sm">
                     {item.dropdown.map((sub, subIdx) => (
-                      <li
-                        key={subIdx}
-                        className="hover:underline font-light dark:font-thin"
-                      >
-                        {sub}
+                      <li key={subIdx}>
+                        <a
+                          href={`/${sub.toLowerCase().replace(/\s+/g, "-")}`}
+                          className="hover:underline font-light dark:font-thin block"
+                        >
+                          {sub}
+                        </a>
                       </li>
                     ))}
                   </ul>
@@ -225,10 +283,7 @@ const Navbar = () => {
           {/* Two side-by-side boxes */}
           <div className="mt-8 flex w-full">
             <div className="flex-1 border border-gray-500 text-center py-2">
-              Follow Us
-            </div>
-            <div className="flex-1 border border-gray-500 text-center py-2">
-              Call Us
+              <a href="tel:+1234567890">Call Us</a>
             </div>
           </div>
         </div>

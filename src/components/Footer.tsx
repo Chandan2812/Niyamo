@@ -1,10 +1,9 @@
 import {
-  FaEnvelope,
   FaFacebookF,
   FaLinkedinIn,
-  FaWhatsapp,
   FaInstagram,
   FaYoutube,
+  FaTwitter,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -65,10 +64,9 @@ const Footer = () => {
             1 Bell Street, London, London, United Kingdom, NW1 5BY
           </p>
           <div className="flex justify-start lg:justify-end gap-4 pt-2 text-[var(--primary-color)] text-xl">
-            <FaEnvelope />
             <FaFacebookF />
             <FaLinkedinIn />
-            <FaWhatsapp />
+            <FaTwitter />
             <FaInstagram />
             <FaYoutube />
           </div>
