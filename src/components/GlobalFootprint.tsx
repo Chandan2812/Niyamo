@@ -35,7 +35,7 @@ const GlobalFootprintSection: React.FC = () => {
 
         <div className="flex justify-between items-center mb-6 flex-wrap gap-4">
           <h2 className="text-2xl md:text-4xl font-semibold text-black dark:text-white mt-2">
-            From the UAE to the world
+            From the London to the world
           </h2>
           <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
             <span className="z-10 relative flex items-center gap-1 group-hover:text-white transition-colors duration-300 font-light">
