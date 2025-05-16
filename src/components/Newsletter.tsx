@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { BASE_URL } from "../utils/function";
 
 const NewsSubscribeSection: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -17,12 +18,11 @@ const NewsSubscribeSection: React.FC = () => {
 
     setLoading(true);
     try {
-      const res = await fetch("https://niyamo-backend.onrender.com/subscribe", {
+      const res = await fetch(`${BASE_URL}/subscribe`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
       });
-
       const data = await res.json();
       if (res.ok) {
         setPopup({ type: "success", message: data.message });
