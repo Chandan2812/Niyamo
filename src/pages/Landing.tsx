@@ -5,6 +5,7 @@ import FundamentalsSection from "../components/Fundamental";
 import GlobalFootprintSection from "../components/GlobalFootprint";
 import Hero from "../components/Hero";
 import Navbar from "../components/Nav";
+import NewsSubscribeSection from "../components/Newsletter";
 import FindYourPartner from "../components/slider";
 
 function Landing() {
@@ -18,6 +19,7 @@ function Landing() {
       <GlobalFootprintSection />
 
       <FundamentalsSection />
+      <NewsSubscribeSection />
       <Footer />
     </div>
   );
