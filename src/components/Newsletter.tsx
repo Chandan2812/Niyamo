@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import { BASE_URL } from "../utils/function";
 
@@ -42,6 +42,16 @@ const NewsSubscribeSection: React.FC = () => {
       setLoading(false);
     }
   };
+
+  // Auto-dismiss popup after 3 seconds
+  useEffect(() => {
+    if (popup) {
+      const timeout = setTimeout(() => {
+        setPopup(null);
+      }, 3000);
+      return () => clearTimeout(timeout);
+    }
+  }, [popup]);
 
   return (
     <div className="border-t border-gray-300 dark:border-gray-700 w-full">
