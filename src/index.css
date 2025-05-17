@@ -19,3 +19,16 @@
   background-color: white;
   color: black;
 }
+
+.input {
+  @apply w-full border border-gray-300 rounded px-3 py-2;
+}
+.textarea {
+  @apply w-full border border-gray-300 rounded px-3 py-2;
+}
+.btn {
+  @apply bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition;
+}
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700;
+}

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^1.9.0",
     "framer-motion": "^12.10.0",
     "keen-slider": "^6.8.6",
     "lucide-react": "^0.487.0",
