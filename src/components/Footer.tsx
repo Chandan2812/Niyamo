@@ -17,8 +17,8 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start">
           <div className="flex items-center gap-4">
             <div className="w-16 border-t border-[var(--primary-color)]" />
-            <p className="text-2xl md:text-4xl py-6 font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
-              Niyamo Capital
+            <p className="text-2xl uppercase md:text-4xl py-6 font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
+              Fern Hospitality
             </p>
             <div className="w-20 border-t border-[var(--primary-color)]" />
           </div>
@@ -86,7 +86,7 @@ const Footer = () => {
 
       {/* Footer Bottom Links */}
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-6 py-6 text-xs text-gray-600 dark:text-gray-400 flex flex-col sm:flex-row justify-between gap-2">
-        <span>Niyamo Capital ©2025 All Rights Reserved</span>
+        <span>Fern Hospitality ©2025 All Rights Reserved</span>
         <div className="flex gap-4">
           {["Terms of Use", "Privacy Policy", "Sitemap"].map((item, idx) => (
             <a

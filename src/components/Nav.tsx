@@ -96,7 +96,9 @@ const Navbar = () => {
       <div className="hidden md:flex justify-between items-center px-10">
         <div className="flex items-center gap-6  ">
           <div className="text-2xl font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
-            <a href="/">Niyamo Capital</a>
+            <a href="/" className="uppercase">
+              Fern Hospitality
+            </a>
           </div>
 
           <div className="border-l self-stretch border-gray-400"></div>

@@ -12,7 +12,7 @@ const PrivateEvents: React.FC = () => {
         <div className="space-y-6">
           <h1 className="text-3xl md:text-4xl font-semibold">Private Events</h1>
           <p className="text-lg font-medium">
-            At Niyamo Capital, we understand the importance of creating
+            At Fern Hospitality, we understand the importance of creating
             extraordinary events that leave a lasting impression.
           </p>
           <p className="text-sm leading-relaxed">

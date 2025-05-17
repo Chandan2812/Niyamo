@@ -9,22 +9,22 @@ const slides = [
     image: image1,
     title: "Experience Luxury, Redefined",
     description:
-      "Niyamo Capital pioneers excellence in hospitality investments across iconic destinations.",
-    buttonText: "Discover More",
+      "Fern Hospitality pioneers excellence in hospitality investments across iconic destinations.",
+    buttonText: "Contact Us",
   },
   {
     image: image2,
     title: "Where Vision Meets Destination",
     description:
       "We partner with world-class brands to create timeless experiences in hospitality.",
-    buttonText: "Our Projects",
+    buttonText: "Contact Us",
   },
   {
     image: image3,
     title: "Crafting Tomorrow’s Landmarks",
     description:
-      "Join Niyamo Capital in building extraordinary spaces that inspire and endure.",
-    buttonText: "Partner With Us",
+      "Join Fern Hospitality in building extraordinary spaces that inspire and endure.",
+    buttonText: "Contact Us",
   },
 ];
 
@@ -68,15 +68,17 @@ const Hero = () => {
           <p className="text-base md:text-lg mb-6">
             {slides[index].description}
           </p>
-          <button className="relative inline-block px-6 py-2 border border-[var(--primary-color)] font-light group overflow-hidden transition-all">
-            <span className="relative z-10 text-[var(--primary-color)] group-hover:text-black transition-colors duration-300">
-              {slides[index].buttonText}
-            </span>
-            <span
-              className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
-              style={{ backgroundImage: "var(--bg-primary-gradient)" }}
-            />
-          </button>
+          <a href="/contact">
+            <button className="relative inline-block px-6 py-2 border border-[var(--primary-color)] font-light group overflow-hidden transition-all">
+              <span className="relative z-10 text-[var(--primary-color)] group-hover:text-black transition-colors duration-300">
+                {slides[index].buttonText}
+              </span>
+              <span
+                className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
+                style={{ backgroundImage: "var(--bg-primary-gradient)" }}
+              />
+            </button>
+          </a>
         </motion.div>
       </div>
     </div>

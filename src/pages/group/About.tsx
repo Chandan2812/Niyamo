@@ -21,7 +21,7 @@ function AboutUs() {
                 Leading Hospitality with Vision and Flavor
               </h2>
               <p className="text-gray-800 dark:text-gray-200 text-base mb-6">
-                Niyamo Capital is a dynamic hospitality company redefining
+                Fern Hospitality is a dynamic hospitality company redefining
                 culinary experiences through a portfolio of innovative
                 restaurant concepts. Founded with a vision to elevate dining
                 culture, we craft memorable environments where taste, service,
@@ -56,7 +56,7 @@ function AboutUs() {
             <div className="md:w-1/2">
               <img
                 src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80"
-                alt="Niyamo Capital Hospitality"
+                alt="Fern Hospitality Hospitality"
                 className="w-full h-auto rounded-xl shadow-lg"
               />
             </div>

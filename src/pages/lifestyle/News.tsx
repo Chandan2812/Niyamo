@@ -6,7 +6,7 @@ const newsData = [
   {
     image:
       "https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615857862058-BSQJWNSWK8TOUPOQQW1D/Team.jpg?format=750w",
-    text: "Niyamo Capital unveils plans for a luxury hospitality venture in Dubai, blending investment innovation with lifestyle excellence.",
+    text: "Fern Hospitality unveils plans for a luxury hospitality venture in Dubai, blending investment innovation with lifestyle excellence.",
   },
   {
     image:
@@ -16,7 +16,7 @@ const newsData = [
   {
     image:
       "https://framerusercontent.com/images/rj1r36AyQ0OXSJtnrx5fCCiwM2c.webp?scale-down-to=512",
-    text: "Niyamo Capital announces global expansion—over 100 venues in development across key international markets.",
+    text: "Fern Hospitality announces global expansion—over 100 venues in development across key international markets.",
   },
 ];
 
