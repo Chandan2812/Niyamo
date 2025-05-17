@@ -12,9 +12,9 @@ import {
 } from "lucide-react";
 
 const navItems = [
-  { title: "Group", dropdown: ["About us", "Management", "NC Expansion"] },
+  { title: "Group", dropdown: ["About us", "Management", "FH Expansion"] },
   {
-    title: "NC Concepts",
+    title: "FH Concepts",
     dropdown: [
       "16 Charles Street",
       "Biryani Kebab Chai (BKC)",
@@ -25,10 +25,10 @@ const navItems = [
     ],
   },
   {
-    title: "NC Lifestyle",
+    title: "FH Lifestyle",
     dropdown: ["Group Dinning", "Private Events", "News"],
   },
-  { title: "NC World", dropdown: ["Careers", "Press", "Contact"] },
+  { title: "FH World", dropdown: ["Careers", "Press", "Contact"] },
 ];
 
 declare global {

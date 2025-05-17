@@ -76,7 +76,7 @@ const NewsSubscribeSection: React.FC = () => {
                 placeholder="Your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full sm:w-[300px] px-4 py-3 rounded-md text-black dark:text-white bg-transparent border border-gray-300 focus:outline-none"
+                className="w-full sm:w-[300px] px-4 py-3  text-black dark:text-white bg-transparent border border-gray-300 focus:outline-none"
               />
               <button
                 onClick={handleSubscribe}
