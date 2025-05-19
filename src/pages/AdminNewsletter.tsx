@@ -1,4 +1,3 @@
-// NewsletterForm.tsx
 import React, { useState } from "react";
 import axios from "axios";
 import "../index.css";
@@ -33,7 +32,6 @@ const NewsletterForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
     const payload = {
       subject: form.subject,
       title: form.title,
@@ -67,136 +65,133 @@ const NewsletterForm = () => {
       {/* Navbar */}
       <nav className="bg-gray-900 shadow px-6 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="text-3xl font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
-            <a href="/" className="uppercase">
-              Fern Hospitality
-            </a>
+          <div className="text-3xl font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent uppercase">
+            Fern Hospitality
           </div>
         </div>
       </nav>
 
-      {/* Form Container */}
-      <form
-        onSubmit={handleSubmit}
-        className="max-w-5xl mx-auto mt-10 bg-neutral-900 p-8 -lg shadow-lg space-y-6"
-      >
-        <h2 className="text-2xl font-semibold mb-4 text-center">
-          📬 Send Newsletter
-        </h2>
+      {/* Responsive Grid Layout */}
+      <div className="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Left: Form */}
+        <form
+          onSubmit={handleSubmit}
+          className="bg-neutral-900 p-6 rounded shadow space-y-5"
+        >
+          <h2 className="text-2xl font-semibold text-center">
+            📬 Send Newsletter
+          </h2>
 
-        <div>
-          <label className="block mb-1">Subject</label>
-          <input
-            name="subject"
-            value={form.subject}
-            onChange={handleChange}
-            className="w-full p-2  bg-neutral-700 border border-gray-600 text-white"
-            required
-          />
-        </div>
+          {[
+            { label: "Subject", name: "subject" },
+            { label: "Title", name: "title" },
+            { label: "CTA Text", name: "ctaText" },
+            { label: "CTA URL", name: "ctaUrl", type: "url" },
+            { label: "Image URL (optional)", name: "imageUrl" },
+            {
+              label: "Schedule At",
+              name: "scheduleAt",
+              type: "datetime-local",
+            },
+          ].map((field) => (
+            <div key={field.name}>
+              <label className="block mb-1">{field.label}</label>
+              <input
+                name={field.name}
+                type={field.type || "text"}
+                value={form[field.name as keyof typeof form] as string}
+                onChange={handleChange}
+                className="w-full p-2 bg-neutral-700 border border-gray-600 text-white"
+                required={!["imageUrl", "scheduleAt"].includes(field.name)}
+              />
+            </div>
+          ))}
 
-        <div>
-          <label className="block mb-1">Title</label>
-          <input
-            name="title"
-            value={form.title}
-            onChange={handleChange}
-            className="w-full p-2  bg-neutral-700 border border-gray-600 text-white"
-            required
-          />
-        </div>
-
-        <div>
-          <label className="block mb-1">Content (Plain Text)</label>
-          <textarea
-            name="content"
-            value={form.content}
-            onChange={handleChange}
-            rows={6}
-            placeholder={`Example:\n\n1. We launched a new feature.\n2. Bug fixes in the dashboard.`}
-            className="w-full p-2  bg-neutral-700 border border-gray-600 text-white"
-            required
-          />
-        </div>
-
-        <div>
-          <label className="block mb-1">CTA Text</label>
-          <input
-            name="ctaText"
-            value={form.ctaText}
-            onChange={handleChange}
-            className="w-full p-2  bg-neutral-700 border border-gray-600 text-white"
-            required
-          />
-        </div>
-
-        <div>
-          <label className="block mb-1">CTA URL</label>
-          <input
-            type="url"
-            name="ctaUrl"
-            value={form.ctaUrl}
-            onChange={handleChange}
-            className="w-full p-2  bg-neutral-700 border border-gray-600 text-white"
-            required
-          />
-        </div>
-
-        <div>
-          <label className="block mb-1">Image URL (optional)</label>
-          <input
-            name="imageUrl"
-            value={form.imageUrl}
-            onChange={handleChange}
-            className="w-full p-2  bg-neutral-700 border border-gray-600 text-white"
-          />
-        </div>
-
-        <div>
-          <label className="block mb-1">Schedule At</label>
-          <input
-            type="datetime-local"
-            name="scheduleAt"
-            value={form.scheduleAt}
-            onChange={handleChange}
-            className="w-full p-2  bg-neutral-700 border border-gray-600 text-white"
-          />
-        </div>
-
-        <div>
-          <label className="block mb-1">Recipients</label>
-          <label className="flex items-center space-x-2 mb-2">
-            <input
-              type="checkbox"
-              name="sendToAll"
-              checked={form.sendToAll}
-              onChange={handleChange}
-              className="form-checkbox"
-            />
-            <span>Send to All Subscribers</span>
-          </label>
-
-          {!form.sendToAll && (
+          <div>
+            <label className="block mb-1">Content (Plain Text)</label>
             <textarea
-              name="emails"
-              placeholder="Enter comma-separated emails"
-              value={form.emails}
+              name="content"
+              value={form.content}
               onChange={handleChange}
-              className="w-full p-2  bg-neutral-700 border border-gray-600 text-white"
-              rows={3}
+              rows={6}
+              placeholder={`Example: We launched a new feature.`}
+              className="w-full p-2 bg-neutral-700 border border-gray-600 text-white"
               required
             />
+          </div>
+
+          <div>
+            <label className="block mb-1">Recipients</label>
+            <label className="flex items-center space-x-2 mb-2">
+              <input
+                type="checkbox"
+                name="sendToAll"
+                checked={form.sendToAll}
+                onChange={handleChange}
+              />
+              <span>Send to All Subscribers</span>
+            </label>
+
+            {!form.sendToAll && (
+              <textarea
+                name="emails"
+                placeholder="Enter comma-separated emails"
+                value={form.emails}
+                onChange={handleChange}
+                className="w-full p-2 bg-neutral-700 border border-gray-600 text-white"
+                rows={3}
+                required
+              />
+            )}
+          </div>
+
+          <div className="text-center">
+            <button
+              type="submit"
+              className="bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] text-black font-medium py-2 px-6 hover:opacity-80"
+            >
+              {form.scheduleAt ? "Schedule Newsletter" : "Send Newsletter"}
+            </button>
+          </div>
+        </form>
+
+        {/* Right: Preview */}
+        <div className="bg-neutral-800 p-6 rounded shadow space-y-4">
+          <h3 className="text-xl font-semibold border-b border-gray-600 pb-2">
+            🧾 Preview
+          </h3>
+          <p className="text-sm text-gray-400">Subject:</p>
+          <p className="text-lg">{form.subject || "Newsletter Subject"}</p>
+
+          <p className="text-sm text-gray-400">Title:</p>
+          <h2 className="text-2xl font-bold">
+            {form.title || "Newsletter Title"}
+          </h2>
+
+          <div className="text-sm whitespace-pre-wrap">
+            {form.content || "Newsletter content goes here..."}
+          </div>
+
+          {form.imageUrl && (
+            <img
+              src={form.imageUrl}
+              alt="Newsletter"
+              className="w-full rounded border border-gray-700"
+            />
+          )}
+
+          {form.ctaText && (
+            <a
+              href={form.ctaUrl || "#"}
+              className="inline-block mt-4 px-4 py-2 bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] text-black font-semibold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {form.ctaText}
+            </a>
           )}
         </div>
-        <div className="flex justify-center items-center">
-          <button
-            type="submit"
-            className="w-fit bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] hover:opacity-80 text-black py-2 px-4"
-          >
-            {form.scheduleAt ? "Schedule Newsletter" : "Send Newsletter"}
-          </button>
-        </div>
-      </form>
+      </div>
     </div>
   );
 };
