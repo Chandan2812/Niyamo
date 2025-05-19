@@ -34,7 +34,7 @@ function App() {
         <Route path="/private-events" element={<PrivateEvents />} />
         <Route path="/news" element={<News />} />
         <Route path="/the-joyce-restaurant" element={<Joyce />} />
-        <Route path="/admin" element={<AdminNewsletterSender />} />
+        <Route path="/newsletter" element={<AdminNewsletterSender />} />
       </Routes>
     </Router>
   );
