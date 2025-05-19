@@ -85,8 +85,8 @@ const NewsletterForm = () => {
           {[
             { label: "Subject", name: "subject" },
             { label: "Title", name: "title" },
-            { label: "CTA Text", name: "ctaText" },
-            { label: "CTA URL", name: "ctaUrl", type: "url" },
+            { label: "Button Text", name: "ctaText" },
+            { label: "Button URL", name: "ctaUrl", type: "url" },
             { label: "Image URL (optional)", name: "imageUrl" },
             {
               label: "Schedule At",
