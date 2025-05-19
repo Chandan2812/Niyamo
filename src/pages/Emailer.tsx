@@ -79,10 +79,13 @@ const Emailer = () => {
           </div>
         </div>
       </nav>
-      <div className="p-6 max-w-7xl mx-auto text-white">
+      <div className="p-6 max-w-7xl mx-auto text-white ">
         <h1 className="text-3xl font-bold mb-4 text-center">📧 Send Emailer</h1>
-        <div className="flex flex-col lg:flex-row gap-8">
-          <form onSubmit={handleSubmit} className="space-y-4 w-full lg:w-1/2">
+        <div className="flex flex-col lg:flex-row gap-8 ">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-4 w-full lg:w-1/2 bg-neutral-900 p-6"
+          >
             {[
               { label: "Subject", name: "subject" },
               { label: "Title", name: "title" },

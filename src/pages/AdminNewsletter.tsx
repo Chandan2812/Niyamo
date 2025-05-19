@@ -70,6 +70,9 @@ const NewsletterForm = () => {
           </div>
         </div>
       </nav>
+      <h2 className="text-3xl font-semibold text-center mt-5">
+        📬 Send Newsletter
+      </h2>
 
       {/* Responsive Grid Layout */}
       <div className="max-w-7xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -78,10 +81,6 @@ const NewsletterForm = () => {
           onSubmit={handleSubmit}
           className="bg-neutral-900 p-6 rounded shadow space-y-5"
         >
-          <h2 className="text-2xl font-semibold text-center">
-            📬 Send Newsletter
-          </h2>
-
           {[
             { label: "Subject", name: "subject" },
             { label: "Title", name: "title" },
@@ -160,17 +159,12 @@ const NewsletterForm = () => {
           <h3 className="text-xl font-semibold border-b border-gray-600 pb-2">
             🧾 Preview
           </h3>
-          <p className="text-sm text-gray-400">Subject:</p>
-          <p className="text-lg">{form.subject || "Newsletter Subject"}</p>
 
-          <p className="text-sm text-gray-400">Title:</p>
-          <h2 className="text-2xl font-bold">
-            {form.title || "Newsletter Title"}
-          </h2>
+          <p className="text-lg">{form.subject}</p>
 
-          <div className="text-sm whitespace-pre-wrap">
-            {form.content || "Newsletter content goes here..."}
-          </div>
+          <h2 className="text-2xl font-bold">{form.title}</h2>
+
+          <div className="text-sm whitespace-pre-wrap">{form.content}</div>
 
           {form.imageUrl && (
             <img
