@@ -15,6 +15,7 @@ import PrivateEvents from "./pages/lifestyle/PrivateEvents";
 import News from "./pages/lifestyle/News";
 import Joyce from "./pages/nc_concepts/Joyce";
 import AdminNewsletterSender from "./pages/AdminNewsletter";
+import Emailer from "./pages/Emailer";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/the-joyce-restaurant" element={<Joyce />} />
         <Route path="/newsletter" element={<AdminNewsletterSender />} />
+        <Route path="/emailer" element={<Emailer />} />
       </Routes>
     </Router>
   );
