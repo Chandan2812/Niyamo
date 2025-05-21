@@ -6,6 +6,7 @@ import GlobalFootprintSection from "../components/GlobalFootprint";
 import Hero from "../components/Hero";
 import Navbar from "../components/Nav";
 import NewsSubscribeSection from "../components/Newsletter";
+import NewsletterPopup from "../components/NewsletterPopup";
 import FindYourPartner from "../components/slider";
 
 function Landing() {
@@ -19,6 +20,8 @@ function Landing() {
       <GlobalFootprintSection />
 
       <FundamentalsSection />
+      {/* Show the popup */}
+      <NewsletterPopup />
       <NewsSubscribeSection />
       <Footer />
     </div>

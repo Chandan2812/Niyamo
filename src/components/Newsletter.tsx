@@ -54,7 +54,10 @@ const NewsSubscribeSection: React.FC = () => {
   }, [popup]);
 
   return (
-    <div className="border-t border-gray-300 dark:border-gray-700 w-full">
+    <div
+      id="newsletter-section"
+      className="border-t border-gray-300 dark:border-gray-700 w-full"
+    >
       <div className="bg-white dark:bg-black text-black dark:text-white  py-12 px-4 sm:px-6 md:px-10 font-raleway">
         <div className="w-11/12  mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
           {/* Left Section */}
