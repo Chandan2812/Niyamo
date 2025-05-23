@@ -44,7 +44,11 @@ const Navbar = () => {
   const [mobileDropdowns, setMobileDropdowns] = useState<
     Record<number, boolean>
   >({});
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("theme")
+      ? localStorage.getItem("theme") === "dark"
+      : true;
+  });
 
   useEffect(() => {
     if (darkMode) {
