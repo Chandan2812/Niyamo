@@ -25,14 +25,7 @@ const Garden: React.FC = () => {
             choice for both business and leisure travelers seeking easy access
             to London's top attractions.
           </p>
-          <a
-            href="https://www.oyorooms.com/gb/39338/"
-            className="text-[var(--primary-color)] text-sm font-light"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            24 & 30 Sussex Gardens
-          </a>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
             <img
               src="https://images.oyoroomscdn.com/uploads/hotel_image/39338/large/2d813aefe1471af8.jpeg"

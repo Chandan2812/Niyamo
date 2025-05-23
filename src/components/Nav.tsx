@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 const navItems = [
-  { title: "Group", dropdown: ["About us", "Management", "FH Expansion"] },
+  { title: "Group", dropdown: ["About us", "Management"] },
   {
     title: "FH Concepts",
     dropdown: [

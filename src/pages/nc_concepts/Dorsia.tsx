@@ -2,30 +2,32 @@ import React from "react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 
-const Joyce: React.FC = () => {
+const Dorsia: React.FC = () => {
   return (
     <div className="bg-white text-black font-raleway dark:bg-black dark:text-white  font-light dark:font-thin">
       <Navbar />
       <section className="w-11/12 mx-auto py-28 px-4 md:px-8">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-          The Joyce Restaurant{" "}
+          Dorsia
         </h1>
 
         {/* Concept Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">Welcome To The Joyce </h2>
+          <h2 className="text-2xl font-semibold mb-4">
+            Welcome To The Dorsia{" "}
+          </h2>
           <p className="max-w-3xl text-sm leading-relaxed mb-4">
             Perfection in detail: We place great emphasis on ensuring that your
             visit becomes a culinary experience.
           </p>
           <a
-            href="https://www.thejoycerestaurant.com/"
+            href="https://www.dorsia.com/"
             className="text-[var(--primary-color)] text-sm font-light"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://www.thejoycerestaurant.com/
+            https://www.dorsia.com/
           </a>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
             <img
@@ -104,7 +106,7 @@ const Joyce: React.FC = () => {
         </div>
 
         {/* Location Section */}
-        <div className="mb-12">
+        {/* <div className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Location</h2>
           <div className="border rounded overflow-hidden h-96">
             <iframe
@@ -116,11 +118,11 @@ const Joyce: React.FC = () => {
               title="315 W 39th St, New York, NY 10018, United States"
             ></iframe>
           </div>
-        </div>
+        </div> */}
       </section>
       <Footer />
     </div>
   );
 };
 
-export default Joyce;
+export default Dorsia;
