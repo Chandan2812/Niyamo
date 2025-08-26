@@ -1,10 +1,5 @@
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -12,12 +7,12 @@ const Footer = () => {
       {/* Top horizontal line */}
       <div className="border-t border-gray-300 dark:border-gray-700 w-full" />
 
-      {/* Logo and CONTACTS Title */}
-      <div className="w-11/12 mx-auto  px-3 md:px-8 flex flex-col md:flex-row justify-between items-center">
+      {/* Logo + CONTACTS */}
+      <div className="w-11/12 mx-auto px-3 md:px-8 flex flex-col md:flex-row justify-between items-center">
         <div className="flex flex-col items-center md:items-start">
           <div className="flex items-center gap-4">
             <div className="w-16 border-t border-[var(--primary-color)]" />
-            <p className="text-2xl uppercase md:text-4xl py-6 font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
+            <p className="text-xl uppercase md:text-3xl py-6 font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
               Fern Hospitality
             </p>
             <div className="w-20 border-t border-[var(--primary-color)]" />
@@ -27,75 +22,87 @@ const Footer = () => {
       </div>
 
       {/* Mid horizontal line */}
-      <div className="w-11/12 mx-auto px-3 md:px-10  border-t border-gray-300 dark:border-gray-700 mb-8" />
+      <div className="w-11/12 mx-auto px-3 md:px-10 border-t border-gray-300 dark:border-gray-700 mb-8" />
 
       {/* Main content */}
-      <div className="w-11/12 mx-auto flex flex-col lg:flex-row justify-between px-6 sm:px-12 lg:px-6 gap-8 pb-10 font-light dark:font-thin ">
-        {/* Left: Navigation Columns */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-          {[
-            ["Our Concepts", "GAIA", "Shanghai Me", "La Maison Ani"],
-            [
-              "Dubai Venues",
-              "International Venues",
-              "Events",
-              "Private Dining",
-            ],
-            ["Reservations", "Careers", "Press"],
-            ["About Us", "Contact Us"],
-          ].map((group, idx) => (
-            <ul key={idx} className="space-y-2">
-              {group.map((item, i) => (
-                <li
-                  key={i}
-                  className="cursor-pointer hover:text-[var(--primary-color)] transition"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
-          ))}
+      <div className="w-11/12 mx-auto flex flex-col lg:flex-row justify-between px-6 sm:px-12 lg:px-6 gap-10 pb-10 font-light dark:font-thin">
+        {/* Logo */}
+        <div className="flex justify-center ">
+          <img
+            src={logo}
+            alt="Fern Hospitality"
+            className="dark:invert w-36 invert-0"
+          />
         </div>
 
-        {/* Right: Contact Info */}
+        {/* Navigation Columns */}
+        <div className="grid grid-cols-2 gap-10">
+          {/* Locations */}
+          <ul className="space-y-2">
+            {[
+              { label: "16 Charles Street", route: "/locations/london" },
+              { label: "Biryani Kabab Chai", route: "/locations/bkc" },
+              { label: "Coupette", route: "/locations/coupette" },
+              { label: "24 & 30 Sussex Gardens", route: "/locations/sussex" },
+              { label: "The Joyce Restaurant", route: "/locations/joyce" },
+              { label: "Dorsia", route: "/locations/dorsia" },
+            ].map((item, i) => (
+              <li key={i}>
+                <Link
+                  to={item.route}
+                  className="hover:text-[var(--primary-color)] transition duration-300"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Company */}
+          <ul className="space-y-2">
+            {[
+              { label: "About Us", route: "/about" },
+              { label: "Contact Us", route: "/contact" },
+              { label: "Press Release", route: "/press" },
+              { label: "News", route: "/news" },
+            ].map((item, i) => (
+              <li key={i}>
+                <Link
+                  to={item.route}
+                  className="hover:text-[var(--primary-color)] transition duration-300"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Contact Info */}
         <div className="space-y-4 lg:text-right">
-          <h3 className="text-lg">London, UK</h3>
-          <p className="text-gray-700 dark:text-gray-200">
+          <h3 className="text-lg font-medium">London, UK</h3>
+          <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
             1 Bell Street, London, London, United Kingdom, NW1 5BY
           </p>
-          <div className="flex justify-start lg:justify-end gap-4 pt-2 text-[var(--primary-color)] text-xl">
-            <FaFacebookF />
-            <FaLinkedinIn />
-            <FaTwitter />
-            <FaInstagram />
-            <FaYoutube />
-          </div>
-          <div className="flex md:justify-end">
-            <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden w-fit">
-              <span className="z-10 relative flex items-center gap-1 group-hover:text-white transition-colors duration-300 font-light">
-                CALL US
-              </span>
-              <span
-                className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
-                style={{ backgroundImage: "var(--bg-primary-gradient)" }}
-              ></span>
-            </button>
-          </div>
         </div>
       </div>
 
       {/* Footer Bottom Links */}
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-6 py-6 text-xs text-gray-600 dark:text-gray-400 flex flex-col sm:flex-row justify-between gap-2">
+      <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-6 py-6 text-xs text-gray-600 dark:text-gray-400 flex flex-col sm:flex-row justify-between gap-2 border-t border-gray-200 dark:border-gray-700 pt-6">
         <span>Fern Hospitality ©2025 All Rights Reserved</span>
         <div className="flex gap-4">
-          {["Terms of Use", "Privacy Policy", "Sitemap"].map((item, idx) => (
-            <a
+          {[
+            { label: "Terms of Use", route: "/terms" },
+            { label: "Privacy Policy", route: "/privacy" },
+            { label: "Sitemap", route: "/sitemap" },
+          ].map((item, idx) => (
+            <Link
               key={idx}
-              href="#"
-              className="cursor-pointer hover:text-[var(--primary-color)] transition"
+              to={item.route}
+              className="hover:text-[var(--primary-color)] transition duration-300"
             >
-              {item}
-            </a>
+              {item.label}
+            </Link>
           ))}
         </div>
       </div>

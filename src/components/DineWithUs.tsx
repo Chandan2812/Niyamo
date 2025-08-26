@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import dinningImage from "../assets/hero2.svg";
-import { ArrowRight } from "lucide-react";
+// import { ArrowRight } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const DiningExperienceSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [hasAnimated, setHasAnimated] = useState(false);
-  const [guests, setGuests] = useState(0);
-  const [venues, setVenues] = useState(0);
+  // const [guests, setGuests] = useState(0);
+  // const [venues, setVenues] = useState(0);
 
   useEffect(() => {
     AOS.init({ duration: 1200 });
@@ -18,8 +18,8 @@ const DiningExperienceSection: React.FC = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated) {
-          animateValue(setGuests, 346000, 1000);
-          animateValue(setVenues, 26, 1000);
+          // animateValue(setGuests, 346000, 1000);
+          // animateValue(setVenues, 26, 1000);
           setHasAnimated(true);
         }
       },
@@ -35,25 +35,25 @@ const DiningExperienceSection: React.FC = () => {
     };
   }, [hasAnimated]);
 
-  const animateValue = (
-    setter: (value: number) => void,
-    target: number,
-    duration: number
-  ) => {
-    const start = 0;
-    const stepTime = 20;
-    const steps = duration / stepTime;
-    const increment = target / steps;
-    let current = start;
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        current = target;
-        clearInterval(timer);
-      }
-      setter(Math.floor(current));
-    }, stepTime);
-  };
+  // const animateValue = (
+  //   setter: (value: number) => void,
+  //   target: number,
+  //   duration: number
+  // ) => {
+  //   const start = 0;
+  //   const stepTime = 20;
+  //   const steps = duration / stepTime;
+  //   const increment = target / steps;
+  //   let current = start;
+  //   const timer = setInterval(() => {
+  //     current += increment;
+  //     if (current >= target) {
+  //       current = target;
+  //       clearInterval(timer);
+  //     }
+  //     setter(Math.floor(current));
+  //   }, stepTime);
+  // };
 
   return (
     <section
@@ -88,7 +88,7 @@ const DiningExperienceSection: React.FC = () => {
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x border-t border-gray-300 mb-8">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x border-t border-gray-300 mb-8">
             <div className="py-4 sm:pr-6">
               <p className="text-xs font-semibold text-gray-700 dark:text-gray-300 uppercase mb-1">
                 We Have
@@ -111,10 +111,10 @@ const DiningExperienceSection: React.FC = () => {
                 Restaurants and nightlife venues around the world.
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Button */}
-          <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
+          {/* <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
             <span className="z-10 relative flex items-center gap-1 group-hover:text-white transition-colors duration-300 font-light">
               Make A Reservation <ArrowRight size={16} />
             </span>
@@ -122,7 +122,7 @@ const DiningExperienceSection: React.FC = () => {
               className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
               style={{ backgroundImage: "var(--bg-primary-gradient)" }}
             ></span>
-          </button>
+          </button> */}
         </div>
 
         {/* Image with dotted background */}

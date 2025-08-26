@@ -5,19 +5,22 @@ import img3 from "../assets/hospitalityconcept/PAGE-8-DUBAI.jpg";
 import img4 from "../assets/hospitalityconcept/Gaia-marbella_olive-press-1.jpg";
 import img5 from "../assets/hospitalityconcept/PAGE-8-MONACO.jpg";
 import img6 from "../assets/hospitalityconcept/PAGE-8-RIYADH.jpg";
-import img7 from "../assets/hospitalityconcept/PAGE-8-MIAMI.jpg";
-import { ArrowRight } from "lucide-react";
+// import img7 from "../assets/hospitalityconcept/PAGE-8-MIAMI.jpg";
+// import { ArrowRight } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const locations = [
-  { name: "DOHA", img: img1 },
-  { name: "LONDON", img: img2 },
-  { name: "DUBAI", img: img3 },
-  { name: "MARBELLA", img: img4 },
-  { name: "MONACO", img: img5 },
-  { name: "RIYADH", img: img6 },
-  { name: "MIAMI", img: img7 },
+  { name: "16 Charles Street", img: img1, url: "/16-charles-street" },
+  {
+    name: "Birayani Kabab Chai (BKC)",
+    img: img2,
+    url: "/biryani-kebab-chai-(bkc)",
+  },
+  { name: "Coupette", img: img3, url: "/coupette" },
+  { name: "24 & 30 Sussex Gardens", img: img4, url: "/24-&-30-sussex-gardens" },
+  { name: "The Joyce Restaurant", img: img5, url: "/the-joyce-restaurant" },
+  { name: "Dorsia", img: img6, url: "/dorsia" },
 ];
 
 const GlobalFootprintSection: React.FC = () => {
@@ -37,7 +40,7 @@ const GlobalFootprintSection: React.FC = () => {
           <h2 className="text-2xl md:text-4xl font-semibold text-black dark:text-white mt-2">
             From the London to the world
           </h2>
-          <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
+          {/* <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
             <span className="z-10 relative flex items-center gap-1 group-hover:text-white transition-colors duration-300 font-light">
               SEE WORLD MAP <ArrowRight size={16} />
             </span>
@@ -45,15 +48,18 @@ const GlobalFootprintSection: React.FC = () => {
               className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
               style={{ backgroundImage: "var(--bg-primary-gradient)" }}
             ></span>
-          </button>
+          </button> */}
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-fr">
           {locations.map((location, index) => (
-            <div
+            <a
               key={index}
+              href={location.url}
               className={`relative overflow-hidden rounded-sm ${
-                index === 2 ? "md:col-span-2 h-96 md:h-96 lg:h-96" : "h-96"
+                index === 2 || index === 3
+                  ? "md:col-span-2 h-96 md:h-96 lg:h-96"
+                  : "h-96"
               }`}
               style={{
                 backgroundImage: `url(${location.img})`,
@@ -67,7 +73,7 @@ const GlobalFootprintSection: React.FC = () => {
                   {location.name}
                 </h3>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

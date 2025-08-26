@@ -6,7 +6,7 @@ import img4 from "../assets/hospitalityconcept/Gaia-marbella_olive-press-1.jpg";
 import img5 from "../assets/hospitalityconcept/PAGE-8-MONACO.jpg";
 import img6 from "../assets/hospitalityconcept/PAGE-8-RIYADH.jpg";
 import img7 from "../assets/hospitalityconcept/PAGE-8-MIAMI.jpg";
-import { ArrowRight } from "lucide-react";
+// import { ArrowRight } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -28,17 +28,11 @@ const FundamentalsSection: React.FC = () => {
   return (
     <section className="bg-white dark:bg-black text-black dark:text-white  font-raleway font-light dark:font-thin">
       <div className="w-11/12 mx-auto  px-3 md:px-8 py-10">
-        <div>
-          <p className="text-gray-700 dark:text-gray-300 text-xs tracking-widest mt-1 uppercase font-semibold">
-            NC Capital
-          </p>
-        </div>
-
         <div className="flex justify-between items-center mb-6 flex-wrap gap-4 ">
           <h2 className="text-2xl md:text-4xl font-semibold text-black dark:text-white mt-2">
-            Fern Hospitality <br /> expansion plan for the upcoming <br /> year
+            Fern Hospitality <br /> expansion plan for the upcoming year
           </h2>
-          <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
+          {/* <button className="relative group flex items-center text-[var(--primary-color)] border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
             <span className="z-10 relative flex items-center gap-1 group-hover:text-white transition-colors duration-300 font-light">
               NC Capital <ArrowRight size={16} />
             </span>
@@ -46,7 +40,7 @@ const FundamentalsSection: React.FC = () => {
               className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
               style={{ backgroundImage: "var(--bg-primary-gradient)" }}
             ></span>
-          </button>
+          </button> */}
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-fr">

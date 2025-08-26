@@ -124,12 +124,12 @@ const FindYourPartner: React.FC = () => {
               className="text-gray-600 dark:text-gray-400 text-base my-6 max-w-xl"
               data-aos="fade-right"
             >
-              Fern Hospitality is a forward-thinking hospitality company
-              curating exceptional dining destinations. With a portfolio of
-              vibrant restaurants, we blend culinary artistry with unforgettable
-              ambiance. Our team delivers refined experiences through passion,
-              innovation, and attention to detail — creating places where guests
-              feel inspired and at home.
+              We are a forward-thinking hospitality company curating exceptional
+              dining destinations. With a portfolio of vibrant restaurants, we
+              blend culinary artistry with unforgettable ambiance. Our team
+              delivers refined experiences through passion, innovation, and
+              attention to detail — creating places where guests feel inspired
+              and at home.
             </p>
 
             <a href="/contact">

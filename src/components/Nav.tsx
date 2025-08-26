@@ -4,15 +4,15 @@ import {
   Moon,
   Sun,
   ChevronDown,
-  Twitter,
-  Instagram,
-  Facebook,
-  Linkedin,
-  Youtube,
+  // Twitter,
+  // Instagram,
+  // Facebook,
+  // Linkedin,
+  // Youtube,
 } from "lucide-react";
 
 const navItems = [
-  { title: "Group", dropdown: ["About us", "Management"] },
+  { title: "Group", dropdown: ["About us", "Management", "Fund Manager"] },
   {
     title: "FH Concepts",
     dropdown: [
@@ -25,10 +25,9 @@ const navItems = [
     ],
   },
   {
-    title: "FH Lifestyle",
-    dropdown: ["Group Dinning", "Private Events", "News"],
+    title: "Press",
+    dropdown: ["Press Release", "News"],
   },
-  { title: "FH World", dropdown: ["Careers", "Press", "Contact"] },
 ];
 
 declare global {
@@ -166,10 +165,10 @@ const Navbar = () => {
           </button>
           <div className="relative group">
             <span className="text-sm text-[var(--primary-color)] font-medium cursor-pointer py-8">
-              Follow Us
+              <a href="/contact">Contact Us</a>
             </span>
 
-            <div
+            {/* <div
               className={`absolute top-14 -right-20 min-w-[150px] rounded shadow-lg z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none group-hover:pointer-events-auto ${
                 darkMode ? "bg-gray-800 text-white" : "bg-white text-black"
               }`}
@@ -219,12 +218,12 @@ const Navbar = () => {
                 <Youtube size={16} />
                 Youtube
               </a>
-            </div>
+            </div> */}
           </div>
 
-          <span className="text-sm  text-[var(--primary-color)] font-medium cursor-pointer">
+          {/* <span className="text-sm  text-[var(--primary-color)] font-medium cursor-pointer">
             <a href="tel:+1234567890">Call Us</a>
-          </span>
+          </span> */}
         </div>
       </div>
 
