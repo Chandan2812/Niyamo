@@ -46,7 +46,8 @@ const slides = [
     description1:
       "Dorsia is a members-only dining network offering guaranteed access to sought-after tables in the world’s most vibrant culinary destinations, with privileged entry to exclusive events, seasonal pop-ups, and a curated social diary.",
 
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+    image:
+      "https://framerusercontent.com/images/g4sS7ZaoyqeGrz7RPt4j395kkQ.jpg?scale-down-to=2048",
   },
 ];
 

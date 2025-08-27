@@ -9,7 +9,7 @@ const Coupette: React.FC = () => {
       <section className="px-4 md:px-12 lg:px-24 py-28">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-          Coupette Bethnal Green
+          Coupette
         </h1>
 
         {/* Concept Section */}
@@ -17,7 +17,7 @@ const Coupette: React.FC = () => {
           <h2 className="text-2xl font-semibold mb-4">
             One of the Best Cocktail Bars in Central London
           </h2>
-          <p className="max-w-3xl text-sm leading-relaxed mb-4 text-gray-700 dark:text-gray-300">
+          <p className=" text-md leading-relaxed mb-4 text-gray-700 dark:text-gray-300">
             Coupette, a French-inspired cocktail bar in Bethnal Green, shines as
             one of London's best cocktail bars in East London since its 2017
             opening. Coupette’s intimate, soft lighting that dances upon the
@@ -70,7 +70,7 @@ const Coupette: React.FC = () => {
             <h2 className="text-2xl font-semibold mb-4">
               Discover Our Cocktail Bars and Restaurants in London
             </h2>
-            <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+            <p className="text-md leading-relaxed text-gray-700 dark:text-gray-300">
               Welcome to Coupette, a beacon of French sophistication and
               culinary heritage. Named after the elegant Coupe glass, Coupette
               has risen to prominence since its opening in summer 2017 in
@@ -85,7 +85,7 @@ const Coupette: React.FC = () => {
           <h2 className="text-2xl font-semibold mb-4">
             Cocktail Bar and Restaurant, Soho
           </h2>
-          <p className="text-sm leading-relaxed mb-6 max-w-3xl text-gray-700 dark:text-gray-300">
+          <p className="text-md leading-relaxed mb-6  text-gray-700 dark:text-gray-300">
             Experience Coupette's sophisticated yet sustainable cocktails. Our
             expert bartenders craft drinks using locally sourced ingredients,
             presenting intricate stories and rich flavours. Immerse yourself in

@@ -6,7 +6,7 @@ const Bkc: React.FC = () => {
   return (
     <div className="bg-white text-black font-raleway dark:bg-black dark:text-white  font-light dark:font-thin">
       <Navbar />
-      <section className="w-11/12 mx-auto py-28 px-4 md:px-8">
+      <section className="w-11/12 md:w-5/6 mx-auto py-28 px-4 md:px-8">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12">
           Biryani Kebab Chai
@@ -17,7 +17,7 @@ const Bkc: React.FC = () => {
           <h2 className="text-2xl font-semibold mb-4">
             Bringing authentic Awadhi delights to London
           </h2>
-          <p className="max-w-3xl text-sm leading-relaxed mb-4">
+          <p className=" text-md leading-relaxed mb-4">
             At BKC – Biryani Kebab Chai, our story is one of passion,
             exploration, and the desire to share the unparalleled tastes of
             Awadhi cuisine with London. Launched in Marble Arch in 2022 and in
@@ -64,7 +64,7 @@ const Bkc: React.FC = () => {
             <h2 className="text-2xl font-semibold mb-4">
               The dum pukht delight: Lucknowi Biryani at BKC
             </h2>
-            <p className="text-sm leading-relaxed">
+            <p className="text-md leading-relaxed">
               At BKC the dishes are thoughtfully curated by our Head Chef – Arsh
               Thakur, following the age-old Awadhi cooking techniques using the
               freshest British produce...
@@ -74,8 +74,7 @@ const Bkc: React.FC = () => {
 
         {/* Design Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">Design</h2>
-          <p className="text-sm leading-relaxed mb-6 max-w-3xl">
+          <p className="text-md leading-relaxed mb-6 ">
             Charles Street has character and history, which we are keen to
             preserve and enhance...
           </p>

@@ -12,7 +12,7 @@ const Dorsia: React.FC = () => {
         className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1528605248644-14dd04022da1')",
+            "url('https://framerusercontent.com/images/CqOMdh6OAvRBr5oT4vm8s2zp6Y.jpg?scale-down-to=1024')",
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
@@ -52,17 +52,17 @@ const Dorsia: React.FC = () => {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+            src="https://framerusercontent.com/images/0GGQrhMI0xTOtf9XNoY5CPHHq8.jpg?scale-down-to=2048"
             alt="Dining 1"
             className="w-full h-64 object-cover rounded-xl shadow-md"
           />
           <img
-            src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/38694TheJoyce_122024_6462.jpg"
+            src="https://framerusercontent.com/images/6sk3M25yiTD2BsaiWnnZAnqJM.jpg"
             alt="Dining 2"
             className="w-full h-64 object-cover rounded-xl shadow-md"
           />
           <img
-            src="https://images.unsplash.com/photo-1559339352-11d035aa65de"
+            src="https://framerusercontent.com/images/GfCCHBhlwBouXSNk534AYwiFbw.jpg"
             alt="Dining 3"
             className="w-full h-64 object-cover rounded-xl shadow-md"
           />

@@ -38,7 +38,7 @@ const locations = [
   },
   {
     name: "Dorsia",
-    img: "https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/55839TheJoyce_122024_6266.jpg",
+    img: "https://framerusercontent.com/images/ijVLbDfM5mjmgGRngmmp3ABo.jpg",
     url: "/dorsia",
   },
 ];

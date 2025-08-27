@@ -4,18 +4,18 @@ import Footer from "../../components/Footer";
 
 const Joyce: React.FC = () => {
   return (
-    <div className="bg-white text-black font-raleway dark:bg-black dark:text-white  font-light dark:font-thin">
+    <div className="bg-white text-black font-raleway dark:bg-black dark:text-white  font-light">
       <Navbar />
-      <section className="w-11/12 mx-auto py-28 px-4 md:px-8">
+      <section className="w-11/12 md:w-5/6 mx-auto py-28 px-4 md:px-8">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-          The Joyce Restaurant{" "}
+          The Joyce Restaurant
         </h1>
 
         {/* Concept Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">Welcome To The Joyce </h2>
-          <p className="max-w-3xl text-sm leading-relaxed mb-4">
+          <p className="text-md leading-relaxed mb-4">
             an intimate, 45-seat speakeasy on Miami Beach’s Española Way by
             Alinea alum James Taylor, blending refined American cuisine with
             emerald-green interiors, a rotating gallery of blue-chip art, and
@@ -66,7 +66,7 @@ const Joyce: React.FC = () => {
               <h2 className="text-2xl md:text-3xl font-semibold">
                 James Taylor The Chef
               </h2>
-              <p className="text-sm md:text-base leading-relaxed">
+              <p className="text-md md:text-base leading-relaxed">
                 Chef James Taylor has enchanted culinary enthusiasts and food
                 critics across the U.S. for over a decade. After training at Le
                 Cordon Bleu Chicago, he honed his epicurean skills at Bavette’s
@@ -82,8 +82,7 @@ const Joyce: React.FC = () => {
 
         {/* Design Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">Design</h2>
-          <p className="text-sm leading-relaxed mb-6 max-w-3xl">
+          <p className="text-md leading-relaxed mb-6 ">
             Charles Street has character and history, which we are keen to
             preserve and enhance...
           </p>
