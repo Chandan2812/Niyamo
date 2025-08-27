@@ -78,11 +78,11 @@ const ConceptInFocusSection = () => {
           </div>
         </div>
 
-        <p className="text-gray-700 dark:text-gray-300 max-w-xl mb-6">
+        {/* <p className="text-gray-700 dark:text-gray-300 max-w-xl mb-6">
           Our creative, yet intricate approach leads to elevated experiences. We
           develop premium dining concepts that showcase the quality and
           progressive nature of the region.
-        </p>
+        </p> */}
 
         {/* Fixed Box with Changing Content */}
         <div className="relative flex flex-col md:flex-row bg-white dark:bg-black overflow-hidden rounded-2xl shadow-lg">
