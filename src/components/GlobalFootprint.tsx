@@ -1,26 +1,46 @@
 import React, { useEffect } from "react";
-import img1 from "../assets/hospitalityconcept/PAGE-8-DOHA.jpg";
-import img2 from "../assets/hospitalityconcept/Bar-8.jpg";
-import img3 from "../assets/hospitalityconcept/PAGE-8-DUBAI.jpg";
-import img4 from "../assets/hospitalityconcept/Gaia-marbella_olive-press-1.jpg";
-import img5 from "../assets/hospitalityconcept/PAGE-8-MONACO.jpg";
-import img6 from "../assets/hospitalityconcept/PAGE-8-RIYADH.jpg";
+// import img1 from "../assets/hospitalityconcept/PAGE-8-DOHA.jpg";
+// import img2 from "../assets/hospitalityconcept/Bar-8.jpg";
+// import img3 from "../assets/hospitalityconcept/PAGE-8-DUBAI.jpg";
+// import img4 from "../assets/hospitalityconcept/Gaia-marbella_olive-press-1.jpg";
+// import img5 from "../assets/hospitalityconcept/PAGE-8-MONACO.jpg";
+// import img6 from "../assets/hospitalityconcept/PAGE-8-RIYADH.jpg";
 // import img7 from "../assets/hospitalityconcept/PAGE-8-MIAMI.jpg";
 // import { ArrowRight } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const locations = [
-  { name: "16 Charles Street", img: img1, url: "/16-charles-street" },
+  {
+    name: "16 Charles Street",
+    img: "https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615985825825-W98KHLYXOIUMSPGZBGDW/DSC_3718.jpg?format=750w",
+    url: "/16-charles-street",
+  },
   {
     name: "Birayani Kabab Chai (BKC)",
-    img: img2,
+    img: "https://bkclondon.uk/wp-content/uploads/2023/08/DSC00189-2400x1600.jpg",
     url: "/biryani-kebab-chai-(bkc)",
   },
-  { name: "Coupette", img: img3, url: "/coupette" },
-  { name: "24 & 30 Sussex Gardens", img: img4, url: "/24-&-30-sussex-gardens" },
-  { name: "The Joyce Restaurant", img: img5, url: "/the-joyce-restaurant" },
-  { name: "Dorsia", img: img6, url: "/dorsia" },
+  {
+    name: "Coupette",
+    img: "https://static.wixstatic.com/media/fe41f9_1b5419bb954a4b0283823e65061f871c~mv2.jpg",
+    url: "/coupette",
+  },
+  {
+    name: "24 & 30 Sussex Gardens",
+    img: "https://images.oyoroomscdn.com/uploads/hotel_image/39338/large/2d813aefe1471af8.jpeg",
+    url: "/24-&-30-sussex-gardens",
+  },
+  {
+    name: "The Joyce Restaurant",
+    img: "https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/38694TheJoyce_122024_6462.jpg",
+    url: "/the-joyce-restaurant",
+  },
+  {
+    name: "Dorsia",
+    img: "https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/55839TheJoyce_122024_6266.jpg",
+    url: "/dorsia",
+  },
 ];
 
 const GlobalFootprintSection: React.FC = () => {

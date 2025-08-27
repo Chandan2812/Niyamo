@@ -252,11 +252,11 @@ const Navbar = () => {
             darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
           }`}
         >
-          <div className="space-y-6">
+          <div className="space-y-10">
             {navItems.map((item, idx) => (
               <div key={idx}>
                 <button
-                  className="flex justify-between w-full items-center font-light"
+                  className="flex justify-between w-full items-center font-light mb-5"
                   onClick={() => toggleMobileDropdown(idx)}
                 >
                   {item.title}
@@ -268,7 +268,7 @@ const Navbar = () => {
                   />
                 </button>
                 {mobileDropdowns[idx] && (
-                  <ul className="pl-4 mt-1 space-y-1 text-sm">
+                  <ul className="pl-4 mt-1 space-y-5 text-sm">
                     {item.dropdown.map((sub, subIdx) => (
                       <li key={subIdx}>
                         <a
@@ -283,12 +283,8 @@ const Navbar = () => {
                 )}
               </div>
             ))}
-          </div>
-
-          {/* Two side-by-side boxes */}
-          <div className="mt-8 flex w-full">
-            <div className="flex-1 border border-gray-500 text-center py-2">
-              <a href="tel:+1234567890">Call Us</a>
+            <div className="text-sm font-medium cursor-pointer">
+              <a href="/contact">Contact Us</a>
             </div>
           </div>
         </div>
