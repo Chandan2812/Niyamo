@@ -23,6 +23,11 @@ const fundamentals = [
     img: img7,
     url: "la-specialita",
   },
+  {
+    name: "Thamel ",
+    img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/67/4e/2e/o-nossos-deliciosos-momode3man.jpg?w=1100&h=600&s=1",
+    url: "thamel",
+  },
 ];
 
 const FundamentalsSection: React.FC = () => {
@@ -52,9 +57,7 @@ const FundamentalsSection: React.FC = () => {
             <a
               key={index}
               href={location.url}
-              className={`relative overflow-hidden rounded-sm ${
-                index === 0 ? "md:col-span-2 h-96 md:h-96 lg:h-96" : "h-96"
-              }`}
+              className="relative overflow-hidden rounded-sm h-96"
               style={{
                 backgroundImage: `url(${location.img})`,
                 backgroundSize: "cover",

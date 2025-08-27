@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 
@@ -18,13 +18,7 @@ function Contact() {
           </p>
 
           {/* Info Cards */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <ContactCard
-              icon={<Phone className="w-8 h-8" />}
-              label="Call Us"
-              content="020 7125 0421"
-              href="tel:02071250421"
-            />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <ContactCard
               icon={<Mail className="w-8 h-8" />}
               label="Email Us"

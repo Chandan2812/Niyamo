@@ -25,6 +25,7 @@ import RamenMe from "./pages/pipeline/RamenMe";
 import ZumanaBali from "./pages/pipeline/ZumanaBali";
 import BangCookies from "./pages/pipeline/BangCookies";
 import Baoli from "./pages/pipeline/Baoli";
+import Thamel from "./pages/pipeline/Thamel";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
         <Route path="/zumana-bali" element={<ZumanaBali />} />
         <Route path="/bang-cookies" element={<BangCookies />} />
         <Route path="/baoli" element={<Baoli />} />
+        <Route path="/thamel" element={<Thamel />} />
       </Routes>
     </Router>
   );

@@ -11,7 +11,7 @@ const Garden: React.FC = () => {
         className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://lh3.googleusercontent.com/p/AF1QipPdyRmpO_48JE0RqG79TrKeatYU8a7kDI2F-WMH=w446-h298-k-no')",
+            "url('https://images.oyoroomscdn.com/uploads/hotel_image/39338/large/4f44f19f4a1bb2cf.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
@@ -19,6 +19,14 @@ const Garden: React.FC = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             24 & 30 Sussex Gardens
           </h1>
+          <a
+            href="https://www.oyorooms.com/GB/39338/?utm_source=GMB_GB&utm_medium=Organic&utm_campaign=EN_LDN002&latitude=51.5177018416648&longitude=-0.168721675872803&locale=en"
+            className="mt-6 inline-block px-6 py-3 bg-[var(--primary-color)] text-white font-medium rounded-full shadow-lg hover:opacity-90 transition"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit 24 & 30 Sussex Gardens
+          </a>
         </div>
       </section>
 
