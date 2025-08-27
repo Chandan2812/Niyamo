@@ -6,42 +6,42 @@ function Management() {
     {
       name: "Uday Singh",
       designation: "CEO",
-      image: "https://via.placeholder.com/300x300.png?text=Uday+Singh",
+      image: "https://fnst.axflare.com/img/team/JPEG/oEsyFzyLSm.jpg",
       description:
         "Serial hospitality entrepreneur with a proven track record of creating and scaling premium F&B and lifestyle concepts globally. Founder of Global Titans Fight Series and recognized for driving high-margin experiential hospitality investments.",
     },
     {
       name: "Akshat Tiberwala",
       designation: "MD",
-      image: "https://via.placeholder.com/300x300.png?text=Akshat+Tiberwala",
+      image: "https://fnst.axflare.com/img/team/JPEG/XqjPzqAxew.jpeg",
       description:
         "Founder of Niyamo Capital, a UK-based investment firm. Combines financial economics expertise with creative brand insight. Focused on sourcing and scaling next-gen F&B and lifestyle investments worldwide.",
     },
     {
       name: "Bartolémy Lemoine",
       designation: "Head of Operations",
-      image: "https://via.placeholder.com/300x300.png?text=Bartolemy+Lemoine",
+      image: "https://fnst.axflare.com/img/team/JPEG/NQdQHfPaqp.jpg",
       description:
         "15+ years in luxury hospitality and high-end concierge services. Former VIP Director at Bagatelle Group. Expert in curating guest experiences, managing elite relationships, and leading hospitality operations worldwide.",
     },
     {
       name: "Alex Cordoba",
       designation: "CEO, Savaya",
-      image: "https://via.placeholder.com/300x300.png?text=Alex+Cordoba",
+      image: "https://fnst.axflare.com/img/team/JPEG/oEsyFzyLSm.jpg",
       description:
         "CEO of Savaya, a globally recognized hospitality and entertainment group based in Bali. Leads strategic growth across lifestyle brands, with a focus on innovation, guest experiences, and premium hospitality expansion.",
     },
     {
       name: "Zachary Cefaratti",
-      designation: "Founder & CEO, Dalma Capital",
-      image: "https://via.placeholder.com/300x300.png?text=Zachary+Cefaratti",
+      designation: "Founder & CEO, ",
+      image: "https://fnst.axflare.com/img/team/JPEG/XqjPzqAxew.jpeg",
       description:
-        "Founder & CEO of Dalma Capital, managing $50B+ in assets across multiple regions. Known for structuring cross-border deals. Also the founder of AIM Summit, driving innovation in finance and hospitality platforms.",
+        "Founder & CEO of , managing $50B+ in assets across multiple regions. Known for structuring cross-border deals. Also the founder of AIM Summit, driving innovation in finance and hospitality platforms.",
     },
     {
       name: "Mark Lotenburg",
       designation: "Founder & CEO, DORSIA",
-      image: "https://via.placeholder.com/300x300.png?text=Mark+Lotenburg",
+      image: "https://fnst.axflare.com/img/team/JPEG/NQdQHfPaqp.jpg",
       description:
         "Founder & CEO of DORSIA, redefining restaurant access through venture-backed innovation. Focused on hospitality tech, luxury dining, and curated lifestyle memberships with category-defining impact.",
     },

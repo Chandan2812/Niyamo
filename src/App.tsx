@@ -18,6 +18,13 @@ import AdminNewsletterSender from "./pages/AdminNewsletter";
 import Emailer from "./pages/Emailer";
 import Dorsia from "./pages/nc_concepts/Dorsia";
 import FundManager from "./pages/group/FundManager";
+import LaSpecialita from "./pages/pipeline/LaSpecialita";
+import OpaBali from "./pages/pipeline/OpaBali";
+import Bagatelle from "./pages/pipeline/Bagatelle";
+import RamenMe from "./pages/pipeline/RamenMe";
+import ZumanaBali from "./pages/pipeline/ZumanaBali";
+import BangCookies from "./pages/pipeline/BangCookies";
+import Baoli from "./pages/pipeline/Baoli";
 
 function App() {
   return (
@@ -41,6 +48,13 @@ function App() {
         <Route path="/dorsia" element={<Dorsia />} />
         <Route path="/newsletter" element={<AdminNewsletterSender />} />
         <Route path="/emailer" element={<Emailer />} />
+        <Route path="/la-specialita" element={<LaSpecialita />} />
+        <Route path="/opa-bali" element={<OpaBali />} />
+        <Route path="/bagatelle" element={<Bagatelle />} />
+        <Route path="/ramen-me" element={<RamenMe />} />
+        <Route path="/zumana-bali" element={<ZumanaBali />} />
+        <Route path="/bang-cookies" element={<BangCookies />} />
+        <Route path="/baoli" element={<Baoli />} />
       </Routes>
     </Router>
   );

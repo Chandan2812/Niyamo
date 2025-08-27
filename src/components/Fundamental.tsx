@@ -12,13 +12,17 @@ import "aos/dist/aos.css";
 
 // Rearranged to place "DUBAI" first
 const fundamentals = [
-  { name: "Bagatelle-Dubai Singapore & Mykonos", img: img3 },
-  { name: "Bang Cookies - USA", img: img1 },
-  { name: "Zumana Bali", img: img2 },
-  { name: "Ramen Me", img: img4 },
-  { name: "OPA Bali", img: img5 },
-  { name: "Baoli", img: img6 },
-  { name: "La Specialita Miami & Los Angeles", img: img7 },
+  { name: "Bagatelle-Dubai Singapore & Mykonos", img: img3, url: "bagatelle" },
+  { name: "Bang Cookies - USA", img: img1, url: "bang-cookies" },
+  { name: "Zumana Bali", img: img2, url: "zumana-bali" },
+  { name: "Ramen Me", img: img4, url: "ramen-me" },
+  { name: "OPA Bali", img: img5, url: "opa-bali" },
+  { name: "Baoli", img: img6, url: "baoli" },
+  {
+    name: "La Specialita Miami & Los Angeles",
+    img: img7,
+    url: "la-specialita",
+  },
 ];
 
 const FundamentalsSection: React.FC = () => {
@@ -45,8 +49,9 @@ const FundamentalsSection: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-fr">
           {fundamentals.map((location, index) => (
-            <div
+            <a
               key={index}
+              href={location.url}
               className={`relative overflow-hidden rounded-sm ${
                 index === 0 ? "md:col-span-2 h-96 md:h-96 lg:h-96" : "h-96"
               }`}
@@ -62,7 +67,7 @@ const FundamentalsSection: React.FC = () => {
                   {location.name}
                 </h3>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

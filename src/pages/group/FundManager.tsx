@@ -6,7 +6,7 @@ function FundManager() {
     {
       name: "Zachary Cefaratti",
       designation: "Founder",
-      image: "https://via.placeholder.com/300x300.png?text=Zachary+Cefaratti",
+      image: "https://fnst.axflare.com/img/team/JPEG/XqjPzqAxew.jpeg",
       details: [
         "Experienced Portfolio manager, platform CEO and investment banker",
         "London School of Economics and Political Science; University of Pennsylvania; Foster School of Business at the University of Washington USA",
@@ -16,7 +16,7 @@ function FundManager() {
     {
       name: "Mishal Kanoo",
       designation: "Director",
-      image: "https://via.placeholder.com/300x300.png?text=Mishal+Kanoo",
+      image: "https://fnst.axflare.com/img/team/JPEG/XqjPzqAxew.jpeg",
       details: [
         "Chairman at The Kanoo Group",
         "Chairman of KAAF Investments, UAE",
@@ -29,7 +29,7 @@ function FundManager() {
     {
       name: "David Gibson-Moore",
       designation: "Director, Chairman",
-      image: "https://via.placeholder.com/300x300.png?text=David+Gibson-Moore",
+      image: "https://fnst.axflare.com/img/team/JPEG/XqjPzqAxew.jpeg",
       details: [
         "President of Gulf Analytica",
         "Senior Advisor of LGT Group Foundation",
@@ -43,7 +43,7 @@ function FundManager() {
     {
       name: "Amir Anwar",
       designation: "Senior Executive Officer",
-      image: "https://via.placeholder.com/300x300.png?text=Amir+Anwar",
+      image: "https://fnst.axflare.com/img/team/JPEG/XqjPzqAxew.jpeg",
       details: [
         "Financial Officer at Burj Global Capital Limited, UAE",
         "Regulated Financial Officer in the Dubai International Financial Centre, UAE",
@@ -58,11 +58,11 @@ function FundManager() {
     <div>
       <Navbar />
       <section className="bg-white dark:bg-black text-black dark:text-white font-raleway py-28 px-6 mt-10">
-        <div className="w-11/12 mx-auto">
+        <div className="w-11/12 md:w-5/6 mx-auto">
           <h1 className="text-4xl font-bold text-center mb-12">
-            Dalma Capital – Fund Managers
+            Fund Managers
           </h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+          <div className="grid grid-cols-1  md:grid-cols-2 gap-10">
             {fundManagers.map((person, index) => (
               <div
                 key={index}

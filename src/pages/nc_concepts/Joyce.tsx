@@ -111,12 +111,12 @@ const Joyce: React.FC = () => {
           <h2 className="text-2xl font-semibold mb-4">Location</h2>
           <div className="border rounded overflow-hidden h-96">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2766072631443!2d-73.99464552415483!3d40.755940571386994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259240efe06dd%3A0xf66b7cd95f214890!2sThe%20Joyce%20Public%20House!5e0!3m2!1sen!2sin!4v1746710964256!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.508171056109!2d-80.1327508!3d25.786804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b514aa5a8eaf%3A0x27099deb3aa70bd2!2sThe%20Joyce!5e0!3m2!1sen!2sin!4v1756282507387!5m2!1sen!2sin"
               className="w-full h-full border-0"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="315 W 39th St, New York, NY 10018, United States"
+              title="The Joyce, Miami"
             ></iframe>
           </div>
         </div>
