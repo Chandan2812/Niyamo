@@ -6,12 +6,23 @@ const Garden: React.FC = () => {
   return (
     <div className="bg-white text-black font-raleway dark:bg-black dark:text-white  font-light ">
       <Navbar />
-      <section className="w-11/12 mx-auto py-28 px-4 md:px-8">
-        {/* Title */}
-        <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-          24 & 30 Sussex Gardens
-        </h1>
 
+      <section
+        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://lh3.googleusercontent.com/p/AF1QipPdyRmpO_48JE0RqG79TrKeatYU8a7kDI2F-WMH=w446-h298-k-no')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            24 & 30 Sussex Gardens
+          </h1>
+        </div>
+      </section>
+
+      <section className="w-11/12 mx-auto py-12 px-4 md:px-8">
         {/* Concept Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">

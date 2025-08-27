@@ -6,13 +6,22 @@ const Charles: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <section className="bg-white dark:bg-black text-black dark:text-white font-raleway font-light dark:font-thin py-20 md:mt-16 px-4 md:px-12">
-        <div className="w-11/12 mx-auto">
-          {/* Title */}
-          <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12">
+      <section
+        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://static.wixstatic.com/media/1bd01e_add9a31017b44a3ab08325667cf1864f~mv2.jpg/v1/fill/w_1751,h_1629,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/1bd01e_add9a31017b44a3ab08325667cf1864f~mv2.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
             16 Charles Street
           </h1>
-
+        </div>
+      </section>
+      <section className="bg-white dark:bg-black text-black dark:text-white font-raleway font-light  py-12">
+        <div className="w-11/12 md:w-5/6 mx-auto">
           {/* Concept Section */}
           <div className="mb-16">
             <p className=" text-md leading-relaxed mb-4">
@@ -28,14 +37,7 @@ const Charles: React.FC = () => {
               submitted another application to Westminster City Council for
               Planning and Listed Building Consents.
             </p>
-            <a
-              href="https://www.16charlesstreet.co.uk/"
-              className="text-[var(--primary-color)] text-sm font-light"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://www.16charlesstreet.co.uk
-            </a>
+
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
               <img
                 src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615985977066-O9EM7EDKCSYWTU4WS1R0/Gilles+Malafosse%2C+Claire+Malafosse%2C+Benoit+Darge%CC%81re%2C+Alexandre+Rossoz+%C2%A9+Maxime+Lenik+1.jpg?format=750w"

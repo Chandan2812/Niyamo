@@ -6,12 +6,31 @@ const Joyce: React.FC = () => {
   return (
     <div className="bg-white text-black font-raleway dark:bg-black dark:text-white  font-light">
       <Navbar />
-      <section className="w-11/12 md:w-5/6 mx-auto py-28 px-4 md:px-8">
-        {/* Title */}
-        <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-          The Joyce Restaurant
-        </h1>
 
+      <section
+        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://lh3.googleusercontent.com/p/AF1QipMEOx-TcIQtXiOis1LD9LkdVcOu2mGnrSu1P-YM=w408-h275-k-no')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            The Joyce Restaurant{" "}
+          </h1>
+
+          <a
+            href="https://www.thejoycerestaurant.com/"
+            className="mt-6 inline-block px-6 py-3 bg-[var(--primary-color)] text-white font-medium rounded-full shadow-lg hover:opacity-90 transition"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit The Joyce Restaurant
+          </a>
+        </div>
+      </section>
+      <section className="w-11/12 md:w-5/6 mx-auto py-12">
         {/* Concept Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">Welcome To The Joyce </h2>
@@ -22,14 +41,7 @@ const Joyce: React.FC = () => {
             collectible design furniture for a uniquely immersive culinary and
             cultural experience.
           </p>
-          <a
-            href="https://www.thejoycerestaurant.com/"
-            className="text-[var(--primary-color)] text-sm font-light"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://www.thejoycerestaurant.com/
-          </a>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
             <img
               src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/26189TheJoyce_122024_1338_1.jpg"

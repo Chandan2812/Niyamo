@@ -28,7 +28,7 @@ const Dorsia: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visit Dorsia ↗
+            Visit Dorsia
           </a>
         </div>
       </section>

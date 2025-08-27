@@ -6,12 +6,29 @@ const Coupette: React.FC = () => {
   return (
     <div className="font-raleway bg-white text-black dark:bg-black dark:text-white">
       <Navbar />
-      <section className="px-4 md:px-12 lg:px-24 py-28">
-        {/* Title */}
-        <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-          Coupette
-        </h1>
 
+      <section
+        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://static.wixstatic.com/media/1d4581_1468d806d67043db9665f87ddc3ad3aa~mv2.png/v1/fill/w_349,h_245,q_90,enc_avif,quality_auto/1d4581_1468d806d67043db9665f87ddc3ad3aa~mv2.png')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Coupette</h1>
+
+          <a
+            href="https://www.coupette.co.uk"
+            className="mt-6 inline-block px-6 py-3 bg-[var(--primary-color)] text-white font-medium rounded-full shadow-lg hover:opacity-90 transition"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit Coupette
+          </a>
+        </div>
+      </section>
+      <section className="w-11/12 md:w-5/6 mx-auto py-12">
         {/* Concept Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">
@@ -29,14 +46,7 @@ const Coupette: React.FC = () => {
             acclaimed spot not only captivates with its setting but also with
             its innovative cocktails, making it a must-visit in London.
           </p>
-          <a
-            href="https://www.coupette.co.uk/"
-            className="text-[var(--primary-color)] text-sm underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://www.coupette.co.uk
-          </a>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
             {/* Image Gallery */}
             <img

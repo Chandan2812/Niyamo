@@ -164,7 +164,7 @@ const Navbar = () => {
             {darkMode ? <Sun /> : <Moon />}
           </button>
           <div className="relative group">
-            <span className="text-sm text-[var(--primary-color)] font-medium cursor-pointer py-8">
+            <span className="text-md border border-[var(--primary-color)] text-[var(--primary-color)] font-medium cursor-pointer px-2 py-1 rounded-full hover:bg-[var(--primary-color)] hover:text-white">
               <a href="/contact">Contact Us</a>
             </span>
 
