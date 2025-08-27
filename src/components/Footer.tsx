@@ -90,6 +90,17 @@ const Footer = () => {
       {/* Footer Bottom Links */}
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-6 py-6 text-xs text-gray-600 dark:text-gray-400 flex flex-col sm:flex-row justify-between gap-2 border-t border-gray-200 dark:border-gray-700 pt-6">
         <span>Fern Hospitality ©2025 All Rights Reserved</span>
+        <div>
+          <p>
+            Made & Marketed by{" "}
+            <a
+              href="https://www.bigwigmediadigital.com"
+              className="text-blue-400"
+            >
+              Bigwig Media Digital
+            </a>
+          </p>
+        </div>
         <div className="flex gap-4">
           {[
             { label: "Terms of Use", route: "/terms" },
