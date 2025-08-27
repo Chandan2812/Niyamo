@@ -13,8 +13,8 @@ function Contact() {
             Let's Connect
           </h2>
           <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 mb-16 max-w-2xl mx-auto">
-            We’d love to hear from you! Reach out through phone, email, or visit
-            our office.
+            We’d love to hear from you! Reach out through email, or visit our
+            office.
           </p>
 
           {/* Info Cards */}
