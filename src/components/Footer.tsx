@@ -27,11 +27,11 @@ const Footer = () => {
       {/* Main content */}
       <div className="w-11/12 mx-auto flex flex-col lg:flex-row justify-between px-6 sm:px-12 lg:px-6 gap-10 pb-10 font-light dark:font-thin">
         {/* Logo */}
-        <div className="flex justify-center ">
+        <div className="md:w-1/4 flex justify-center items-center">
           <img
             src={logo}
             alt="Fern Hospitality"
-            className="dark:invert w-36 invert-0"
+            className="dark:invert w-24 invert-0"
           />
         </div>
 

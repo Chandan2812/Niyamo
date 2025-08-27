@@ -3,38 +3,35 @@ import React, { useState } from "react";
 
 const teamMembers = [
   {
-    name: "Ben Thomas",
-    role: "Sales Director",
-    experience: "Experience: 19 years",
-    languages: "Languages: English, Spanish",
+    name: "Uday Singh",
+    role: "CEO",
     image: "https://fnst.axflare.com/img/team/JPEG/oEsyFzyLSm.jpg",
   },
   {
-    name: "John Golotco",
-    role: "Sales Director",
-    experience: "Experience: 12 years",
-    languages: "Languages: English, Russian, Romanian",
+    name: "Akshat Tiberwala",
+    role: "MD",
     image: "https://fnst.axflare.com/img/team/JPEG/XqjPzqAxew.jpeg",
   },
   {
     name: "Ivan Ruchev",
-    role: "Senior Partner",
-    experience: "Experience: 10 years",
-    languages: "Languages: Russian",
+    role: "Head of Operations",
     image: "https://fnst.axflare.com/img/team/JPEG/NQdQHfPaqp.jpg",
   },
   {
-    name: "Ivan Ruchev",
-    role: "Senior Partner",
-    experience: "Experience: 10 years",
-    languages: "Languages: Russian",
-    image: "https://fnst.axflare.com/img/team/JPEG/NQdQHfPaqp.jpg",
+    name: "Alex Cordoba",
+    role: "CEO, Savaya",
+
+    image: "https://fnst.axflare.com/img/team/JPEG/oEsyFzyLSm.jpg",
   },
   {
-    name: "Ivan Ruchev",
-    role: "Senior Partner",
-    experience: "Experience: 10 years",
-    languages: "Languages: Russian",
+    name: "Zachary Cefaratti",
+    role: "Founder & CEO, Dalma Capital",
+    image: "https://fnst.axflare.com/img/team/JPEG/XqjPzqAxew.jpeg",
+  },
+  {
+    name: "Mark Lotenburg",
+    role: "Founder and CEO, DORSIA",
+
     image: "https://fnst.axflare.com/img/team/JPEG/NQdQHfPaqp.jpg",
   },
 ];
@@ -180,12 +177,6 @@ const FindYourPartner: React.FC = () => {
                     </h3>
                     <p className="text-sm text-gray-300 dark:text-gray-400">
                       {member.role}
-                    </p>
-                    <p className="text-sm text-gray-400 dark:text-gray-500">
-                      {member.experience}
-                    </p>
-                    <p className="text-sm text-gray-400 dark:text-gray-500">
-                      {member.languages}
                     </p>
                   </div>
                 </div>

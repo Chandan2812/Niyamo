@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 
@@ -7,51 +7,56 @@ function Contact() {
     <div>
       <Navbar />
       <section className="bg-white dark:bg-black text-black dark:text-white py-24 px-6 mt-10">
-        <div className="w-11/12 mx-auto flex flex-col lg:flex-row gap-12 items-center font-raleway font-light dark:font-thin">
-          {/* Left: Contact Info */}
-          <div className="flex-1">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-6 relative inline-block after:content-[''] after:block after:h-1 after:w-20 after:mt-2 after:bg-[var(--primary-color)]">
-              Let's Connect
-            </h2>
-            <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 mb-10">
-              We’d love to hear from you. Reach out and let’s start a
-              conversation.
-            </p>
+        <div className="w-11/12 mx-auto text-center font-raleway">
+          {/* Header */}
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+            Let's Connect
+          </h2>
+          <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 mb-16 max-w-2xl mx-auto">
+            We’d love to hear from you! Reach out through phone, email, or visit
+            our office.
+          </p>
 
-            <div className="space-y-6">
-              <ContactItem
-                icon={<Phone />}
-                label="Call us"
-                content="020 7125 0421"
-                href="tel:02071250421"
-              />
-              <ContactItem
-                icon={<Mail />}
-                label="Email us"
-                content="admin@commcommuk.com"
-                href="mailto:admin@commcommuk.com"
-              />
-              <ContactItem
-                icon={<MapPin />}
-                label="Office"
-                content="1 Bell Street, London, London, United Kingdom, NW1 5BY"
-                href="https://www.google.com/maps/place/1+Bell+St,+London+NW1+5BY"
-              />
-              <ContactItem
-                icon={<Clock />}
-                label="Working Hours"
-                content="Mon - Fri: 9:00 AM - 6:00 PM"
-              />
-            </div>
+          {/* Info Cards */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <ContactCard
+              icon={<Phone className="w-8 h-8" />}
+              label="Call Us"
+              content="020 7125 0421"
+              href="tel:02071250421"
+            />
+            <ContactCard
+              icon={<Mail className="w-8 h-8" />}
+              label="Email Us"
+              content="Dev@fernhospitalityventures.com"
+              href="mailto:Dev@fernhospitalityventures.com"
+            />
+            <ContactCard
+              icon={<Mail className="w-8 h-8" />}
+              label="Email Us"
+              content="Jenna@niyamocapital.com"
+              href="mailto:Jenna@niyamocapital.com"
+            />
+            <ContactCard
+              icon={<MapPin className="w-8 h-8" />}
+              label="Office"
+              content="1 Bell Street, London, United Kingdom, NW1 5BY"
+              href="https://www.google.com/maps/place/1+Bell+St,+London+NW1+5BY"
+            />
           </div>
 
-          {/* Right: Image */}
-          <div className="flex-1 flex justify-center">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1616079667915-Z9ECTJF2V83YIHPHM13T/thumbnail_IMG_8335.jpeg?format=750w"
-              alt="Contact Us"
-              className="w-full max-w-sm h-auto rounded-xl shadow-lg"
-            />
+          {/* Map */}
+          <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
+            <iframe
+              title="Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.5928692374323!2d-0.17052509999999996!3d51.5206849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab152d94cbd%3A0xbb639c0396f9672b!2s1%20Bell%20St%2C%20London%20NW1%205BY%2C%20UK!5e0!3m2!1sen!2sin!4v1756279718388!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -60,30 +65,26 @@ function Contact() {
   );
 }
 
-type ContactItemProps = {
+type ContactCardProps = {
   icon: React.ReactNode;
   label: string;
   content: string;
   href?: string;
 };
 
-const ContactItem = ({ icon, label, content, href }: ContactItemProps) => {
+const ContactCard = ({ icon, label, content, href }: ContactCardProps) => {
   const Wrapper = href ? "a" : "div";
 
   return (
     <Wrapper
       href={href}
-      className={`flex items-center gap-4 ${href ? "cursor-pointer" : ""}`}
       target={href?.startsWith("http") ? "_blank" : undefined}
       rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
+      className="bg-[#111827] text-white rounded-2xl p-6 flex flex-col items-center justify-center shadow-md hover:shadow-lg transition-shadow"
     >
-      <div className="p-4 bg-[var(--primary-color)] text-white rounded-full">
-        {icon}
-      </div>
-      <div>
-        <p className="text-sm text-gray-600 dark:text-gray-400">{label}</p>
-        <p className="text-lg font-medium">{content}</p>
-      </div>
+      <div className="mb-4">{icon}</div>
+      <h3 className="text-lg font-semibold">{label}</h3>
+      <p className="mt-2 text-sm text-center">{content}</p>
     </Wrapper>
   );
 };

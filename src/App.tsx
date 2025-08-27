@@ -17,6 +17,7 @@ import Joyce from "./pages/nc_concepts/Joyce";
 import AdminNewsletterSender from "./pages/AdminNewsletter";
 import Emailer from "./pages/Emailer";
 import Dorsia from "./pages/nc_concepts/Dorsia";
+import FundManager from "./pages/group/FundManager";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/biryani-kebab-chai-(bkc)" element={<Bkc />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/management" element={<Management />} />
+        <Route path="/fund-manager" element={<FundManager />} />
         <Route path="/coupette" element={<Coupette />} />
         <Route path="/24-&-30-sussex-gardens" element={<Garden />} />
         <Route path="/group-dinning" element={<GroupDining />} />

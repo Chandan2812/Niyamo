@@ -4,122 +4,140 @@ import Footer from "../../components/Footer";
 
 const Dorsia: React.FC = () => {
   return (
-    <div className="bg-white text-black font-raleway dark:bg-black dark:text-white  font-light dark:font-thin">
+    <div className="bg-white text-black font-raleway dark:bg-black dark:text-white font-light">
       <Navbar />
-      <section className="w-11/12 mx-auto py-28 px-4 md:px-8">
-        {/* Title */}
-        <h1 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-          Dorsia
-        </h1>
 
-        {/* Concept Section */}
-        <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">
-            Welcome To The Dorsia{" "}
-          </h2>
-          <p className="max-w-3xl text-sm leading-relaxed mb-4">
-            Perfection in detail: We place great emphasis on ensuring that your
-            visit becomes a culinary experience.
+      {/* Hero Section */}
+      <section
+        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1528605248644-14dd04022da1')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Dorsia</h1>
+          <p className="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
+            A modern concierge redefining luxury dining through technology,
+            exclusivity, and global reach.
           </p>
           <a
             href="https://www.dorsia.com/"
-            className="text-[var(--primary-color)] text-sm font-light"
+            className="mt-6 inline-block px-6 py-3 bg-[var(--primary-color)] text-white font-medium rounded-full shadow-lg hover:opacity-90 transition"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://www.dorsia.com/
+            Visit Dorsia ↗
           </a>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
-            <img
-              src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/26189TheJoyce_122024_1338_1.jpg"
-              alt="BKC concept 1"
-              className="w-full h-full object-cover rounded"
-            />
-            <img
-              src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/55839TheJoyce_122024_6266.jpg"
-              alt="BKC concept 2"
-              className="w-full h-full object-cover rounded"
-            />
-            <img
-              src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/38694TheJoyce_122024_6462.jpg"
-              alt="BKC concept 3"
-              className="w-full h-full object-cover rounded"
-            />
-          </div>
         </div>
+      </section>
 
-        {/* Cuisine Section */}
-        <div className="mb-16">
-          <div className="flex flex-col md:flex-row gap-6 items-start">
-            {/* Image */}
-            <div className="md:w-1/3 w-full">
-              <img
-                src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/62526TheJoyce_1120244082.jpg"
-                alt="Cuisine 1"
-                className="w-full h-[400px] object-contain rounded-lg shadow-md"
-              />
+      {/* Concept Section */}
+      <section className="w-11/12 md:w-5/6 mx-auto py-12 ">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+          A Modern Concierge for Luxury Dining
+        </h2>
+        <p className="text-sm md:text-base leading-relaxed mb-4">
+          Dorsia is a members-only dining network offering guaranteed access to
+          sought-after tables in the world’s most vibrant culinary destinations,
+          with privileged entry to exclusive events, seasonal pop-ups, and a
+          curated social diary.
+        </p>
+        <p className="text-sm md:text-base leading-relaxed mb-10">
+          By partnering directly with top-tier restaurants, Dorsia secures
+          peak-time reservations with guaranteed minimum spends — ensuring
+          exceptional experiences for diners and meaningful value for
+          restaurants.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+            alt="Dining 1"
+            className="w-full h-64 object-cover rounded-xl shadow-md"
+          />
+          <img
+            src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/38694TheJoyce_122024_6462.jpg"
+            alt="Dining 2"
+            className="w-full h-64 object-cover rounded-xl shadow-md"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de"
+            alt="Dining 3"
+            className="w-full h-64 object-cover rounded-xl shadow-md"
+          />
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="bg-gray-50 dark:bg-gray-900 py-12">
+        <div className="w-11/12 md:w-5/6 mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-12">
+            Key Features
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white dark:bg-black rounded-xl p-8 shadow-lg">
+              <h3 className="font-semibold text-lg mb-3">
+                Curated Access to High-Demand Tables
+              </h3>
+              <p className="text-sm leading-relaxed">
+                Direct access to exclusive peak-time reservations, without
+                resellers or mark-ups.
+              </p>
             </div>
-
-            {/* Text */}
-            <div className="md:w-2/3 w-full space-y-4">
-              <h2 className="text-2xl md:text-3xl font-semibold">
-                James Taylor The Chef
-              </h2>
-              <p className="text-sm md:text-base leading-relaxed">
-                Chef James Taylor has enchanted culinary enthusiasts and food
-                critics across the U.S. for over a decade. After training at Le
-                Cordon Bleu Chicago, he honed his epicurean skills at Bavette’s
-                Bar and Boeuf Steakhouse (Hogsalt Hospitality), followed by
-                leadership roles at Michelin-starred Roister (★) and Alinea
-                (★★★). Since 2021, James has captivated the discerning palates
-                of esteemed private clients, who encouraged him to share his
-                talents with the world.
+            <div className="bg-white dark:bg-black rounded-xl p-8 shadow-lg">
+              <h3 className="font-semibold text-lg mb-3">
+                Tiered Membership Options
+              </h3>
+              <p className="text-sm leading-relaxed">
+                From basic to premium tiers, with dining credits and exclusive
+                perks.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-black rounded-xl p-8 shadow-lg">
+              <h3 className="font-semibold text-lg mb-3">
+                Dynamic Pricing & Smart Booking
+              </h3>
+              <p className="text-sm leading-relaxed">
+                Data-driven booking tools enhance availability and optimise
+                spend.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-black rounded-xl p-8 shadow-lg">
+              <h3 className="font-semibold text-lg mb-3">
+                Exclusive Benefits & VIP Experiences
+              </h3>
+              <p className="text-sm leading-relaxed">
+                Privileged access to seasonal pop-ups, curated events, and VIP
+                treatment.
               </p>
             </div>
           </div>
         </div>
-
-        {/* Design Section */}
-        <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">Design</h2>
-          <p className="text-sm leading-relaxed mb-6 max-w-3xl">
-            Charles Street has character and history, which we are keen to
-            preserve and enhance...
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <img
-              src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/TV8njQqwQPCOIZlaOWvR_TheJoyce_112024_3876.jpg"
-              alt="Design 1"
-              className="h-full object-cover rounded"
-            />
-            <img
-              src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/dZCWFGjwT0ehKAEc9h4e_TheJoyce_112024_4005.jpg"
-              alt="Design 2"
-              className="h-full object-cover rounded"
-            />
-            <img
-              src="https://joyce-restaurant.at/wp-content/uploads/2023/07/img-3-1152x1536-optimized.jpg"
-              alt="Design 3"
-              className="h-full object-cover rounded"
-            />
-          </div>
-        </div>
-
-        {/* Location Section */}
-        {/* <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Location</h2>
-          <div className="border rounded overflow-hidden h-96">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2766072631443!2d-73.99464552415483!3d40.755940571386994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259240efe06dd%3A0xf66b7cd95f214890!2sThe%20Joyce%20Public%20House!5e0!3m2!1sen!2sin!4v1746710964256!5m2!1sen!2sin"
-              className="w-full h-full border-0"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="315 W 39th St, New York, NY 10018, United States"
-            ></iframe>
-          </div>
-        </div> */}
       </section>
+
+      {/* Global Reach */}
+      <section className="py-12 w-11/12 md:w-5/6 mx-auto text-center ">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+          Global Reach
+        </h2>
+        <p className="text-sm md:text-base leading-relaxed mb-10">
+          Dorsia operates in cities such as Miami, Aspen, Cannes, and St Tropez,
+          with strong investor backing and offices in Miami, London, LA, and
+          NYC.
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {["Miami", "Aspen", "Cannes", "St Tropez"].map((city, i) => (
+            <div
+              key={i}
+              className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow-md hover:scale-105 transition"
+            >
+              <p className="font-medium text-lg">{city}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

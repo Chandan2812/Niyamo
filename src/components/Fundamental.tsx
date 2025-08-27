@@ -12,13 +12,13 @@ import "aos/dist/aos.css";
 
 // Rearranged to place "DUBAI" first
 const fundamentals = [
-  { name: "DUBAI", img: img3 },
-  { name: "DOHA", img: img1 },
-  { name: "LONDON", img: img2 },
-  { name: "MARBELLA", img: img4 },
-  { name: "MONACO", img: img5 },
-  { name: "RIYADH", img: img6 },
-  { name: "MIAMI", img: img7 },
+  { name: "Bagatelle-Dubai Singapore & Mykonos", img: img3 },
+  { name: "Bang Cookies - USA", img: img1 },
+  { name: "Zumana Bali", img: img2 },
+  { name: "Ramen Me", img: img4 },
+  { name: "OPA Bali", img: img5 },
+  { name: "Baoli", img: img6 },
+  { name: "La Specialita Miami & Los Angeles", img: img7 },
 ];
 
 const FundamentalsSection: React.FC = () => {

@@ -16,8 +16,11 @@ const Joyce: React.FC = () => {
         <div className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">Welcome To The Joyce </h2>
           <p className="max-w-3xl text-sm leading-relaxed mb-4">
-            Perfection in detail: We place great emphasis on ensuring that your
-            visit becomes a culinary experience.
+            an intimate, 45-seat speakeasy on Miami Beach’s Española Way by
+            Alinea alum James Taylor, blending refined American cuisine with
+            emerald-green interiors, a rotating gallery of blue-chip art, and
+            collectible design furniture for a uniquely immersive culinary and
+            cultural experience.
           </p>
           <a
             href="https://www.thejoycerestaurant.com/"
