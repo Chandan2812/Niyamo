@@ -31,6 +31,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import AdminSubscriber from "./pages/admin/AdminSubscriber";
 import AdminContact from "./pages/admin/AdminContact";
 import PressRelease from "./pages/nc_world/PressRelease";
+import Disclaimer from "./pages/Disclaimer";
 
 function App() {
   return (
@@ -63,6 +64,7 @@ function App() {
         <Route path="/baoli" element={<Baoli />} />
         <Route path="/thamel" element={<Thamel />} />
         <Route path="/press-release" element={<PressRelease />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<Dashboard />} />
 

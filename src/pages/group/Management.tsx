@@ -1,48 +1,54 @@
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 import NewsSubscribeSection from "../../components/Newsletter";
+import img1 from "../../assets/team/11.jpg";
+import img2 from "../../assets/team/12.jpg";
+import img3 from "../../assets/team/13.jpg";
+import img4 from "../../assets/team/14.jpg";
+import img5 from "../../assets/team/15.jpg";
+import img6 from "../../assets/team/16.jpg";
 
 function Management() {
   const team = [
     {
       name: "Uday Singh",
       designation: "CEO",
-      image: "https://fnst.axflare.com/img/team/JPEG/oEsyFzyLSm.jpg",
+      image: img1,
       description:
         "Serial hospitality entrepreneur with a proven track record of creating and scaling premium F&B and lifestyle concepts globally. Founder of Global Titans Fight Series and recognized for driving high-margin experiential hospitality investments.",
     },
     {
       name: "Akshat Tiberwala",
       designation: "MD",
-      image: "https://fnst.axflare.com/img/team/JPEG/XqjPzqAxew.jpeg",
+      image: img2,
       description:
         "Founder of Niyamo Capital, a UK-based investment firm. Combines financial economics expertise with creative brand insight. Focused on sourcing and scaling next-gen F&B and lifestyle investments worldwide.",
     },
     {
       name: "Bartolémy Lemoine",
       designation: "Head of Operations",
-      image: "https://fnst.axflare.com/img/team/JPEG/NQdQHfPaqp.jpg",
+      image: img6,
       description:
         "15+ years in luxury hospitality and high-end concierge services. Former VIP Director at Bagatelle Group. Expert in curating guest experiences, managing elite relationships, and leading hospitality operations worldwide.",
     },
     {
       name: "Alex Cordoba",
       designation: "CEO, Savaya",
-      image: "https://fnst.axflare.com/img/team/JPEG/oEsyFzyLSm.jpg",
+      image: img3,
       description:
         "CEO of Savaya, a globally recognized hospitality and entertainment group based in Bali. Leads strategic growth across lifestyle brands, with a focus on innovation, guest experiences, and premium hospitality expansion.",
     },
     {
       name: "Zachary Cefaratti",
       designation: "Founder & CEO, ",
-      image: "https://fnst.axflare.com/img/team/JPEG/XqjPzqAxew.jpeg",
+      image: img4,
       description:
         "Founder & CEO of , managing $50B+ in assets across multiple regions. Known for structuring cross-border deals. Also the founder of AIM Summit, driving innovation in finance and hospitality platforms.",
     },
     {
       name: "Mark Lotenburg",
       designation: "Founder & CEO, DORSIA",
-      image: "https://fnst.axflare.com/img/team/JPEG/NQdQHfPaqp.jpg",
+      image: img5,
       description:
         "Founder & CEO of DORSIA, redefining restaurant access through venture-backed innovation. Focused on hospitality tech, luxury dining, and curated lifestyle memberships with category-defining impact.",
     },

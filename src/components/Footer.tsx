@@ -65,6 +65,7 @@ const Footer = () => {
               { label: "Contact Us", route: "/contact" },
               { label: "Press Release", route: "/press" },
               { label: "News", route: "/news" },
+              { label: "Disclaimer", route: "/disclaimer" },
             ].map((item, i) => (
               <li key={i}>
                 <Link
@@ -101,8 +102,9 @@ const Footer = () => {
             </a>
           </p>
         </div>
-        <div className="flex gap-4">
+        {/* <div className="flex gap-4">
           {[
+            { label: "Disclaimer", route: "/disclaimer" },
             { label: "Terms of Use", route: "#" },
             { label: "Privacy Policy", route: "#" },
             { label: "Sitemap", route: "#" },
@@ -115,7 +117,7 @@ const Footer = () => {
               {item.label}
             </Link>
           ))}
-        </div>
+        </div> */}
       </div>
     </footer>
   );

@@ -1,51 +1,33 @@
 import { ArrowRight } from "lucide-react";
 import React, { useState } from "react";
+import img1 from "../assets/team/11.jpg";
+import img2 from "../assets/team/12.jpg";
+import img3 from "../assets/team/13.jpg";
+import img4 from "../assets/team/14.jpg";
+import img5 from "../assets/team/15.jpg";
+import img6 from "../assets/team/16.jpg";
 
 const teamMembers = [
-  {
-    name: "Uday Singh",
-    role: "CEO",
-    image: "https://fnst.axflare.com/img/team/JPEG/oEsyFzyLSm.jpg",
-  },
-  {
-    name: "Akshat Tiberwala",
-    role: "MD",
-    image: "https://fnst.axflare.com/img/team/JPEG/XqjPzqAxew.jpeg",
-  },
-  {
-    name: "Ivan Ruchev",
-    role: "Head of Operations",
-    image: "https://fnst.axflare.com/img/team/JPEG/NQdQHfPaqp.jpg",
-  },
-  {
-    name: "Alex Cordoba",
-    role: "CEO, Savaya",
-
-    image: "https://fnst.axflare.com/img/team/JPEG/oEsyFzyLSm.jpg",
-  },
+  { name: "Uday Singh", role: "CEO", image: img1 },
+  { name: "Akshat Tiberwala", role: "MD", image: img2 },
+  { name: "Ivan Ruchev", role: "Head of Operations", image: img6 },
+  { name: "Alex Cordoba", role: "CEO, Savaya", image: img3 },
   {
     name: "Zachary Cefaratti",
     role: "Founder & CEO, Dalma Capital",
-    image: "https://fnst.axflare.com/img/team/JPEG/XqjPzqAxew.jpeg",
+    image: img4,
   },
-  {
-    name: "Mark Lotenburg",
-    role: "Founder and CEO, DORSIA",
-
-    image: "https://fnst.axflare.com/img/team/JPEG/NQdQHfPaqp.jpg",
-  },
+  { name: "Mark Lotenburg", role: "Founder and CEO, DORSIA", image: img5 },
 ];
 
 const FindYourPartner: React.FC = () => {
   const [current, setCurrent] = useState(0);
 
-  const handlePrev = () => {
+  const handlePrev = () =>
     setCurrent((prev) => (prev - 1 + teamMembers.length) % teamMembers.length);
-  };
 
-  const handleNext = () => {
+  const handleNext = () =>
     setCurrent((prev) => (prev + 1) % teamMembers.length);
-  };
 
   const getSlideStyle = (index: number) => {
     const total = teamMembers.length;
@@ -55,12 +37,14 @@ const FindYourPartner: React.FC = () => {
       position: "absolute" as const,
       top: "0",
       transition: "all 0.5s ease-in-out",
-      width: "300px",
-      height: "460px",
+      width: "220px",
+      height: "250px",
+      padding: "1rem",
+      borderRadius: "1rem",
     };
 
     switch (position) {
-      case 0: // Center card
+      case 0: // Center
         return {
           ...baseStyle,
           left: "50%",
@@ -68,7 +52,7 @@ const FindYourPartner: React.FC = () => {
           zIndex: 30,
           opacity: 1,
         };
-      case 1: // Right card
+      case 1: // Right
         return {
           ...baseStyle,
           left: "75%",
@@ -76,7 +60,7 @@ const FindYourPartner: React.FC = () => {
           zIndex: 20,
           opacity: 0.6,
         };
-      case total - 1: // Left card
+      case total - 1: // Left
         return {
           ...baseStyle,
           left: "25%",
@@ -84,7 +68,7 @@ const FindYourPartner: React.FC = () => {
           zIndex: 20,
           opacity: 0.6,
         };
-      default: // Hidden cards
+      default: // Hidden
         return {
           ...baseStyle,
           left: "50%",
@@ -101,22 +85,18 @@ const FindYourPartner: React.FC = () => {
         <div className="w-11/12 mx-auto grid lg:grid-cols-2 gap-10 items-start">
           {/* Left Text */}
           <div>
-            <div className="mb-2">
-              <p
-                className="uppercase tracking-widest font-semibold text-xs text-gray-700 dark:text-gray-300"
-                data-aos="fade-right"
-              >
-                About Us
-              </p>
-            </div>
-
+            <p
+              className="uppercase tracking-widest font-semibold text-xs text-gray-700 dark:text-gray-300"
+              data-aos="fade-right"
+            >
+              About Us
+            </p>
             <h2
-              className="text-2xl md:text-4xl font-semibold text-black dark:text-white mt-2"
+              className="text-2xl md:text-4xl font-semibold mt-2"
               data-aos="fade-right"
             >
               Hospitality, Reimagined by Fern Hospitality
             </h2>
-
             <p
               className="text-gray-600 dark:text-gray-400 text-base my-6 max-w-xl"
               data-aos="fade-right"
@@ -142,8 +122,8 @@ const FindYourPartner: React.FC = () => {
             </a>
           </div>
 
-          {/* Right Slider Section */}
-          <div className="relative w-full flex justify-center items-center h-[500px]">
+          {/* Right Slider */}
+          <div className="relative w-full flex justify-center items-center h-[400px]">
             {/* Arrows */}
             <button
               onClick={handlePrev}
@@ -158,27 +138,25 @@ const FindYourPartner: React.FC = () => {
               →
             </button>
 
-            {/* Slides Container */}
-            <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden h-[500px]">
+            {/* Slides */}
+            <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden h-[300px]">
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
                   style={getSlideStyle(index)}
-                  className="rounded overflow-hidden shadow-lg transition-all duration-500 ease-in-out"
+                  className="flex flex-col items-center justify-start shadow-lg transition-all h-[250px] duration-500 ease-in-out text-center bg-white dark:bg-gray-900"
                 >
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-28 h-28 rounded-full object-cover border-4 border-gray-200 dark:border-gray-700 mb-10"
                   />
-                  <div className="absolute bottom-0 bg-black bg-opacity-80 p-4 w-full text-left dark:bg-gray-900 dark:bg-opacity-80">
-                    <h3 className="text-lg font-semibold text-white dark:text-gray-100">
-                      {member.name}
-                    </h3>
-                    <p className="text-sm text-gray-300 dark:text-gray-400">
-                      {member.role}
-                    </p>
-                  </div>
+                  <h3 className="text-lg font-semibold text-black dark:text-white">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    {member.role}
+                  </p>
                 </div>
               ))}
             </div>
