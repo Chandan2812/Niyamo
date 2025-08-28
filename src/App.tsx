@@ -30,6 +30,7 @@ import AdminLayout from "./pages/admin/AdminLayout";
 import Dashboard from "./pages/admin/Dashboard";
 import AdminSubscriber from "./pages/admin/AdminSubscriber";
 import AdminContact from "./pages/admin/AdminContact";
+import PressRelease from "./pages/nc_world/PressRelease";
 
 function App() {
   return (
@@ -61,6 +62,7 @@ function App() {
         <Route path="/bang-cookies" element={<BangCookies />} />
         <Route path="/baoli" element={<Baoli />} />
         <Route path="/thamel" element={<Thamel />} />
+        <Route path="/press-release" element={<PressRelease />} />
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<Dashboard />} />
 

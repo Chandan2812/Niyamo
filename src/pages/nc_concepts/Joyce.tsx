@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
+import NewsSubscribeSection from "../../components/Newsletter";
 
 const Joyce: React.FC = () => {
   return (
@@ -132,6 +133,7 @@ const Joyce: React.FC = () => {
           </div>
         </div>
       </section>
+      <NewsSubscribeSection />
       <Footer />
     </div>
   );

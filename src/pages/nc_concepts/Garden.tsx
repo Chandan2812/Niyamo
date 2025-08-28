@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
+import NewsSubscribeSection from "../../components/Newsletter";
 
 const Garden: React.FC = () => {
   return (
@@ -128,6 +129,7 @@ const Garden: React.FC = () => {
           </div>
         </div>
       </section>
+      <NewsSubscribeSection />
       <Footer />
     </div>
   );

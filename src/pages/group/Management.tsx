@@ -1,5 +1,6 @@
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
+import NewsSubscribeSection from "../../components/Newsletter";
 
 function Management() {
   const team = [
@@ -78,6 +79,7 @@ function Management() {
           </div>
         </div>
       </section>
+      <NewsSubscribeSection />
       <Footer />
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
+import NewsSubscribeSection from "../../components/Newsletter";
 
 const Dorsia: React.FC = () => {
   return (
@@ -137,7 +138,7 @@ const Dorsia: React.FC = () => {
           ))}
         </div>
       </section>
-
+      <NewsSubscribeSection />
       <Footer />
     </div>
   );

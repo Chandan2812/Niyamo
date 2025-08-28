@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
+import NewsSubscribeSection from "../../components/Newsletter";
 
 const Charles: React.FC = () => {
   return (
@@ -125,6 +126,7 @@ const Charles: React.FC = () => {
           </div>
         </div>
       </section>
+      <NewsSubscribeSection />
       <Footer />
     </div>
   );

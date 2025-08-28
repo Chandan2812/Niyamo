@@ -103,9 +103,9 @@ const Footer = () => {
         </div>
         <div className="flex gap-4">
           {[
-            { label: "Terms of Use", route: "/terms" },
-            { label: "Privacy Policy", route: "/privacy" },
-            { label: "Sitemap", route: "/sitemap" },
+            { label: "Terms of Use", route: "#" },
+            { label: "Privacy Policy", route: "#" },
+            { label: "Sitemap", route: "#" },
           ].map((item, idx) => (
             <Link
               key={idx}

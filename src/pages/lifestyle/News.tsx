@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
+import NewsSubscribeSection from "../../components/Newsletter";
 
 const newsData = [
   {
@@ -46,6 +47,7 @@ const News: React.FC = () => {
           ))}
         </div>
       </section>
+      <NewsSubscribeSection />
       <Footer />
     </div>
   );

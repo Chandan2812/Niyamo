@@ -1,6 +1,7 @@
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { ArrowRight } from "lucide-react";
+import NewsSubscribeSection from "../../components/Newsletter";
 
 function AboutUs() {
   return (
@@ -63,6 +64,7 @@ function AboutUs() {
           </div>
         </div>
       </section>
+      <NewsSubscribeSection />
       <Footer />
     </div>
   );

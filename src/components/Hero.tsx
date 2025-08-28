@@ -39,7 +39,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[100vh] overflow-hidden font-raleway font-thin">
+    <div className="relative w-full h-[100vh] overflow-hidden font-raleway ">
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={slides[index].image}
@@ -54,7 +54,7 @@ const Hero = () => {
       </AnimatePresence>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60 flex items-center justify-center px-4">
+      <div className="absolute inset-0 bg-black/10 dark:bg-black/40 flex items-center justify-center px-4">
         <motion.div
           key={slides[index].title}
           initial={{ opacity: 0, y: 80 }}
@@ -62,7 +62,7 @@ const Hero = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
           className="text-center text-white max-w-3xl"
         >
-          <h1 className="text-3xl md:text-6xl mb-3 leading-tight">
+          <h1 className="text-3xl md:text-6xl mb-3 leading-tight font-thin">
             {slides[index].title}
           </h1>
           <p className="text-base md:text-lg mb-6">
