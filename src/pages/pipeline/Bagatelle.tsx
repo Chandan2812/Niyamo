@@ -16,7 +16,7 @@ function Bagatelle() {
             Iconic Party-Centric Venue with International Licensing Power
           </p>
         </div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('https://bagatelle.com/app/uploads/2021/01/Design-sans-titre-2024-03-25T114650.357.jpg')] bg-cover bg-center opacity-60 dark:opacity-30"></div>
       </section>
 
       {/* Why We Like It Section */}

@@ -8,13 +8,13 @@ const Coupette: React.FC = () => {
       <Navbar />
 
       <section
-        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://static.wixstatic.com/media/1d4581_1468d806d67043db9665f87ddc3ad3aa~mv2.png/v1/fill/w_349,h_245,q_90,enc_avif,quality_auto/1d4581_1468d806d67043db9665f87ddc3ad3aa~mv2.png')",
+            "url('https://res.cloudinary.com/dqrlkbsdq/image/upload/v1756361389/coup-04_hz9e4j.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/10 dark:bg-black/50"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Coupette</h1>
 

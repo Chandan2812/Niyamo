@@ -16,7 +16,7 @@ function OpaBali() {
             High-Margin, Experiential Concept with Proven Traction
           </p>
         </div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/dqrlkbsdq/image/upload/v1756358587/WhatsApp_Image_2025-08-27_at_11.03.24_df16c009_ybkdyp.jpg')] bg-cover bg-center opacity-60 dark:opacity-30"></div>
       </section>
 
       {/* Why We Like It Section */}

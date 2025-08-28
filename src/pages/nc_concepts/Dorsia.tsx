@@ -12,10 +12,10 @@ const Dorsia: React.FC = () => {
         className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://framerusercontent.com/images/CqOMdh6OAvRBr5oT4vm8s2zp6Y.jpg?scale-down-to=1024')",
+            "url('https://framerusercontent.com/images/c4nWIxEc3kvODedMR8Cp78HhQTk.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 dark:bg-black/50 bg-black/10"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Dorsia</h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">

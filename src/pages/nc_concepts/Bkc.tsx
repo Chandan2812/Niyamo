@@ -5,16 +5,18 @@ import Footer from "../../components/Footer";
 const Bkc: React.FC = () => {
   return (
     <div className="bg-white text-black font-raleway dark:bg-black dark:text-white  font-light ">
-      <Navbar />
+      <div className="mb-20">
+        <Navbar />
+      </div>
 
       <section
         className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://bkclondon.uk/wp-content/uploads/2024/05/about.png')",
+            "url('https://lh3.googleusercontent.com/p/AF1QipNPxgd0BKb8J0rolY6pb4GcNI0cUFPvOZa3Ey5u=s1360-w1360-h1020-rw')",
         }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/10 dark:bg-black/60"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Biryani Kebab Chai

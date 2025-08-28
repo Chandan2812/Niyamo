@@ -1,33 +1,44 @@
 import React, { useEffect } from "react";
-import img1 from "../assets/hospitalityconcept/PAGE-8-DOHA.jpg";
+// import img1 from "../assets/hospitalityconcept/PAGE-8-DOHA.jpg";
 import img2 from "../assets/hospitalityconcept/Bar-8.jpg";
-import img3 from "../assets/hospitalityconcept/PAGE-8-DUBAI.jpg";
-import img4 from "../assets/hospitalityconcept/Gaia-marbella_olive-press-1.jpg";
-import img5 from "../assets/hospitalityconcept/PAGE-8-MONACO.jpg";
-import img6 from "../assets/hospitalityconcept/PAGE-8-RIYADH.jpg";
-import img7 from "../assets/hospitalityconcept/PAGE-8-MIAMI.jpg";
+// import img3 from "../assets/hospitalityconcept/PAGE-8-DUBAI.jpg";
+// import img4 from "../assets/hospitalityconcept/Gaia-marbella_olive-press-1.jpg";
+// import img5 from "../assets/hospitalityconcept/PAGE-8-MONACO.jpg";
+// import img6 from "../assets/hospitalityconcept/PAGE-8-RIYADH.jpg";
+// import img7 from "../assets/hospitalityconcept/PAGE-8-MIAMI.jpg";
 // import { ArrowRight } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 // Rearranged to place "DUBAI" first
 const fundamentals = [
-  { name: "Bagatelle-Dubai Singapore & Mykonos", img: img3, url: "bagatelle" },
-  { name: "Bang Cookies - USA", img: img1, url: "bang-cookies" },
-  { name: "Zumana Bali", img: img2, url: "zumana-bali" },
-  { name: "Ramen Me", img: img4, url: "ramen-me" },
-  { name: "OPA Bali", img: img5, url: "opa-bali" },
-  { name: "Baoli", img: img6, url: "baoli" },
   {
-    name: "La Specialita Miami & Los Angeles",
-    img: img7,
-    url: "la-specialita",
+    name: "OPA Bali",
+    img: "https://res.cloudinary.com/dqrlkbsdq/image/upload/v1756358588/WhatsApp_Image_2025-08-25_at_16.54.17_da07e5b6_ob96oi.jpg",
+    url: "opa-bali",
+  },
+
+  {
+    name: "Bagatelle-Dubai Singapore & Mykonos",
+    img: "https://bagatelle.com/app/uploads/2021/01/Design-sans-titre-2.png",
+    url: "bagatelle",
+  },
+  {
+    name: "Ramen Me",
+    img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/e3/ed/5f/our-kumamoto-ramen-is.jpg?w=800&h=800&s=1",
+    url: "ramen-me",
   },
   {
     name: "Thamel ",
     img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/67/4e/2e/o-nossos-deliciosos-momode3man.jpg?w=1100&h=600&s=1",
     url: "thamel",
   },
+  {
+    name: "Dorsia",
+    img: "https://framerusercontent.com/images/3mGdPFh187MyIIHpADs5nkHbuak.jpg",
+    url: "dorsia",
+  },
+  { name: "16 Charles Street", img: img2, url: "16-charles-street" },
 ];
 
 const FundamentalsSection: React.FC = () => {
@@ -37,6 +48,9 @@ const FundamentalsSection: React.FC = () => {
   return (
     <section className="bg-white dark:bg-black text-black dark:text-white  font-raleway font-light dark:font-thin">
       <div className="w-11/12 mx-auto  px-3 md:px-8 py-10">
+        <p className="text-gray-700 dark:text-gray-300 text-xs tracking-widest mt-1 uppercase font-semibold">
+          Pipeline
+        </p>
         <div className="flex justify-between items-center mb-6 flex-wrap gap-4 ">
           <h2 className="text-2xl md:text-4xl font-semibold text-black dark:text-white mt-2">
             Fern Hospitality <br /> expansion plan for the upcoming year
@@ -57,7 +71,11 @@ const FundamentalsSection: React.FC = () => {
             <a
               key={index}
               href={location.url}
-              className="relative overflow-hidden rounded-sm h-96"
+              className={`relative overflow-hidden rounded-sm ${
+                index === 0 || index === 5
+                  ? "md:col-span-2 h-96 md:h-96 lg:h-96"
+                  : "h-96"
+              }`}
               style={{
                 backgroundImage: `url(${location.img})`,
                 backgroundSize: "cover",

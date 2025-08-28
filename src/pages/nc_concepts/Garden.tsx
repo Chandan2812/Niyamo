@@ -14,7 +14,7 @@ const Garden: React.FC = () => {
             "url('https://images.oyoroomscdn.com/uploads/hotel_image/39338/large/4f44f19f4a1bb2cf.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/10 dark:bg-black/60"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             24 & 30 Sussex Gardens

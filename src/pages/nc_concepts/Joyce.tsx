@@ -8,13 +8,13 @@ const Joyce: React.FC = () => {
       <Navbar />
 
       <section
-        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://lh3.googleusercontent.com/p/AF1QipMEOx-TcIQtXiOis1LD9LkdVcOu2mGnrSu1P-YM=w408-h275-k-no')",
+            "url('https://lh3.googleusercontent.com/p/AF1QipNetjlzYCmVTv2wOoDys1VYGk5_U-S4gEiq_fFV=s1246-k-no')",
         }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/0 dark:bg-black/30"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             The Joyce Restaurant{" "}
