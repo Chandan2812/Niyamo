@@ -8,7 +8,7 @@ const Garden: React.FC = () => {
       <Navbar />
 
       <section
-        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://images.oyoroomscdn.com/uploads/hotel_image/39338/large/4f44f19f4a1bb2cf.jpg')",

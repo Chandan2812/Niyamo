@@ -8,13 +8,13 @@ function Thamel() {
 
       {/* Hero Section */}
       <section
-        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/61/d1/cb/12-teremos-o-menu-a-la.jpg?w=1200&h=-1&s=1')",
         }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/10 dark:bg-black/50"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Thamel</h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl font-light">

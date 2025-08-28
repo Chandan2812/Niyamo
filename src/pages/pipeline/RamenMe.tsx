@@ -7,7 +7,7 @@ function RamenMe() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-black text-white py-60 px-6">
+      <section className="relative bg-black text-white h-[90vh] py-60 px-6">
         <div className="w-11/12 md:w-5/6 mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold tracking-wide">
             Ramen Me
@@ -17,7 +17,7 @@ function RamenMe() {
             Upside
           </p>
         </div>
-        <div className="absolute inset-0 bg-[url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/44/bc/79/chicken-gyoza-japanese.jpg?w=1400&h=-1&s=1')] bg-cover bg-center opacity-60 dark:opacity-30"></div>
+        <div className="absolute inset-0 bg-[url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/44/bc/79/chicken-gyoza-japanese.jpg?w=1400&h=-1&s=1')] bg-cover bg-center opacity-60 dark:opacity-20"></div>
       </section>
 
       {/* Why We Like It Section */}

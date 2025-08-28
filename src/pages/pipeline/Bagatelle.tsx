@@ -7,7 +7,7 @@ function Bagatelle() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-black text-white py-60 px-6">
+      <section className="relative bg-black text-white h-[90vh] py-60 px-6">
         <div className="w-11/12 md:w-5/6 mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold tracking-wide">
             Bagatelle – Dubai, Singapore, & Mykonos

@@ -7,13 +7,13 @@ const Charles: React.FC = () => {
     <div>
       <Navbar />
       <section
-        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://static.wixstatic.com/media/1bd01e_add9a31017b44a3ab08325667cf1864f~mv2.jpg/v1/fill/w_1751,h_1629,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/1bd01e_add9a31017b44a3ab08325667cf1864f~mv2.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/10 dark:bg-black/50"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             16 Charles Street

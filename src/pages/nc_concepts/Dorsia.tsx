@@ -9,10 +9,10 @@ const Dorsia: React.FC = () => {
 
       {/* Hero Section */}
       <section
-        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://framerusercontent.com/images/c4nWIxEc3kvODedMR8Cp78HhQTk.jpg')",
+            "url('https://framerusercontent.com/images/BtXXWI5hmEcY9EeE8WyRVGu8.jpg')",
         }}
       >
         <div className="absolute inset-0 dark:bg-black/50 bg-black/10"></div>
