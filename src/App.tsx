@@ -26,6 +26,10 @@ import ZumanaBali from "./pages/pipeline/ZumanaBali";
 import BangCookies from "./pages/pipeline/BangCookies";
 import Baoli from "./pages/pipeline/Baoli";
 import Thamel from "./pages/pipeline/Thamel";
+import AdminLayout from "./pages/admin/AdminLayout";
+import Dashboard from "./pages/admin/Dashboard";
+import AdminSubscriber from "./pages/admin/AdminSubscriber";
+import AdminContact from "./pages/admin/AdminContact";
 
 function App() {
   return (
@@ -57,6 +61,13 @@ function App() {
         <Route path="/bang-cookies" element={<BangCookies />} />
         <Route path="/baoli" element={<Baoli />} />
         <Route path="/thamel" element={<Thamel />} />
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<Dashboard />} />
+
+          <Route path="subscriber" element={<AdminSubscriber />} />
+
+          <Route path="Contacts" element={<AdminContact />} />
+        </Route>
       </Routes>
     </Router>
   );

@@ -1,9 +1,82 @@
+import { useState } from "react";
 import { Mail, MapPin, User, Phone, MessageSquare } from "lucide-react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 import countryCodes from "../../utils/countryCodes.json";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneCode: countryCodes[70].dial_code, // default first country
+    phone: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
+
+  // ✅ email regex
+  const validateEmail = (email: string) => {
+    const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/;
+    return re.test(String(email).toLowerCase());
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError(null);
+    setSuccess(null);
+
+    // ✅ validate email before API call
+    if (!validateEmail(formData.email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const res = await fetch(
+        `${import.meta.env.VITE_API_BASE_URL}/api/contact`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: formData.name,
+            email: formData.email,
+            phone: `${formData.phoneCode}${formData.phone}`, // ✅ full phone
+            message: formData.message,
+          }),
+        }
+      );
+
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || "Something went wrong!");
+      }
+
+      setSuccess("Your message has been sent successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        phoneCode: countryCodes[70].dial_code,
+        phone: "",
+        message: "",
+      });
+    } catch (err: any) {
+      setError(err.message || "Server error, please try again later.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div>
       <Navbar />
@@ -45,23 +118,38 @@ function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white dark:bg-[#111827]  text-black dark:text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow">
+            <div className="bg-white dark:bg-[#111827] text-black dark:text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow">
               <h3 className="text-2xl font-semibold mb-6 text-center">
                 Send Us a Message
               </h3>
-              <form className="grid gap-6">
+
+              {/* ✅ Error & Success Messages */}
+              {error && (
+                <p className="text-red-500 text-center mb-4">{error}</p>
+              )}
+              {success && (
+                <p className="text-green-500 text-center mb-4">{success}</p>
+              )}
+
+              <form onSubmit={handleSubmit} className="grid gap-6">
                 {/* Name + Email */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <InputField
                     icon={<User className="w-5 h-5 text-gray-400" />}
                     type="text"
                     placeholder="Your Name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     required
                   />
                   <InputField
                     icon={<Mail className="w-5 h-5 text-gray-400" />}
                     type="email"
                     placeholder="Your Email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -69,6 +157,9 @@ function Contact() {
                 {/* Phone with Country Code */}
                 <div className="flex gap-3">
                   <select
+                    name="phoneCode"
+                    value={formData.phoneCode}
+                    onChange={handleChange}
                     className="p-3 rounded-lg bg-white dark:bg-[#111827] text-black dark:text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] w-1/3"
                     required
                   >
@@ -82,6 +173,9 @@ function Contact() {
                     icon={<Phone className="w-5 h-5 text-gray-400" />}
                     type="tel"
                     placeholder="Phone Number"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     required
                     className="flex-1"
                   />
@@ -91,16 +185,24 @@ function Contact() {
                 <div className="relative">
                   <MessageSquare className="w-5 h-5 text-gray-400 absolute left-3 top-3" />
                   <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     placeholder="Your Message"
                     rows={5}
                     className="w-full pl-10 p-3 rounded-lg bg-white dark:bg-[#111827] text-black dark:text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
                     required
                   ></textarea>
                 </div>
+
                 <div className="flex justify-center">
-                  <button className="relative inline-block px-6 py-2 border border-[var(--primary-color)] font-light group overflow-hidden transition-all">
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="relative inline-block px-6 py-2 border border-[var(--primary-color)] font-light group overflow-hidden transition-all disabled:opacity-50"
+                  >
                     <span className="relative z-10 text-[var(--primary-color)] group-hover:text-black transition-colors duration-300">
-                      Send Message
+                      {loading ? "Sending..." : "Send Message"}
                     </span>
                     <span
                       className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
@@ -141,7 +243,6 @@ type ContactCardProps = {
 
 const ContactCard = ({ icon, label, content, href }: ContactCardProps) => {
   const Wrapper = href ? "a" : "div";
-
   return (
     <Wrapper
       href={href}
@@ -149,7 +250,7 @@ const ContactCard = ({ icon, label, content, href }: ContactCardProps) => {
       rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
       className="bg-gray-100 dark:bg-gray-900 text-black dark:text-white rounded-2xl p-6 flex items-start gap-4 shadow-md hover:shadow-lg transition-shadow"
     >
-      <div className="flex-shrink-0 text-[var(--primary-color)] ">{icon}</div>
+      <div className="flex-shrink-0 text-[var(--primary-color)]">{icon}</div>
       <div>
         <h3 className="text-lg font-semibold">{label}</h3>
         <p className="mt-1 text-sm">{content}</p>
@@ -164,6 +265,9 @@ type InputFieldProps = {
   placeholder: string;
   required?: boolean;
   className?: string;
+  name: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 const InputField = ({
@@ -172,12 +276,18 @@ const InputField = ({
   placeholder,
   required,
   className,
+  name,
+  value,
+  onChange,
 }: InputFieldProps) => {
   return (
     <div className={`relative ${className || ""}`}>
       <div className="absolute left-3 top-3">{icon}</div>
       <input
         type={type}
+        name={name}
+        value={value}
+        onChange={onChange}
         placeholder={placeholder}
         required={required}
         className="w-full pl-10 p-3 rounded-lg bg-white dark:bg-[#111827] text-black dark:text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
