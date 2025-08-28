@@ -65,8 +65,7 @@ function App() {
           <Route index element={<Dashboard />} />
 
           <Route path="subscriber" element={<AdminSubscriber />} />
-
-          <Route path="Contacts" element={<AdminContact />} />
+          <Route path="contact" element={<AdminContact />} />
         </Route>
       </Routes>
     </Router>

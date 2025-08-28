@@ -20,6 +20,7 @@ const Dashboard = () => {
       fetch(`${baseURL}/api/contact`).then((r) => r.json()),
     ])
       .then(([subscribers, contacts]) => {
+        console.log(contacts);
         setCounts({
           subscribers: Array.isArray(subscribers) ? subscribers.length : 0,
           contacts: Array.isArray(contacts) ? contacts.length : 0,

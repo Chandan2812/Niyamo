@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import { BASE_URL } from "../utils/function";
+
+const baseURL = import.meta.env.VITE_API_BASE_URL;
 
 const NewsSubscribeSection: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -18,7 +19,7 @@ const NewsSubscribeSection: React.FC = () => {
 
     setLoading(true);
     try {
-      const res = await fetch(`${BASE_URL}/subscribe`, {
+      const res = await fetch(`${baseURL}/subscribe`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
