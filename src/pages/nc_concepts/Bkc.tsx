@@ -39,12 +39,14 @@ const Bkc: React.FC = () => {
           <h2 className="text-2xl font-semibold mb-4">
             Bringing authentic Awadhi delights to London
           </h2>
-          <p className=" text-md leading-relaxed mb-4">
-            At BKC – Biryani Kebab Chai, our story is one of passion,
-            exploration, and the desire to share the unparalleled tastes of
-            Awadhi cuisine with London. Launched in Marble Arch in 2022 and in
-            Soho in 2023, our mission remains the same: to celebrate the
-            culinary wonders of Lucknow...
+          <p className="text-md leading-relaxed mb-4">
+            At <strong>BKC – Biryani Kebab Chai</strong>, we bring the royal
+            flavors of Lucknow straight to London. Born from a passion for
+            authentic Awadhi cuisine, our journey began in Marble Arch in 2022
+            and expanded to Soho in 2023. From fragrant dum biryanis to
+            melt-in-the-mouth kebabs and soulful kulhad chai, every dish is a
+            tribute to the timeless culinary heritage of Lucknow , served with
+            warmth, tradition, and a touch of modern elegance.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
@@ -77,21 +79,32 @@ const Bkc: React.FC = () => {
           </div>
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              The dum pukht delight: Lucknowi Biryani at BKC
+              Dum Pukht Magic: The Royal Lucknowi Biryani at BKC
             </h2>
             <p className="text-md leading-relaxed">
-              At BKC the dishes are thoughtfully curated by our Head Chef – Arsh
-              Thakur, following the age-old Awadhi cooking techniques using the
-              freshest British produce...
+              At <strong>BKC</strong>, every plate tells a story of passion and
+              precision. Guided by our Head Chef, <strong>Arsh Thakur</strong>,
+              we embrace the art of <em>dum pukht</em> cooking , where
+              slow-cooked marinated meats and aromatic rice come together in
+              perfect harmony. Using age-old Awadhi techniques and the freshest
+              British produce, we craft dishes that are rich, soulful, and
+              unforgettable , capturing the royal essence of Lucknow while
+              celebrating London’s vibrant spirit.
             </p>
           </div>
         </div>
 
         {/* Design Section */}
         <div className="mb-16">
-          <p className="text-md leading-relaxed mb-6 ">
-            Charles Street has character and history, which we are keen to
-            preserve and enhance...
+          <p className="text-md leading-relaxed mb-6">
+            More than just a restaurant, <strong>BKC</strong> is a cultural
+            experience. Inspired by Lucknow’s tradition of
+            <em>mehmaan nawazi</em> (royal hospitality), we welcome every guest
+            with warmth, elegance, and care. Whether you’re enjoying chai in a
+            rustic kulhad, savoring kebabs with friends, or gathering for a
+            Nawabi feast, every moment at BKC is designed to feel special. Step
+            inside, and let us transport you to the heritage-rich streets of
+            Lucknow , right here in the heart of London.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <img
@@ -105,7 +118,7 @@ const Bkc: React.FC = () => {
               className="h-full object-cover rounded"
             />
             <img
-              src="https://bkclondon.uk/wp-content/uploads/2024/06/attachment-1.png"
+              src="https://bkclondon.uk/wp-content/uploads/2024/06/Rectangle-11.png"
               alt="Design 3"
               className="h-full object-cover rounded"
             />
