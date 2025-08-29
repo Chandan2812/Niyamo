@@ -40,12 +40,18 @@ const Footer = () => {
           {/* Locations */}
           <ul className="space-y-2">
             {[
-              { label: "16 Charles Street", route: "/locations/london" },
-              { label: "Biryani Kabab Chai", route: "/locations/bkc" },
-              { label: "Coupette", route: "/locations/coupette" },
-              { label: "24 & 30 Sussex Gardens", route: "/locations/sussex" },
-              { label: "The Joyce Restaurant", route: "/locations/joyce" },
-              { label: "Dorsia", route: "/locations/dorsia" },
+              { label: "16 Charles Street", route: "/16-charles-street" },
+              {
+                label: "Biryani Kabab Chai",
+                route: "/biryani-kebab-chai-(bkc)",
+              },
+              { label: "Coupette", route: "/coupette" },
+              {
+                label: "24 & 30 Sussex Gardens",
+                route: "/24-&-30-sussex-gardens",
+              },
+              { label: "The Joyce Restaurant", route: "/the-joyce-restaurant" },
+              { label: "Dorsia", route: "/dorsia" },
             ].map((item, i) => (
               <li key={i}>
                 <Link
@@ -61,19 +67,19 @@ const Footer = () => {
           {/* Company */}
           <ul className="space-y-2">
             {[
-              { label: "About Us", route: "/about" },
+              { label: "About Us", route: "/about-us" },
               { label: "Contact Us", route: "/contact" },
-              { label: "Press Release", route: "/press" },
+              { label: "Press Release", route: "/press-release" },
               { label: "News", route: "/news" },
               { label: "Disclaimer", route: "/disclaimer" },
             ].map((item, i) => (
               <li key={i}>
-                <Link
-                  to={item.route}
+                <a
+                  href={item.route}
                   className="hover:text-[var(--primary-color)] transition duration-300"
                 >
                   {item.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
