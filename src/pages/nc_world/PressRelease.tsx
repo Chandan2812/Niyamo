@@ -1,6 +1,8 @@
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Nav";
 import NewsSubscribeSection from "../../components/Newsletter";
+import uday from "../../assets/Fern Hospitality9098.jpg";
+import akshat from "../../assets/Akshat.jpg";
 
 const PressRelease = () => {
   return (
@@ -14,7 +16,7 @@ const PressRelease = () => {
         </h1>
 
         {/* Quote */}
-        <blockquote className="bg-gray-100 border-l-4 border-red-600 p-6 rounded-lg mb-10">
+        <blockquote className="bg-gray-100 border-l-4 border-red-600 p-6 rounded-lg mb-5">
           <p className="italic text-lg text-gray-800 leading-relaxed">
             “This is a once in a generation moment for hospitality investment,”
             said <strong>Uday Singh</strong>, CEO of Fern Hospitality Ventures
@@ -25,6 +27,9 @@ const PressRelease = () => {
             that is driving demand from Dubai to New York, and London to Bali.”
           </p>
         </blockquote>
+        <div className="flex justify-center mb-10">
+          <img src={uday} alt="" className="w-[25%]" />
+        </div>
 
         {/* Fund Section */}
         <div>
@@ -248,6 +253,10 @@ const PressRelease = () => {
             months because of social media content.”
           </p>
         </blockquote>
+
+        <div className="flex justify-center">
+          <img src={akshat} alt="" className="w-[25%]" />
+        </div>
       </section>
 
       <section className="max-w-5xl mx-auto px-6 py-12 space-y-8">
