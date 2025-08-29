@@ -65,7 +65,7 @@ const DiningExperienceSection: React.FC = () => {
         <div className="z-10">
           <div className=" mb-2">
             <p
-              className="uppercase tracking-widest font-semibold mt-2 text-xs text-gray-700 dark:text-gray-300"
+              className="uppercase tracking-widest font-semibold mt-2 text-xs text-[var(--primary-color)]"
               data-aos="fade-right"
             >
               Dine With Us
@@ -75,7 +75,7 @@ const DiningExperienceSection: React.FC = () => {
             className="text-2xl md:text-4xl font-semibold text-black dark:text-white mt-2"
             data-aos="fade-right"
           >
-            An elevated dining experience in each and every restaurant
+            An elevated dining experience in every restaurant
           </h2>
           <p
             className="text-gray-700 dark:text-gray-300 text-base mb-8 mt-4"
@@ -83,7 +83,7 @@ const DiningExperienceSection: React.FC = () => {
           >
             With innovation and excellence at our core, we strive to exceed
             expectations with every guest. Our restaurant and nightlife venues
-            are dynamic – where we understand every moving part of an
+            are dynamic, where we understand every moving part of an
             unforgettable experience.
           </p>
 
@@ -127,8 +127,8 @@ const DiningExperienceSection: React.FC = () => {
 
         {/* Image with dotted background */}
         <div className="relative w-full h-full z-10">
-          <div className="absolute top-10 right-6 w-full h-full bg-[radial-gradient(#ccc_2.5px,transparent_2.5px)] bg-[length:28px_28px] z-0" />
-          <div className="absolute right-10 top-44 md:bottom-0 md:right-0 w-[90%] h-[90%] md:w-[90%] md:h-[80%] bg-[#eaf3f7] dark:bg-gray-900 z-0"></div>
+          <div className="absolute top-10 right-6 w-full h-full bg-[radial-gradient(var(--primary-color)_2.5px,transparent_2.5px)] bg-[length:28px_28px] z-0" />
+          <div className="absolute right-10 top-44 md:bottom-0 md:right-0 w-[90%] h-[90%] md:w-[90%] md:h-[80%] bg-[var(--primary-color)] dark:bg-gray-900  z-0"></div>
           <img
             src={dinningImage}
             alt="Dining"

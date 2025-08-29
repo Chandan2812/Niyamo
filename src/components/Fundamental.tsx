@@ -48,7 +48,7 @@ const FundamentalsSection: React.FC = () => {
   return (
     <section className="bg-white dark:bg-black text-black dark:text-white  font-raleway font-light dark:font-thin">
       <div className="w-11/12 mx-auto  px-3 md:px-8 py-10">
-        <p className="text-gray-700 dark:text-gray-300 text-xs tracking-widest mt-1 uppercase font-semibold">
+        <p className="text-[var(--primary-color)] text-xs tracking-widest mt-1 uppercase font-semibold">
           Pipeline
         </p>
         <div className="flex justify-between items-center mb-6 flex-wrap gap-4 ">

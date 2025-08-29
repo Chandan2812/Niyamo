@@ -86,7 +86,7 @@ const FindYourPartner: React.FC = () => {
           {/* Left Text */}
           <div>
             <p
-              className="uppercase tracking-widest font-semibold text-xs text-gray-700 dark:text-gray-300"
+              className="uppercase tracking-widest font-semibold text-xs text-[var(--primary-color)]"
               data-aos="fade-right"
             >
               About Us
@@ -127,13 +127,13 @@ const FindYourPartner: React.FC = () => {
             {/* Arrows */}
             <button
               onClick={handlePrev}
-              className="absolute left-2 sm:left-0 z-40 bg-white border border-black px-3 py-2 text-black hover:bg-black hover:text-white transition dark:bg-black dark:border-[var(--primary-color)] dark:text-[var(--primary-color)]"
+              className="absolute left-2 sm:left-0 z-40 bg-white border border-black px-3 py-2 text-black hover:bg-[var(--primary-color)] hover:text-white transition dark:bg-black dark:border-[var(--primary-color)] dark:text-[var(--primary-color)]"
             >
               ←
             </button>
             <button
               onClick={handleNext}
-              className="absolute right-2 sm:right-0 z-40 bg-white border border-black px-3 py-2 text-black hover:bg-black hover:text-white transition dark:bg-black dark:border-[var(--primary-color)] dark:text-[var(--primary-color)]"
+              className="absolute right-2 sm:right-0 z-40 bg-white border border-black px-3 py-2 text-black hover:bg-[var(--primary-color)] hover:text-white transition dark:bg-black dark:border-[var(--primary-color)] dark:text-[var(--primary-color)]"
             >
               →
             </button>
@@ -144,7 +144,7 @@ const FindYourPartner: React.FC = () => {
                 <div
                   key={index}
                   style={getSlideStyle(index)}
-                  className="flex flex-col items-center justify-start shadow-lg transition-all h-[250px] duration-500 ease-in-out text-center bg-white dark:bg-gray-900"
+                  className="flex flex-col items-center justify-start shadow-lg transition-all h-[250px] duration-500 ease-in-out text-center bg-[var(--primary-color)] dark:bg-gray-900"
                 >
                   <img
                     src={member.image}
@@ -154,7 +154,7 @@ const FindYourPartner: React.FC = () => {
                   <h3 className="text-lg font-semibold text-black dark:text-white">
                     {member.name}
                   </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                  <p className="text-sm text-gray-200 dark:text-gray-400">
                     {member.role}
                   </p>
                 </div>

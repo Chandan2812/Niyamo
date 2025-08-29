@@ -20,7 +20,7 @@ const slides = [
   {
     title: "Coupette",
     description1:
-      "Coupette, a French-inspired cocktail bar in Bethnal Green, shines as one of London's best cocktail bars in East London since its 2017 opening. Coupette’s intimate, soft lighting that dances upon the walls, casts shadows that whisper secrets of French romance and intrigue. With every step, you're enveloped in an atmosphere of allure at this standout cocktail bar and restaurant in London.",
+      "We are a forward-thinking hospitality company curating exceptional dining destinations. With a portfolio of vibrant restaurants, we blend culinary artistry with unforgettable ambiance. Our team delivers refined experiences through passion, innovation, and attention to detail — creating places where guests feel inspired and at home.",
 
     image:
       "https://static.wixstatic.com/media/fe41f9_6900c9bc00ac4705b096d1859135c7bb~mv2.jpg",
@@ -36,7 +36,7 @@ const slides = [
   {
     title: "The Joyce Restaurant",
     description1:
-      "an intimate, 45-seat speakeasy on Miami Beach’s Española Way by Alinea alum James Taylor, blending refined American cuisine with emerald-green interiors, a rotating gallery of blue-chip art, and collectible design furniture for a uniquely immersive culinary and cultural experience.",
+      "An intimate, 45-seat speakeasy on Miami Beach’s Española Way by Alinea alum James Taylor, blending refined American cuisine with emerald-green interiors, a rotating gallery of blue-chip art, and collectible design furniture for a uniquely immersive culinary and cultural experience.",
 
     image:
       "https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/dZCWFGjwT0ehKAEc9h4e_TheJoyce_112024_4005.jpg",
@@ -69,7 +69,7 @@ const ConceptInFocusSection = () => {
         {/* Heading */}
         <div className="mb-4 flex flex-col md:flex-row md:items-start md:justify-between gap-6">
           <div className="flex-1">
-            <p className="uppercase tracking-widest font-semibold mt-2 text-xs text-gray-700 dark:text-gray-300">
+            <p className="uppercase tracking-widest font-semibold mt-2 text-xs text-[var(--primary-color)]">
               Concept in focus
             </p>
             <h2 className="text-2xl md:text-4xl font-semibold text-black dark:text-white mt-2">
@@ -87,7 +87,7 @@ const ConceptInFocusSection = () => {
         {/* Fixed Box with Changing Content */}
         <div className="relative flex flex-col md:flex-row bg-white dark:bg-black overflow-hidden rounded-2xl shadow-lg">
           {/* Image Section */}
-          <div className="md:w-1/2 w-full relative h-[500px] bg-[#eaf3f7] dark:bg-gray-900">
+          <div className="md:w-1/2 w-full relative h-[500px] bg-[var(--primary-color)] dark:bg-gray-900 ">
             <AnimatePresence mode="wait">
               <motion.img
                 key={currentSlide.image + index}
@@ -103,7 +103,7 @@ const ConceptInFocusSection = () => {
           </div>
 
           {/* Text Section */}
-          <div className="md:w-1/2 w-full bg-[#eaf3f7] dark:bg-gray-900 p-6 md:p-12 flex flex-col justify-center relative">
+          <div className="md:w-1/2 w-full bg-[var(--primary-color)] dark:bg-gray-900 p-6 md:p-12 flex flex-col justify-center relative">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentSlide.title + index}
@@ -115,7 +115,7 @@ const ConceptInFocusSection = () => {
                 <h3 className="text-2xl md:text-4xl font-semibold text-black dark:text-white mb-4">
                   {currentSlide.title}
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                <p className="text-gray-200 dark:text-gray-300 mb-4">
                   {currentSlide.description1}
                 </p>
               </motion.div>
