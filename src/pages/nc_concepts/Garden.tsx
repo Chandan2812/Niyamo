@@ -35,15 +35,21 @@ const Garden: React.FC = () => {
         {/* Concept Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">
-            OYO Townhouse 30 Sussex Hotel, London Paddington{" "}
+            OYO Townhouse 30 Sussex – Stay in London Paddington
           </h2>
-          <p className=" text-md leading-relaxed mb-4">
-            Located in the heart of London's vibrant Paddington district, OYO
-            Townhouse 30 Sussex Hotel offers a perfect blend of comfort,
-            convenience, and affordability. Just a short stroll from Hyde Park
-            and the iconic Paddington Station, this 3-star hotel is an ideal
-            choice for both business and leisure travelers seeking easy access
-            to London's top attractions.
+          <p className="text-md leading-relaxed mb-4">
+            Situated in the heart of London’s lively{" "}
+            <span className="font-semibold">Paddington district</span>, OYO
+            Townhouse 30 Sussex combines{" "}
+            <span className="italic">modern comfort</span>,
+            <span className="italic"> convenience</span>, and{" "}
+            <span className="italic">great value</span>. Just a short walk from{" "}
+            <span className="font-semibold">Hyde Park</span> and the iconic
+            <span className="font-semibold"> Paddington Station</span>, our
+            welcoming 3-star hotel is perfectly placed for both{" "}
+            <span className="italic">business trips</span> and
+            <span className="italic"> leisure getaways</span>, offering easy
+            access to London’s most celebrated attractions.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
@@ -79,22 +85,25 @@ const Garden: React.FC = () => {
               OYO Townhouse 30 Sussex Hotel, London Paddington
             </h2>
             <p className="text-md leading-relaxed">
-              Experience the charm of London while enjoying the comfort and
-              convenience of OYO Townhouse 30 Sussex Hotel. With its prime
-              location, modern amenities, and exceptional service, it's the
-              perfect base for exploring the city's rich history and vibrant
-              culture.
+              Nestled in the lively heart of Paddington, OYO Townhouse 30 Sussex
+              Hotel combines modern comfort with timeless charm. Just steps away
+              from Hyde Park and Paddington Station, our stylish 3-star retreat
+              offers smart amenities, warm hospitality, and unbeatable
+              convenience, making it the perfect stay for both business trips
+              and London getaways.
             </p>
           </div>
         </div>
 
         {/* Design Section */}
         <div className="mb-16">
-          <p className="text-md leading-relaxed mb-6 ">
-            The hotel boasts 13 well-appointed rooms, each featuring air
-            conditioning, flat-screen TVs, free Wi-Fi, and private bathrooms
-            with complimentary toiletries.
+          <p className="text-md leading-relaxed mb-6">
+            The hotel features 13 thoughtfully designed rooms, each equipped
+            with modern comforts including air conditioning, flat-screen TVs,
+            complimentary Wi-Fi, and private bathrooms stocked with free
+            toiletries, ensuring a relaxing and convenient stay.
           </p>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <img
               src="https://images.oyoroomscdn.com/uploads/hotel_image/39338/large/b1518190f2c6e81c.JPG"

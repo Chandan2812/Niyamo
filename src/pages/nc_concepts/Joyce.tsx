@@ -34,13 +34,14 @@ const Joyce: React.FC = () => {
       <section className="w-11/12 md:w-5/6 mx-auto py-12">
         {/* Concept Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">Welcome To The Joyce </h2>
-          <p className="text-md leading-relaxed mb-4">
-            an intimate, 45-seat speakeasy on Miami Beach’s Española Way by
-            Alinea alum James Taylor, blending refined American cuisine with
+          <h2 className="text-2xl font-semibold mb-4">Welcome to The Joyce</h2>
+          <p className="text-md leading-relaxed">
+            Tucked away on Miami Beach’s vibrant Española Way, The Joyce is an
+            intimate 45-seat speakeasy by Alinea alum James Taylor. Guests are
+            invited to indulge in refined American cuisine while surrounded by
             emerald-green interiors, a rotating gallery of blue-chip art, and
-            collectible design furniture for a uniquely immersive culinary and
-            cultural experience.
+            collectible design furniture, creating a uniquely immersive blend of
+            culinary excellence and cultural sophistication.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
@@ -76,18 +77,19 @@ const Joyce: React.FC = () => {
 
             {/* Text */}
             <div className="md:w-2/3 w-full space-y-4">
-              <h2 className="text-2xl md:text-3xl font-semibold">
-                James Taylor The Chef
+              <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+                James Taylor, The Chef
               </h2>
               <p className="text-md md:text-base leading-relaxed">
-                Chef James Taylor has enchanted culinary enthusiasts and food
-                critics across the U.S. for over a decade. After training at Le
-                Cordon Bleu Chicago, he honed his epicurean skills at Bavette’s
-                Bar and Boeuf Steakhouse (Hogsalt Hospitality), followed by
-                leadership roles at Michelin-starred Roister (★) and Alinea
-                (★★★). Since 2021, James has captivated the discerning palates
-                of esteemed private clients, who encouraged him to share his
-                talents with the world.
+                For over a decade, Chef James Taylor has delighted culinary
+                enthusiasts and critics alike across the United States. A
+                graduate of Le Cordon Bleu Chicago, he perfected his craft at
+                Bavette’s Bar and Boeuf Steakhouse (Hogsalt Hospitality) before
+                moving into leadership roles at the Michelin-starred Roister (★)
+                and the world-renowned Alinea (★★★). Since 2021, he has
+                captivated the palates of an exclusive private clientele, whose
+                encouragement inspired him to share his culinary artistry with
+                the world.
               </p>
             </div>
           </div>
@@ -95,10 +97,13 @@ const Joyce: React.FC = () => {
 
         {/* Design Section */}
         <div className="mb-16">
-          <p className="text-md leading-relaxed mb-6 ">
-            Charles Street has character and history, which we are keen to
-            preserve and enhance...
+          <p className="text-md leading-relaxed mb-6">
+            Nestled in the heart of Charles Street, we embrace its rich
+            character and storied history, not just to preserve it, but to
+            elevate it. Every detail is crafted to honor the past while shaping
+            a vibrant, modern experience for today.
           </p>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <img
               src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/TV8njQqwQPCOIZlaOWvR_TheJoyce_112024_3876.jpg"

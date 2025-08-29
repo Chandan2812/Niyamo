@@ -45,7 +45,7 @@ const Bkc: React.FC = () => {
             authentic Awadhi cuisine, our journey began in Marble Arch in 2022
             and expanded to Soho in 2023. From fragrant dum biryanis to
             melt-in-the-mouth kebabs and soulful kulhad chai, every dish is a
-            tribute to the timeless culinary heritage of Lucknow , served with
+            tribute to the timeless culinary heritage of Lucknow, served with
             warmth, tradition, and a touch of modern elegance.
           </p>
 
@@ -84,11 +84,11 @@ const Bkc: React.FC = () => {
             <p className="text-md leading-relaxed">
               At <strong>BKC</strong>, every plate tells a story of passion and
               precision. Guided by our Head Chef, <strong>Arsh Thakur</strong>,
-              we embrace the art of <em>dum pukht</em> cooking , where
+              we embrace the art of <em>dum pukht</em> cooking, where
               slow-cooked marinated meats and aromatic rice come together in
               perfect harmony. Using age-old Awadhi techniques and the freshest
               British produce, we craft dishes that are rich, soulful, and
-              unforgettable , capturing the royal essence of Lucknow while
+              unforgettable, capturing the royal essence of Lucknow while
               celebrating London’s vibrant spirit.
             </p>
           </div>
@@ -98,13 +98,13 @@ const Bkc: React.FC = () => {
         <div className="mb-16">
           <p className="text-md leading-relaxed mb-6">
             More than just a restaurant, <strong>BKC</strong> is a cultural
-            experience. Inspired by Lucknow’s tradition of
+            experience. Inspired by Lucknow’s tradition of{" "}
             <em>mehmaan nawazi</em> (royal hospitality), we welcome every guest
             with warmth, elegance, and care. Whether you’re enjoying chai in a
             rustic kulhad, savoring kebabs with friends, or gathering for a
             Nawabi feast, every moment at BKC is designed to feel special. Step
             inside, and let us transport you to the heritage-rich streets of
-            Lucknow , right here in the heart of London.
+            Lucknow, right here in the heart of London.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <img

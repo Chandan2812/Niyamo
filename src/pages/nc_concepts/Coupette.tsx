@@ -35,17 +35,27 @@ const Coupette: React.FC = () => {
           <h2 className="text-2xl font-semibold mb-4">
             One of the Best Cocktail Bars in Central London
           </h2>
-          <p className=" text-md leading-relaxed mb-4 text-gray-700 dark:text-gray-300">
-            Coupette, a French-inspired cocktail bar in Bethnal Green, shines as
-            one of London's best cocktail bars in East London since its 2017
-            opening. Coupette’s intimate, soft lighting that dances upon the
-            walls, casts shadows that whisper secrets of French romance and
-            intrigue. With every step, you're enveloped in an atmosphere of
-            allure at this standout cocktail bar and restaurant in London.
-            Vintage coins adorning the bar top evoke a sense of nostalgia, while
-            modern artwork infuses the space with a playful sophistication. This
-            acclaimed spot not only captivates with its setting but also with
-            its innovative cocktails, making it a must-visit in London.
+          <p className="text-md leading-relaxed mb-4 text-gray-700 dark:text-gray-300">
+            Step into <span className="font-semibold">Coupette</span>, a
+            French-inspired cocktail haven in Bethnal Green, and discover why it
+            has become one of{" "}
+            <span className="italic">
+              London’s most celebrated cocktail bars
+            </span>{" "}
+            since opening in 2017. With dim golden lighting that dances across
+            rustic walls, the bar exudes an irresistible Parisian charm,
+            effortlessly blending romance and modern sophistication. Every
+            detail tells a story—vintage coins glimmer across the bar top, while
+            bold contemporary artwork injects playful energy into the space.
+            <br />
+            <br />
+            What truly sets Coupette apart is its award-winning mixology, where
+            tradition meets innovation in every glass. From the iconic{" "}
+            <span className="font-semibold">Champagne Piña Colada</span> to
+            daring seasonal creations, each cocktail is crafted to surprise and
+            delight. Whether you’re seeking a stylish night out, an intimate
+            date, or simply the finest cocktails in Central London, Coupette is
+            an unforgettable destination that lingers long after the last sip.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
@@ -79,14 +89,21 @@ const Coupette: React.FC = () => {
           </div>
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              Discover Our Cocktail Bars and Restaurants in London
+              Discover Coupette – Where Cocktails Meet Art in London
             </h2>
-            <p className="text-md leading-relaxed text-gray-700 dark:text-gray-300">
-              Welcome to Coupette, a beacon of French sophistication and
-              culinary heritage. Named after the elegant Coupe glass, Coupette
-              has risen to prominence since its opening in summer 2017 in
-              Bethnal Green, securing a spot as one of the best cocktail bars in
-              London and ranking number 23 in The World’s 50 Best Bars.
+            <p className="text-md leading-relaxed mb-4 text-gray-700 dark:text-gray-300">
+              Step into <span className="font-semibold">Coupette</span>,
+              London’s award-winning cocktail haven, where French elegance meets
+              modern creativity. Inspired by the timeless Coupe glass, our bar
+              has captivated guests since opening in Bethnal Green in 2017.
+              Ranked{" "}
+              <span className="italic">#23 in The World’s 50 Best Bars</span>,
+              Coupette is more than a place to drink; it’s a stage for
+              unforgettable moments. From dazzling cocktails that push the
+              boundaries of flavor to a chic, Parisian-inspired ambiance that
+              whispers romance and sophistication, every visit feels like a
+              celebration. Discover why Coupette is not just one of the best
+              cocktail bars in London, it’s an experience you’ll never forget.
             </p>
           </div>
         </div>
@@ -94,15 +111,19 @@ const Coupette: React.FC = () => {
         {/* Design Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">
-            Cocktail Bar and Restaurant, Soho
+            Cocktail Bar & Restaurant in Soho
           </h2>
-          <p className="text-md leading-relaxed mb-6  text-gray-700 dark:text-gray-300">
-            Experience Coupette's sophisticated yet sustainable cocktails. Our
-            expert bartenders craft drinks using locally sourced ingredients,
-            presenting intricate stories and rich flavours. Immerse yourself in
-            French cocktail artistry while championing environmental
-            stewardship.
+          <p className="text-md leading-relaxed text-gray-700 dark:text-gray-300 mb-6">
+            Welcome to <span className="font-semibold">Coupette Soho</span>, a
+            destination where sophistication meets sustainability. Our
+            award-winning bartenders reimagine French cocktail artistry with a
+            modern twist, using{" "}
+            <span className="italic">locally sourced ingredients</span> to craft
+            drinks that tell intricate stories with every sip. From rich,
+            layered flavours to innovative, eco-friendly practices, every detail
+            is designed to delight your senses while honoring the planet.
           </p>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <img
               src="https://static.wixstatic.com/media/1d4581_f5fe5812b8b0490f8fa3650912b2ea37~mv2.png"
