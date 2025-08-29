@@ -43,7 +43,7 @@ function Management() {
       designation: "Founder & CEO, ",
       image: img4,
       description:
-        "Founder & CEO of , managing $50B+ in assets across multiple regions. Known for structuring cross-border deals. Also the founder of AIM Summit, driving innovation in finance and hospitality platforms.",
+        "Founder & CEO of, managing $50B+ in assets across multiple regions. Known for structuring cross-border deals. Also, the founder of AIM Summit, driving innovation in finance and hospitality platforms.",
     },
     {
       name: "Mark Lotenburg",
@@ -59,7 +59,7 @@ function Management() {
       <Navbar />
       <section className="bg-white dark:bg-black text-black dark:text-white font-raleway py-28 px-6 mt-10">
         <div className="w-11/12 mx-auto">
-          <h1 className="text-4xl font-bold text-center mb-12">
+          <h1 className="text-4xl font-bold text-center mb-12 text-[var(--primary-color)]">
             Our Team & Advisors
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
