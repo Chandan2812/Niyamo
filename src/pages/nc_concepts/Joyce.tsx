@@ -35,7 +35,7 @@ const Joyce: React.FC = () => {
         {/* Concept Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">Welcome to The Joyce</h2>
-          <p className="text-md leading-relaxed">
+          <p className="text-md leading-relaxed text-justify">
             Tucked away on Miami Beach’s vibrant Española Way, The Joyce is an
             intimate 45-seat speakeasy by Alinea alum James Taylor. Guests are
             invited to indulge in refined American cuisine while surrounded by
@@ -80,7 +80,7 @@ const Joyce: React.FC = () => {
               <h2 className="text-2xl md:text-3xl font-semibold mb-4">
                 James Taylor, The Chef
               </h2>
-              <p className="text-md md:text-base leading-relaxed">
+              <p className="text-md md:text-base leading-relaxed text-justify">
                 For over a decade, Chef James Taylor has delighted culinary
                 enthusiasts and critics alike across the United States. A
                 graduate of Le Cordon Bleu Chicago, he perfected his craft at
@@ -97,7 +97,7 @@ const Joyce: React.FC = () => {
 
         {/* Design Section */}
         <div className="mb-16">
-          <p className="text-md leading-relaxed mb-6">
+          <p className="text-md leading-relaxed mb-6 text-justify">
             Nestled in the heart of Charles Street, we embrace its rich
             character and storied history, not just to preserve it, but to
             elevate it. Every detail is crafted to honor the past while shaping

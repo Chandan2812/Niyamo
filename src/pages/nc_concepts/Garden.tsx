@@ -84,7 +84,7 @@ const Garden: React.FC = () => {
             <h2 className="text-2xl font-semibold mb-4">
               OYO Townhouse 30 Sussex Hotel, London Paddington
             </h2>
-            <p className="text-md leading-relaxed">
+            <p className="text-md leading-relaxed text-justify">
               Nestled in the lively heart of Paddington, OYO Townhouse 30 Sussex
               Hotel combines modern comfort with timeless charm. Just steps away
               from Hyde Park and Paddington Station, our stylish 3-star retreat
@@ -97,7 +97,7 @@ const Garden: React.FC = () => {
 
         {/* Design Section */}
         <div className="mb-16">
-          <p className="text-md leading-relaxed mb-6">
+          <p className="text-md leading-relaxed mb-6 text-justify">
             The hotel features 13 thoughtfully designed rooms, each equipped
             with modern comforts including air conditioning, flat-screen TVs,
             complimentary Wi-Fi, and private bathrooms stocked with free

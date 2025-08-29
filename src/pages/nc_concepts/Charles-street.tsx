@@ -25,7 +25,7 @@ const Charles: React.FC = () => {
         <div className="w-11/12 md:w-5/6 mx-auto">
           {/* Concept Section */}
           <div className="mb-16">
-            <p className=" text-md leading-relaxed mb-4">
+            <p className=" text-md leading-relaxed mb-4 text-justify">
               During 2021, the team began developing its plans to restore 16
               Charles Street to its former glory and bring it into public use
               for everyone to enjoy. The new restaurant will be a discreet
@@ -74,7 +74,7 @@ const Charles: React.FC = () => {
             </div>
             <div>
               <h2 className="text-2xl font-semibold mb-4">Cuisine</h2>
-              <p className="text-md leading-relaxed">
+              <p className="text-md leading-relaxed text-justify">
                 16 Charles Street is located in the heart of Mayfair on the
                 north side of Charles Street opposite the junction with Queen
                 Square. The area is well-served by a wide range of local
@@ -87,7 +87,7 @@ const Charles: React.FC = () => {
 
           {/* Design Section */}
           <div className="mb-16">
-            <p className="text-md leading-relaxed mb-6 ">
+            <p className="text-md leading-relaxed mb-6 text-justify">
               Charles Street has character and history, which we are keen to
               preserve and enhance. The building at 16 Charles Street is a Grade
               II* listed Georgian property, which dates back to 1753. The

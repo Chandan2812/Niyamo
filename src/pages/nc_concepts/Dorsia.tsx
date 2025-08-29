@@ -39,13 +39,13 @@ const Dorsia: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-semibold mb-6">
           A Modern Concierge for Luxury Dining
         </h2>
-        <p className="text-sm md:text-base leading-relaxed mb-4">
+        <p className="text-sm md:text-base leading-relaxed mb-4 text-justify">
           Dorsia is a members-only dining network offering guaranteed access to
           sought-after tables in the world’s most vibrant culinary destinations,
           with privileged entry to exclusive events, seasonal pop-ups, and a
           curated social diary.
         </p>
-        <p className="text-sm md:text-base leading-relaxed mb-10">
+        <p className="text-sm md:text-base leading-relaxed mb-10 text-justify">
           By partnering directly with top-tier restaurants, Dorsia secures
           peak-time reservations with guaranteed minimum spends — ensuring
           exceptional experiences for diners and meaningful value for
@@ -122,7 +122,7 @@ const Dorsia: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-semibold mb-6">
           Global Reach
         </h2>
-        <p className="text-sm md:text-base leading-relaxed mb-10">
+        <p className="text-sm md:text-base leading-relaxed mb-10 text-justify">
           Dorsia operates in cities such as Miami, Aspen, Cannes, and St Tropez,
           with strong investor backing and offices in Miami, London, LA, and
           NYC.

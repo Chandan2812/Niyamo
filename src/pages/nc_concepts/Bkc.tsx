@@ -39,7 +39,7 @@ const Bkc: React.FC = () => {
           <h2 className="text-2xl font-semibold mb-4">
             Bringing authentic Awadhi delights to London
           </h2>
-          <p className="text-md leading-relaxed mb-4">
+          <p className="text-md leading-relaxed mb-4 text-justify">
             At <strong>BKC – Biryani Kebab Chai</strong>, we bring the royal
             flavors of Lucknow straight to London. Born from a passion for
             authentic Awadhi cuisine, our journey began in Marble Arch in 2022
@@ -81,7 +81,7 @@ const Bkc: React.FC = () => {
             <h2 className="text-2xl font-semibold mb-4">
               Dum Pukht Magic: The Royal Lucknowi Biryani at BKC
             </h2>
-            <p className="text-md leading-relaxed">
+            <p className="text-md leading-relaxed text-justify">
               At <strong>BKC</strong>, every plate tells a story of passion and
               precision. Guided by our Head Chef, <strong>Arsh Thakur</strong>,
               we embrace the art of <em>dum pukht</em> cooking, where
@@ -96,7 +96,7 @@ const Bkc: React.FC = () => {
 
         {/* Design Section */}
         <div className="mb-16">
-          <p className="text-md leading-relaxed mb-6">
+          <p className="text-md leading-relaxed mb-6 text-justify">
             More than just a restaurant, <strong>BKC</strong> is a cultural
             experience. Inspired by Lucknow’s tradition of{" "}
             <em>mehmaan nawazi</em> (royal hospitality), we welcome every guest
