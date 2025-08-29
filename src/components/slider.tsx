@@ -81,7 +81,7 @@ const FindYourPartner: React.FC = () => {
 
   return (
     <section className="relative custom-gradient-lines">
-      <div className="pt-16 px-4 md:px-8 relative bg-white dark:bg-black text-black dark:text-white font-raleway">
+      <div className="pt-12 px-4 md:px-8 relative bg-white dark:bg-black text-black dark:text-white font-raleway">
         <div className="w-11/12 mx-auto grid lg:grid-cols-2 gap-10 items-start">
           {/* Left Text */}
           <div>
@@ -98,7 +98,7 @@ const FindYourPartner: React.FC = () => {
               Hospitality, Reimagined by Fern Hospitality
             </h2>
             <p
-              className="text-gray-600 dark:text-gray-400 text-base my-6 max-w-xl"
+              className="text-gray-600 dark:text-gray-400 text-base my-6 max-w-xl text-justify"
               data-aos="fade-right"
             >
               We are a forward-thinking hospitality company curating exceptional
@@ -144,7 +144,7 @@ const FindYourPartner: React.FC = () => {
                 <div
                   key={index}
                   style={getSlideStyle(index)}
-                  className="flex flex-col items-center justify-start shadow-lg transition-all h-[250px] duration-500 ease-in-out text-center bg-[var(--primary-color)] dark:bg-gray-900"
+                  className="flex flex-col items-center justify-start shadow-lg transition-all h-[250px] duration-500 ease-in-out text-center bg-[var(--primary-color)] "
                 >
                   <img
                     src={member.image}
@@ -154,7 +154,7 @@ const FindYourPartner: React.FC = () => {
                   <h3 className="text-lg font-semibold text-black dark:text-white">
                     {member.name}
                   </h3>
-                  <p className="text-sm text-gray-200 dark:text-gray-400">
+                  <p className="text-sm text-gray-200 dark:text-gray-200">
                     {member.role}
                   </p>
                 </div>

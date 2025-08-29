@@ -14,8 +14,8 @@ function Landing() {
     <div>
       <Navbar />
       <Hero />
-      <DiningExperienceSection />
       <FindYourPartner />
+      <DiningExperienceSection />
       <ConceptInFocusSection />
       <GlobalFootprintSection />
 
