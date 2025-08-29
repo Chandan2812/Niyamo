@@ -12,7 +12,7 @@ const Joyce: React.FC = () => {
         className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://lh3.googleusercontent.com/p/AF1QipNetjlzYCmVTv2wOoDys1VYGk5_U-S4gEiq_fFV=s1246-k-no')",
+            "url('https://res.cloudinary.com/dqrlkbsdq/image/upload/v1756458924/2025-02-08_qpg5tq.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/0 dark:bg-black/30"></div>

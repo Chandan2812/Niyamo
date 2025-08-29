@@ -11,7 +11,7 @@ const Bkc: React.FC = () => {
       </div>
 
       <section
-        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dqrlkbsdq/image/upload/v1756362081/bkc_tuicnp.webp')",
