@@ -38,18 +38,18 @@ const PressRelease = () => {
       </section> */}
 
       {/* FOUNDER IMAGES */}
-      <section className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 px-6 pb-12 items-center py-12 font-serif">
+      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-6 pb-12 items-center py-12 font-serif">
         {/* Left side - Profile */}
-        <div className="bg-[#fdfcf7] border border-gray-300 p-6 rounded-md shadow-inner text-center">
+        <div className="bg-[#fdfcf7] dark:bg-[#1a1a1a] border border-gray-300 dark:border-gray-600 p-6 rounded-md shadow-inner text-center">
           <img
             src={uday}
             alt="Uday Singh"
-            className="w-40 h-40 rounded-full object-cover mx-auto mb-4 border border-gray-400"
+            className="w-40 h-40 rounded-full object-cover mx-auto mb-4 border border-gray-400 dark:border-gray-600"
           />
-          <h3 className="font-bold text-2xl text-gray-900 uppercase tracking-wide">
+          <h3 className="font-bold text-2xl text-gray-900 dark:text-gray-100 uppercase tracking-wide">
             Uday Singh
           </h3>
-          <p className="text-sm text-gray-800 leading-relaxed">
+          <p className="text-sm text-gray-800 dark:text-gray-300 leading-relaxed">
             CEO of Fern Hospitality Ventures, entrepreneur behind OPA &
             Bagatelle Dubai.
           </p>
@@ -57,12 +57,12 @@ const PressRelease = () => {
 
         {/* Right side - Statement */}
         <div className="flex items-center">
-          <p className="bg-[#fdfcf7] border border-gray-300 p-6 rounded-md text-lg italic leading-relaxed text-gray-900 shadow-inner">
+          <p className="bg-[#fdfcf7] dark:bg-[#1a1a1a] border border-gray-300 dark:border-gray-600 p-6 py-8 rounded-md text-lg italic leading-relaxed text-gray-900 dark:text-gray-200 shadow-inner">
             “This is a once in a generation moment for hospitality investment,”
-            said <span className="font-bold">Uday Singh</span>, CEO of Fern
-            Hospitality Ventures and the entrepreneur behind global successes
-            like OPA and Bagatelle Dubai. “Demand is soaring while supply
-            remains limited. Our fund provides early access to the next
+            said <span className="font-bold dark:text-white">Uday Singh</span>,
+            CEO of Fern Hospitality Ventures and the entrepreneur behind global
+            successes like OPA and Bagatelle Dubai. “Demand is soaring while
+            supply remains limited. Our fund provides early access to the next
             generation of premium leisure and lifestyle concepts as they scale
             across the global social calendar that is driving demand from Dubai
             to New York, and London to Bali.”
@@ -72,11 +72,12 @@ const PressRelease = () => {
 
       {/* FUND HIGHLIGHTS */}
       <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 px-6 pb-16 font-serif">
-        <div className="bg-[#f4f1e7] p-6 border border-gray-400 shadow-[2px_2px_6px_rgba(0,0,0,0.2)] rounded-none">
-          <h2 className="text-2xl font-bold mb-3 text-gray-900 underline decoration-gray-500">
+        {/* The Fund */}
+        <div className="bg-[#f4f1e7] dark:bg-[#1a1a1a] p-6 border border-gray-400 dark:border-gray-600 shadow-[2px_2px_6px_rgba(0,0,0,0.25)] rounded-none">
+          <h2 className="text-2xl font-bold mb-3 text-gray-900 dark:text-gray-100 underline decoration-gray-500 dark:decoration-gray-400">
             The Fund
           </h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-800 leading-relaxed">
+          <ul className="list-disc list-inside space-y-2 text-gray-800 dark:text-gray-300 leading-relaxed">
             <li>Raised $15m in the first 24 hours of launching</li>
             <li>
               Leveraging Dubai’s hospitality success to scale brands worldwide
@@ -88,11 +89,12 @@ const PressRelease = () => {
           </ul>
         </div>
 
-        <div className="bg-[#f4f1e7] p-6 border border-gray-400 shadow-[2px_2px_6px_rgba(0,0,0,0.2)] rounded-none">
-          <h2 className="text-2xl font-bold mb-3 text-gray-900 underline decoration-gray-500">
+        {/* Fund Strategy */}
+        <div className="bg-[#f4f1e7] dark:bg-[#1a1a1a] p-6 border border-gray-400 dark:border-gray-600 shadow-[2px_2px_6px_rgba(0,0,0,0.25)] rounded-none">
+          <h2 className="text-2xl font-bold mb-3 text-gray-900 dark:text-gray-100 underline decoration-gray-500 dark:decoration-gray-400">
             Fund Strategy
           </h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-800 leading-relaxed">
+          <ul className="list-disc list-inside space-y-2 text-gray-800 dark:text-gray-300 leading-relaxed">
             <li>
               First-of-its-kind global luxury hospitality &amp; F&amp;B
               investment focus
@@ -101,7 +103,9 @@ const PressRelease = () => {
               Dual return model: cashflow from operations + real estate capital
               upside
             </li>
-            <li>Targeting iconic venues, disruptors & technology innovators</li>
+            <li>
+              Targeting iconic venues, disruptors &amp; technology innovators
+            </li>
             <li>
               Dalma Capital to manage closed-ended fund ($100m, 20% net return)
             </li>
@@ -110,18 +114,18 @@ const PressRelease = () => {
       </section>
 
       {/* TEAM & PORTFOLIO SECTION */}
-      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-6 pb-16 font-serif text-gray-900">
+      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-0 md:gap-8 px-6 pb-16 font-serif">
         {/* TEAM */}
-        <div className="bg-[#fcfbf7] p-8 border border-gray-300 shadow-sm rounded-none">
-          <h2 className="text-2xl font-bold mb-4 uppercase tracking-wide underline decoration-gray-400">
-            Team & Track Record
+        <div className="bg-[#fcfbf7] dark:bg-[#1a1a1a] p-8 border border-gray-300 dark:border-gray-600 shadow-[2px_2px_6px_rgba(0,0,0,0.25)] md:border-r md:pr-10">
+          <h2 className="text-2xl font-bold mb-4 tracking-wide text-gray-900 dark:text-gray-100 underline decoration-gray-400 dark:decoration-gray-500">
+            Team &amp; Track Record
           </h2>
-          <p className="mb-4 text-gray-700 leading-relaxed">
+          <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
             Comprising seasoned hospitality investors and young talent in
             partnership with top operators globally, the team brings a proven
             record of high-profile successes:
           </p>
-          <ul className="list-disc pl-5 space-y-2 text-gray-800 leading-relaxed">
+          <ul className="list-disc pl-5 space-y-2 text-gray-800 dark:text-gray-300 leading-relaxed">
             <li>
               <strong>Uday Singh:</strong> Led successes including{" "}
               <em>Bagatelle Dubai</em> (exit 2022), <em>Opa Dubai</em> (2018),{" "}
@@ -137,11 +141,11 @@ const PressRelease = () => {
         </div>
 
         {/* PORTFOLIO */}
-        <div className="bg-[#fcfbf7] p-8 border border-gray-300 shadow-sm rounded-none">
-          <h2 className="text-2xl font-bold mb-4 uppercase tracking-wide underline decoration-gray-400">
+        <div className="bg-[#fcfbf7] dark:bg-[#1a1a1a] p-8 border border-gray-300 dark:border-gray-600 shadow-[2px_2px_6px_rgba(0,0,0,0.25)] md:border-l md:pl-10">
+          <h2 className="text-2xl font-bold mb-4 tracking-wide text-gray-900 dark:text-gray-100 underline decoration-gray-400 dark:decoration-gray-500">
             Portfolio Post $15m Raise
           </h2>
-          <ul className="list-disc pl-5 space-y-2 text-gray-800 leading-relaxed">
+          <ul className="list-disc pl-5 space-y-2 text-gray-800 dark:text-gray-300 leading-relaxed">
             <li>
               <strong>Dorsia</strong> – tech-driven reservations platform
             </li>
@@ -165,13 +169,13 @@ const PressRelease = () => {
       </section>
 
       {/* PIPELINE & STRATEGY */}
-      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 px-6 pb-16 font-serif">
+      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-0 md:gap-8 px-6 pb-16 font-serif">
         {/* PIPELINE / DISCUSSIONS */}
-        <div className="bg-[#f4f1e7] p-6 border border-gray-400 shadow-[2px_2px_6px_rgba(0,0,0,0.2)] rounded-none">
-          <h2 className="text-2xl font-bold mb-3 text-gray-900 underline decoration-gray-500">
+        <div className="bg-[#fdfcf7] dark:bg-[#1a1a1a] p-8 border border-gray-400 dark:border-gray-600 shadow-[2px_2px_6px_rgba(0,0,0,0.25)] md:border-r md:pr-10 rounded-none">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 underline decoration-gray-500 dark:decoration-gray-400">
             In Discussion With
           </h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-800 leading-relaxed">
+          <ul className="list-disc pl-5 space-y-2 text-gray-800 dark:text-gray-300 leading-relaxed">
             <li>
               Ultra-luxury wellness project by a globally renowned wellness
               entrepreneur
@@ -194,29 +198,34 @@ const PressRelease = () => {
         </div>
 
         {/* FUND STRATEGY & RATIONALE */}
-        <div className="bg-[#f4f1e7] p-6 border border-gray-400 shadow-[2px_2px_6px_rgba(0,0,0,0.2)] rounded-none">
-          <h2 className="text-2xl font-bold mb-3 text-gray-900 underline decoration-gray-500">
-            Fund Strategy & Rationale
+        <div className="bg-[#fdfcf7] dark:bg-[#1a1a1a] p-8 border border-gray-400 dark:border-gray-600 shadow-[2px_2px_6px_rgba(0,0,0,0.25)] md:border-l md:pl-10 rounded-none">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100 underline decoration-gray-500 dark:decoration-gray-400">
+            Fund Strategy &amp; Rationale
           </h2>
 
-          <h3 className="font-semibold text-gray-900 mb-2">Fund Strategy</h3>
-          <ul className="list-disc list-inside mb-4 space-y-2 text-gray-800 leading-relaxed">
+          <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            Fund Strategy
+          </h3>
+          <ul className="list-disc pl-5 mb-6 space-y-2 text-gray-800 dark:text-gray-300 leading-relaxed">
             <li>
-              Backing early-stage culturally relevant brands in food, wellness &
-              experiential formats
+              Backing early-stage culturally relevant brands in food, wellness
+              &amp; experiential formats
             </li>
             <li>Investing in disruptive technology</li>
             <li>Targeting social media–influenced brands</li>
             <li>
-              Scalable concepts with proven local traction & expansion potential
+              Scalable concepts with proven local traction &amp; expansion
+              potential
             </li>
           </ul>
 
-          <h3 className="font-semibold text-gray-900 mb-2">Rationale</h3>
-          <ul className="list-disc list-inside space-y-2 text-gray-800 leading-relaxed">
+          <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            Rationale
+          </h3>
+          <ul className="list-disc pl-5 space-y-2 text-gray-800 dark:text-gray-300 leading-relaxed">
             <li>
               Global luxury hospitality reshaped since Covid; growth driven by
-              next-gen travelers & new destinations
+              next-gen travelers &amp; new destinations
             </li>
             <li>
               Luxury hospitality spending projected to grow from $239B (2023) →
@@ -225,41 +234,48 @@ const PressRelease = () => {
             <li>Dining is now the #1 global consumer spend, ahead of retail</li>
             <li>
               Sector returns currently outperforming all others, fueled by
-              innovation & new destinations
+              innovation &amp; new destinations
             </li>
           </ul>
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 px-6 pb-16 font-serif text-gray-900">
+      <section className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 px-6 pb-12 font-serif">
         {/* Left side - Profile */}
-        <div className="bg-[#f9f7f1] md:col-span-1 p-6 border border-gray-300 shadow-sm text-center rounded-none">
+        <div className="bg-[#fdfcf7] dark:bg-[#1a1a1a] md:col-span-1 p-6 border border-gray-300 dark:border-gray-600 shadow-[2px_2px_6px_rgba(0,0,0,0.25)] text-center rounded-none">
           <img
             src={akshat}
             alt="Akshat Tiberwala"
-            className="w-40 h-40 rounded-full object-cover mx-auto mb-4 border border-gray-400"
+            className="w-40 h-40 rounded-full object-cover mx-auto mb-4 border border-gray-400 dark:border-gray-500"
           />
-          <h3 className="font-bold text-xl mb-2">Akshat Tiberwala</h3>
-          <p className="text-sm leading-relaxed text-gray-700">
+          <h3 className="font-bold text-xl mb-2 text-gray-900 dark:text-gray-100">
+            Akshat Tiberwala
+          </h3>
+          <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-300">
             Managing Director, Founder of Niyamo Capital, bringing financial
             expertise and a Gen-Z investor perspective.
           </p>
         </div>
 
         {/* Right side - Statement */}
-        <div className="md:col-span-3 flex items-center border-l-2 border-gray-400 pl-6">
-          <blockquote className="bg-[#fcfbf7] border border-gray-300 shadow-sm p-6 italic leading-relaxed">
+        <div className="md:col-span-3 flex items-center border-l-2 border-gray-400 dark:border-gray-600 pl-6">
+          <blockquote className="relative bg-[#fcfbf7] dark:bg-[#1a1a1a] border border-gray-300 dark:border-gray-600 shadow-[2px_2px_6px_rgba(0,0,0,0.25)] p-8 italic leading-relaxed text-gray-800 dark:text-gray-200">
+            {/* Decorative quotation mark */}
+            <span className="absolute -top-6 -left-4 text-6xl text-gray-400 dark:text-gray-600 select-none">
+              “
+            </span>
+
             <p className="mb-4">
-              “We invest where global lifestyle trends meet real estate
+              We invest where global lifestyle trends meet real estate
               investment opportunity,” said{" "}
               <span className="font-semibold">Akshat Tiberwala</span>, Managing
               Director at FHV. “We back cash-flow-positive brands with
               expansion-ready models and layer in technology to create scalable,
               efficient platforms. Our investments are not only about great
-              concepts, but about systems that can grow globally.”
+              concepts, but about systems that can grow globally.
             </p>
             <p>
-              “Global hospitality will increasingly be dominated by newer
+              Global hospitality will increasingly be dominated by newer
               generations, both as consumers and as operators, through the rise
               of social media platforms. Brands are no longer growing
               linearly—they’re growing laterally with the introduction of social
@@ -269,22 +285,21 @@ const PressRelease = () => {
                 and 73% visited restaurants in the last 3 months because of
                 social media content.
               </span>
-              ”
             </p>
           </blockquote>
         </div>
       </section>
 
       {/* PRESS RELEASE & MARKET OUTLOOK */}
-      <section className="max-w-5xl mx-auto px-6 py-16 font-serif text-gray-900">
-        <div className="bg-[#fcfbf7] border border-gray-300 shadow-sm p-10 rounded-none">
-          <h2 className="text-3xl font-bold mb-8 uppercase tracking-wide underline decoration-gray-400">
-            Press Release & Market Outlook
+      <section className="max-w-5xl mx-auto px-6 py-12 font-serif">
+        <div className="bg-[#fdfcf7] dark:bg-[#1a1a1a] border border-gray-300 dark:border-gray-600 shadow-[3px_3px_8px_rgba(0,0,0,0.25)] p-10 rounded-none">
+          <h2 className="text-3xl font-bold mb-8 tracking-wide text-gray-900 dark:text-gray-100 underline decoration-gray-400 dark:decoration-gray-500">
+            Press Release &amp; Market Outlook
           </h2>
 
           {/* Press Info */}
-          <p className="mb-6 leading-relaxed text-justify">
-            <span className="font-semibold">
+          <p className="mb-6 leading-relaxed text-justify text-gray-800 dark:text-gray-200">
+            <span className="font-semibold italic tracking-wide">
               Dubai, UAE – Monday, 25 August 2025
             </span>{" "}
             – Fern Hospitality Ventures (FHV), the Dubai-based investment
@@ -294,7 +309,7 @@ const PressRelease = () => {
             experiential leisure sector.
           </p>
 
-          <p className="mb-6 leading-relaxed text-justify">
+          <p className="mb-6 leading-relaxed text-justify text-gray-800 dark:text-gray-200">
             The fund’s line-up includes serial hospitality entrepreneur{" "}
             <span className="font-semibold">Uday Singh</span>, who spearheaded
             fundraising for award-winning concepts like Opa, Bagatelle Dubai,
@@ -306,7 +321,7 @@ const PressRelease = () => {
             DFSA-regulated investment firm.
           </p>
 
-          <p className="mb-6 leading-relaxed text-justify">
+          <p className="mb-6 leading-relaxed text-justify text-gray-800 dark:text-gray-200">
             Dubai’s role as a global powerhouse in luxury dining and hospitality
             continues to accelerate, with homegrown concepts now setting
             benchmarks worldwide. Led by entrepreneurs such as Uday Singh, whose
@@ -316,25 +331,25 @@ const PressRelease = () => {
           </p>
 
           {/* Key Investment Features */}
-          <div className="bg-[#fdfcf7] border border-gray-300 shadow-sm p-6 mb-8">
-            <h3 className="text-lg font-semibold mb-3 uppercase tracking-wide">
+          <div className="bg-[#f9f7f1] dark:bg-[#262626] border border-gray-300 dark:border-gray-600 shadow-sm p-6 mb-8">
+            <h3 className="text-lg font-semibold mb-3 tracking-wide text-gray-900 dark:text-gray-100">
               Investment Highlights
             </h3>
-            <ul className="list-disc pl-5 space-y-2 leading-relaxed">
+            <ul className="list-disc pl-5 space-y-2 leading-relaxed text-gray-800 dark:text-gray-300">
               <li>80% dividend distribution on operating income</li>
               <li>Exposure to iconic global brands in early-stage expansion</li>
               <li>
                 Asset-backed investments with strong real estate fundamentals
               </li>
               <li>
-                Dual-layer return strategy via operating income & capital
+                Dual-layer return strategy via operating income &amp; capital
                 appreciation on exit
               </li>
             </ul>
           </div>
 
           {/* Market Outlook */}
-          <p className="mb-6 leading-relaxed text-justify">
+          <p className="mb-6 leading-relaxed text-justify text-gray-800 dark:text-gray-200">
             There has never been a better time to launch a fund of this nature.
             Fine dining demand is surging, immersive experiences are gaining
             traction, and trends like “Revenge Dining” are fueling global
@@ -345,7 +360,7 @@ const PressRelease = () => {
             closures, capital constraints, and fragmented ownership.
           </p>
 
-          <p className="leading-relaxed text-justify">
+          <p className="leading-relaxed text-justify text-gray-800 dark:text-gray-200">
             With technology still in its early stages, FHV’s strategy and
             leadership are positioned to capture the next wave of growth in
             global lifestyle destinations. From culturally relevant F&amp;B
@@ -357,22 +372,22 @@ const PressRelease = () => {
       </section>
 
       {/* EDITOR’S NOTE */}
-      <section className="max-w-5xl mx-auto px-6 py-16 font-serif text-gray-900">
-        <div className="bg-[#fcfbf7] border border-gray-300 shadow-sm p-10 rounded-none">
-          <h2 className="text-3xl font-bold mb-10 uppercase tracking-wide underline decoration-gray-400">
+      <section className="max-w-5xl mx-auto px-6 py-12 font-serif">
+        <div className="bg-[#fdfcf7] dark:bg-[#1a1a1a] border border-gray-300 dark:border-gray-600 shadow-[3px_3px_8px_rgba(0,0,0,0.25)] p-10 rounded-none">
+          <h2 className="text-3xl font-bold mb-10 tracking-wide text-gray-900 dark:text-gray-100 underline decoration-gray-400 dark:decoration-gray-500">
             Editor’s Note
           </h2>
 
           {/* 1. Clear Strategy */}
-          <h3 className="text-xl font-bold mb-4 uppercase tracking-wide underline decoration-gray-300">
+          <h3 className="text-xl font-bold mb-4 tracking-wide text-gray-900 dark:text-gray-100 underline decoration-gray-300 dark:decoration-gray-600">
             1. A Clear Strategy for a Changing Sector
           </h3>
-          <p className="mb-4 leading-relaxed text-justify">
+          <p className="mb-4 leading-relaxed text-justify text-gray-800 dark:text-gray-200">
             Targeting global leisure hotspots, the fund’s thesis is anchored in
             acquiring and scaling proven, high-margin concepts in the most
             in-demand hospitality hubs.
           </p>
-          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed">
+          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed text-gray-800 dark:text-gray-300">
             <li>
               World-famous hospitality brands expanding into emerging
               destinations
@@ -386,11 +401,11 @@ const PressRelease = () => {
               forecasting &amp; guest journeys
             </li>
           </ul>
-          <p className="mb-4 leading-relaxed text-justify">
+          <p className="mb-4 leading-relaxed text-justify text-gray-800 dark:text-gray-200">
             FHV’s team unites operators, technologists and investors with a
             proven record of market growth.
           </p>
-          <ul className="list-disc pl-6 space-y-1 leading-relaxed">
+          <ul className="list-disc pl-6 space-y-1 leading-relaxed text-gray-800 dark:text-gray-300">
             <li>
               <span className="font-semibold">Dubai:</span> 17.15m visitors in
               2023 (+19% YoY, record high)
@@ -418,10 +433,10 @@ const PressRelease = () => {
           </ul>
 
           {/* 2. GenZ */}
-          <h3 className="text-xl font-bold mt-10 mb-4 uppercase tracking-wide underline decoration-gray-300">
+          <h3 className="text-xl font-bold mt-10 mb-4 tracking-wide text-gray-900 dark:text-gray-100 underline decoration-gray-300 dark:decoration-gray-600">
             2. GenZ: The Future of Hospitality
           </h3>
-          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed">
+          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed text-gray-800 dark:text-gray-300">
             <li>79% dine out 5+ times monthly</li>
             <li>88% follow travel influencers on TikTok/Instagram</li>
             <li>89% rank travel as top financial priority</li>
@@ -433,10 +448,10 @@ const PressRelease = () => {
             <li>“Snackification” creates new daily guest engagement windows</li>
           </ul>
 
-          <h4 className="text-lg font-semibold mt-6 mb-2 italic">
+          <h4 className="text-lg font-semibold mt-6 mb-2 italic text-gray-900 dark:text-gray-100">
             The Digital Discovery Era
           </h4>
-          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed">
+          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed text-gray-800 dark:text-gray-300">
             <li>74% choose venues via social media</li>
             <li>TikTok videos &lt;30s perform 2x better than Reels</li>
             <li>
@@ -444,10 +459,10 @@ const PressRelease = () => {
             </li>
           </ul>
 
-          <h4 className="text-lg font-semibold mt-6 mb-2 italic">
+          <h4 className="text-lg font-semibold mt-6 mb-2 italic text-gray-900 dark:text-gray-100">
             Experiential &amp; Immersive Formats
           </h4>
-          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed">
+          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed text-gray-800 dark:text-gray-300">
             <li>Chef’s tables, multi-sensory dining, storytelling events</li>
             <li>Hybrid venues mixing dining, art, co-working, wellness</li>
             <li>
@@ -455,27 +470,27 @@ const PressRelease = () => {
             </li>
           </ul>
 
-          <h4 className="text-lg font-semibold mt-6 mb-2 italic">
+          <h4 className="text-lg font-semibold mt-6 mb-2 italic text-gray-900 dark:text-gray-100">
             Sustainability = Luxury’s New Status
           </h4>
-          <p className="mb-4 leading-relaxed text-justify">
+          <p className="mb-4 leading-relaxed text-justify text-gray-800 dark:text-gray-200">
             Eco-responsibility and community-driven concepts are now premium
             differentiators, embedding values into brand DNA.
           </p>
 
-          <h4 className="text-lg font-semibold mt-6 mb-2 italic">
+          <h4 className="text-lg font-semibold mt-6 mb-2 italic text-gray-900 dark:text-gray-100">
             Tech as Next Frontier
           </h4>
-          <p className="mb-4 leading-relaxed text-justify">
+          <p className="mb-4 leading-relaxed text-justify text-gray-800 dark:text-gray-200">
             AI-led demand forecasting, personalised digital journeys, and
             membership models (e.g. Dorsia) are redefining exclusivity.
           </p>
 
           {/* 3. Growth Dynamics */}
-          <h3 className="text-xl font-bold mt-10 mb-4 uppercase tracking-wide underline decoration-gray-300">
+          <h3 className="text-xl font-bold mt-10 mb-4 tracking-wide text-gray-900 dark:text-gray-100 underline decoration-gray-300 dark:decoration-gray-600">
             3. Growth Dynamics
           </h3>
-          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed">
+          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed text-gray-800 dark:text-gray-300">
             <li>Fine dining market: €28B</li>
             <li>Culinary tourism: $11B market, growing 20% annually</li>
             <li>Luxury travel &amp; tourism → $3T revenue in 5 years</li>
@@ -490,38 +505,40 @@ const PressRelease = () => {
             <li>GenZ → 40% of global spend by 2030</li>
           </ul>
 
-          <h4 className="text-lg font-semibold mt-6 mb-2 italic">
+          <h4 className="text-lg font-semibold mt-6 mb-2 italic text-gray-900 dark:text-gray-100">
             Bleisure &amp; Digital Nomadism
           </h4>
-          <ul className="list-disc pl-6 mb-8 space-y-1 leading-relaxed">
+          <ul className="list-disc pl-6 mb-8 space-y-1 leading-relaxed text-gray-800 dark:text-gray-300">
             <li>60% of corporate travelers extend trips</li>
             <li>Bleisure market $430B (2024) → $731B by 2032 (8.9% CAGR)</li>
             <li>84% want vacation time in business trips</li>
           </ul>
 
           {/* About Section */}
-          <div className="bg-[#f7f6f2] border border-gray-300 p-6 mb-8">
-            <h3 className="text-lg font-semibold mb-3 uppercase tracking-wide">
+          <div className="bg-[#f9f7f1] dark:bg-[#262626] border border-gray-300 dark:border-gray-600 p-6 mb-8">
+            <h3 className="text-lg font-semibold mb-3 uppercase tracking-wide text-gray-900 dark:text-gray-100">
               About Fern Hospitality Ventures
             </h3>
-            <p className="mb-3 leading-relaxed text-justify">
+            <p className="mb-3 leading-relaxed text-justify text-gray-800 dark:text-gray-200">
               Dubai-based investment platform targeting premium hospitality,
               wellness, experiential F&amp;B, and tech-driven lifestyle brands.
               Focus on scaling real estate-backed assets in high-growth
               destinations.
             </p>
-            <h3 className="text-lg font-semibold mb-3 uppercase tracking-wide">
+            <h3 className="text-lg font-semibold mb-3 uppercase tracking-wide text-gray-900 dark:text-gray-100">
               About Dalma Capital
             </h3>
-            <p className="mb-0 leading-relaxed text-justify">
+            <p className="mb-0 leading-relaxed text-justify text-gray-800 dark:text-gray-200">
               Global investment firm in DIFC, regulated by DFSA. Manages $10B+
               across private equity, credit, and real assets.
             </p>
           </div>
 
           {/* Media */}
-          <div className="text-sm italic text-gray-700">
-            <h3 className="font-semibold mb-2 not-italic">Media Enquiries</h3>
+          <div className="text-sm italic text-gray-700 dark:text-gray-400">
+            <h3 className="font-semibold mb-2 not-italic text-gray-900 dark:text-gray-100">
+              Media Enquiries
+            </h3>
             <p>James Henderson | +971 50 471 4080 | james@JBH-PR.com</p>
             <p>Mohammad Aldaejy | +971 58 540 5177 | mohammed@JBH-PR.com</p>
           </div>
