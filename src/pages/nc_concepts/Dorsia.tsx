@@ -10,7 +10,7 @@ const Dorsia: React.FC = () => {
 
       {/* Hero Section */}
       <section
-        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[50vh] md:h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://framerusercontent.com/images/BtXXWI5hmEcY9EeE8WyRVGu8.jpg')",
@@ -19,10 +19,10 @@ const Dorsia: React.FC = () => {
         <div className="absolute inset-0 dark:bg-black/50 bg-black/10"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Dorsia</h1>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
+          {/* <p className="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
             A modern concierge redefining luxury dining through technology,
             exclusivity, and global reach.
-          </p>
+          </p> */}
           <a
             href="https://www.dorsia.com/"
             className="mt-6 inline-block px-6 py-3 bg-[var(--primary-color)] text-white font-medium rounded-full shadow-lg hover:opacity-90 transition"
@@ -36,18 +36,18 @@ const Dorsia: React.FC = () => {
 
       {/* Concept Section */}
       <section className="w-11/12 md:w-5/6 mx-auto py-12 ">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           A Modern Concierge for Luxury Dining
         </h2>
-        <p className="text-sm md:text-base leading-relaxed mb-4 text-justify">
+        <p className="text-gray-600 dark:text-gray-400 text-base mb-2  text-justify font-serif">
           Dorsia is a members-only dining network offering guaranteed access to
           sought-after tables in the world’s most vibrant culinary destinations,
           with privileged entry to exclusive events, seasonal pop-ups, and a
           curated social diary.
         </p>
-        <p className="text-sm md:text-base leading-relaxed mb-10 text-justify">
+        <p className="text-gray-600 dark:text-gray-400 text-base mb-6 text-justify font-serif">
           By partnering directly with top-tier restaurants, Dorsia secures
-          peak-time reservations with guaranteed minimum spends — ensuring
+          peak-time reservations with guaranteed minimum spends, ensuring
           exceptional experiences for diners and meaningful value for
           restaurants.
         </p>
@@ -71,44 +71,44 @@ const Dorsia: React.FC = () => {
       </section>
 
       {/* Features Section */}
-      <section className="bg-gray-50 dark:bg-gray-900 py-12">
+      <section className=" py-12">
         <div className="w-11/12 md:w-5/6 mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-12">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-12">
             Key Features
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-black rounded-xl p-8 shadow-lg">
-              <h3 className="font-semibold text-lg mb-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
+            <div className="bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] rounded-xl py-8 px-4 shadow-lg">
+              <h3 className="font-semibold text-xl mb-3">
                 Curated Access to High-Demand Tables
               </h3>
-              <p className="text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif">
                 Direct access to exclusive peak-time reservations, without
                 resellers or mark-ups.
               </p>
             </div>
-            <div className="bg-white dark:bg-black rounded-xl p-8 shadow-lg">
-              <h3 className="font-semibold text-lg mb-3">
+            <div className="bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] rounded-xl p-8 shadow-lg">
+              <h3 className="font-semibold text-xl mb-3">
                 Tiered Membership Options
               </h3>
-              <p className="text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif">
                 From basic to premium tiers, with dining credits and exclusive
                 perks.
               </p>
             </div>
-            <div className="bg-white dark:bg-black rounded-xl p-8 shadow-lg">
-              <h3 className="font-semibold text-lg mb-3">
+            <div className="bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] rounded-xl p-8 shadow-lg">
+              <h3 className="font-semibold text-xl mb-3">
                 Dynamic Pricing & Smart Booking
               </h3>
-              <p className="text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif">
                 Data-driven booking tools enhance availability and optimise
                 spend.
               </p>
             </div>
-            <div className="bg-white dark:bg-black rounded-xl p-8 shadow-lg">
-              <h3 className="font-semibold text-lg mb-3">
+            <div className="bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] rounded-xl p-8 shadow-lg">
+              <h3 className="font-semibold text-xl mb-3">
                 Exclusive Benefits & VIP Experiences
               </h3>
-              <p className="text-sm leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif">
                 Privileged access to seasonal pop-ups, curated events, and VIP
                 treatment.
               </p>
@@ -119,10 +119,10 @@ const Dorsia: React.FC = () => {
 
       {/* Global Reach */}
       <section className="py-12 w-11/12 md:w-5/6 mx-auto text-center ">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           Global Reach
         </h2>
-        <p className="text-sm md:text-base leading-relaxed mb-10 text-justify">
+        <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif">
           Dorsia operates in cities such as Miami, Aspen, Cannes, and St Tropez,
           with strong investor backing and offices in Miami, London, LA, and
           NYC.
@@ -131,7 +131,7 @@ const Dorsia: React.FC = () => {
           {["Miami", "Aspen", "Cannes", "St Tropez"].map((city, i) => (
             <div
               key={i}
-              className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow-md hover:scale-105 transition"
+              className="bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] rounded-xl p-6 shadow-md hover:scale-105 transition"
             >
               <p className="font-medium text-lg">{city}</p>
             </div>

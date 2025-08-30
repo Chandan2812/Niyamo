@@ -9,7 +9,7 @@ const Coupette: React.FC = () => {
       <Navbar />
 
       <section
-        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[50vh] md:h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dqrlkbsdq/image/upload/v1756361389/coup-04_hz9e4j.jpg')",
@@ -32,10 +32,10 @@ const Coupette: React.FC = () => {
       <section className="w-11/12 md:w-5/6 mx-auto py-12">
         {/* Concept Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
             One of the Best Cocktail Bars in Central London
           </h2>
-          <p className="text-md leading-relaxed mb-4 text-gray-700 dark:text-gray-300 text-justify">
+          <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif ">
             Step into <span className="font-semibold">Coupette</span>, a
             French-inspired cocktail haven in Bethnal Green, and discover why it
             has become one of{" "}
@@ -45,7 +45,7 @@ const Coupette: React.FC = () => {
             since opening in 2017. With dim golden lighting that dances across
             rustic walls, the bar exudes an irresistible Parisian charm,
             effortlessly blending romance and modern sophistication. Every
-            detail tells a story—vintage coins glimmer across the bar top, while
+            detail tells a story,vintage coins glimmer across the bar top, while
             bold contemporary artwork injects playful energy into the space.
             <br />
             <br />
@@ -88,10 +88,10 @@ const Coupette: React.FC = () => {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold mb-4">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4">
               Discover Coupette – Where Cocktails Meet Art in London
             </h2>
-            <p className="text-md leading-relaxed mb-4 text-gray-700 dark:text-gray-300 text-justify">
+            <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
               Step into <span className="font-semibold">Coupette</span>,
               London’s award-winning cocktail haven, where French elegance meets
               modern creativity. Inspired by the timeless Coupe glass, our bar
@@ -110,10 +110,10 @@ const Coupette: React.FC = () => {
 
         {/* Design Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
             Cocktail Bar & Restaurant in Soho
           </h2>
-          <p className="text-md leading-relaxed text-gray-700 dark:text-gray-300 mb-6 text-justify">
+          <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
             Welcome to <span className="font-semibold">Coupette Soho</span>, a
             destination where sophistication meets sustainability. Our
             award-winning bartenders reimagine French cocktail artistry with a
@@ -145,7 +145,7 @@ const Coupette: React.FC = () => {
 
         {/* Location Section */}
         <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Location</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Location</h2>
           <div className="border rounded overflow-hidden h-96">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.2378937973726!2d-0.06170442352879775!3d51.52719637181788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cc5314cf5d1%3A0x86778d55de5a820c!2sCoupette!5e0!3m2!1sen!2sin!4v1746706756972!5m2!1sen!2sin"

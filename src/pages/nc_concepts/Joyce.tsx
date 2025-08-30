@@ -9,7 +9,7 @@ const Joyce: React.FC = () => {
       <Navbar />
 
       <section
-        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[50vh] md:h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dqrlkbsdq/image/upload/v1756458924/2025-02-08_qpg5tq.jpg')",
@@ -34,8 +34,10 @@ const Joyce: React.FC = () => {
       <section className="w-11/12 md:w-5/6 mx-auto py-12">
         {/* Concept Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">Welcome to The Joyce</h2>
-          <p className="text-md leading-relaxed text-justify">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+            Welcome to The Joyce
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
             Tucked away on Miami Beach’s vibrant Española Way, The Joyce is an
             intimate 45-seat speakeasy by Alinea alum James Taylor. Guests are
             invited to indulge in refined American cuisine while surrounded by
@@ -80,7 +82,7 @@ const Joyce: React.FC = () => {
               <h2 className="text-2xl md:text-3xl font-semibold mb-4">
                 James Taylor, The Chef
               </h2>
-              <p className="text-md md:text-base leading-relaxed text-justify">
+              <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
                 For over a decade, Chef James Taylor has delighted culinary
                 enthusiasts and critics alike across the United States. A
                 graduate of Le Cordon Bleu Chicago, he perfected his craft at
@@ -97,13 +99,6 @@ const Joyce: React.FC = () => {
 
         {/* Design Section */}
         <div className="mb-16">
-          <p className="text-md leading-relaxed mb-6 text-justify">
-            Nestled in the heart of Charles Street, we embrace its rich
-            character and storied history, not just to preserve it, but to
-            elevate it. Every detail is crafted to honor the past while shaping
-            a vibrant, modern experience for today.
-          </p>
-
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <img
               src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/TV8njQqwQPCOIZlaOWvR_TheJoyce_112024_3876.jpg"

@@ -6,12 +6,12 @@ import NewsSubscribeSection from "../../components/Newsletter";
 const Bkc: React.FC = () => {
   return (
     <div className="bg-white text-black font-raleway dark:bg-black dark:text-white  font-light ">
-      <div className="mb-20">
+      <div className="md:mb-20">
         <Navbar />
       </div>
 
       <section
-        className="relative h-[80vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[50vh] md:h-[80vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/dqrlkbsdq/image/upload/v1756362081/bkc_tuicnp.webp')",
@@ -36,10 +36,10 @@ const Bkc: React.FC = () => {
       <section className="w-11/12 md:w-5/6 mx-auto py-12">
         {/* Concept Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
             Bringing authentic Awadhi delights to London
           </h2>
-          <p className="text-md leading-relaxed mb-4 text-justify">
+          <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
             At <strong>BKC – Biryani Kebab Chai</strong>, we bring the royal
             flavors of Lucknow straight to London. Born from a passion for
             authentic Awadhi cuisine, our journey began in Marble Arch in 2022
@@ -78,10 +78,10 @@ const Bkc: React.FC = () => {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold mb-4">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4">
               Dum Pukht Magic: The Royal Lucknowi Biryani at BKC
             </h2>
-            <p className="text-md leading-relaxed text-justify">
+            <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
               At <strong>BKC</strong>, every plate tells a story of passion and
               precision. Guided by our Head Chef, <strong>Arsh Thakur</strong>,
               we embrace the art of <em>dum pukht</em> cooking, where
@@ -96,7 +96,7 @@ const Bkc: React.FC = () => {
 
         {/* Design Section */}
         <div className="mb-16">
-          <p className="text-md leading-relaxed mb-6 text-justify">
+          <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
             More than just a restaurant, <strong>BKC</strong> is a cultural
             experience. Inspired by Lucknow’s tradition of{" "}
             <em>mehmaan nawazi</em> (royal hospitality), we welcome every guest
@@ -127,7 +127,7 @@ const Bkc: React.FC = () => {
 
         {/* Location Section */}
         <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Location</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Location</h2>
           <div className="border rounded overflow-hidden h-96">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9659341051693!2d-0.16402052352963883!3d51.51384097181476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876053ad1fce285%3A0x679683173f356f02!2sBKC%20-%20Biryani%20Kebab%20Chai%20-%20Marble%20Arch!5e0!3m2!1sen!2sin!4v1746705021018!5m2!1sen!2sin"

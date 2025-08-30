@@ -9,7 +9,7 @@ const Garden: React.FC = () => {
       <Navbar />
 
       <section
-        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[50vh] md:h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://images.oyoroomscdn.com/uploads/hotel_image/39338/large/4f44f19f4a1bb2cf.jpg')",
@@ -34,10 +34,10 @@ const Garden: React.FC = () => {
       <section className="w-11/12 mx-auto py-12 px-4 md:px-8">
         {/* Concept Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
             OYO Townhouse 30 Sussex – Stay in London Paddington
           </h2>
-          <p className="text-md leading-relaxed mb-4">
+          <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
             Situated in the heart of London’s lively{" "}
             <span className="font-semibold">Paddington district</span>, OYO
             Townhouse 30 Sussex combines{" "}
@@ -81,10 +81,10 @@ const Garden: React.FC = () => {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold mb-4">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4">
               OYO Townhouse 30 Sussex Hotel, London Paddington
             </h2>
-            <p className="text-md leading-relaxed text-justify">
+            <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
               Nestled in the lively heart of Paddington, OYO Townhouse 30 Sussex
               Hotel combines modern comfort with timeless charm. Just steps away
               from Hyde Park and Paddington Station, our stylish 3-star retreat
@@ -97,7 +97,7 @@ const Garden: React.FC = () => {
 
         {/* Design Section */}
         <div className="mb-16">
-          <p className="text-md leading-relaxed mb-6 text-justify">
+          <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
             The hotel features 13 thoughtfully designed rooms, each equipped
             with modern comforts including air conditioning, flat-screen TVs,
             complimentary Wi-Fi, and private bathrooms stocked with free
@@ -125,7 +125,7 @@ const Garden: React.FC = () => {
 
         {/* Location Section */}
         <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Location</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Location</h2>
           <div className="border rounded overflow-hidden h-96">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.7550433944866!2d-0.1713803235294214!3d51.517709871815676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab45bec61cd%3A0xd6330ee7af126678!2sOYO%20Townhouse%2030%20Sussex%20Hotel%2C%20London%20Paddington!5e0!3m2!1sen!2sin!4v1746708465018!5m2!1sen!2sin"
