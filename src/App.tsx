@@ -32,6 +32,7 @@ import AdminSubscriber from "./pages/admin/AdminSubscriber";
 import AdminContact from "./pages/admin/AdminContact";
 import PressRelease from "./pages/nc_world/PressRelease";
 import Disclaimer from "./pages/Disclaimer";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
           <Route path="contact" element={<AdminContact />} />
         </Route>
       </Routes>
+      <ScrollToTopButton />
     </Router>
   );
 }
