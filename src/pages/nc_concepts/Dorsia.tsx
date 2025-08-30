@@ -77,7 +77,7 @@ const Dorsia: React.FC = () => {
             Key Features
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
-            <div className="bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] rounded-xl py-8 px-4 shadow-lg">
+            <div className="bg-gray-50 text-gray-800 dark:text-white dark:bg-[var(--secondary-color)] rounded-xl py-8 px-4 shadow-lg">
               <h3 className="font-semibold text-xl mb-3">
                 Curated Access to High-Demand Tables
               </h3>
@@ -86,7 +86,7 @@ const Dorsia: React.FC = () => {
                 resellers or mark-ups.
               </p>
             </div>
-            <div className="bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] rounded-xl p-8 shadow-lg">
+            <div className="bg-gray-50 text-gray-800 dark:text-white dark:bg-[var(--secondary-color)] rounded-xl p-8 shadow-lg">
               <h3 className="font-semibold text-xl mb-3">
                 Tiered Membership Options
               </h3>
@@ -95,7 +95,7 @@ const Dorsia: React.FC = () => {
                 perks.
               </p>
             </div>
-            <div className="bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] rounded-xl p-8 shadow-lg">
+            <div className="bg-gray-50 text-gray-800 dark:text-white dark:bg-[var(--secondary-color)] rounded-xl p-8 shadow-lg">
               <h3 className="font-semibold text-xl mb-3">
                 Dynamic Pricing & Smart Booking
               </h3>
@@ -104,7 +104,7 @@ const Dorsia: React.FC = () => {
                 spend.
               </p>
             </div>
-            <div className="bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] rounded-xl p-8 shadow-lg">
+            <div className="bg-gray-50 text-gray-800 dark:text-white dark:bg-[var(--secondary-color)] rounded-xl p-8 shadow-lg">
               <h3 className="font-semibold text-xl mb-3">
                 Exclusive Benefits & VIP Experiences
               </h3>
@@ -131,7 +131,7 @@ const Dorsia: React.FC = () => {
           {["Miami", "Aspen", "Cannes", "St Tropez"].map((city, i) => (
             <div
               key={i}
-              className="bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] rounded-xl p-6 shadow-md hover:scale-105 transition"
+              className="bg-gray-50 text-gray-800 dark:text-white dark:bg-[var(--secondary-color)] rounded-xl p-6 shadow-md hover:scale-105 transition"
             >
               <p className="font-medium text-lg">{city}</p>
             </div>

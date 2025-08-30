@@ -60,17 +60,22 @@ const Charles: React.FC = () => {
 
           {/* Cuisine Section */}
 
-          <div className="grid grid-cols-1 md:grid-cols-3  gap-4 mb-16">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1616079667915-Z9ECTJF2V83YIHPHM13T/thumbnail_IMG_8335.jpeg?format=750w"
-              alt="Cuisine 1"
-              className="w-full h-[300px] object-contain rounded"
-            />
-            <div>
-              <h2 className="text-3xl font-semibold mb-4 text-center">
+          <div className="mb-16 grid md:grid-cols-2 gap-14 items-center  mx-auto">
+            {/* Left Image */}
+            <div className="w-full">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1616079667915-Z9ECTJF2V83YIHPHM13T/thumbnail_IMG_8335.jpeg?format=750w"
+                alt="Cuisine 1"
+                className="w-full h-[400px] object-cover rounded-lg shadow-md"
+              />
+            </div>
+
+            {/* Right Content */}
+            <div className="flex flex-col justify-center">
+              <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-white">
                 Cuisine
               </h2>
-              <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-center font-serif">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 text-justify font-serif leading-relaxed">
                 16 Charles Street is located in the heart of Mayfair on the
                 north side of Charles Street opposite the junction with Queen
                 Square. The area is well-served by a wide range of local
@@ -78,12 +83,17 @@ const Charles: React.FC = () => {
                 underground station. The building is located in the Mayfair
                 Conservation Area and the Core Central Activities Zone.
               </p>
+
+              {/* CTA Button (optional) */}
+              <a href="/contact">
+                <button className="relative group flex items-center bg-[var(--primary-color)] text-white border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest transition-all duration-300 overflow-hidden">
+                  <span className="z-10 relative flex items-center gap-1 group-hover:text-[var(--primary-color)] transition-colors duration-300 font-light">
+                    Contact Us →
+                  </span>
+                  <span className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0 bg-white"></span>
+                </button>
+              </a>
             </div>
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/e5a6a702-65fc-4e72-a12f-bd5d83429dbd/IMG_8063.JPG?format=1000w"
-              alt="Cuisine 2"
-              className="w-full h-[300px] object-contain rounded"
-            />
           </div>
 
           {/* Design Section */}
