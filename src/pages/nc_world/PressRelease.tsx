@@ -5,7 +5,7 @@ import akshat from "../../assets/Akshat.jpg";
 
 const PressRelease = () => {
   return (
-    <div className="bg-white text-black">
+    <div className="bg-white dark:bg-black text-black dark:text-white">
       <Navbar />
 
       {/* HEADER */}
@@ -39,7 +39,7 @@ const PressRelease = () => {
       {/* FOUNDER IMAGES */}
       <section className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 px-6 pb-12 items-center py-12">
         {/* Left side - Profile */}
-        <div className="bg-yellow-100 p-6 rounded-lg shadow text-center">
+        <div className="bg-yellow-100 dark:bg-yellow-200 p-6 rounded-lg shadow text-center">
           <img
             src={uday}
             alt="Uday Singh"
@@ -54,7 +54,7 @@ const PressRelease = () => {
 
         {/* Right side - Statement */}
         <div className="flex items-center">
-          <p className="bg-gray-100 border-l-4 border-red-500 p-6 rounded-lg text-lg italic">
+          <p className="bg-gray-100 dark:bg-gray-500 border-l-4 border-red-500 p-6 rounded-lg text-lg italic">
             “This is a once in a generation moment for hospitality investment,”
             said <strong>Uday Singh</strong>, CEO of Fern Hospitality Ventures
             and the entrepreneur behind global successes like OPA and Bagatelle
@@ -221,7 +221,7 @@ const PressRelease = () => {
 
         {/* Right side - Statement */}
         <div className="flex md:col-span-3 items-center">
-          <p className="bg-gray-100 border-l-4 border-red-500 p-6 rounded-lg text-lg italic">
+          <p className="bg-gray-100 dark:bg-gray-500 border-l-4 border-red-500 p-6 rounded-lg text-lg italic">
             “We invest where global lifestyle trends meet real estate investment
             opportunity,” said{" "}
             <span className="font-semibold">Akshat Tiberwala</span>, Managing
