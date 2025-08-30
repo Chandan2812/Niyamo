@@ -42,7 +42,7 @@ const LanguageSelector = () => {
   return (
     <select
       onChange={handleLanguageChange}
-      className="bg-transparent dark:bg-gray-800 text-black dark:text-white border border-black dark:border-white px-2 rounded-full"
+      className="bg-transparent dark:bg-[#111827] text-black dark:text-white border border-black dark:border-[var(--primary-color)] px-2 rounded-full"
       defaultValue=""
     >
       <option value="" disabled>
