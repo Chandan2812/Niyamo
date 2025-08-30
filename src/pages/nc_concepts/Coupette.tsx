@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 import NewsSubscribeSection from "../../components/Newsletter";
+import { ArrowRight } from "lucide-react";
 
 const Coupette: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ const Coupette: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visit Coupette
+            Explore
           </a>
         </div>
       </section>
@@ -79,7 +80,8 @@ const Coupette: React.FC = () => {
         </div>
 
         {/* Cuisine Section */}
-        <div className="mb-16 grid md:grid-cols-2 gap-8 items-start">
+        <div className="mb-16 grid md:grid-cols-2 gap-14 items-center max-w-7xl mx-auto">
+          {/* Left Image */}
           <div className="grid grid-cols-1 gap-4">
             <img
               src="https://static.wixstatic.com/media/1d4581_b98fcf51e6344e628b653e11da24eac9~mv2.png"
@@ -105,6 +107,15 @@ const Coupette: React.FC = () => {
               celebration. Discover why Coupette is not just one of the best
               cocktail bars in London, it’s an experience you’ll never forget.
             </p>
+            {/* Explore Button */}
+            <a href="https://www.coupette.co.uk">
+              <button className="relative group flex items-center bg-[var(--primary-color)] text-white border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest  transition-all duration-300 overflow-hidden">
+                <span className="z-10 relative flex items-center gap-1 group-hover:text-[var(--primary-color)] transition-colors duration-300 font-light">
+                  Contact Us <ArrowRight size={16} />
+                </span>
+                <span className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0 bg-white"></span>
+              </button>
+            </a>
           </div>
         </div>
 

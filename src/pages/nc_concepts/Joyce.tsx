@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 import NewsSubscribeSection from "../../components/Newsletter";
+import { ArrowRight } from "lucide-react";
 
 const Joyce: React.FC = () => {
   return (
@@ -27,7 +28,7 @@ const Joyce: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visit The Joyce Restaurant
+            Explore
           </a>
         </div>
       </section>
@@ -66,34 +67,41 @@ const Joyce: React.FC = () => {
         </div>
 
         {/* Cuisine Section */}
-        <div className="mb-16">
-          <div className="flex flex-col md:flex-row gap-6 items-start">
-            {/* Image */}
-            <div className="md:w-1/3 w-full">
-              <img
-                src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/62526TheJoyce_1120244082.jpg"
-                alt="Cuisine 1"
-                className="w-full h-[400px] object-contain rounded-lg shadow-md"
-              />
-            </div>
 
-            {/* Text */}
-            <div className="md:w-2/3 w-full space-y-4">
-              <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-                James Taylor, The Chef
-              </h2>
-              <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
-                For over a decade, Chef James Taylor has delighted culinary
-                enthusiasts and critics alike across the United States. A
-                graduate of Le Cordon Bleu Chicago, he perfected his craft at
-                Bavette’s Bar and Boeuf Steakhouse (Hogsalt Hospitality) before
-                moving into leadership roles at the Michelin-starred Roister (★)
-                and the world-renowned Alinea (★★★). Since 2021, he has
-                captivated the palates of an exclusive private clientele, whose
-                encouragement inspired him to share his culinary artistry with
-                the world.
-              </p>
-            </div>
+        {/* Cuisine Section */}
+        <div className="mb-16 grid md:grid-cols-2 gap-14 items-center max-w-7xl mx-auto">
+          {/* Left Image */}
+          <div className="grid grid-cols-1 gap-4">
+            <img
+              src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/62526TheJoyce_1120244082.jpg"
+              alt="Cuisine 1"
+              className="w-full h-[400px] object-contain "
+            />
+          </div>
+
+          {/* Text */}
+          <div className="md:w-2/3 w-full space-y-4">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+              James Taylor, The Chef
+            </h2>
+            <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
+              For over a decade, Chef James Taylor has delighted culinary
+              enthusiasts and critics alike across the United States. A graduate
+              of Le Cordon Bleu Chicago, he perfected his craft at Bavette’s Bar
+              and Boeuf Steakhouse (Hogsalt Hospitality) before moving into
+              leadership roles at the Michelin-starred Roister (★) and the
+              world-renowned Alinea (★★★). Since 2021, he has captivated the
+              palates of an exclusive private clientele, whose encouragement
+              inspired him to share his culinary artistry with the world.
+            </p>
+            <a href="https://www.thejoycerestaurant.com">
+              <button className="relative group flex items-center bg-[var(--primary-color)] text-white border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest mt-5  transition-all duration-300 overflow-hidden">
+                <span className="z-10 relative flex items-center gap-1 group-hover:text-[var(--primary-color)] transition-colors duration-300 font-light">
+                  Contact Us <ArrowRight size={16} />
+                </span>
+                <span className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0 bg-white"></span>
+              </button>
+            </a>
           </div>
         </div>
 

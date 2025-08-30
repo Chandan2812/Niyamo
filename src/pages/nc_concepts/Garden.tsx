@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 import NewsSubscribeSection from "../../components/Newsletter";
+import { ArrowRight } from "lucide-react";
 
 const Garden: React.FC = () => {
   return (
@@ -26,7 +27,7 @@ const Garden: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Visit 24 & 30 Sussex Gardens
+            Explore
           </a>
         </div>
       </section>
@@ -72,7 +73,8 @@ const Garden: React.FC = () => {
         </div>
 
         {/* Cuisine Section */}
-        <div className="mb-16 grid md:grid-cols-2 gap-8 items-start">
+        <div className="mb-16 grid md:grid-cols-2 gap-14 items-center max-w-7xl mx-auto">
+          {/* Left Image */}
           <div className="grid grid-cols-1 gap-4">
             <img
               src="https://images.oyoroomscdn.com/uploads/hotel_image/39338/large/4c618879fe13a5be.jpg"
@@ -92,6 +94,15 @@ const Garden: React.FC = () => {
               convenience, making it the perfect stay for both business trips
               and London getaways.
             </p>
+            {/* Explore Button */}
+            <a href="https://www.oyorooms.com/GB/39338/?utm_source=GMB_GB&utm_medium=Organic&utm_campaign=EN_LDN002&latitude=51.5177018416648&longitude=-0.168721675872803&locale=en">
+              <button className="relative group flex items-center bg-[var(--primary-color)] text-white border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest  transition-all duration-300 overflow-hidden">
+                <span className="z-10 relative flex items-center gap-1 group-hover:text-[var(--primary-color)] transition-colors duration-300 font-light">
+                  Contact Us <ArrowRight size={16} />
+                </span>
+                <span className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0 bg-white"></span>
+              </button>
+            </a>
           </div>
         </div>
 
