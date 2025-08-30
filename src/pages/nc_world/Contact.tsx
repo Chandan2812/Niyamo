@@ -202,7 +202,7 @@ function Contact() {
                     disabled={loading}
                     className="relative inline-block px-6 py-2 border border-[var(--primary-color)] font-light group overflow-hidden transition-all disabled:opacity-50"
                   >
-                    <span className="relative z-10 text-[var(--primary-color)] group-hover:text-black transition-colors duration-300">
+                    <span className="relative z-10 text-[var(--primary-color)] group-hover:text-white transition-colors duration-300">
                       {loading ? "Sending..." : "Send Message"}
                     </span>
                     <span

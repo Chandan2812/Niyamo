@@ -120,15 +120,15 @@ const ConceptInFocusSection = () => {
                 exit={{ opacity: 0, y: -40 }}
                 transition={{ duration: 0.6 }}
               >
-                <h3 className="text-2xl md:text-4xl font-semibold text-[var(--primary-color)]  mb-4">
+                <h3 className="text-2xl md:text-4xl font-semibold text-white dark:text-[var(--primary-color)]  mb-4">
                   {currentSlide.title}
                 </h3>
                 <p className="text-gray-200 dark:text-gray-400 mb-4 text-justify font-serif">
                   {currentSlide.description1}
                 </p>
                 <a href={currentSlide.link}>
-                  <button className="relative group flex items-center gap-2 text-[var(--primary-color)] dark:text-white border border-[var(--primary-color)]  text-[12px] px-6 py-3 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
-                    <span className="z-10 relative flex items-center gap-2 text-[var(--primary-color)] group-hover:text-white transition-colors duration-300 font-light">
+                  <button className="relative group flex items-center gap-2 text-white dark:text-[var(--primary-color)] dark:text-white border dark:border-[var(--primary-color)]  text-[12px] px-6 py-3 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
+                    <span className="z-10 relative flex items-center gap-2 dark:text-[var(--primary-color)] group-hover:text-white transition-colors duration-300 font-light">
                       Know More <ArrowRight size={16} />
                     </span>
                     <span
