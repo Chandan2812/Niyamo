@@ -77,7 +77,7 @@ function Management() {
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
                   {member.designation}
                 </p>
-                <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify  font-serif leading-relaxed">
                   {member.description}
                 </p>
               </div>
