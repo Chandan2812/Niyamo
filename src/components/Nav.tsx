@@ -305,7 +305,7 @@ const Navbar = () => {
         id="google_translate_element"
         className="fixed top-2 right-[20px] -translate-x-1/2 z-[9990] md:top-7 md:right-[160px]"
       ></div> */}
-      <div className="notranslate fixed top-3 right-[1px] -translate-x-1/2 z-[9990] md:top-7 md:right-[100px]">
+      <div className="notranslate fixed top-3 right-[1px] -translate-x-1/2 z-[9990] md:top-7 md:right-[125px]">
         <LanguageSelector />
       </div>
     </nav>

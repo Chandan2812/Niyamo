@@ -18,7 +18,7 @@ function AboutUs() {
               <p className="uppercase tracking-widest font-semibold text-xs text-[var(--primary-color)] mb-4">
                 Our Story
               </p>
-              <h2 className="text-2xl md:text-4xl font-semibold text-black dark:text-white mt-2">
+              <h2 className="text-2xl md:text-3xl font-semibold text-black dark:text-white mt-2">
                 Redefining Hospitality with Taste and Vision
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">

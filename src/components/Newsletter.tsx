@@ -59,23 +59,19 @@ const NewsSubscribeSection: React.FC = () => {
       id="newsletter-section"
       className="border-t border-gray-300 dark:border-gray-700 w-full"
     >
-      <div className="bg-white dark:bg-black text-black dark:text-white py-12 px-4 sm:px-6 md:px-10 font-raleway">
-        <div className="w-11/12 mx-auto flex flex-col lg:flex-row items-center  gap-10">
+      <div className="bg-white dark:bg-black text-black dark:text-white py-12 px-4 sm:px-6 md:px-20 font-raleway">
+        <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Left Section */}
-          <div className="w-full  text-center ">
-            <h2 className="text-2xl md:text-4xl font-semibold mt-2">
-              Sign up for exclusive offers from us
+          <div className="w-full lg:w-auto text-center lg:text-left">
+            <h2 className="text-2xl md:text-4xl font-semibold">
+              Join Our Circle for News & Privileges
             </h2>
           </div>
 
           {/* Right Section */}
-          <div className="w-full  flex flex-col gap-4">
-            <p className="text-base text-gray-700 dark:text-gray-300  ">
-              Sign up to our newsletter for all the latest news and events.
-            </p>
-
+          <div className="w-full lg:w-auto flex flex-col gap-4 items-center lg:items-end">
             {/* Input + Button */}
-            <div className="w-full flex flex-col sm:flex-row items-center  gap-3">
+            <div className="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto">
               <input
                 type="email"
                 placeholder="Your email"
