@@ -10,6 +10,14 @@ import {
   // Linkedin,
   // Youtube,
 } from "lucide-react";
+import LanguageSelector from "./LanguageSelector";
+
+declare global {
+  interface Window {
+    googleTranslateElementInit: () => void;
+    google: any;
+  }
+}
 
 const navItems = [
   { title: "Group", dropdown: ["About us", "Management"] },
@@ -65,7 +73,6 @@ const Navbar = () => {
 
   useEffect(() => {
     const googleTranslateElementInit = () => {
-      // @ts-ignore
       new window.google.translate.TranslateElement(
         {
           pageLanguage: "en",
@@ -74,7 +81,7 @@ const Navbar = () => {
         "google_translate_element"
       );
     };
-    // Check if the script has already been added
+
     const loadGoogleTranslateScript = () => {
       if (!window.googleTranslateElementInit) {
         const script = document.createElement("script");
@@ -290,10 +297,13 @@ const Navbar = () => {
         </div>
       )}
 
-      <div
+      {/* <div
         id="google_translate_element"
         className="fixed top-2 right-[20px] -translate-x-1/2 z-[9990] md:top-7 md:right-[160px]"
-      ></div>
+      ></div> */}
+      <div className="notranslate fixed top-2 right-[20px] -translate-x-1/2 z-[9990] md:top-7 md:right-[160px]">
+        <LanguageSelector />
+      </div>
     </nav>
   );
 };
