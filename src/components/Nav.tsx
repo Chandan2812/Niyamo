@@ -163,13 +163,6 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="text-xl text-inherit"
-            title="Toggle Theme"
-          >
-            {darkMode ? <Sun /> : <Moon />}
-          </button>
           <div className="relative group">
             <span className="text-md border border-[var(--primary-color)] text-[var(--primary-color)] font-medium cursor-pointer px-2 py-1 rounded-full hover:bg-[var(--primary-color)] hover:text-white">
               <a href="/contact">Contact Us</a>
@@ -227,6 +220,13 @@ const Navbar = () => {
               </a>
             </div> */}
           </div>
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="text-xl text-inherit"
+            title="Toggle Theme"
+          >
+            {darkMode ? <Sun /> : <Moon />}
+          </button>
 
           {/* <span className="text-sm  text-[var(--primary-color)] font-medium cursor-pointer">
             <a href="tel:+1234567890">Call Us</a>
@@ -301,7 +301,7 @@ const Navbar = () => {
         id="google_translate_element"
         className="fixed top-2 right-[20px] -translate-x-1/2 z-[9990] md:top-7 md:right-[160px]"
       ></div> */}
-      <div className="notranslate fixed top-3 right-[1px] -translate-x-1/2 z-[9990] md:top-7 md:right-[160px]">
+      <div className="notranslate fixed top-3 right-[1px] -translate-x-1/2 z-[9990] md:top-7 md:right-[100px]">
         <LanguageSelector />
       </div>
     </nav>
