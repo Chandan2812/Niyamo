@@ -37,10 +37,10 @@ const FindYourPartner: React.FC = () => {
       position: "absolute" as const,
       top: "0",
       transition: "all 0.5s ease-in-out",
-      width: "220px",
-      height: "250px",
-      padding: "1rem",
+      width: "300px", // bigger width
+      height: "350px", // taller box
       borderRadius: "1rem",
+      overflow: "hidden",
     };
 
     switch (position) {
@@ -95,7 +95,7 @@ const FindYourPartner: React.FC = () => {
               className="text-2xl md:text-4xl font-semibold mt-2"
               data-aos="fade-right"
             >
-              Hospitality, Reimagined by Fern Hospitality
+              Hospitality, Reimagined
             </h2>
             <p
               className="text-gray-600 dark:text-gray-400 text-base my-6 max-w-xl text-justify font-serif"
@@ -139,24 +139,27 @@ const FindYourPartner: React.FC = () => {
             </button>
 
             {/* Slides */}
-            <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden h-[300px]">
+            {/* Slides */}
+            <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden h-[380px]">
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
                   style={getSlideStyle(index)}
-                  className="flex flex-col items-center justify-start shadow-lg transition-all h-[250px] duration-500 ease-in-out text-center bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] "
+                  className="flex flex-col items-center justify-start shadow-lg transition-all duration-500 ease-in-out text-center bg-white dark:bg-[var(--secondary-color)]"
                 >
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-28 h-28 rounded-full object-cover border-4 border-gray-200 dark:border-gray-700 mb-10"
+                    className="w-full h-[250px] object-cover"
                   />
-                  <h3 className="text-lg font-semibold text-black dark:text-white">
-                    {member.name}
-                  </h3>
-                  <p className="text-sm text-gray-200 dark:text-gray-200">
-                    {member.role}
-                  </p>
+                  <div className="p-4">
+                    <h3 className="text-lg font-semibold text-black dark:text-white">
+                      {member.name}
+                    </h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
+                      {member.role}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

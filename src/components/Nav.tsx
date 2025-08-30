@@ -32,10 +32,10 @@ const navItems = [
       "Dorsia",
     ],
   },
-  {
-    title: "Press",
-    dropdown: ["Press Release", "News"],
-  },
+  // {
+  //   title: "Press",
+  //   dropdown: ["Press Release", "News"],
+  // },
 ];
 
 declare global {
@@ -160,6 +160,10 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+
+          <div>
+            <a href="/press-release">Press Release</a>
+          </div>
         </div>
 
         <div className="flex items-center gap-4">
