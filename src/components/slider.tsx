@@ -8,8 +8,9 @@ import img5 from "../assets/team/15.jpg";
 import img6 from "../assets/team/16.jpg";
 
 const teamMembers = [
-  { name: "Uday Singh", role: "CEO", image: img1 },
+  { name: "Mark Lotenburg", role: "Founder and CEO, DORSIA", image: img5 },
   { name: "Akshat Tiberwala", role: "MD", image: img2 },
+  { name: "Uday Singh", role: "CEO", image: img1 },
   { name: "Ivan Ruchev", role: "Head of Operations", image: img6 },
   { name: "Alex Cordoba", role: "CEO, Savaya", image: img3 },
   {
@@ -17,7 +18,6 @@ const teamMembers = [
     role: "Founder & CEO, Dalma Capital",
     image: img4,
   },
-  { name: "Mark Lotenburg", role: "Founder and CEO, DORSIA", image: img5 },
 ];
 
 const FindYourPartner: React.FC = () => {
@@ -38,8 +38,8 @@ const FindYourPartner: React.FC = () => {
       top: "0",
       transition: "all 0.5s ease-in-out",
       width: "300px", // bigger width
-      height: "350px", // taller box
-      borderRadius: "1rem",
+      height: "450px", // taller box
+      borderRadius: "0rem",
       overflow: "hidden",
     };
 
@@ -80,8 +80,8 @@ const FindYourPartner: React.FC = () => {
   };
 
   return (
-    <section className="relative custom-gradient-lines">
-      <div className="pt-12 px-4 md:px-8 relative bg-white dark:bg-black text-black dark:text-white font-raleway">
+    <section className="relative custom-gradient-lines ">
+      <div className="pt-24 px-4 md:px-8 relative bg-white dark:bg-black text-black dark:text-white font-raleway ">
         <div className="w-11/12 mx-auto grid lg:grid-cols-2 gap-10 items-start">
           {/* Left Text */}
           <div>
@@ -98,7 +98,7 @@ const FindYourPartner: React.FC = () => {
               Hospitality, Reimagined
             </h2>
             <p
-              className="text-gray-600 dark:text-gray-400 text-base my-6 max-w-xl text-justify font-serif"
+              className="text-gray-600 dark:text-gray-400 text-base my-6 max-w-xl text-justify font-serif mb-20"
               data-aos="fade-right"
             >
               We are a forward-thinking hospitality company curating exceptional
@@ -140,7 +140,7 @@ const FindYourPartner: React.FC = () => {
 
             {/* Slides */}
             {/* Slides */}
-            <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden h-[380px]">
+            <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden h-[400px]">
               {teamMembers.map((member, index) => (
                 <div
                   key={index}
@@ -150,7 +150,7 @@ const FindYourPartner: React.FC = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-[250px] object-cover"
+                    className="w-full h-[300px] object-cover"
                   />
                   <div className="p-4">
                     <h3 className="text-lg font-semibold text-black dark:text-white">

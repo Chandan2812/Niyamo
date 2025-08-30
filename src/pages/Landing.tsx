@@ -15,9 +15,9 @@ function Landing() {
       <Navbar />
       <Hero />
       <FindYourPartner />
-      <DiningExperienceSection />
       <ConceptInFocusSection />
       <GlobalFootprintSection />
+      <DiningExperienceSection />
 
       <FundamentalsSection />
       {/* Show the popup */}

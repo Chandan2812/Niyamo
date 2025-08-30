@@ -9,7 +9,7 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phoneCode: countryCodes[70].dial_code, // default first country
+    phoneCode: countryCodes[150].dial_code, // default first country
     phone: "",
     message: "",
   });
@@ -67,7 +67,7 @@ function Contact() {
       setFormData({
         name: "",
         email: "",
-        phoneCode: countryCodes[70].dial_code,
+        phoneCode: countryCodes[150].dial_code,
         phone: "",
         message: "",
       });
@@ -95,7 +95,7 @@ function Contact() {
           </div>
 
           {/* Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Info Cards */}
             <div className="space-y-6">
               <ContactCard
@@ -250,7 +250,7 @@ const ContactCard = ({ icon, label, content, href }: ContactCardProps) => {
       href={href}
       target={href?.startsWith("http") ? "_blank" : undefined}
       rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
-      className="bg-gray-100 dark:bg-gray-900 text-black dark:text-white rounded-2xl p-6 flex items-start gap-4 shadow-md hover:shadow-lg transition-shadow"
+      className="bg-gray-50 dark:bg-gray-900 text-black dark:text-white rounded-2xl p-6 flex items-start gap-4 shadow-md hover:shadow-lg transition-shadow"
     >
       <div className="flex-shrink-0 text-[var(--primary-color)]">{icon}</div>
       <div>

@@ -40,7 +40,7 @@ function Management() {
     },
     {
       name: "Zachary Cefaratti",
-      designation: "Founder & CEO, ",
+      designation: "Founder & CEO, Dalma Capital ",
       image: img4,
       description:
         "Founder & CEO of, managing $50B+ in assets across multiple regions. Known for structuring cross-border deals. Also, the founder of AIM Summit, driving innovation in finance and hospitality platforms.",
@@ -66,7 +66,7 @@ function Management() {
             {team.map((member, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-[var(--secondary-color)] rounded-xl shadow-lg p-6 text-center"
+                className="bg-white dark:bg-[var(--secondary-color)]  shadow-lg p-6 text-center"
               >
                 <img
                   src={member.image}

@@ -39,7 +39,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[100vh] overflow-hidden font-raleway ">
+    <div className="relative w-full h-[100vh] overflow-hidden font-raleway  ">
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={slides[index].image}
@@ -54,7 +54,7 @@ const Hero = () => {
       </AnimatePresence>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/10 dark:bg-black/40 flex items-center justify-center px-4">
+      <div className="absolute inset-0 bg-black/10 dark:bg-black/40 flex items-center justify-center px-4 ">
         <motion.div
           key={slides[index].title}
           initial={{ opacity: 0, y: 80 }}
@@ -62,13 +62,13 @@ const Hero = () => {
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
           className="text-center text-white max-w-3xl"
         >
-          <h1 className="text-3xl md:text-6xl mb-3 leading-tight font-thin">
+          <h1 className="text-3xl md:text-5xl mb-3 leading-tight font-thin">
             {slides[index].title}
           </h1>
           <p className="text-base md:text-lg mb-6">
             {slides[index].description}
           </p>
-          <a href="/contact">
+          {/* <a href="/contact">
             <button className="relative inline-block px-6 py-2 border border-[var(--primary-color)] font-light group overflow-hidden transition-all">
               <span className="relative z-10 text-[var(--primary-color)] group-hover:text-black transition-colors duration-300">
                 {slides[index].buttonText}
@@ -78,7 +78,7 @@ const Hero = () => {
                 style={{ backgroundImage: "var(--bg-primary-gradient)" }}
               />
             </button>
-          </a>
+          </a> */}
         </motion.div>
       </div>
     </div>

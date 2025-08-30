@@ -60,7 +60,7 @@ const DiningExperienceSection: React.FC = () => {
       ref={sectionRef}
       className="bg-white dark:bg-black text-black dark:text-white font-raleway font-light  relative overflow-hidden"
     >
-      <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-3 md:px-8 pb-12">
+      <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-3 md:px-8 py-12">
         <div className="relative w-full h-full z-10">
           <div className="absolute top-10 right-6 w-full h-full bg-[radial-gradient(var(--primary-color)_2.5px,transparent_2.5px)] bg-[length:28px_28px] z-0" />
           <div className="absolute right-10 top-44 md:bottom-0 md:right-0 w-[90%] h-[90%] md:w-[90%] md:h-[80%] bg-[var(--primary-color)] dark:bg-[var(--secondary-color)]  z-0"></div>
