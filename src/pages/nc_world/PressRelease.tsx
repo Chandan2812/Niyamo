@@ -10,8 +10,8 @@ const PressRelease = () => {
       <Navbar />
       <section className="w-11/12 md:w-5/6 mx-auto pt-32 pb-16 space-y-12 font-serif">
         {/* Headline */}
-        <div className="text-center border-b-4 border-black pb-6">
-          <h2 className="text-4xl font-extrabold tracking-wide uppercase text-gray-900 dark:text-gray-100 mb-4">
+        <div className="text-center border-b-4 border-black dark:border-white pb-6">
+          <h2 className="text-xl md:text-4xl  font-extrabold tracking-wide uppercase text-gray-900 dark:text-gray-100 mb-4">
             Dubai Based Fern Hospitality Ventures (FHV) Launches $100m Fund
           </h2>
           <p className="text-lg italic text-gray-700 dark:text-gray-200">
