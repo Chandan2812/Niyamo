@@ -27,30 +27,32 @@ function Thamel() {
       <section className="w-11/12 md:w-10/12 mx-auto py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image */}
-          <div className="relative">
+          <div className="relative w-3/4 h-full z-10">
+            <div className="absolute top-20 right-6 w-full h-full bg-[radial-gradient(var(--primary-color)_2.5px,transparent_2.5px)] bg-[length:28px_28px] z-0" />
+            <div className="absolute right-10 top-32 md:bottom-0 md:right-0 w-[90%] h-[90%] md:w-[90%] md:h-[80%] bg-[var(--primary-color)] dark:bg-[var(--secondary-color)]  z-0"></div>
             <img
               src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/02/b3/b1/o-verao-pede-uma-salada.jpg?w=1400&h=-1&s=1"
-              alt="Thamel Restaurant"
-              className="w-3/4  object-cover rounded-2xl shadow-lg"
+              alt="Dining"
+              className="relative z-10  object-cover"
             />
           </div>
 
           {/* Text */}
           <div>
-            <p className="mb-4 text-gray-700 dark:text-gray-300">
+            <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
               Thamel Restaurant & Cocktails in Porto, Portugal, offers a unique
               and diverse culinary experience. The restaurant's philosophy is to
               take its customers on a culinary journey through Nepal, Tibet,
               China, India, and even parts of the American Southwest.
             </p>
-            <p className="mb-4 text-gray-700 dark:text-gray-300">
+            <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
               The menu is a rich fusion of Asian cuisines, featuring traditional
               dishes like Nepalese momos (dumplings), Tibetan soups, and classic
               Chinese and Thai dishes such as Pad Thai and various curries. The{" "}
               <span className="font-semibold">Thamel Thali</span> is a popular
               Nepalese platter that allows you to sample a variety of curries.
             </p>
-            <p className="mb-4 text-gray-700 dark:text-gray-300">
+            <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
               The restaurant also has a strong focus on vegan and vegetarian
               options, with many dishes, including the Thali, available in a
               plant-based version. To complement the food, they offer a
@@ -58,7 +60,7 @@ function Thamel() {
               <span className="font-semibold">signature cocktails</span> made
               with fresh fruits and spices.
             </p>
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
               With a cozy atmosphere, friendly staff, and a wide variety of
               flavorful dishes, Thamel is a great choice for those looking to
               explore a diverse range of Asian flavors in the heart of Porto.

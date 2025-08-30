@@ -7,7 +7,7 @@ function Bagatelle() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-black text-white h-[90vh] py-60 px-6">
+      <section className="relative bg-black text-white h-[50vh] md:h-[90vh] py-32 md:py-60 px-6">
         <div className="w-11/12 md:w-5/6 mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold tracking-wide">
             Bagatelle – Dubai, Singapore, & Mykonos
@@ -30,17 +30,17 @@ function Bagatelle() {
           <div className="grid md:grid-cols-2 gap-12 text-lg leading-relaxed">
             <div>
               <HighlightCard title="Proven Global Concept with Massive Brand Equity" />
-              <p>
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Bagatelle is a globally recognized{" "}
                 <strong>French-Mediterranean dining and party concept</strong>,
                 active in New York, Dubai, London, and St. Barth.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 The Dubai venue is already operating with{" "}
                 <strong>high gross revenue per sqm</strong> and a strong
                 nightlife crossover.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 The brand consistently draws HNWIs, celebrities, and luxury
                 tourists with its signature{" "}
                 <strong>"dinner to dancefloor"</strong> experience.
@@ -48,16 +48,16 @@ function Bagatelle() {
             </div>
             <div>
               <HighlightCard title="Strong Unit-Level Performance in Key Cities" />
-              <p>
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Dubai location generates{" "}
                 <strong>multi-million USD annual revenue</strong>, with high
                 occupancy year-round and low promotional dependence.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Mykonos sees <strong>seasonal EBITDA margins &gt;40%</strong>{" "}
                 due to short but high-demand operating windows.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Sydney and Singapore offer major upside via{" "}
                 <strong>first-mover positioning</strong> in premium F&amp;B
                 districts.
@@ -65,33 +65,33 @@ function Bagatelle() {
             </div>
             <div>
               <HighlightCard title="Powerful Brand Licensing & Operating Model" />
-              <p>
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Fern’s model supports{" "}
                 <strong>equity + license partnerships</strong> with local
                 operators, reducing execution risk and CapEx.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Bagatelle’s playbook is <strong>replicable</strong>, with
                 signature design, menu, entertainment programming, and seasonal
                 activations built in.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Ideal for institutional roll-up, IPO, or strategic sale to
                 luxury hospitality groups or PE consolidators.
               </p>
             </div>
             <div>
               <HighlightCard title="Market Timing: Premium Nightlife Dining Is Soaring" />
-              <p>
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Cities like <strong>Singapore and Sydney</strong> are
                 underpenetrated in upscale experiential F&amp;B.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Post-COVID demand for <strong>"occasion-driven" venues</strong>{" "}
                 has surged, with +20% YoY spend growth in top nightlife
                 districts.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Bagatelle’s positioning hits the sweet spot between{" "}
                 <strong>exclusivity, fun, and food</strong> — with no scaled
                 competitor replicating its model.
