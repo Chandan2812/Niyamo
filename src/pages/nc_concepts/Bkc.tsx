@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 import NewsSubscribeSection from "../../components/Newsletter";
-import { ArrowRight } from "lucide-react";
+// import { ArrowRight } from "lucide-react";
 
 const Bkc: React.FC = () => {
   return (
@@ -98,11 +98,14 @@ const Bkc: React.FC = () => {
 
             {/* Explore Button */}
             <a href="/contact">
-              <button className="relative group flex items-center bg-[var(--primary-color)] text-white border border-[var(--primary-color)] text-[12px] px-8 py-4 uppercase tracking-widest  transition-all duration-300 overflow-hidden">
-                <span className="z-10 relative flex items-center gap-1 group-hover:text-[var(--primary-color)] transition-colors duration-300 font-light">
-                  Contact Us <ArrowRight size={16} />
+              <button className="relative group flex items-center gap-2 text-white dark:text-[var(--primary-color)] dark:text-white border dark:border-[var(--primary-color)]  text-[12px] px-6 py-3 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
+                <span className="z-10 relative flex items-center gap-2 dark:text-[var(--primary-color)] group-hover:text-white transition-colors duration-300 font-light">
+                  Contact Us →
                 </span>
-                <span className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0 bg-white"></span>
+                <span
+                  className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
+                  style={{ backgroundImage: "var(--bg-primary-gradient)" }}
+                ></span>
               </button>
             </a>
           </div>
