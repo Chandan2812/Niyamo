@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 const slides = [
   {
@@ -9,6 +10,8 @@ const slides = [
 
     image:
       "https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615985825825-W98KHLYXOIUMSPGZBGDW/DSC_3718.jpg?format=750w",
+
+    link: "/16-charles-street",
   },
   {
     title: "Biryani Kebab Chai",
@@ -16,6 +19,7 @@ const slides = [
       "At BKC – Biryani Kebab Chai, our story is one of passion, exploration, and the desire to share the unparalleled tastes of Awadhi cuisine with London. Launched in Marble Arch in 2022 and in Soho in 2023, our mission remains the same: to celebrate the culinary wonders of Lucknow...",
 
     image: "https://bkclondon.uk/wp-content/uploads/2024/06/2-1.png",
+    link: "/biryani-kebab-chai-(bkc)",
   },
   {
     title: "Coupette",
@@ -24,6 +28,7 @@ const slides = [
 
     image:
       "https://static.wixstatic.com/media/fe41f9_6900c9bc00ac4705b096d1859135c7bb~mv2.jpg",
+    link: "/coupette",
   },
   {
     title: "24 & 30 Sussex Gardens",
@@ -32,6 +37,7 @@ const slides = [
 
     image:
       "https://images.oyoroomscdn.com/uploads/hotel_image/39338/large/4c618879fe13a5be.jpg",
+    link: "/24-&-30-sussex-gardens",
   },
   {
     title: "The Joyce Restaurant",
@@ -40,6 +46,7 @@ const slides = [
 
     image:
       "https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/dZCWFGjwT0ehKAEc9h4e_TheJoyce_112024_4005.jpg",
+    link: "/the-joyce-restaurant",
   },
   {
     title: "Dorsia",
@@ -48,6 +55,7 @@ const slides = [
 
     image:
       "https://framerusercontent.com/images/g4sS7ZaoyqeGrz7RPt4j395kkQ.jpg?scale-down-to=2048",
+    link: "/dorsia",
   },
 ];
 
@@ -73,7 +81,7 @@ const ConceptInFocusSection = () => {
               Concept in focus
             </p>
             <h2 className="text-2xl md:text-4xl font-semibold text-black dark:text-white mt-2">
-              Lifestyle concepts, reimagined
+              Elevating the Essence of Lifestyle
             </h2>
           </div>
         </div>
@@ -112,12 +120,23 @@ const ConceptInFocusSection = () => {
                 exit={{ opacity: 0, y: -40 }}
                 transition={{ duration: 0.6 }}
               >
-                <h3 className="text-2xl md:text-4xl font-semibold text-black dark:text-white mb-4">
+                <h3 className="text-2xl md:text-4xl font-semibold text-[var(--primary-color)]  mb-4">
                   {currentSlide.title}
                 </h3>
                 <p className="text-gray-200 dark:text-gray-400 mb-4 text-justify font-serif">
                   {currentSlide.description1}
                 </p>
+                <a href={currentSlide.link}>
+                  <button className="relative group flex items-center gap-2 text-[var(--primary-color)] dark:text-white border border-[var(--primary-color)]  text-[12px] px-6 py-3 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
+                    <span className="z-10 relative flex items-center gap-2 text-[var(--primary-color)] group-hover:text-white transition-colors duration-300 font-light">
+                      Know More <ArrowRight size={16} />
+                    </span>
+                    <span
+                      className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
+                      style={{ backgroundImage: "var(--bg-primary-gradient)" }}
+                    ></span>
+                  </button>
+                </a>
               </motion.div>
             </AnimatePresence>
           </div>
