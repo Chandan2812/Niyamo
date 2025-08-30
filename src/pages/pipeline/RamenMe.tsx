@@ -7,7 +7,7 @@ function RamenMe() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-black text-white h-[90vh] py-60 px-6">
+      <section className="relative bg-black text-white h-[50vh] md:h-[90vh] py-60 px-6">
         <div className="w-11/12 md:w-5/6 mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold tracking-wide">
             Ramen Me
@@ -31,46 +31,48 @@ function RamenMe() {
           <div className="grid md:grid-cols-2 gap-12 text-lg leading-relaxed">
             <div>
               <HighlightCard title="High-Margin, Delivery-Optimized Concept" />
-              <p>
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Ramen Me is designed for{" "}
                 <strong>fast-casual and cloud kitchen scalability</strong> with
                 emphasis on high-volume delivery.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Typical units deliver <strong>25–35% EBITDA margins</strong>{" "}
                 with low labor and minimal kitchen capex.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Features a <strong>tight, craveable menu</strong> optimized for
                 repeat orders and social media virality.
               </p>
             </div>
             <div>
               <HighlightCard title="Explosive Demand for Affordable Premium Asian Cuisine" />
-              <p>
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Ramen is one of the{" "}
                 <strong>fastest-growing food categories globally</strong>,
                 especially popular with Gen Z and millennials.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 In markets like UAE, UK, and Southeast Asia, demand for
                 <strong> accessible comfort food with a premium twist</strong>
                 is surging.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Ramen Me fits perfectly into this pocket —{" "}
                 <strong>affordable, addictive, and Instagrammable</strong>.
               </p>
             </div>
             <div>
               <HighlightCard title="Built for Multi-Unit Rollout or Franchising" />
-              <p>Modular, compact layout ideal for:</p>
-              <ul className="list-disc pl-6 mt-2 space-y-2">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
+                Modular, compact layout ideal for:
+              </p>
+              <ul className="list-disc pl-6 mt-2 space-y-2 text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 <li>Mall food courts</li>
                 <li>Standalone kiosks</li>
                 <li>Ghost kitchens</li>
               </ul>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Supports <strong>10–15 day fit outs</strong> and sub-$100K
                 startup costs, making it ideal for franchising or regional
                 rollouts.
@@ -78,16 +80,16 @@ function RamenMe() {
             </div>
             <div>
               <HighlightCard title="Backed by Experienced Brand Builders" />
-              <p>
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Part of Fern’s hospitality portfolio with access to in-house
                 expertise in:
               </p>
-              <ul className="list-disc pl-6 mt-2 space-y-2">
+              <ul className="list-disc pl-6 mt-2 space-y-2 text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 <li>Menu engineering</li>
                 <li>Influencer-led digital marketing</li>
                 <li>Scalable back-of-house systems</li>
               </ul>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Early traction visible with{" "}
                 <strong>above-market retention rates</strong> in test locations
                 (pending confirmation from internal data).

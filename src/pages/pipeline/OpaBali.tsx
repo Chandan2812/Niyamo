@@ -7,7 +7,7 @@ function OpaBali() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-black text-white h-[90vh] py-60 px-6">
+      <section className="relative bg-black text-white h-[50vh] md:h-[90vh] py-60 px-6">
         <div className="w-11/12 md:w-5/6 mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold tracking-wide">
             OPA Bali
@@ -30,7 +30,7 @@ function OpaBali() {
           <div className="grid md:grid-cols-2 gap-12 text-lg leading-relaxed">
             <div>
               <HighlightCard title="Proven Concept with Strong Performance in Dubai" />
-              <p>
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 OPA was launched in Dubai by Fern’s founder and quickly became a{" "}
                 <strong>
                   category-defining Greek dining and entertainment experience
@@ -40,19 +40,19 @@ function OpaBali() {
                 strong EBITDA margins due to premium price points and high
                 covers.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 The Bali opening replicates this winning format in a destination
                 primed for high-energy experiential dining.
               </p>
             </div>
             <div>
               <HighlightCard title="First-Mover Advantage in Bali’s Greek Category" />
-              <p>
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 There is no dominant modern Greek dining brand in Bali today,
                 especially one combining{" "}
                 <strong>theatrical dining with nightlife elements</strong>.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 OPA Bali brings a differentiated “dinner-to-party” concept to a
                 tourism hotspot increasingly driven by Instagram-era experience
                 seekers. Positioned to lead the Greek-Med category in a market
@@ -62,12 +62,12 @@ function OpaBali() {
             </div>
             <div>
               <HighlightCard title="Premium Location with Low Fixed Costs" />
-              <p>
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 The site is located in Bali’s{" "}
                 <strong>Seminyak Petitenget district</strong>, surrounded by
                 5-star hotels and nightlife corridors.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Lease terms in Bali remain favorable post-COVID, offering{" "}
                 <strong>low occupancy costs and high profit conversion</strong>.
                 Buildout optimized by local partners with strong CapEx
@@ -76,18 +76,18 @@ function OpaBali() {
             </div>
             <div>
               <HighlightCard title="High Yield + Fast Ramp-up" />
-              <p>
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Average check size expected:{" "}
                 <strong>USD 85–120 per head</strong>.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Target: <strong>300–400 covers per night</strong> during peak
                 season.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Projected unit-level EBITDA margins: <strong>30–35%</strong>.
               </p>
-              <p className="mt-4">
+              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify">
                 Break-even expected within <strong>8–10 months</strong> of
                 launch.
               </p>
