@@ -59,22 +59,18 @@ const Charles: React.FC = () => {
           </div>
 
           {/* Cuisine Section */}
-          <div className="mb-16 grid md:grid-cols-2 gap-8 items-start">
-            <div className="grid grid-cols-2 gap-4">
-              <img
-                src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1616079667915-Z9ECTJF2V83YIHPHM13T/thumbnail_IMG_8335.jpeg?format=750w"
-                alt="Cuisine 1"
-                className="w-full h-full object-cover rounded"
-              />
-              <img
-                src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/e5a6a702-65fc-4e72-a12f-bd5d83429dbd/IMG_8063.JPG?format=1000w"
-                alt="Cuisine 2"
-                className="w-full h-full object-cover rounded"
-              />
-            </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3  gap-4 mb-16">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1616079667915-Z9ECTJF2V83YIHPHM13T/thumbnail_IMG_8335.jpeg?format=750w"
+              alt="Cuisine 1"
+              className="w-full h-[300px] object-contain rounded"
+            />
             <div>
-              <h2 className="text-3xl font-semibold mb-4">Cuisine</h2>
-              <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
+              <h2 className="text-3xl font-semibold mb-4 text-center">
+                Cuisine
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-center font-serif">
                 16 Charles Street is located in the heart of Mayfair on the
                 north side of Charles Street opposite the junction with Queen
                 Square. The area is well-served by a wide range of local
@@ -83,6 +79,11 @@ const Charles: React.FC = () => {
                 Conservation Area and the Core Central Activities Zone.
               </p>
             </div>
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/e5a6a702-65fc-4e72-a12f-bd5d83429dbd/IMG_8063.JPG?format=1000w"
+              alt="Cuisine 2"
+              className="w-full h-[300px] object-contain rounded"
+            />
           </div>
 
           {/* Design Section */}
