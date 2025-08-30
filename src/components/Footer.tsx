@@ -100,10 +100,7 @@ const Footer = () => {
         <div>
           <p>
             Made & Marketed by{" "}
-            <a
-              href="https://www.bigwigmediadigital.com"
-              className="text-blue-400"
-            >
+            <a href="https://www.bigwigmediadigital.com">
               Bigwig Media Digital
             </a>
           </p>

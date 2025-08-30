@@ -58,7 +58,7 @@ function Management() {
     <div>
       <Navbar />
       <section className="bg-white dark:bg-black text-black dark:text-white font-raleway py-28 px-6 mt-10">
-        <div className="w-11/12 mx-auto">
+        <div className="w-11/12 md:w-5/6 mx-auto">
           <h1 className="text-4xl font-bold text-center mb-12 text-[var(--primary-color)]">
             Our Team & Advisors
           </h1>
@@ -66,7 +66,7 @@ function Management() {
             {team.map((member, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6 text-center"
+                className="bg-white dark:bg-[var(--secondary-color)] rounded-xl shadow-lg p-6 text-center"
               >
                 <img
                   src={member.image}
@@ -77,7 +77,7 @@ function Management() {
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
                   {member.designation}
                 </p>
-                <p className="text-sm text-gray-700 dark:text-gray-300">
+                <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif leading-relaxed">
                   {member.description}
                 </p>
               </div>

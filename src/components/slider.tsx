@@ -98,7 +98,7 @@ const FindYourPartner: React.FC = () => {
               Hospitality, Reimagined by Fern Hospitality
             </h2>
             <p
-              className="text-gray-600 dark:text-gray-400 text-base my-6 max-w-xl text-justify"
+              className="text-gray-600 dark:text-gray-400 text-base my-6 max-w-xl text-justify font-serif"
               data-aos="fade-right"
             >
               We are a forward-thinking hospitality company curating exceptional
@@ -144,7 +144,7 @@ const FindYourPartner: React.FC = () => {
                 <div
                   key={index}
                   style={getSlideStyle(index)}
-                  className="flex flex-col items-center justify-start shadow-lg transition-all h-[250px] duration-500 ease-in-out text-center bg-[var(--primary-color)] "
+                  className="flex flex-col items-center justify-start shadow-lg transition-all h-[250px] duration-500 ease-in-out text-center bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] "
                 >
                   <img
                     src={member.image}

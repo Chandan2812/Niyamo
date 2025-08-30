@@ -87,7 +87,7 @@ const ConceptInFocusSection = () => {
         {/* Fixed Box with Changing Content */}
         <div className="relative flex flex-col md:flex-row bg-white dark:bg-black overflow-hidden rounded-2xl shadow-lg">
           {/* Image Section */}
-          <div className="md:w-1/2 w-full relative h-[500px] bg-[var(--primary-color)]  ">
+          <div className="md:w-1/2 w-full relative h-[500px] bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] ">
             <AnimatePresence mode="wait">
               <motion.img
                 key={currentSlide.image + index}
@@ -103,7 +103,7 @@ const ConceptInFocusSection = () => {
           </div>
 
           {/* Text Section */}
-          <div className="md:w-1/2 w-full bg-[var(--primary-color)]  p-6 md:p-12 flex flex-col justify-center relative">
+          <div className="md:w-1/2 w-full bg-[var(--primary-color)] dark:bg-[var(--secondary-color)]  p-6 md:p-12 flex flex-col justify-center relative">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentSlide.title + index}
@@ -115,7 +115,7 @@ const ConceptInFocusSection = () => {
                 <h3 className="text-2xl md:text-4xl font-semibold text-black dark:text-white mb-4">
                   {currentSlide.title}
                 </h3>
-                <p className="text-gray-200 dark:text-gray-200 mb-4 text-justify">
+                <p className="text-gray-200 dark:text-gray-400 mb-4 text-justify font-serif">
                   {currentSlide.description1}
                 </p>
               </motion.div>

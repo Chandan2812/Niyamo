@@ -8,7 +8,7 @@ const Charles: React.FC = () => {
     <div>
       <Navbar />
       <section
-        className="relative h-[90vh] flex items-center justify-center bg-cover bg-center"
+        className="relative h-[50vh] md:h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage:
             "url('https://static.wixstatic.com/media/1bd01e_add9a31017b44a3ab08325667cf1864f~mv2.jpg/v1/fill/w_1751,h_1629,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/1bd01e_add9a31017b44a3ab08325667cf1864f~mv2.jpg')",
@@ -25,7 +25,7 @@ const Charles: React.FC = () => {
         <div className="w-11/12 md:w-5/6 mx-auto">
           {/* Concept Section */}
           <div className="mb-16">
-            <p className=" text-md leading-relaxed mb-4 text-justify">
+            <p className=" text-gray-600 dark:text-gray-400 text-base text-justify font-serif">
               During 2021, the team began developing its plans to restore 16
               Charles Street to its former glory and bring it into public use
               for everyone to enjoy. The new restaurant will be a discreet
@@ -73,8 +73,8 @@ const Charles: React.FC = () => {
               />
             </div>
             <div>
-              <h2 className="text-2xl font-semibold mb-4">Cuisine</h2>
-              <p className="text-md leading-relaxed text-justify">
+              <h2 className="text-3xl font-semibold mb-4">Cuisine</h2>
+              <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
                 16 Charles Street is located in the heart of Mayfair on the
                 north side of Charles Street opposite the junction with Queen
                 Square. The area is well-served by a wide range of local
@@ -87,7 +87,7 @@ const Charles: React.FC = () => {
 
           {/* Design Section */}
           <div className="mb-16">
-            <p className="text-md leading-relaxed mb-6 text-justify">
+            <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
               Charles Street has character and history, which we are keen to
               preserve and enhance. The building at 16 Charles Street is a Grade
               II* listed Georgian property, which dates back to 1753. The
