@@ -7,15 +7,51 @@ const PressRelease = () => {
   return (
     <div className="bg-white dark:bg-black text-black dark:text-white">
       <Navbar />
-      <section className="w-11/12 md:w-5/6 mx-auto pt-32 pb-16 space-y-12 font-serif">
-        {/* Headline */}
-        <div className="text-center border-b-4 border-black pb-6">
-          <h2 className="text-4xl font-extrabold tracking-wide uppercase text-gray-900 dark:text-gray-100 mb-4">
-            Dubai Based Fern Hospitality Ventures (FHV) Launches $100m Fund
-          </h2>
-          <p className="text-lg italic text-gray-700 dark:text-gray-200">
-            Initial <span className="text-red-600 font-bold">$100m</span> to be
-            invested in high-growth global hospitality sector
+
+      {/* HEADER */}
+      <section className="text-center px-6 pt-32 pb-12 border-b-4 border-[#404040]">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          <span className="text-[#3d3d3b]">PRESS</span>{" "}
+          <span className="text-[#e84f1c]">RELEASE</span>
+        </h1>
+        <h2 className="text-2xl md:text-3xl font-bold text-[#3d3d3b]">
+          Dubai Based Fern Hospitality Ventures (FHV) Launches Fund To Raise An
+          Initial $100m
+        </h2>
+        <p className="mt-4 max-w-3xl mx-auto text-lg">
+          To invest in high-growth global hospitality sector with backing from
+          leading investors and managed by Dalma Capital.
+        </p>
+      </section>
+
+      {/* QUOTE */}
+      {/* <section className="max-w-5xl mx-auto px-6 py-12">
+        <blockquote className="bg-gray-100 border-l-4 border-red-500 p-6 rounded-lg text-lg italic">
+          “This is a once in a generation moment for hospitality investment,”
+          said <strong>Uday Singh</strong>, CEO of Fern Hospitality Ventures and
+          the entrepreneur behind global successes like OPA and Bagatelle Dubai.
+          “Demand is soaring while supply remains limited. Our fund provides
+          early access to the next generation of premium leisure and lifestyle
+          concepts as they scale across the global social calendar that is
+          driving demand from Dubai to New York, and London to Bali.”
+        </blockquote>
+      </section> */}
+
+      {/* FOUNDER IMAGES */}
+      <section className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 px-6 pb-12 items-center py-12 font-serif">
+        {/* Left side - Profile */}
+        <div className="bg-[#fdfcf7] border border-gray-300 p-6 rounded-md shadow-inner text-center">
+          <img
+            src={uday}
+            alt="Uday Singh"
+            className="w-40 h-40 rounded-full object-cover mx-auto mb-4 border border-gray-400"
+          />
+          <h3 className="font-bold text-2xl text-gray-900 uppercase tracking-wide">
+            Uday Singh
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            CEO of Fern Hospitality Ventures, entrepreneur behind OPA &
+            Bagatelle Dubai.
           </p>
         </div>
 
