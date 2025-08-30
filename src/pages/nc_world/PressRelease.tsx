@@ -1,6 +1,5 @@
-import Footer from "../../components/Footer";
 import Navbar from "../../components/Nav";
-import NewsSubscribeSection from "../../components/Newsletter";
+import Footer from "../../components/Footer";
 import uday from "../../assets/Fern Hospitality9098.jpg";
 import akshat from "../../assets/Akshat.jpg";
 
@@ -8,575 +7,527 @@ const PressRelease = () => {
   return (
     <div className="bg-white dark:bg-black text-black dark:text-white">
       <Navbar />
-      <section className="w-11/12 md:w-5/6 mx-auto pt-32 pb-16 space-y-12 font-serif">
-        {/* Headline */}
-        <div className="text-center border-b-4 border-black pb-6">
-          <h2 className="text-4xl font-extrabold tracking-wide uppercase text-gray-900 dark:text-gray-100 mb-4">
-            Dubai Based Fern Hospitality Ventures (FHV) Launches $100m Fund
-          </h2>
-          <p className="text-lg italic text-gray-700 dark:text-gray-200">
-            Initial <span className="text-red-600 font-bold">$100m</span> to be
-            invested in high-growth global hospitality sector
+
+      {/* HEADER */}
+      <section className="text-center px-6 pt-32 pb-12 border-b-4 border-[#404040]">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
+          <span className="text-[#3d3d3b]">PRESS</span>{" "}
+          <span className="text-[#e84f1c]">RELEASE</span>
+        </h1>
+        <h2 className="text-2xl md:text-3xl font-bold text-[#3d3d3b]">
+          Dubai Based Fern Hospitality Ventures (FHV) Launches Fund To Raise An
+          Initial $100m
+        </h2>
+        <p className="mt-4 max-w-3xl mx-auto text-lg">
+          To invest in high-growth global hospitality sector with backing from
+          leading investors and managed by Dalma Capital.
+        </p>
+      </section>
+
+      {/* QUOTE */}
+      {/* <section className="max-w-5xl mx-auto px-6 py-12">
+        <blockquote className="bg-gray-100 border-l-4 border-red-500 p-6 rounded-lg text-lg italic">
+          “This is a once in a generation moment for hospitality investment,”
+          said <strong>Uday Singh</strong>, CEO of Fern Hospitality Ventures and
+          the entrepreneur behind global successes like OPA and Bagatelle Dubai.
+          “Demand is soaring while supply remains limited. Our fund provides
+          early access to the next generation of premium leisure and lifestyle
+          concepts as they scale across the global social calendar that is
+          driving demand from Dubai to New York, and London to Bali.”
+        </blockquote>
+      </section> */}
+
+      {/* FOUNDER IMAGES */}
+      <section className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 px-6 pb-12 items-center py-12 font-serif">
+        {/* Left side - Profile */}
+        <div className="bg-[#fdfcf7] border border-gray-300 p-6 rounded-md shadow-inner text-center">
+          <img
+            src={uday}
+            alt="Uday Singh"
+            className="w-40 h-40 rounded-full object-cover mx-auto mb-4 border border-gray-400"
+          />
+          <h3 className="font-bold text-2xl text-gray-900 uppercase tracking-wide">
+            Uday Singh
+          </h3>
+          <p className="text-sm text-gray-800 leading-relaxed">
+            CEO of Fern Hospitality Ventures, entrepreneur behind OPA &
+            Bagatelle Dubai.
           </p>
         </div>
 
-        {/* CEO Quote - Image Right */}
-        <div className="grid md:grid-cols-3 gap-6 items-center border-gray-400 pt-8">
-          <div className="md:col-span-2 bg-green-50 p-6 shadow-inner order-2 md:order-1">
-            <h3 className="text-xl font-bold text-green-700 mb-3">CEO QUOTE</h3>
-            <blockquote className="border-l-4 border-green-600 pl-4">
-              <p className="italic text-lg leading-relaxed text-gray-800">
-                “This is a once in a generation moment for hospitality
-                investment,” said <strong>Uday Singh</strong>, CEO of Fern
-                Hospitality Ventures and the entrepreneur behind global
-                successes like OPA and Bagatelle Dubai. “Demand is soaring while
-                supply remains limited. Our fund provides early access to the
-                next generation of premium leisure and lifestyle concepts as
-                they scale across the global social calendar that is driving
-                demand from Dubai to New York, and London to Bali.”
-              </p>
-            </blockquote>
-          </div>
-          <div className="order-1 md:order-2 flex justify-center">
-            <img
-              src={uday}
-              alt="CEO Uday Singh"
-              className="w-[240px] rounded shadow-md border border-gray-300"
-            />
-          </div>
+        {/* Right side - Statement */}
+        <div className="flex items-center">
+          <p className="bg-[#fdfcf7] border border-gray-300 p-6 rounded-md text-lg italic leading-relaxed text-gray-900 shadow-inner">
+            “This is a once in a generation moment for hospitality investment,”
+            said <span className="font-bold">Uday Singh</span>, CEO of Fern
+            Hospitality Ventures and the entrepreneur behind global successes
+            like OPA and Bagatelle Dubai. “Demand is soaring while supply
+            remains limited. Our fund provides early access to the next
+            generation of premium leisure and lifestyle concepts as they scale
+            across the global social calendar that is driving demand from Dubai
+            to New York, and London to Bali.”
+          </p>
+        </div>
+      </section>
+
+      {/* FUND HIGHLIGHTS */}
+      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 px-6 pb-16 font-serif">
+        <div className="bg-[#f4f1e7] p-6 border border-gray-400 shadow-[2px_2px_6px_rgba(0,0,0,0.2)] rounded-none">
+          <h2 className="text-2xl font-bold mb-3 text-gray-900 underline decoration-gray-500">
+            The Fund
+          </h2>
+          <ul className="list-disc list-inside space-y-2 text-gray-800 leading-relaxed">
+            <li>Raised $15m in the first 24 hours of launching</li>
+            <li>
+              Leveraging Dubai’s hospitality success to scale brands worldwide
+            </li>
+            <li>
+              Exposure to global growth prospects across tech, luxury, and
+              emerging destinations
+            </li>
+          </ul>
         </div>
 
-        {/* The Fund + Board in Newspaper Columns */}
-        <div className="grid md:grid-cols-4 gap-6 mt-10">
-          {/* The Fund */}
-          <div className="md:col-span-2 bg-blue-50 p-6 border border-gray-300 shadow-sm">
-            <h3 className="text-xl font-bold text-blue-700 mb-4">THE FUND</h3>
-            <ul className="list-disc pl-6 space-y-3 text-gray-800 leading-relaxed">
-              <li>
-                Raised <strong>$15m</strong> in first 24 hours of launching the
-                fund
-              </li>
-              <li>
-                Leveraging Dubai’s hospitality success to scale brands worldwide
-                as it becomes an exporter of global concepts
-              </li>
-              <li>
-                Offers exposure to technology-led concepts, luxury experiential
-                brands and emerging market operators
-              </li>
-              <li>
-                First-of-its-kind fund in global luxury hospitality &amp;
-                F&amp;B with a dual return model (cashflow + capital upside from
-                real estate)
-              </li>
-              <li>
-                Managed by Dalma Capital, FHV targets{" "}
-                <strong>$100m fund size</strong> with projected{" "}
-                <strong>20% net return</strong>
-              </li>
-            </ul>
-          </div>
+        <div className="bg-[#f4f1e7] p-6 border border-gray-400 shadow-[2px_2px_6px_rgba(0,0,0,0.2)] rounded-none">
+          <h2 className="text-2xl font-bold mb-3 text-gray-900 underline decoration-gray-500">
+            Fund Strategy
+          </h2>
+          <ul className="list-disc list-inside space-y-2 text-gray-800 leading-relaxed">
+            <li>
+              First-of-its-kind global luxury hospitality &amp; F&amp;B
+              investment focus
+            </li>
+            <li>
+              Dual return model: cashflow from operations + real estate capital
+              upside
+            </li>
+            <li>Targeting iconic venues, disruptors & technology innovators</li>
+            <li>
+              Dalma Capital to manage closed-ended fund ($100m, 20% net return)
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          {/* The Board */}
-          <div className="md:col-span-2 bg-green-50 p-6 border border-gray-300 shadow-sm">
-            <h3 className="text-2xl font-bold text-green-800 mb-4">
-              THE BOARD
-            </h3>
+      {/* TEAM & PORTFOLIO SECTION */}
+      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-6 pb-16 font-serif text-gray-900">
+        {/* TEAM */}
+        <div className="bg-[#fcfbf7] p-8 border border-gray-300 shadow-sm rounded-none">
+          <h2 className="text-2xl font-bold mb-4 uppercase tracking-wide underline decoration-gray-400">
+            Team & Track Record
+          </h2>
+          <p className="mb-4 text-gray-700 leading-relaxed">
+            Comprising seasoned hospitality investors and young talent in
+            partnership with top operators globally, the team brings a proven
+            record of high-profile successes:
+          </p>
+          <ul className="list-disc pl-5 space-y-2 text-gray-800 leading-relaxed">
+            <li>
+              <strong>Uday Singh:</strong> Led successes including{" "}
+              <em>Bagatelle Dubai</em> (exit 2022), <em>Opa Dubai</em> (2018),{" "}
+              <em>Opa Mumbai</em> (2022), and raised investment for{" "}
+              <em>La Nina Dubai</em> (2023).
+            </li>
+            <li>
+              <strong>Akshat Tiberwala:</strong> In his early 20s, founded{" "}
+              <em>Niyamo Capital</em> (2024), managing $25m+ AUM and deploying
+              capital into early-stage, high-growth companies.
+            </li>
+          </ul>
+        </div>
+
+        {/* PORTFOLIO */}
+        <div className="bg-[#fcfbf7] p-8 border border-gray-300 shadow-sm rounded-none">
+          <h2 className="text-2xl font-bold mb-4 uppercase tracking-wide underline decoration-gray-400">
+            Portfolio Post $15m Raise
+          </h2>
+          <ul className="list-disc pl-5 space-y-2 text-gray-800 leading-relaxed">
+            <li>
+              <strong>Dorsia</strong> – tech-driven reservations platform
+            </li>
+            <li>
+              <strong>16 Charles Street, Mayfair</strong> – private members club
+              with fine dining including <em>Loulou of Paris</em>
+            </li>
+            <li>
+              <strong>Ramen Me</strong> – new-wave disco-dining concept in
+              Portugal
+            </li>
+            <li>
+              <strong>The Joyce</strong> – Miami-based modern American dining
+            </li>
+            <li>
+              <strong>Opa, Bali</strong> – experiential Greek concept “Made in
+              Dubai”
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* PIPELINE & STRATEGY */}
+      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 px-6 pb-16 font-serif">
+        {/* PIPELINE / DISCUSSIONS */}
+        <div className="bg-[#f4f1e7] p-6 border border-gray-400 shadow-[2px_2px_6px_rgba(0,0,0,0.2)] rounded-none">
+          <h2 className="text-2xl font-bold mb-3 text-gray-900 underline decoration-gray-500">
+            In Discussion With
+          </h2>
+          <ul className="list-disc list-inside space-y-2 text-gray-800 leading-relaxed">
+            <li>
+              Ultra-luxury wellness project by a globally renowned wellness
+              entrepreneur
+            </li>
+            <li>
+              <em>Baoli, Bali</em> – luxury sunset-to-night beach club
+              experience
+            </li>
+            <li>
+              <em>Zumana, Bali</em> – beachfront dining + entertainment
+              destination
+            </li>
+            <li>
+              <em>Bang Cookies</em> – influencer-led, scalable brand
+            </li>
+            <li>
+              <em>Bagatelle</em> – expansion into emerging locations
+            </li>
+          </ul>
+        </div>
+
+        {/* FUND STRATEGY & RATIONALE */}
+        <div className="bg-[#f4f1e7] p-6 border border-gray-400 shadow-[2px_2px_6px_rgba(0,0,0,0.2)] rounded-none">
+          <h2 className="text-2xl font-bold mb-3 text-gray-900 underline decoration-gray-500">
+            Fund Strategy & Rationale
+          </h2>
+
+          <h3 className="font-semibold text-gray-900 mb-2">Fund Strategy</h3>
+          <ul className="list-disc list-inside mb-4 space-y-2 text-gray-800 leading-relaxed">
+            <li>
+              Backing early-stage culturally relevant brands in food, wellness &
+              experiential formats
+            </li>
+            <li>Investing in disruptive technology</li>
+            <li>Targeting social media–influenced brands</li>
+            <li>
+              Scalable concepts with proven local traction & expansion potential
+            </li>
+          </ul>
+
+          <h3 className="font-semibold text-gray-900 mb-2">Rationale</h3>
+          <ul className="list-disc list-inside space-y-2 text-gray-800 leading-relaxed">
+            <li>
+              Global luxury hospitality reshaped since Covid; growth driven by
+              next-gen travelers & new destinations
+            </li>
+            <li>
+              Luxury hospitality spending projected to grow from $239B (2023) →
+              $391B (2028)
+            </li>
+            <li>Dining is now the #1 global consumer spend, ahead of retail</li>
+            <li>
+              Sector returns currently outperforming all others, fueled by
+              innovation & new destinations
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 px-6 pb-16 font-serif text-gray-900">
+        {/* Left side - Profile */}
+        <div className="bg-[#f9f7f1] md:col-span-1 p-6 border border-gray-300 shadow-sm text-center rounded-none">
+          <img
+            src={akshat}
+            alt="Akshat Tiberwala"
+            className="w-40 h-40 rounded-full object-cover mx-auto mb-4 border border-gray-400"
+          />
+          <h3 className="font-bold text-xl mb-2">Akshat Tiberwala</h3>
+          <p className="text-sm leading-relaxed text-gray-700">
+            Managing Director, Founder of Niyamo Capital, bringing financial
+            expertise and a Gen-Z investor perspective.
+          </p>
+        </div>
+
+        {/* Right side - Statement */}
+        <div className="md:col-span-3 flex items-center border-l-2 border-gray-400 pl-6">
+          <blockquote className="bg-[#fcfbf7] border border-gray-300 shadow-sm p-6 italic leading-relaxed">
             <p className="mb-4">
-              Comprising hospitality investment veterans and rising young talent
-              in partnership with top global operators. Proven track record of
-              successful, high-growth investments.
+              “We invest where global lifestyle trends meet real estate
+              investment opportunity,” said{" "}
+              <span className="font-semibold">Akshat Tiberwala</span>, Managing
+              Director at FHV. “We back cash-flow-positive brands with
+              expansion-ready models and layer in technology to create scalable,
+              efficient platforms. Our investments are not only about great
+              concepts, but about systems that can grow globally.”
             </p>
-
-            <div className="space-y-6">
-              {/* Uday Singh */}
-              <div>
-                <h4 className="text-lg font-semibold">Uday Singh</h4>
-                <p className="text-gray-700">
-                  Hospitality successes include Bagatelle Dubai and a successful
-                  exit in 2022, creating a new investor base.
-                </p>
-                <ul className="list-disc pl-6 mt-2 space-y-1 text-gray-700">
-                  <li>
-                    Opa Dubai (2018) and Opa Mumbai (2022) with further
-                    expansion
-                  </li>
-                  <li>Raised investment for La Nina Dubai in 2023</li>
-                </ul>
-              </div>
-
-              {/* Akshat Tiberwala */}
-              <div>
-                <h4 className="text-lg font-semibold">
-                  Akshat Tiberwala (Managing Director)
-                </h4>
-                <p className="text-gray-700">
-                  In his early 20’s, Akshat brings a modern, GenZ-rooted
-                  perspective and assets in the immediate portfolio.
-                </p>
-                <ul className="list-disc pl-6 mt-2 space-y-1 text-gray-700">
-                  <li>
-                    Founded <strong>Niyamo Capital</strong> in 2024, deploying
-                    capital in early-stage high-growth companies
-                  </li>
-                  <li>Currently managing assets worth $25m</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-11/12 md:w-5/6 mx-auto py-12 font-serif">
-        <div className="grid md:grid-cols-5 gap-8">
-          {/* Portfolio Section */}
-          <div className="md:col-span-3 bg-red-50 p-8 border border-gray-300 shadow-sm">
-            <h2 className="text-2xl font-bold text-red-700 mb-6 uppercase tracking-wide">
-              Portfolio Post $15m Fund Raise
-            </h2>
-            <ul className="list-disc pl-6 space-y-4 text-gray-800 leading-relaxed">
-              <li>
-                <strong>Dorsia</strong> – a revolutionary tech-driven
-                reservations platform
-              </li>
-              <li>
-                <strong>16 Charles Street, Mayfair</strong> – Private members
-                club combining high-end dining concepts including the famed
-                Loulou of Paris
-              </li>
-              <li>
-                <strong>Ramen Me</strong> – New wave consumer-led Disco-dining
-                concept successfully launched in Portugal
-              </li>
-              <li>
-                <strong>The Joyce</strong> – Miami-based American dining
-              </li>
-              <li>
-                <strong>Opa, Bali</strong> – An experiential, Greek ‘Made in
-                Dubai’ concept that’s become a crowd favourite
-              </li>
-            </ul>
-          </div>
-
-          {/* Rationale Section */}
-          <div className="md:col-span-2 bg-yellow-50 p-8 border border-gray-300 shadow-sm">
-            <h2 className="text-2xl font-bold text-yellow-700 mb-6 uppercase tracking-wide">
-              Rationale
-            </h2>
-            <ul className="list-disc pl-6 space-y-3 text-gray-800 leading-relaxed">
-              <li>
-                Global luxury hospitality industry changed dramatically over the
-                last 5 years since Covid…
-              </li>
-              <li>
-                Spending in luxury hospitality expected to grow to{" "}
-                <strong>$391B</strong> by 2028 from <strong>$239B</strong> in
-                2023
-              </li>
-              <li>
-                Returns in this sector are currently outperforming all others,
-                driven by dining being the No.1 consumer spend ahead of retail
-                globally
-              </li>
-              <li>
-                Fast-growing, ever-changing sector with new concepts,
-                technologies, and destinations emerging every year
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-11/12 md:w-5/6 mx-auto py-12 font-serif">
-        <div className="grid md:grid-cols-5 gap-8">
-          {/* In Discussion Section */}
-          <div className="md:col-span-2 bg-blue-50 p-8 border border-gray-300 shadow-sm">
-            <h2 className="text-2xl font-bold text-blue-700 mb-6 uppercase tracking-wide">
-              In Discussion With
-            </h2>
-            <ul className="list-disc pl-6 space-y-3 text-gray-800 leading-relaxed">
-              <li>
-                A new ultra-luxury wellness project created by one of the
-                industry’s most famous wellness entrepreneurs
-              </li>
-              <li>
-                <strong>Baoli, Bali</strong> – Sunset-to-night luxury beach club
-                experience
-              </li>
-              <li>
-                <strong>Zumana, Bali</strong> – Prime beachfront culinary &amp;
-                entertainment destination
-              </li>
-              <li>
-                <strong>Bang Cookies</strong> – Social media &amp;
-                influencer-led scalable brand
-              </li>
-              <li>
-                <strong>Bagatelle</strong> – Openings in new emerging locations
-              </li>
-            </ul>
-          </div>
-
-          {/* Fund Strategy Section */}
-          <div className="md:col-span-3 bg-green-50 p-8 border border-gray-300 shadow-sm">
-            <h2 className="text-2xl font-bold text-green-700 mb-6 uppercase tracking-wide">
-              Fund Strategy
-            </h2>
-            <ul className="list-disc pl-6 space-y-3 text-gray-800 leading-relaxed">
-              <li>
-                Creating a diverse portfolio:
-                <ul className="list-disc pl-6 mt-2 space-y-2">
-                  <li>
-                    Backing early stage culturally relevant brands in food,
-                    wellness, and experiential formats
-                  </li>
-                  <li>Investing in disruptive technology</li>
-                  <li>
-                    Investing in brands with high levels of social media
-                    influence
-                  </li>
-                  <li>Scalable concepts that can be replicated globally</li>
-                  <li>
-                    Targeting brands with proven local traction for expansion
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-11/12 md:w-5/6 mx-auto py-12 border-t border-gray-300">
-        <div className="grid md:grid-cols-3 gap-8 items-start">
-          {/* Image with Caption */}
-          <div className="flex flex-col items-center order-1">
-            <img
-              src={akshat}
-              alt="Akshat Tiberwala"
-              className="w-[340px] rounded-md shadow-lg"
-            />
-            <p className="mt-3 text-sm text-gray-600 dark:text-gray-300 italic text-center">
-              Akshat Tiberwala, Managing Director, FHV
-            </p>
-          </div>
-
-          {/* Quote Article */}
-          <div className="md:col-span-2 bg-white border border-gray-300 p-8 shadow-sm order-2">
-            <h2 className="text-2xl font-extrabold text-red-800 mb-4 tracking-wide">
-              MD Speaks
-            </h2>
-
-            <blockquote className="space-y-6 font-serif leading-relaxed text-gray-800">
-              <p className="text-lg italic">
-                “We invest where global lifestyle trends meet real estate
-                investment opportunity,” said <strong>Akshat Tiberwala</strong>,
-                Managing Director at FHV. “We back cash-flow-positive brands
-                with expansion-ready models and layer in technology to create
-                scalable, efficient platforms. Our investments are not only
-                about great concepts, but about systems that can grow globally.”
-              </p>
-
-              <p className="text-lg italic">
-                “Global Hospitality will increasingly be dominated by newer
-                generations both as consumers and as operators through the rise
-                of social media platforms. Brands are no longer growing linearly
-                – they’re growing laterally with the introduction of social
-                media to the mix. We can see this as 71% of young visitors use
-                social media for restaurant updates and 73% visited restaurants
-                in the last 3 months because of social media content.”
-              </p>
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-11/12 md:w-5/6 mx-auto py-12">
-        <div className="bg-white shadow-lg p-8">
-          {/* Newspaper Grid */}
-          <div className="grid md:grid-cols-2 gap-8 text-justify text-gray-800 leading-relaxed">
-            {/* Column 1 */}
-            <div className="space-y-5">
-              <p>
-                <strong>Dubai, UAE – Monday 25, 08, 2025 –</strong> Fern
-                Hospitality Ventures (FHV), the Dubai-based investment platform
-                focused on investing in world-renowned brands on a long-term
-                basis while providing annual return and eventual exit, has
-                launched a <strong>$100 million fund</strong> targeting
-                high-yield opportunities in the fast-evolving luxury hospitality
-                and experiential leisure sector.
-              </p>
-
-              <p>
-                The fund’s line-up includes serial hospitality entrepreneur{" "}
-                <strong>Uday Singh</strong>, who was behind the fundraising of
-                award winning concepts like Opa, Bagatelle Dubai and La Nina, as
-                well as <strong>Akshat Tiberwala</strong>, one of the youngest
-                entrepreneurs rooted in GenZ and the Managing Director of
-                private investment vehicle <strong>Niyamo Capital</strong>. The
-                fund is managed by <strong>Dalma Capital</strong>, a leading
-                DFSA-regulated investment firm.
-              </p>
-
-              <p>
-                Dubai’s position as a global powerhouse in luxury dining and
-                hospitality continues to accelerate, with homegrown concepts now
-                setting the benchmark for success on the world stage. Led by
-                dynamic entrepreneurs including Uday Singh, whose portfolio has
-                shaped the city’s high-end dining landscape, ‘Made in Dubai’
-                brands are not only dominating locally but also expanding into
-                key international markets.
-              </p>
-            </div>
-
-            {/* Column 2 */}
-            <div className="space-y-5">
-              <p>
-                This is the first of its kind investment fund that focuses on
-                global luxury hospitality sectors while offering a{" "}
-                <strong>dual return model</strong> that utilises cashflow from
-                operations and value creation from global expansion – targeting
-                iconic venues/locations, sector disruptors and technology-driven
-                innovators. The team also has a track record of achieving
-                returns in excess of 30%.
-              </p>
-
-              <div>
-                <h3 className="text-lg font-bold uppercase mb-2 border-l-4 border-black pl-3">
-                  Investor Benefits
-                </h3>
-                <ul className="list-disc pl-6 space-y-1">
-                  <li>80% dividend distribution on operating income</li>
-                  <li>
-                    Exposure to iconic global brands in early-stage expansion
-                  </li>
-                  <li>
-                    Asset-backed investments with strong real estate
-                    fundamentals
-                  </li>
-                  <li>
-                    Dual-layer return strategy via operating income and capital
-                    appreciation on exit
-                  </li>
-                </ul>
-              </div>
-
-              <p>
-                There has never been a better time to set up a fund like this as
-                fine dining guest demands surge together with the need for
-                immersive experiences as well as trends such as{" "}
-                <strong>‘Revenge Dining’</strong> becoming more popular. This
-                has contributed to the growth of the fine dining market to{" "}
-                <strong>$253B in 2025</strong> from{" "}
-                <strong>$162B in 2020</strong>.
-              </p>
-
-              <p>
-                Despite the great demand and growth in the luxury hospitality
-                sector, technology is still in its early stages. With a dynamic
-                strategy and an experienced team at the helm, the fund is built
-                to capitalize on the next wave of growth in global lifestyle
-                destinations.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="w-11/12 md:w-5/6 mx-auto py-16 border-t border-gray-300 dark:border-gray-700">
-        <h2 className="text-4xl font-extrabold tracking-wide text-gray-900 dark:text-gray-100 mb-10 uppercase">
-          Editor’s Note
-        </h2>
-
-        <div className="space-y-12 md:columns-2 lg:columns-3 gap-10 font-serif leading-relaxed text-gray-800 dark:text-gray-200">
-          {/* 1. Clear Strategy */}
-          <div className="break-inside-avoid mb-10">
-            <h3 className="text-2xl font-semibold border-b-2 border-yellow-600 dark:border-yellow-500 pb-1 mb-4">
-              1. A Clear Strategy for a Changing Sector
-            </h3>
             <p>
-              Targeting global leisure hotspots, the fund’s thesis is driven by
-              fine dining being the top spend category among affluent
-              travellers. Anchored in scaling proven, high-margin concepts
-              across hubs like Dubai, London, and Miami.
+              “Global hospitality will increasingly be dominated by newer
+              generations, both as consumers and as operators, through the rise
+              of social media platforms. Brands are no longer growing
+              linearly—they’re growing laterally with the introduction of social
+              media to the mix. We can see this as{" "}
+              <span className="font-semibold">
+                71% of young visitors use social media for restaurant updates,
+                and 73% visited restaurants in the last 3 months because of
+                social media content.
+              </span>
+              ”
             </p>
-            <ul className="list-disc pl-6 mt-4 space-y-2">
-              <li>World-famous hospitality brands entering new destinations</li>
-              <li>Food, beach clubs, wellness & members-only experiences</li>
-              <li>Tech-powered disruptors using AI for forecasting & yield</li>
-            </ul>
-            <p className="mt-4">
-              FHV’s team unites operators, technologists & investors with proven
-              growth strategies.
-            </p>
-            <ul className="list-disc pl-6 mt-4 space-y-2">
+          </blockquote>
+        </div>
+      </section>
+
+      {/* PRESS RELEASE & MARKET OUTLOOK */}
+      <section className="max-w-5xl mx-auto px-6 py-16 font-serif text-gray-900">
+        <div className="bg-[#fcfbf7] border border-gray-300 shadow-sm p-10 rounded-none">
+          <h2 className="text-3xl font-bold mb-8 uppercase tracking-wide underline decoration-gray-400">
+            Press Release & Market Outlook
+          </h2>
+
+          {/* Press Info */}
+          <p className="mb-6 leading-relaxed text-justify">
+            <span className="font-semibold">
+              Dubai, UAE – Monday, 25 August 2025
+            </span>{" "}
+            – Fern Hospitality Ventures (FHV), the Dubai-based investment
+            platform focused on world-renowned brands, has launched a{" "}
+            <span className="font-semibold">$100 million fund</span> targeting
+            high-yield opportunities in the fast-evolving luxury hospitality and
+            experiential leisure sector.
+          </p>
+
+          <p className="mb-6 leading-relaxed text-justify">
+            The fund’s line-up includes serial hospitality entrepreneur{" "}
+            <span className="font-semibold">Uday Singh</span>, who spearheaded
+            fundraising for award-winning concepts like Opa, Bagatelle Dubai,
+            and La Nina, as well as{" "}
+            <span className="font-semibold">Akshat Tiberwala</span>, one of the
+            youngest Gen-Z entrepreneurs and Managing Director of private
+            investment firm Niyamo Capital. The fund is managed by{" "}
+            <span className="font-semibold">Dalma Capital</span>, a leading
+            DFSA-regulated investment firm.
+          </p>
+
+          <p className="mb-6 leading-relaxed text-justify">
+            Dubai’s role as a global powerhouse in luxury dining and hospitality
+            continues to accelerate, with homegrown concepts now setting
+            benchmarks worldwide. Led by entrepreneurs such as Uday Singh, whose
+            portfolio has shaped the city’s high-end dining landscape, “Made in
+            Dubai” brands are not only thriving locally but also expanding into
+            key international markets.
+          </p>
+
+          {/* Key Investment Features */}
+          <div className="bg-[#fdfcf7] border border-gray-300 shadow-sm p-6 mb-8">
+            <h3 className="text-lg font-semibold mb-3 uppercase tracking-wide">
+              Investment Highlights
+            </h3>
+            <ul className="list-disc pl-5 space-y-2 leading-relaxed">
+              <li>80% dividend distribution on operating income</li>
+              <li>Exposure to iconic global brands in early-stage expansion</li>
               <li>
-                <strong>Dubai:</strong>{" "}
-                <span className="text-red-700 dark:text-red-400 font-bold">
-                  17.15M visitors (+19% YoY)
-                </span>
+                Asset-backed investments with strong real estate fundamentals
               </li>
               <li>
-                <strong>London:</strong> Luxury tier recovering strongly
-              </li>
-              <li>
-                <strong>Bali:</strong> Surpassed pre-pandemic levels
-              </li>
-              <li>
-                <strong>Miami:</strong> Above 2019 benchmarks
+                Dual-layer return strategy via operating income & capital
+                appreciation on exit
               </li>
             </ul>
           </div>
+
+          {/* Market Outlook */}
+          <p className="mb-6 leading-relaxed text-justify">
+            There has never been a better time to launch a fund of this nature.
+            Fine dining demand is surging, immersive experiences are gaining
+            traction, and trends like “Revenge Dining” are fueling global
+            expansion. The fine dining market has grown from{" "}
+            <span className="font-semibold">$162B in 2020 ➝ $253B in 2025</span>
+            . Core luxury hubs from Dubai to Miami and Bali show rapid growth
+            over the past five years, yet operators face headwinds from
+            closures, capital constraints, and fragmented ownership.
+          </p>
+
+          <p className="leading-relaxed text-justify">
+            With technology still in its early stages, FHV’s strategy and
+            leadership are positioned to capture the next wave of growth in
+            global lifestyle destinations. From culturally relevant F&amp;B
+            brands to digitally driven hospitality platforms, Fern’s portfolio
+            sits at the convergence of rising tourism, real estate scarcity, and
+            growing demand for premium experiences.
+          </p>
+        </div>
+      </section>
+
+      {/* EDITOR’S NOTE */}
+      <section className="max-w-5xl mx-auto px-6 py-16 font-serif text-gray-900">
+        <div className="bg-[#fcfbf7] border border-gray-300 shadow-sm p-10 rounded-none">
+          <h2 className="text-3xl font-bold mb-10 uppercase tracking-wide underline decoration-gray-400">
+            Editor’s Note
+          </h2>
+
+          {/* 1. Clear Strategy */}
+          <h3 className="text-xl font-bold mb-4 uppercase tracking-wide underline decoration-gray-300">
+            1. A Clear Strategy for a Changing Sector
+          </h3>
+          <p className="mb-4 leading-relaxed text-justify">
+            Targeting global leisure hotspots, the fund’s thesis is anchored in
+            acquiring and scaling proven, high-margin concepts in the most
+            in-demand hospitality hubs.
+          </p>
+          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed">
+            <li>
+              World-famous hospitality brands expanding into emerging
+              destinations
+            </li>
+            <li>
+              Culturally resonant concepts in F&amp;B, wellness, beach clubs,
+              members-only
+            </li>
+            <li>
+              Tech-powered disruptors using AI and digital platforms for
+              forecasting &amp; guest journeys
+            </li>
+          </ul>
+          <p className="mb-4 leading-relaxed text-justify">
+            FHV’s team unites operators, technologists and investors with a
+            proven record of market growth.
+          </p>
+          <ul className="list-disc pl-6 space-y-1 leading-relaxed">
+            <li>
+              <span className="font-semibold">Dubai:</span> 17.15m visitors in
+              2023 (+19% YoY, record high)
+            </li>
+            <li>
+              <span className="font-semibold">London:</span> Luxury sector fully
+              recovered beyond pre-COVID levels
+            </li>
+            <li>
+              <span className="font-semibold">Bali:</span> Surpassed
+              pre-pandemic performance
+            </li>
+            <li>
+              <span className="font-semibold">Mykonos:</span> Record tourism
+              post-reopening
+            </li>
+            <li>
+              <span className="font-semibold">Miami:</span> Stabilized above
+              2019 peak
+            </li>
+            <li>
+              <span className="font-semibold">Tulum:</span> Riviera Maya hotspot
+              growing rapidly
+            </li>
+          </ul>
 
           {/* 2. GenZ */}
-          <div className="break-inside-avoid mb-10">
-            <h3 className="text-2xl font-semibold border-b-2 border-blue-600 dark:border-blue-400 pb-1 mb-4">
-              2. GenZ: The Future of Hospitality
-            </h3>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>
-                <span className="font-bold text-blue-700 dark:text-blue-400">
-                  79%
-                </span>{" "}
-                dine out 5+ times a month
-              </li>
-              <li>
-                <span className="font-bold text-blue-700 dark:text-blue-400">
-                  88%
-                </span>{" "}
-                follow travel influencers
-              </li>
-              <li>
-                <span className="font-bold text-blue-700 dark:text-blue-400">
-                  73%
-                </span>{" "}
-                pay more for sustainable options
-              </li>
-            </ul>
+          <h3 className="text-xl font-bold mt-10 mb-4 uppercase tracking-wide underline decoration-gray-300">
+            2. GenZ: The Future of Hospitality
+          </h3>
+          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed">
+            <li>79% dine out 5+ times monthly</li>
+            <li>88% follow travel influencers on TikTok/Instagram</li>
+            <li>89% rank travel as top financial priority</li>
+            <li>
+              52% prioritize experiences over possessions (avg. 29% of income
+              spent on travel)
+            </li>
+            <li>73% willing to pay more for sustainable options</li>
+            <li>“Snackification” creates new daily guest engagement windows</li>
+          </ul>
 
-            <div className="mt-6 border-l-4 border-blue-600 dark:border-blue-400 pl-4 italic text-gray-700 dark:text-gray-300">
-              “Snackification” and TikTok-driven discovery are reshaping
-              hospitality —{" "}
-              <span className="font-semibold">
-                74% of diners choose venues based on social media.
-              </span>
-            </div>
-          </div>
+          <h4 className="text-lg font-semibold mt-6 mb-2 italic">
+            The Digital Discovery Era
+          </h4>
+          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed">
+            <li>74% choose venues via social media</li>
+            <li>TikTok videos &lt;30s perform 2x better than Reels</li>
+            <li>
+              &lt;5% of upscale venues use AI tools, leaving revenue untapped
+            </li>
+          </ul>
+
+          <h4 className="text-lg font-semibold mt-6 mb-2 italic">
+            Experiential &amp; Immersive Formats
+          </h4>
+          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed">
+            <li>Chef’s tables, multi-sensory dining, storytelling events</li>
+            <li>Hybrid venues mixing dining, art, co-working, wellness</li>
+            <li>
+              Hotels with unique F&amp;B earn 10% more than standard formats
+            </li>
+          </ul>
+
+          <h4 className="text-lg font-semibold mt-6 mb-2 italic">
+            Sustainability = Luxury’s New Status
+          </h4>
+          <p className="mb-4 leading-relaxed text-justify">
+            Eco-responsibility and community-driven concepts are now premium
+            differentiators, embedding values into brand DNA.
+          </p>
+
+          <h4 className="text-lg font-semibold mt-6 mb-2 italic">
+            Tech as Next Frontier
+          </h4>
+          <p className="mb-4 leading-relaxed text-justify">
+            AI-led demand forecasting, personalised digital journeys, and
+            membership models (e.g. Dorsia) are redefining exclusivity.
+          </p>
 
           {/* 3. Growth Dynamics */}
-          <div className="break-inside-avoid mb-10">
-            <h3 className="text-2xl font-semibold border-b-2 border-green-600 dark:border-green-400 pb-1 mb-4">
-              3. Growth Dynamics
-            </h3>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>
-                Fine dining valued at{" "}
-                <span className="font-bold text-green-700 dark:text-green-400">
-                  €28B
-                </span>
-              </li>
-              <li>
-                Culinary tourism:{" "}
-                <span className="font-bold text-green-700 dark:text-green-400">
-                  $11B
-                </span>{" "}
-                (+20% annually)
-              </li>
-              <li>
-                Luxury leisure spend to hit{" "}
-                <span className="text-green-700 dark:text-green-400 font-bold">
-                  $391B
-                </span>{" "}
-                by 2028
-              </li>
-            </ul>
+          <h3 className="text-xl font-bold mt-10 mb-4 uppercase tracking-wide underline decoration-gray-300">
+            3. Growth Dynamics
+          </h3>
+          <ul className="list-disc pl-6 mb-4 space-y-1 leading-relaxed">
+            <li>Fine dining market: €28B</li>
+            <li>Culinary tourism: $11B market, growing 20% annually</li>
+            <li>Luxury travel &amp; tourism → $3T revenue in 5 years</li>
+            <li>Luxury leisure hospitality → $239B (2023) → $391B (2028)</li>
+            <li>HNWIs spend to grow $80B → $154B in 3 years</li>
+            <li>Guests now spend more on dining than hotels</li>
+            <li>
+              Brands expanding with seasonal global pop-ups (St. Barts,
+              Courchevel, Mykonos)
+            </li>
+            <li>Entertainment &amp; social cachet drive demand</li>
+            <li>GenZ → 40% of global spend by 2030</li>
+          </ul>
 
-            <div className="mt-6 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-600 p-4 rounded">
-              <h4 className="font-semibold mb-2">Bleisure & Digital Nomads</h4>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>
-                  <span className="font-bold text-green-700 dark:text-green-400">
-                    60%
-                  </span>{" "}
-                  extend trips for leisure
-                </li>
-                <li>
-                  Market hit{" "}
-                  <span className="font-bold text-green-700 dark:text-green-400">
-                    $430B
-                  </span>{" "}
-                  in 2024
-                </li>
-                <li>
-                  Expected to reach{" "}
-                  <span className="font-bold text-green-700 dark:text-green-400">
-                    $731B
-                  </span>{" "}
-                  by 2032
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+          <h4 className="text-lg font-semibold mt-6 mb-2 italic">
+            Bleisure &amp; Digital Nomadism
+          </h4>
+          <ul className="list-disc pl-6 mb-8 space-y-1 leading-relaxed">
+            <li>60% of corporate travelers extend trips</li>
+            <li>Bleisure market $430B (2024) → $731B by 2032 (8.9% CAGR)</li>
+            <li>84% want vacation time in business trips</li>
+          </ul>
 
-      <section className="w-11/12 md:w-5/6 mx-auto py-12">
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* About Fern Hospitality Ventures */}
-          <div className="bg-white dark:bg-black p-6 rounded-xl shadow-md border dark:border-gray-800 border-gray-200">
-            <h2 className="text-2xl font-bold mb-4 text-black dark:text-white">
+          {/* About Section */}
+          <div className="bg-[#f7f6f2] border border-gray-300 p-6 mb-8">
+            <h3 className="text-lg font-semibold mb-3 uppercase tracking-wide">
               About Fern Hospitality Ventures
-            </h2>
-            <p className="leading-relaxed text-gray-800 dark:text-gray-300">
-              Fern Hospitality Ventures is an investment platform based in
-              Dubai, targeting premium hospitality, wellness, experiential
-              F&amp;B, and tech-driven lifestyle brands. Its focus is on scaling
-              culturally relevant, real estate-backed assets in high-growth
-              destinations across the globe.
+            </h3>
+            <p className="mb-3 leading-relaxed text-justify">
+              Dubai-based investment platform targeting premium hospitality,
+              wellness, experiential F&amp;B, and tech-driven lifestyle brands.
+              Focus on scaling real estate-backed assets in high-growth
+              destinations.
+            </p>
+            <h3 className="text-lg font-semibold mb-3 uppercase tracking-wide">
+              About Dalma Capital
+            </h3>
+            <p className="mb-0 leading-relaxed text-justify">
+              Global investment firm in DIFC, regulated by DFSA. Manages $10B+
+              across private equity, credit, and real assets.
             </p>
           </div>
 
-          {/* Media Enquiries */}
-          <div className="bg-white dark:bg-black p-6 rounded-xl shadow-md border dark:border-gray-800 border-gray-200">
-            <h2 className="text-2xl font-bold mb-4 text-black dark:text-white">
-              Media Enquiries
-            </h2>
-            <p className="text-gray-800 dark:text-gray-300">
-              James Henderson |{" "}
-              <a
-                href="tel:+971504714080"
-                className="text-blue-600 dark:text-blue-400 underline"
-              >
-                +971 50 471 4080
-              </a>{" "}
-              |{" "}
-              <a
-                href="mailto:james@JBH-PR.com"
-                className="text-blue-600 dark:text-blue-400 underline"
-              >
-                james@JBH-PR.com
-              </a>
-            </p>
-            <p className="mt-2 text-gray-800 dark:text-gray-300">
-              Mohammad Aldaejy |{" "}
-              <a
-                href="tel:+971585405177"
-                className="text-blue-600 dark:text-blue-400 underline"
-              >
-                +971 58 540 5177
-              </a>{" "}
-              |{" "}
-              <a
-                href="mailto:mohammed@JBH-PR.com"
-                className="text-blue-600 dark:text-blue-400 underline"
-              >
-                mohammed@JBH-PR.com
-              </a>
-            </p>
+          {/* Media */}
+          <div className="text-sm italic text-gray-700">
+            <h3 className="font-semibold mb-2 not-italic">Media Enquiries</h3>
+            <p>James Henderson | +971 50 471 4080 | james@JBH-PR.com</p>
+            <p>Mohammad Aldaejy | +971 58 540 5177 | mohammed@JBH-PR.com</p>
           </div>
         </div>
       </section>
 
-      <NewsSubscribeSection />
       <Footer />
     </div>
   );
