@@ -1,6 +1,5 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Nav";
-import NewsSubscribeSection from "../components/Newsletter";
 
 function Disclaimer() {
   return (
@@ -80,7 +79,6 @@ function Disclaimer() {
         </div>
       </div>
 
-      <NewsSubscribeSection />
       <Footer />
     </div>
   );

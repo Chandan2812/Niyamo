@@ -3,7 +3,6 @@ import { Mail, MapPin, User, Phone, MessageSquare } from "lucide-react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 import countryCodes from "../../utils/countryCodes.json";
-import NewsSubscribeSection from "../../components/Newsletter";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -253,7 +252,6 @@ function Contact() {
           </div>
         </div>
       </section>
-      <NewsSubscribeSection />
       <Footer />
     </div>
   );

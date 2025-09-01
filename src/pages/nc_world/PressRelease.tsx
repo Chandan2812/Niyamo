@@ -1,6 +1,5 @@
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Nav";
-import NewsSubscribeSection from "../../components/Newsletter";
 import uday from "../../assets/Fern Hospitality9098.jpg";
 import akshat from "../../assets/Akshat.jpg";
 
@@ -536,7 +535,6 @@ const PressRelease = () => {
         </div>
       </section>
 
-      <NewsSubscribeSection />
       <Footer />
     </div>
   );

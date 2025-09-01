@@ -1,6 +1,5 @@
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
-import NewsSubscribeSection from "../../components/Newsletter";
 import img1 from "../../assets/team/11.jpg";
 import img2 from "../../assets/team/12.jpg";
 import img3 from "../../assets/team/13.jpg";
@@ -85,7 +84,7 @@ function Management() {
           </div>
         </div>
       </section>
-      <NewsSubscribeSection />
+      {/* <NewsSubscribeSection /> */}
       <Footer />
     </div>
   );
