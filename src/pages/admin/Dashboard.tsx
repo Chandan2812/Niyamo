@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaUser, FaUsers } from "react-icons/fa";
+import { FaUsers } from "react-icons/fa";
 
 const baseURL = import.meta.env.VITE_API_BASE_URL;
 
@@ -32,7 +32,7 @@ const Dashboard = () => {
   }, []);
 
   const cards = [
-    { title: "Subscribers", icon: <FaUser />, count: counts.subscribers },
+    // { title: "Subscribers", icon: <FaUser />, count: counts.subscribers },
     { title: "Contacts", icon: <FaUsers />, count: counts.contacts },
   ];
 
