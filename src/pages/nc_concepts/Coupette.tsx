@@ -71,8 +71,9 @@ const Coupette: React.FC = () => {
             since opening in 2017. With dim golden lighting that dances across
             rustic walls, the bar exudes an irresistible Parisian charm,
             effortlessly blending romance and modern sophistication. Every
-            detail tells a story,vintage coins glimmer across the bar top, while
-            bold contemporary artwork injects playful energy into the space.
+            detail tells a story, vintage coins glimmer across the bar top,
+            while bold contemporary artwork injects playful energy into the
+            space.
             <br />
             <br />
             What truly sets Coupette apart is its award-winning mixology, where

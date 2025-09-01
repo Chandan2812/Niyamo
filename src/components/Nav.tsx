@@ -167,6 +167,9 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
+          <div className="notranslate">
+            <LanguageSelector />
+          </div>
           <div className="relative group">
             <span className="text-md border border-[var(--primary-color)] text-[var(--primary-color)] font-medium cursor-pointer px-2 py-1 rounded-full hover:bg-[var(--primary-color)] hover:text-white">
               <a href="/contact">Contact Us</a>
@@ -243,6 +246,9 @@ const Navbar = () => {
         <div className="text-xl font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
           <a href="/">Fern Hospitality</a>
         </div>
+        <div className="notranslate">
+          <LanguageSelector />
+        </div>
         <div className="flex items-center gap-3">
           <button
             onClick={() => setDarkMode(!darkMode)}
@@ -305,9 +311,7 @@ const Navbar = () => {
         id="google_translate_element"
         className="fixed top-2 right-[20px] -translate-x-1/2 z-[9990] md:top-7 md:right-[160px]"
       ></div> */}
-      <div className="notranslate fixed top-3 right-[1px] -translate-x-1/2 z-[9990] md:top-7 md:right-[125px]">
-        <LanguageSelector />
-      </div>
+      <div id="google_translate_element" className="hidden" />
     </nav>
   );
 };
