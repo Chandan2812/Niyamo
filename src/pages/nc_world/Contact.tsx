@@ -103,12 +103,13 @@ function Contact() {
               Let’s Connect
             </h2>
             <p
-              className="text-base md:text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto"
+              className="text-base md:text-lg text-gray-700 dark:text-gray-300 max-w-1xl mx-auto"
               data-aos="fade-up"
               data-aos-delay="400"
             >
+              Our team is always happy to connect. <br />
               We’re here for you! Reach out via email, drop by our office, or
-              send us a quick message. Our team is always happy to connect.
+              send us a quick message.
             </p>
           </div>
 
