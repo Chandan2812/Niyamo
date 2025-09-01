@@ -117,15 +117,15 @@ const Charles: React.FC = () => {
             {/* Right Content */}
             <div className="flex flex-col justify-center">
               <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-white">
-                Cuisine
+                16 Charles Street - Location
               </h2>
               <p
                 className="text-gray-600 dark:text-gray-400 text-base mb-6 text-justify font-serif leading-relaxed"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <span className="font-semibold">16 Charles Street</span> is
-                located in the heart of
+                {/* <span className="font-semibold">16 Charles Street</span> is */}
+                Located in the heart of
                 <span className="font-semibold"> Mayfair </span> on the north
                 side of Charles Street opposite the junction with Queen Square.
                 The area is well-served by a wide range of local businesses and
