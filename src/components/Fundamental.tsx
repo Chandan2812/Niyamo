@@ -29,7 +29,7 @@ const fundamentals = [
     url: "ramen-me",
   },
   {
-    name: "Thamel - Portugal ",
+    name: "Thamel - Porto ",
     img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/67/4e/2e/o-nossos-deliciosos-momode3man.jpg?w=1100&h=600&s=1",
     url: "thamel",
   },
