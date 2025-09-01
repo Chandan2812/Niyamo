@@ -11,7 +11,7 @@ const teamMembers = [
   { name: "Mark Lotenburg", role: "Founder and CEO, DORSIA", image: img5 },
   { name: "Akshat Tiberwala", role: "MD", image: img2 },
   { name: "Uday Singh", role: "CEO", image: img1 },
-  { name: "Ivan Ruchev", role: "Head of Operations", image: img6 },
+  { name: "Bartoélémy Lemoine", role: "Head of Operations", image: img6 },
   { name: "Alex Cordoba", role: "CEO, Savaya", image: img3 },
   {
     name: "Zachary Cefaratti",
