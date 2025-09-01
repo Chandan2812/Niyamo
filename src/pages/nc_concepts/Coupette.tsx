@@ -87,27 +87,39 @@ const Coupette: React.FC = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
             {/* Image Gallery */}
-            <img
-              src="https://static.wixstatic.com/media/fe41f9_702649e8b6aa4d1e82fe470192aef364~mv2.jpg"
-              alt="Coupette interior 1"
-              className="w-full h-96 object-cover rounded"
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="200"
-            />
-            <img
-              src="https://static.wixstatic.com/media/fe41f9_6900c9bc00ac4705b096d1859135c7bb~mv2.jpg"
-              alt="Coupette interior 2"
-              className="w-full h-96 object-cover rounded"
+            >
+              <img
+                src="https://static.wixstatic.com/media/fe41f9_702649e8b6aa4d1e82fe470192aef364~mv2.jpg"
+                alt="Coupette interior 1"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="500"
-            />
-            <img
-              src="https://static.wixstatic.com/media/fe41f9_a864ac7097194e67bfe124dc1f68e424~mv2.jpg"
-              alt="Coupette interior 3"
-              className="w-full h-96 object-cover rounded"
+            >
+              <img
+                src="https://static.wixstatic.com/media/fe41f9_6900c9bc00ac4705b096d1859135c7bb~mv2.jpg"
+                alt="Coupette interior 2"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="800"
-            />
+            >
+              <img
+                src="https://static.wixstatic.com/media/fe41f9_a864ac7097194e67bfe124dc1f68e424~mv2.jpg"
+                alt="Coupette interior 3"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
           </div>
         </div>
 
@@ -199,27 +211,39 @@ const Coupette: React.FC = () => {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <img
-              src="https://static.wixstatic.com/media/1d4581_f5fe5812b8b0490f8fa3650912b2ea37~mv2.png"
-              alt="Sustainable cocktail"
-              className="h-full object-cover rounded"
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="200"
-            />
-            <img
-              src="https://static.wixstatic.com/media/fe41f9_1b5419bb954a4b0283823e65061f871c~mv2.jpg"
-              alt="Cocktail example"
-              className="h-full object-cover rounded"
+            >
+              <img
+                src="https://static.wixstatic.com/media/1d4581_f5fe5812b8b0490f8fa3650912b2ea37~mv2.png"
+                alt="Sustainable cocktail"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="500"
-            />
-            <img
-              src="https://static.wixstatic.com/media/fe41f9_25b64aa40c07494d813849bc492e5bb4~mv2.jpg"
-              alt="Interior decor"
-              className="h-full object-cover rounded"
+            >
+              <img
+                src="https://static.wixstatic.com/media/fe41f9_1b5419bb954a4b0283823e65061f871c~mv2.jpg"
+                alt="Cocktail example"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="800"
-            />
+            >
+              <img
+                src="https://static.wixstatic.com/media/fe41f9_25b64aa40c07494d813849bc492e5bb4~mv2.jpg"
+                alt="Interior decor"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
           </div>
         </div>
 

@@ -71,33 +71,39 @@ const Joyce: React.FC = () => {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
-            <div className="overflow-hidden rounded">
+            <div
+              className="overflow-hidden rounded"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <img
                 src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/26189TheJoyce_122024_1338_1.jpg"
                 alt="BKC concept 1"
                 className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
-                data-aos="fade-up"
-                data-aos-delay="200"
               />
             </div>
 
-            <div className="overflow-hidden rounded">
+            <div
+              className="overflow-hidden rounded"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <img
                 src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/55839TheJoyce_122024_6266.jpg"
                 alt="BKC concept 2"
                 className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
-                data-aos="fade-up"
-                data-aos-delay="500"
               />
             </div>
 
-            <div className="overflow-hidden rounded">
+            <div
+              className="overflow-hidden rounded"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
               <img
                 src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/38694TheJoyce_122024_6462.jpg"
                 alt="BKC concept 3"
                 className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
-                data-aos="fade-up"
-                data-aos-delay="800"
               />
             </div>
           </div>
@@ -163,27 +169,39 @@ const Joyce: React.FC = () => {
         {/* Design Section */}
         <div className="mb-16">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <img
-              src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/TV8njQqwQPCOIZlaOWvR_TheJoyce_112024_3876.jpg"
-              alt="Design 1"
-              className="h-full object-cover rounded"
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="200"
-            />
-            <img
-              src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/dZCWFGjwT0ehKAEc9h4e_TheJoyce_112024_4005.jpg"
-              alt="Design 2"
-              className="h-full object-cover rounded"
+            >
+              <img
+                src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/TV8njQqwQPCOIZlaOWvR_TheJoyce_112024_3876.jpg"
+                alt="Design 1"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="500"
-            />
-            <img
-              src="https://joyce-restaurant.at/wp-content/uploads/2023/07/img-3-1152x1536-optimized.jpg"
-              alt="Design 3"
-              className="h-full object-cover rounded"
+            >
+              <img
+                src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/dZCWFGjwT0ehKAEc9h4e_TheJoyce_112024_4005.jpg"
+                alt="Design 2"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="800"
-            />
+            >
+              <img
+                src="https://joyce-restaurant.at/wp-content/uploads/2023/07/img-3-1152x1536-optimized.jpg"
+                alt="Design 3"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
           </div>
         </div>
 

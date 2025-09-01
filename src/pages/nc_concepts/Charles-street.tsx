@@ -58,33 +58,39 @@ const Charles: React.FC = () => {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
-              <div className="overflow-hidden rounded">
+              <div
+                className="overflow-hidden rounded"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615985977066-O9EM7EDKCSYWTU4WS1R0/Gilles+Malafosse%2C+Claire+Malafosse%2C+Benoit+Darge%CC%81re%2C+Alexandre+Rossoz+%C2%A9+Maxime+Lenik+1.jpg?format=750w"
                   alt="Concept 1"
                   className="w-full h-64 object-cover rounded transform transition duration-500 hover:scale-110 "
-                  data-aos="fade-up"
-                  data-aos-delay="200"
                 />
               </div>
 
-              <div className="overflow-hidden rounded">
+              <div
+                className="overflow-hidden rounded"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615985825825-W98KHLYXOIUMSPGZBGDW/DSC_3718.jpg?format=750w"
                   alt="Concept 2"
                   className="w-full h-64 object-cover rounded transform transition duration-500 hover:scale-110 "
-                  data-aos="fade-up"
-                  data-aos-delay="500"
                 />
               </div>
 
-              <div className="overflow-hidden rounded">
+              <div
+                className="overflow-hidden rounded"
+                data-aos="fade-up"
+                data-aos-delay="800"
+              >
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615855967211-8DIMWDY166LLLW1TGAPJ/image4.jpg?format=750w"
                   alt="Concept 3"
                   className="w-full h-64 object-cover rounded transform transition duration-500 hover:scale-110 "
-                  data-aos="fade-up"
-                  data-aos-delay="800"
                 />
               </div>
             </div>
@@ -167,20 +173,28 @@ const Charles: React.FC = () => {
               where she entertained politicians, royalty, and celebrities.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <img
-                src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1616080990956-0M829GKJ9EMO15XEX7JR/LE+FLANDRIN+Terrasse+sans+parasol+%C2%A9AngiaVaudron+1+P7120028.JPG?format=1500w"
-                alt="Design 1"
-                className="w-full h-full object-cover rounded"
+              <div
+                className="overflow-hidden"
                 data-aos="fade-up"
                 data-aos-delay="200"
-              />
-              <img
-                src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615986468626-8HLYKDENGO4NG54PYAF8/Le+Flandrin.jpg?format=1500w"
-                alt="Design 2"
-                className="w-full h-full object-cover rounded"
+              >
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1616080990956-0M829GKJ9EMO15XEX7JR/LE+FLANDRIN+Terrasse+sans+parasol+%C2%A9AngiaVaudron+1+P7120028.JPG?format=1500w"
+                  alt="Design 1"
+                  className="w-full h-full object-cover rounded hover:scale-105"
+                />
+              </div>
+              <div
+                className="overflow-hidden"
                 data-aos="fade-up"
                 data-aos-delay="500"
-              />
+              >
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615986468626-8HLYKDENGO4NG54PYAF8/Le+Flandrin.jpg?format=1500w"
+                  alt="Design 2"
+                  className="w-full h-full object-cover rounded hover:scale-105"
+                />
+              </div>
             </div>
           </div>
 
