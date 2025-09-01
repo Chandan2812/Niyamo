@@ -64,13 +64,13 @@ const Bkc: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            At <strong>BKC – Biryani Kebab Chai</strong>, we bring the royal
-            flavors of Lucknow straight to London. Born from a passion for
-            authentic Awadhi cuisine, our journey began in Marble Arch in 2022
-            and expanded to Soho in 2023. From fragrant dum biryanis to
-            melt-in-the-mouth kebabs and soulful kulhad chai, every dish is a
-            tribute to the timeless culinary heritage of Lucknow, served with
-            warmth, tradition, and a touch of modern elegance.
+            At <span className="font-semibold">BKC – Biryani Kebab Chai</span>,
+            we bring the royal flavors of Lucknow straight to London. Born from
+            a passion for authentic Awadhi cuisine, our journey began in Marble
+            Arch in 2022 and expanded to Soho in 2023. From fragrant dum
+            biryanis to melt-in-the-mouth kebabs and soulful kulhad chai, every
+            dish is a tribute to the timeless culinary heritage of Lucknow,
+            served with warmth, tradition, and a touch of modern elegance.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
@@ -130,8 +130,9 @@ const Bkc: React.FC = () => {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              At <strong>BKC</strong>, every plate tells a story of passion and
-              precision. Guided by our Head Chef, <strong>Arsh Thakur</strong>,
+              At <span className="font-semibold">BKC – Biryani Kebab Chai</span>
+              , every plate tells a story of passion and precision. Guided by
+              our Head Chef, <span className="font-semibold">Arsh Thakur</span>,
               we embrace the art of <em>dum pukht</em> cooking, where
               slow-cooked marinated meats and aromatic rice come together in
               perfect harmony. Using age-old Awadhi techniques and the freshest
@@ -166,14 +167,15 @@ const Bkc: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            More than just a restaurant, <strong>BKC</strong> is a cultural
-            experience. Inspired by Lucknow’s tradition of{" "}
-            <em>mehmaan nawazi</em> (royal hospitality), we welcome every guest
-            with warmth, elegance, and care. Whether you’re enjoying chai in a
-            rustic kulhad, savoring kebabs with friends, or gathering for a
-            Nawabi feast, every moment at BKC is designed to feel special. Step
-            inside, and let us transport you to the heritage-rich streets of
-            Lucknow, right here in the heart of London.
+            More than just a restaurant,{" "}
+            <span className="font-semibold">BKC</span> is a cultural experience.
+            Inspired by Lucknow’s tradition of <em>mehmaan nawazi</em> (royal
+            hospitality), we welcome every guest with warmth, elegance, and
+            care. Whether you’re enjoying chai in a rustic kulhad, savoring
+            kebabs with friends, or gathering for a Nawabi feast, every moment
+            at BKC is designed to feel special. Step inside, and let us
+            transport you to the heritage-rich streets of Lucknow, right here in
+            the heart of London.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <img

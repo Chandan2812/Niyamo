@@ -43,17 +43,18 @@ const Charles: React.FC = () => {
               className=" text-gray-600 dark:text-gray-400 text-base text-justify font-serif"
               data-aos="fade-up"
             >
-              During 2021, the team began developing its plans to restore 16
-              Charles Street to its former glory and bring it into public use
-              for everyone to enjoy. The new restaurant will be a discreet
-              fine-dining experience committed to exceptional quality and the
-              highest standards of service. Last year, L16 CS Operations
-              Limited, part of Loulou Groupe, successfully applied for a
-              Certificate of Lawfulness for the use of the building as a
-              restaurant (Use Class E) and a Premises Licence. With the planning
-              use and premises licence now in place, the team has recently
-              submitted another application to Westminster City Council for
-              Planning and Listed Building Consents.
+              During 2021, the team began developing its plans to restore{" "}
+              <span className="font-semibold">16 Charles Street</span> to its
+              former glory and bring it into public use for everyone to enjoy.
+              The new restaurant will be a discreet fine-dining experience
+              committed to exceptional quality and the highest standards of
+              service. Last year, L16 CS Operations Limited, part of Loulou
+              Groupe, successfully applied for a Certificate of Lawfulness for
+              the use of the building as a restaurant (Use Class E) and a
+              Premises Licence. With the planning use and premises licence now
+              in place, the team has recently submitted another application to
+              Westminster City Council for Planning and Listed Building
+              Consents.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
@@ -117,12 +118,18 @@ const Charles: React.FC = () => {
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                16 Charles Street is located in the heart of Mayfair on the
-                north side of Charles Street opposite the junction with Queen
-                Square. The area is well-served by a wide range of local
-                businesses and is within easy walking distance of Green Park
-                underground station. The building is located in the Mayfair
-                Conservation Area and the Core Central Activities Zone.
+                <span className="font-semibold">16 Charles Street</span> is
+                located in the heart of
+                <span className="font-semibold"> Mayfair </span> on the north
+                side of Charles Street opposite the junction with Queen Square.
+                The area is well-served by a wide range of local businesses and
+                is within easy walking distance of Green Park underground
+                station. The building is located in the{" "}
+                <span className="font-semibold">Mayfair Conservation Area</span>{" "}
+                and{" "}
+                <span className="font-semibold">
+                  The Core Central Activities Zone.
+                </span>
               </p>
 
               {/* CTA Button (optional) */}
