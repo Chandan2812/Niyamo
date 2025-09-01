@@ -159,7 +159,7 @@ function Bagatelle() {
                 data-aos-delay="800"
               >
                 Bagatelle’s positioning hits the sweet spot between{" "}
-                <strong>exclusivity, fun, and food</strong> — with no scaled
+                <strong>exclusivity, fun, and food</strong>, with no scaled
                 competitor replicating its model.
               </p>
             </div>

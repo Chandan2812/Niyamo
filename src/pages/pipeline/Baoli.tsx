@@ -79,7 +79,7 @@ function Baoli() {
                 bottle service, cabanas, and experiential dining.
               </p>
               <p className="mt-4">
-                <strong>Projected EBITDA margins of 35–40%</strong> — among the
+                <strong>Projected EBITDA margins of 35–40%</strong>, among the
                 highest in the global beach club category due to low labor and
                 rent.
               </p>
@@ -89,7 +89,7 @@ function Baoli() {
             <div>
               <HighlightCard title="Exit-Ready Platform Asset" />
               <p>
-                Bâoli Bali will not be a one-off — it’s the{" "}
+                Bâoli Bali will not be a one-off, it’s the{" "}
                 <strong>launchpad for an APAC expansion</strong>, with Phuket
                 and the Maldives on the radar.
               </p>

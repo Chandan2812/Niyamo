@@ -70,7 +70,7 @@ const Footer = () => {
               { label: "About Us", route: "/about-us" },
               { label: "Contact Us", route: "/contact" },
               { label: "Press Release", route: "/press-release" },
-              { label: "News", route: "/news" },
+              // { label: "News", route: "/news" },
               { label: "Disclaimer", route: "/disclaimer" },
             ].map((item, i) => (
               <li key={i}>
@@ -99,9 +99,8 @@ const Footer = () => {
         <span>Fern Hospitality ©2025 All Rights Reserved</span>
         <div>
           <p>
-            Made & Marketed by{" "}
             <a href="https://www.bigwigmediadigital.com">
-              Bigwig Media Digital
+              Made & Marketed with ❤️ Bigwig Media Digital
             </a>
           </p>
         </div>

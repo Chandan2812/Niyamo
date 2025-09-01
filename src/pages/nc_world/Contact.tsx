@@ -107,8 +107,8 @@ function Contact() {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              We’d love to hear from you! Whether you prefer email, visiting our
-              office, or sending us a message, our team is ready to connect.
+              We’re here for you! Reach out via email, drop by our office, or
+              send us a quick message. Our team is always happy to connect.
             </p>
           </div>
 

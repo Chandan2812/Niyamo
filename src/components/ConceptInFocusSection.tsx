@@ -24,7 +24,7 @@ const slides = [
   {
     title: "Coupette",
     description1:
-      "We are a forward-thinking hospitality company curating exceptional dining destinations. With a portfolio of vibrant restaurants, we blend culinary artistry with unforgettable ambiance. Our team delivers refined experiences through passion, innovation, and attention to detail — creating places where guests feel inspired and at home.",
+      "We are a forward-thinking hospitality company curating exceptional dining destinations. With a portfolio of vibrant restaurants, we blend culinary artistry with unforgettable ambiance. Our team delivers refined experiences through passion, innovation, and attention to detail, creating places where guests feel inspired and at home.",
 
     image:
       "https://static.wixstatic.com/media/fe41f9_6900c9bc00ac4705b096d1859135c7bb~mv2.jpg",

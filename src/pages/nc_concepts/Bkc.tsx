@@ -67,10 +67,11 @@ const Bkc: React.FC = () => {
             At <span className="font-semibold">BKC – Biryani Kebab Chai</span>,
             we bring the royal flavors of Lucknow straight to London. Born from
             a passion for authentic Awadhi cuisine, our journey began in Marble
-            Arch in 2022 and expanded to Soho in 2023. From fragrant dum
-            biryanis to melt-in-the-mouth kebabs and soulful kulhad chai, every
-            dish is a tribute to the timeless culinary heritage of Lucknow,
-            served with warmth, tradition, and a touch of modern elegance.
+            Arch in 2022 and expanded to Soho in 2023. Indulge in the rich
+            flavors of Lucknow, from aromatic dum biryanis and tender kebabs to
+            comforting kulhad chai. Each dish is crafted as a tribute to
+            timeless traditions, served with warmth and a hint of
+            modern sophistication.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">

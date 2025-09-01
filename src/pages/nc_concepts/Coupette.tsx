@@ -189,13 +189,13 @@ const Coupette: React.FC = () => {
             data-aos-delay="200"
           >
             Welcome to <span className="font-semibold">Coupette Soho</span>, a
-            destination where sophistication meets sustainability. Our
-            award-winning bartenders reimagine French cocktail artistry with a
-            modern twist, using{" "}
+            destination where sophistication meets sustainability. Our award
+            winning bartenders reimagine French cocktail artistry with a modern
+            twist, using{" "}
             <span className="italic">locally sourced ingredients</span> to craft
-            drinks that tell intricate stories with every sip. From rich,
-            layered flavours to innovative, eco-friendly practices, every detail
-            is designed to delight your senses while honoring the planet.
+            drinks that tell intricate stories with every sip. Every element
+            from bold, layered flavors to thoughtful, sustainable practices is
+            crafted to indulge your senses while caring for the planet.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

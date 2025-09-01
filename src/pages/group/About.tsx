@@ -22,7 +22,7 @@ function AboutUs() {
                 Redefining Hospitality with Taste and Vision
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
-                Fern Hospitality is more than a hospitality company—we’re
+                Fern Hospitality is more than a hospitality company, we’re
                 curators of exceptional dining experiences. With a passion for
                 innovation and a commitment to excellence, we create restaurant
                 concepts that blend flavor, service, and ambiance into

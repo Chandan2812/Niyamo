@@ -105,7 +105,7 @@ const FindYourPartner: React.FC = () => {
               dining destinations. With a portfolio of vibrant restaurants, we
               blend culinary artistry with unforgettable ambiance. Our team
               delivers refined experiences through passion, innovation, and
-              attention to detail — creating places where guests feel inspired
+              attention to detail, creating places where guests feel inspired
               and at home.
             </p>
 

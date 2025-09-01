@@ -94,7 +94,7 @@ function BangCookies() {
               </ul>
               <p className="mt-4">
                 Already generating <strong>7-figure annual revenue</strong> with
-                minimal retail footprint — poised for explosive growth with
+                minimal retail footprint, poised for explosive growth with
                 capital.
               </p>
             </div>

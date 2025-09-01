@@ -432,7 +432,7 @@ const PressRelease = () => {
 
             <div className="mt-6 border-l-4 border-[var(--secondary-color)] pl-4 italic text-gray-700 ">
               “Snackification” and TikTok-driven discovery are reshaping
-              hospitality —{" "}
+              hospitality,{" "}
               <span className="font-semibold">
                 74% of diners choose venues based on social media.
               </span>

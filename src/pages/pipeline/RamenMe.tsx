@@ -100,7 +100,7 @@ function RamenMe() {
                 data-aos="zoom-in"
                 data-aos-delay="400"
               >
-                Ramen Me fits perfectly into this pocket —{" "}
+                Ramen Me fits perfectly into this pocket,{" "}
                 <strong>affordable, addictive, and Instagrammable</strong>.
               </p>
             </div>
