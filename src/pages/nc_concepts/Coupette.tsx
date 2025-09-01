@@ -187,7 +187,7 @@ const Coupette: React.FC = () => {
         </div>
 
         {/* Design Section */}
-        <div className="mb-16">
+        <div className="mb-16 mt-28">
           <h2
             className="text-2xl md:text-3xl font-semibold mb-4"
             data-aos="fade-up"
@@ -196,7 +196,7 @@ const Coupette: React.FC = () => {
             Cocktail Bar & Restaurant in Soho
           </h2>
           <p
-            className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif"
+            className="text-gray-600 dark:text-gray-400 text-base my-6 mb-20 text-justify font-serif"
             data-aos="fade-up"
             data-aos-delay="200"
           >

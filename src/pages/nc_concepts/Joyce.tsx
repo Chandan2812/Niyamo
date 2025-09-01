@@ -57,7 +57,7 @@ const Joyce: React.FC = () => {
             Welcome to The Joyce
           </h2>
           <p
-            className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif"
+            className="text-gray-600 dark:text-gray-400 text-base my-6 mb-12 text-justify font-serif"
             data-aos="fade-up"
             data-aos-delay="200"
           >

@@ -158,20 +158,24 @@ const Charles: React.FC = () => {
           </div>
 
           {/* Design Section */}
-          <div className="mb-16">
+          <div className="mb-16 mt-28">
             <p
-              className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif"
+              className="text-gray-600 dark:text-gray-400 text-base my-6 mb-20 text-justify font-serif flex items-start"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Charles Street has character and history, which we are keen to
-              preserve and enhance. The building at 16 Charles Street is a Grade
-              II listed Georgian property, which dates back to 1753. The
-              building has played a significant role in the social history of
-              London and was the former home of the high society hostess Dame
-              Margaret Greville. Here, Dame Margaret hosted society soirees
-              where she entertained politicians, royalty, and celebrities.
+              {/* Actual Text */}
+              <span>
+                Charles Street has character and history, which we are keen to
+                preserve and enhance. The building at 16 Charles Street is a
+                Grade II listed Georgian property, which dates back to 1753. The
+                building has played a significant role in the social history of
+                London and was the former home of the high society hostess Dame
+                Margaret Greville. Here, Dame Margaret hosted society soirees
+                where she entertained politicians, royalty, and celebrities.
+              </span>
             </p>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div
                 className="overflow-hidden"
@@ -181,7 +185,7 @@ const Charles: React.FC = () => {
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1616080990956-0M829GKJ9EMO15XEX7JR/LE+FLANDRIN+Terrasse+sans+parasol+%C2%A9AngiaVaudron+1+P7120028.JPG?format=1500w"
                   alt="Design 1"
-                  className="w-full h-full object-cover rounded hover:scale-105"
+                  className="w-full h-full object-cover rounded transform transition duration-500 hover:scale-105"
                 />
               </div>
               <div
@@ -192,7 +196,7 @@ const Charles: React.FC = () => {
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615986468626-8HLYKDENGO4NG54PYAF8/Le+Flandrin.jpg?format=1500w"
                   alt="Design 2"
-                  className="w-full h-full object-cover rounded hover:scale-105"
+                  className="w-full h-full object-cover rounded transform transition duration-500 hover:scale-105"
                 />
               </div>
             </div>

@@ -169,9 +169,9 @@ const Garden: React.FC = () => {
         </div>
 
         {/* Design Section */}
-        <div className="mb-16">
+        <div className="mb-16 mt-28">
           <p
-            className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif"
+            className="text-gray-600 dark:text-gray-400 text-base my-6 mb-20 text-justify font-serif"
             data-aos="fade-up"
             data-aos-delay="200"
           >
