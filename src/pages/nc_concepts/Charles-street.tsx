@@ -2,8 +2,18 @@ import React from "react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 import NewsSubscribeSection from "../../components/Newsletter";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Charles: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // animation happens only once
+      offset: 100, // offset from the original trigger point
+    });
+  }, []);
   return (
     <div>
       <Navbar />
@@ -16,7 +26,11 @@ const Charles: React.FC = () => {
       >
         <div className="absolute inset-0 bg-black/10 dark:bg-black/50"></div>
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1
+            className="text-4xl md:text-6xl font-bold mb-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             16 Charles Street
           </h1>
         </div>
@@ -25,7 +39,10 @@ const Charles: React.FC = () => {
         <div className="w-11/12 md:w-5/6 mx-auto">
           {/* Concept Section */}
           <div className="mb-16">
-            <p className=" text-gray-600 dark:text-gray-400 text-base text-justify font-serif">
+            <p
+              className=" text-gray-600 dark:text-gray-400 text-base text-justify font-serif"
+              data-aos="fade-up"
+            >
               During 2021, the team began developing its plans to restore 16
               Charles Street to its former glory and bring it into public use
               for everyone to enjoy. The new restaurant will be a discreet
@@ -44,29 +61,41 @@ const Charles: React.FC = () => {
                 src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615985977066-O9EM7EDKCSYWTU4WS1R0/Gilles+Malafosse%2C+Claire+Malafosse%2C+Benoit+Darge%CC%81re%2C+Alexandre+Rossoz+%C2%A9+Maxime+Lenik+1.jpg?format=750w"
                 alt="Concept 1"
                 className="w-full h-64 object-cover rounded"
+                data-aos="fade-up"
+                data-aos-delay="200"
               />
               <img
                 src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615985825825-W98KHLYXOIUMSPGZBGDW/DSC_3718.jpg?format=750w"
                 alt="Concept 2"
                 className="w-full h-64 object-cover rounded"
+                data-aos="fade-up"
+                data-aos-delay="500"
               />
               <img
                 src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615855967211-8DIMWDY166LLLW1TGAPJ/image4.jpg?format=750w"
                 alt="Concept 3"
                 className="w-full h-64 object-cover rounded"
+                data-aos="fade-up"
+                data-aos-delay="8 00"
               />
             </div>
           </div>
 
           {/* Cuisine Section */}
 
-          <div className="mb-16 grid md:grid-cols-2 gap-14 items-center  mx-auto">
+          <div className="mb-20 grid md:grid-cols-2 gap-14 items-center  mx-auto">
             {/* Left Image */}
-            <div className="w-full">
+            <div
+              className="relative w-full h-full z-10"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div className="absolute top-16 right-6 w-full h-full bg-[radial-gradient(var(--primary-color)_2.5px,transparent_2.5px)] bg-[length:28px_28px] z-0" />
+              <div className="absolute right-10 top-32 md:bottom-0 md:right-0 w-[90%] h-[90%] md:w-[90%] md:h-[80%] bg-[var(--primary-color)] dark:bg-[var(--secondary-color)]  z-0"></div>
               <img
                 src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1616079667915-Z9ECTJF2V83YIHPHM13T/thumbnail_IMG_8335.jpeg?format=750w"
-                alt="Cuisine 1"
-                className="w-full h-[400px] object-cover rounded-lg shadow-md"
+                alt="The Charles Street"
+                className="relative z-10 w-full h-[300px] md:h-[400px] object-cover"
               />
             </div>
 
@@ -75,7 +104,11 @@ const Charles: React.FC = () => {
               <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-white">
                 Cuisine
               </h2>
-              <p className="text-gray-600 dark:text-gray-400 text-base mb-6 text-justify font-serif leading-relaxed">
+              <p
+                className="text-gray-600 dark:text-gray-400 text-base mb-6 text-justify font-serif leading-relaxed"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 16 Charles Street is located in the heart of Mayfair on the
                 north side of Charles Street opposite the junction with Queen
                 Square. The area is well-served by a wide range of local
@@ -86,7 +119,11 @@ const Charles: React.FC = () => {
 
               {/* CTA Button (optional) */}
               <a href="/contact">
-                <button className="relative group flex items-center gap-2 text-white dark:text-[var(--primary-color)] dark:text-white border dark:border-[var(--primary-color)]  text-[12px] px-6 py-3 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
+                <button
+                  className="relative group flex items-center gap-2 text-[var(--primary-color)] dark:text-white border border-[var(--primary-color)]  text-[12px] px-6 py-3 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
                   <span className="z-10 relative flex items-center gap-2 dark:text-[var(--primary-color)] group-hover:text-white transition-colors duration-300 font-light">
                     Contact Us →
                   </span>
@@ -101,7 +138,11 @@ const Charles: React.FC = () => {
 
           {/* Design Section */}
           <div className="mb-16">
-            <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
+            <p
+              className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               Charles Street has character and history, which we are keen to
               preserve and enhance. The building at 16 Charles Street is a Grade
               II* listed Georgian property, which dates back to 1753. The
@@ -115,17 +156,21 @@ const Charles: React.FC = () => {
                 src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1616080990956-0M829GKJ9EMO15XEX7JR/LE+FLANDRIN+Terrasse+sans+parasol+%C2%A9AngiaVaudron+1+P7120028.JPG?format=1500w"
                 alt="Design 1"
                 className="w-full h-full object-cover rounded"
+                data-aos="fade-up"
+                data-aos-delay="200"
               />
               <img
                 src="https://images.squarespace-cdn.com/content/v1/6048e88f29a3c733e02afa4f/1615986468626-8HLYKDENGO4NG54PYAF8/Le+Flandrin.jpg?format=1500w"
                 alt="Design 2"
                 className="w-full h-full object-cover rounded"
+                data-aos="fade-up"
+                data-aos-delay="500"
               />
             </div>
           </div>
 
           {/* Location Section */}
-          <div className="mb-12">
+          <div className="mb-12" data-aos="fade-up" data-aos-delay="200">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">
               Location
             </h2>

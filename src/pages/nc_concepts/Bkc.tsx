@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 import NewsSubscribeSection from "../../components/Newsletter";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import { ArrowRight } from "lucide-react";
 
 const Bkc: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // animation happens only once
+      offset: 100, // offset from the original trigger point
+    });
+  }, []);
   return (
     <div className="bg-white text-black font-raleway dark:bg-black dark:text-white  font-light ">
       <div className="md:mb-20">
@@ -20,7 +29,11 @@ const Bkc: React.FC = () => {
       >
         <div className="absolute inset-0 bg-black/10 dark:bg-black/40"></div>
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1
+            className="text-4xl md:text-6xl font-bold mb-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Biryani Kebab Chai
           </h1>
 
@@ -29,6 +42,8 @@ const Bkc: React.FC = () => {
             className="mt-6 inline-block px-6 py-3 bg-[var(--primary-color)] text-white font-medium rounded-full shadow-lg hover:opacity-90 transition"
             target="_blank"
             rel="noopener noreferrer"
+            data-aos="fade-up"
+            data-aos-delay="500"
           >
             Explore
           </a>
@@ -37,10 +52,18 @@ const Bkc: React.FC = () => {
       <section className="w-11/12 md:w-5/6 mx-auto py-12">
         {/* Concept Section */}
         <div className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+          <h2
+            className="text-2xl md:text-3xl font-semibold mb-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Bringing authentic Awadhi delights to London
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
+          <p
+            className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             At <strong>BKC – Biryani Kebab Chai</strong>, we bring the royal
             flavors of Lucknow straight to London. Born from a passion for
             authentic Awadhi cuisine, our journey began in Marble Arch in 2022
@@ -55,37 +78,58 @@ const Bkc: React.FC = () => {
               src="https://bkclondon.uk/wp-content/uploads/2024/06/Slider-1-1.png"
               alt="BKC concept 1"
               className="w-full h-full object-cover rounded"
+              data-aos="fade-up"
+              data-aos-delay="200"
             />
             <img
               src="https://bkclondon.uk/wp-content/uploads/2024/06/2-1.png"
               alt="BKC concept 2"
               className="w-full h-full object-cover rounded"
+              data-aos="fade-up"
+              data-aos-delay="500"
             />
             <img
               src="https://bkclondon.uk/wp-content/uploads/2024/06/3-1.png"
               alt="BKC concept 3"
               className="w-full h-full object-cover rounded"
+              data-aos="fade-up"
+              data-aos-delay="800"
             />
           </div>
         </div>
 
         {/* Cuisine Section */}
-        <div className="mb-16 grid md:grid-cols-2 gap-14 items-center max-w-7xl mx-auto">
+        <div className="mb-20 grid md:grid-cols-2 gap-14 items-center max-w-7xl mx-auto">
           {/* Left Image */}
-          <div className="grid grid-cols-1 gap-4">
+
+          <div
+            className="relative w-full h-full z-10"
+            data-aos="flip-left"
+            data-aos-delay="200"
+          >
+            <div className="absolute top-16 right-6 w-full h-full bg-[radial-gradient(var(--primary-color)_2.5px,transparent_2.5px)] bg-[length:28px_28px] z-0" />
+            <div className="absolute right-10 top-32 md:bottom-0 md:right-0 w-[90%] h-[90%] md:w-[90%] md:h-[80%] bg-[var(--primary-color)] dark:bg-[var(--secondary-color)]  z-0"></div>
             <img
               src="https://bkclondon.uk/wp-content/uploads/2023/08/DSC00189-2400x1600.jpg"
-              alt="Cuisine 1"
-              className="w-full h-full object-cover rounded-lg shadow-md"
+              alt="Biryani Kebab Chai"
+              className="relative z-10 w-full h-[300px] md:h-[400px] object-cover"
             />
           </div>
 
           {/* Right Content */}
           <div className="flex flex-col justify-center">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-white">
+            <h2
+              className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-white"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               Dum Pukht Magic: The Royal Lucknowi Biryani at BKC
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 text-base mb-6 text-justify font-serif leading-relaxed">
+            <p
+              className="text-gray-600 dark:text-gray-400 text-base mb-6 text-justify font-serif leading-relaxed"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               At <strong>BKC</strong>, every plate tells a story of passion and
               precision. Guided by our Head Chef, <strong>Arsh Thakur</strong>,
               we embrace the art of <em>dum pukht</em> cooking, where
@@ -98,8 +142,12 @@ const Bkc: React.FC = () => {
 
             {/* Explore Button */}
             <a href="/contact">
-              <button className="relative group flex items-center gap-2 text-white dark:text-[var(--primary-color)] dark:text-white border dark:border-[var(--primary-color)]  text-[12px] px-6 py-3 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden">
-                <span className="z-10 relative flex items-center gap-2 dark:text-[var(--primary-color)] group-hover:text-white transition-colors duration-300 font-light">
+              <button
+                className="relative group flex items-center gap-2 text-white dark:text-[var(--primary-color)] dark:text-white border border-[var(--primary-color)]  text-[12px] px-6 py-3 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <span className="z-10 relative flex items-center gap-2 text-[var(--primary-color)] group-hover:text-white transition-colors duration-300 font-light">
                   Contact Us →
                 </span>
                 <span
@@ -113,7 +161,11 @@ const Bkc: React.FC = () => {
 
         {/* Design Section */}
         <div className="mb-16">
-          <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
+          <p
+            className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             More than just a restaurant, <strong>BKC</strong> is a cultural
             experience. Inspired by Lucknow’s tradition of{" "}
             <em>mehmaan nawazi</em> (royal hospitality), we welcome every guest
@@ -128,22 +180,28 @@ const Bkc: React.FC = () => {
               src="https://bkclondon.uk/wp-content/uploads/2024/06/IMG2.jpg"
               alt="Design 1"
               className="h-full object-cover rounded"
+              data-aos="fade-up"
+              data-aos-delay="200"
             />
             <img
               src="https://bkclondon.uk/wp-content/uploads/2024/06/Home-replace3-1.png"
               alt="Design 2"
               className="h-full object-cover rounded"
+              data-aos="fade-up"
+              data-aos-delay="500"
             />
             <img
               src="https://bkclondon.uk/wp-content/uploads/2024/06/Rectangle-11.png"
               alt="Design 3"
               className="h-full object-cover rounded"
+              data-aos="fade-up"
+              data-aos-delay="800"
             />
           </div>
         </div>
 
         {/* Location Section */}
-        <div className="mb-12">
+        <div className="mb-12" data-aos="fade-up" data-aos-delay="200">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">Location</h2>
           <div className="border rounded overflow-hidden h-96">
             <iframe

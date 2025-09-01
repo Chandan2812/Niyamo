@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Mail, MapPin, User, Phone, MessageSquare } from "lucide-react";
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 import countryCodes from "../../utils/countryCodes.json";
 import NewsSubscribeSection from "../../components/Newsletter";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -16,6 +18,14 @@ function Contact() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // animation happens only once
+      offset: 100, // offset from the original trigger point
+    });
+  }, []);
 
   // ✅ email regex
   const validateEmail = (email: string) => {
@@ -85,10 +95,18 @@ function Contact() {
         <div className="w-11/12 md:w-5/6 mx-auto font-raleway">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            <h2
+              className="text-3xl md:text-5xl font-bold mb-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               Let’s Connect
             </h2>
-            <p className="text-base md:text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+            <p
+              className="text-base md:text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               We’d love to hear from you! Whether you prefer email, visiting our
               office, or sending us a message, our team is ready to connect.
             </p>
@@ -119,7 +137,11 @@ function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white dark:bg-[#111827] text-black dark:text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow">
+            <div
+              className="bg-white dark:bg-[#111827] text-black dark:text-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <h3 className="text-2xl font-semibold mb-6 text-center">
                 Send Us a Message
               </h3>
@@ -251,6 +273,8 @@ const ContactCard = ({ icon, label, content, href }: ContactCardProps) => {
       target={href?.startsWith("http") ? "_blank" : undefined}
       rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
       className="bg-gray-50 dark:bg-gray-900 text-black dark:text-white rounded-2xl p-6 flex items-start gap-4 shadow-md hover:shadow-lg transition-shadow"
+      data-aos="zoom-in"
+      data-aos-delay="200"
     >
       <div className="flex-shrink-0 text-[var(--primary-color)]">{icon}</div>
       <div>
