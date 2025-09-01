@@ -39,7 +39,7 @@ const Charles: React.FC = () => {
           {/* Concept Section */}
           <div className="mb-16">
             <p
-              className=" text-gray-600 dark:text-gray-400 text-base text-justify font-serif"
+              className=" text-gray-600 dark:text-gray-400 text-base text-justify font-serif mb-16"
               data-aos="fade-up"
             >
               During 2021, the team began developing its plans to restore{" "}

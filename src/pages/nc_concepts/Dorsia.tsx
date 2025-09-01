@@ -70,7 +70,7 @@ const Dorsia: React.FC = () => {
           exclusive events, seasonal pop-ups, and a curated social diary.
         </p>
         <p
-          className="text-gray-600 dark:text-gray-400 text-base mb-6 text-justify font-serif"
+          className="text-gray-600 dark:text-gray-400 text-base text-justify font-serif mb-16"
           data-aos="fade-up"
           data-aos-delay="800"
         >

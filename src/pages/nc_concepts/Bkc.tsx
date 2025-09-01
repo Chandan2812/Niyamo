@@ -59,7 +59,7 @@ const Bkc: React.FC = () => {
             Bringing authentic Awadhi delights to London
           </h2>
           <p
-            className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif"
+            className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif mb-16"
             data-aos="fade-up"
             data-aos-delay="200"
           >

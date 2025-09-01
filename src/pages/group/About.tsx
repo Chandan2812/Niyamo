@@ -1,6 +1,7 @@
 import Navbar from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { ArrowRight } from "lucide-react";
+import aboutImage from "../../assets/hero.svg";
 
 function AboutUs() {
   return (
@@ -59,7 +60,7 @@ function AboutUs() {
                 <div className="absolute top-20 right-6 w-full h-full bg-[radial-gradient(var(--primary-color)_2.5px,transparent_2.5px)] bg-[length:28px_28px] z-0" />
                 <div className="absolute right-10 top-32 md:bottom-0 md:right-0 w-[90%] h-[90%] md:w-[90%] md:h-[80%] bg-[var(--primary-color)] dark:bg-[var(--secondary-color)]  z-0"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80"
+                  src={aboutImage}
                   alt="Dining"
                   className="relative z-10 w-full h-[300px] md:h-[400px] object-cover"
                 />
