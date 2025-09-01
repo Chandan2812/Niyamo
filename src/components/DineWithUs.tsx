@@ -95,6 +95,21 @@ const DiningExperienceSection: React.FC = () => {
             are dynamic, where we understand every moving part of an
             unforgettable experience.
           </p>
+          <a href="/contact">
+            <button
+              className="relative group flex items-center gap-2 text-white dark:text-[var(--primary-color)] dark:text-white border border-[var(--primary-color)]  text-[12px] px-6 py-3 uppercase tracking-widest bg-transparent transition-all duration-300 overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <span className="z-10 relative flex items-center gap-2 text-[var(--primary-color)] group-hover:text-white transition-colors duration-300 font-light">
+                Contact Us →
+              </span>
+              <span
+                className="absolute inset-0 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 z-0"
+                style={{ backgroundImage: "var(--bg-primary-gradient)" }}
+              ></span>
+            </button>
+          </a>
 
           {/* Stats */}
           {/* <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x border-t border-gray-300 mb-8">
