@@ -61,36 +61,45 @@ const Joyce: React.FC = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Tucked away on Miami Beach’s vibrant Española Way, The Joyce is an
-            intimate 45-seat speakeasy by Alinea alum James Taylor. Guests are
-            invited to indulge in refined American cuisine while surrounded by
+            Tucked away on Miami Beach’s vibrant Española Way,{" "}
+            <span className="font-semibold">The Joyce</span> is an intimate
+            45-seat speakeasy by Alinea alum James Taylor. Guests are invited to
+            indulge in refined American cuisine while surrounded by
             emerald-green interiors, a rotating gallery of blue-chip art, and
             collectible design furniture, creating a uniquely immersive blend of
             culinary excellence and cultural sophistication.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
-            <img
-              src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/26189TheJoyce_122024_1338_1.jpg"
-              alt="BKC concept 1"
-              className="w-full h-full object-cover rounded"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            />
-            <img
-              src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/55839TheJoyce_122024_6266.jpg"
-              alt="BKC concept 2"
-              className="w-full h-full object-cover rounded"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            />
-            <img
-              src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/38694TheJoyce_122024_6462.jpg"
-              alt="BKC concept 3"
-              className="w-full h-full object-cover rounded"
-              data-aos="fade-up"
-              data-aos-delay="800"
-            />
+            <div className="overflow-hidden rounded">
+              <img
+                src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/26189TheJoyce_122024_1338_1.jpg"
+                alt="BKC concept 1"
+                className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
+            </div>
+
+            <div className="overflow-hidden rounded">
+              <img
+                src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/55839TheJoyce_122024_6266.jpg"
+                alt="BKC concept 2"
+                className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              />
+            </div>
+
+            <div className="overflow-hidden rounded">
+              <img
+                src="https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/38694TheJoyce_122024_6462.jpg"
+                alt="BKC concept 3"
+                className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-110"
+                data-aos="fade-up"
+                data-aos-delay="800"
+              />
+            </div>
           </div>
         </div>
 
@@ -122,14 +131,16 @@ const Joyce: React.FC = () => {
               James Taylor, The Chef
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-base  text-justify font-serif mb-10">
-              For over a decade, Chef James Taylor has delighted culinary
-              enthusiasts and critics alike across the United States. A graduate
-              of Le Cordon Bleu Chicago, he perfected his craft at Bavette’s Bar
-              and Boeuf Steakhouse (Hogsalt Hospitality) before moving into
-              leadership roles at the Michelin-starred Roister (★) and the
-              world-renowned Alinea (★★★). Since 2021, he has captivated the
-              palates of an exclusive private clientele, whose encouragement
-              inspired him to share his culinary artistry with the world.
+              For over a decade,{" "}
+              <span className="font-semibold">Chef James Taylor</span> has
+              delighted culinary enthusiasts and critics alike across the United
+              States. A graduate of Le Cordon Bleu Chicago, he perfected his
+              craft at Bavette’s Bar and Boeuf Steakhouse (Hogsalt Hospitality)
+              before moving into leadership roles at the Michelin-starred
+              Roister and the world-renowned Alinea. <br /> Since 2021, he has
+              captivated the palates of an exclusive private clientele, whose
+              encouragement inspired him to share his culinary artistry with the
+              world.
             </p>
             <a href="/contact" className="block mt-10 mb-10">
               <button

@@ -65,10 +65,10 @@ const Dorsia: React.FC = () => {
           data-aos="fade-up"
           data-aos-delay="500"
         >
-          Dorsia is a members-only dining network offering guaranteed access to
-          sought-after tables in the world’s most vibrant culinary destinations,
-          with privileged entry to exclusive events, seasonal pop-ups, and a
-          curated social diary.
+          <span className="font-semibold">Dorsia</span> is a members-only dining
+          network offering guaranteed access to sought-after tables in the
+          world’s most vibrant culinary destinations, with privileged entry to
+          exclusive events, seasonal pop-ups, and a curated social diary.
         </p>
         <p
           className="text-gray-600 dark:text-gray-400 text-base mb-6 text-justify font-serif"
@@ -174,9 +174,13 @@ const Dorsia: React.FC = () => {
           Global Reach
         </h2>
         <p className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif">
-          Dorsia operates in cities such as Miami, Aspen, Cannes, and St Tropez,
-          with strong investor backing and offices in Miami, London, LA, and
-          NYC.
+          <span className="font-semibold">Dorsia</span> operates in cities such
+          as{" "}
+          <span className="font-semibold">
+            Miami, Aspen, Cannes, and St Tropez,
+          </span>{" "}
+          with strong investor backing and offices in{" "}
+          <span className="font-semibold">Miami, London, LA, and NYC</span>.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {["Miami", "Aspen", "Cannes", "St Tropez"].map((city, i) => (
