@@ -5,8 +5,8 @@ import FundamentalsSection from "../components/Fundamental";
 import GlobalFootprintSection from "../components/GlobalFootprint";
 import Hero from "../components/Hero";
 import Navbar from "../components/Nav";
-import NewsSubscribeSection from "../components/Newsletter";
-import NewsletterPopup from "../components/NewsletterPopup";
+// import NewsSubscribeSection from "../components/Newsletter";
+// import NewsletterPopup from "../components/NewsletterPopup";
 import FindYourPartner from "../components/slider";
 
 function Landing() {
@@ -21,8 +21,8 @@ function Landing() {
 
       <FundamentalsSection />
       {/* Show the popup */}
-      <NewsletterPopup />
-      <NewsSubscribeSection />
+      {/* <NewsletterPopup />
+      <NewsSubscribeSection /> */}
       <Footer />
     </div>
   );

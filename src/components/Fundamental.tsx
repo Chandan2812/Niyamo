@@ -13,32 +13,32 @@ import "aos/dist/aos.css";
 // Rearranged to place "DUBAI" first
 const fundamentals = [
   {
-    name: "OPA Bali",
+    name: "OPA - Bali",
     img: "https://res.cloudinary.com/dqrlkbsdq/image/upload/v1756358588/WhatsApp_Image_2025-08-25_at_16.54.17_da07e5b6_ob96oi.jpg",
     url: "opa-bali",
   },
 
   {
-    name: "Bagatelle-Dubai Singapore & Mykonos",
+    name: "Bagatelle - Dubai, Singapore & Mykonos",
     img: "https://bagatelle.com/app/uploads/2021/01/Design-sans-titre-2.png",
     url: "bagatelle",
   },
   {
-    name: "Ramen Me",
+    name: "Ramen Me - Lisbon",
     img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/e3/ed/5f/our-kumamoto-ramen-is.jpg?w=800&h=800&s=1",
     url: "ramen-me",
   },
   {
-    name: "Thamel ",
+    name: "Thamel - Portugal ",
     img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/67/4e/2e/o-nossos-deliciosos-momode3man.jpg?w=1100&h=600&s=1",
     url: "thamel",
   },
   {
-    name: "Dorsia",
+    name: "Dorsia - New York",
     img: "https://framerusercontent.com/images/3mGdPFh187MyIIHpADs5nkHbuak.jpg",
     url: "dorsia",
   },
-  { name: "16 Charles Street", img: img2, url: "16-charles-street" },
+  { name: "16 Charles Street - London", img: img2, url: "16-charles-street" },
 ];
 
 const FundamentalsSection: React.FC = () => {
