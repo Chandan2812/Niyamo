@@ -75,20 +75,20 @@ const DiningExperienceSection: React.FC = () => {
           <div className=" mb-2">
             <p
               className="uppercase tracking-widest font-semibold mt-2 text-xs text-[var(--primary-color)]"
-              data-aos="fade-right"
+              data-aos="fade-up"
             >
               Dine With Us
             </p>
           </div>
           <h2
             className="text-2xl md:text-4xl font-semibold text-black dark:text-white mt-2"
-            data-aos="fade-right"
+            data-aos="fade-up"
           >
             An Elevated Dining Experience in Every Restaurant
           </h2>
           <p
             className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif"
-            data-aos="fade-right"
+            data-aos="fade-up"
           >
             With innovation and excellence at our core, we strive to exceed
             expectations with every guest. Our restaurant and nightlife venues
