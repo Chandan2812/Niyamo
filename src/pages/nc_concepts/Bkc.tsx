@@ -75,27 +75,39 @@ const Bkc: React.FC = () => {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
-            <img
-              src="https://bkclondon.uk/wp-content/uploads/2024/06/Slider-1-1.png"
-              alt="BKC concept 1"
-              className="w-full h-full object-cover rounded"
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="200"
-            />
-            <img
-              src="https://bkclondon.uk/wp-content/uploads/2024/06/2-1.png"
-              alt="BKC concept 2"
-              className="w-full h-full object-cover rounded"
+            >
+              <img
+                src="https://bkclondon.uk/wp-content/uploads/2024/06/Slider-1-1.png"
+                alt="BKC concept 1"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="500"
-            />
-            <img
-              src="https://bkclondon.uk/wp-content/uploads/2024/06/3-1.png"
-              alt="BKC concept 3"
-              className="w-full h-full object-cover rounded"
+            >
+              <img
+                src="https://bkclondon.uk/wp-content/uploads/2024/06/2-1.png"
+                alt="BKC concept 2"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="800"
-            />
+            >
+              <img
+                src="https://bkclondon.uk/wp-content/uploads/2024/06/3-1.png"
+                alt="BKC concept 3"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
           </div>
         </div>
 
@@ -179,27 +191,39 @@ const Bkc: React.FC = () => {
             the heart of London.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <img
-              src="https://bkclondon.uk/wp-content/uploads/2024/06/IMG2.jpg"
-              alt="Design 1"
-              className="h-full object-cover rounded"
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="200"
-            />
-            <img
-              src="https://bkclondon.uk/wp-content/uploads/2024/06/Home-replace3-1.png"
-              alt="Design 2"
-              className="h-full object-cover rounded"
+            >
+              <img
+                src="https://bkclondon.uk/wp-content/uploads/2024/06/IMG2.jpg"
+                alt="Design 1"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="500"
-            />
-            <img
-              src="https://bkclondon.uk/wp-content/uploads/2024/06/Rectangle-11.png"
-              alt="Design 3"
-              className="h-full object-cover rounded"
+            >
+              <img
+                src="https://bkclondon.uk/wp-content/uploads/2024/06/Home-replace3-1.png"
+                alt="Design 2"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
+            <div
+              className="overflow-hidden rounded"
               data-aos="fade-up"
               data-aos-delay="800"
-            />
+            >
+              <img
+                src="https://bkclondon.uk/wp-content/uploads/2024/06/Rectangle-11.png"
+                alt="Design 3"
+                className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+              />
+            </div>
           </div>
         </div>
 

@@ -81,27 +81,39 @@ const Dorsia: React.FC = () => {
           restaurants.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <img
-            src="https://framerusercontent.com/images/0GGQrhMI0xTOtf9XNoY5CPHHq8.jpg?scale-down-to=2048"
-            alt="Dining 1"
-            className="w-full h-64 object-cover rounded-xl shadow-md"
+          <div
+            className="overflow-hidden rounded"
             data-aos="fade-up"
             data-aos-delay="200"
-          />
-          <img
-            src="https://framerusercontent.com/images/6sk3M25yiTD2BsaiWnnZAnqJM.jpg"
-            alt="Dining 2"
-            className="w-full h-64 object-cover rounded-xl shadow-md"
+          >
+            <img
+              src="https://framerusercontent.com/images/0GGQrhMI0xTOtf9XNoY5CPHHq8.jpg?scale-down-to=2048"
+              alt="Dining 1"
+              className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+            />
+          </div>
+          <div
+            className="overflow-hidden rounded"
             data-aos="fade-up"
             data-aos-delay="500"
-          />
-          <img
-            src="https://framerusercontent.com/images/GfCCHBhlwBouXSNk534AYwiFbw.jpg"
-            alt="Dining 3"
-            className="w-full h-64 object-cover rounded-xl shadow-md"
+          >
+            <img
+              src="https://framerusercontent.com/images/6sk3M25yiTD2BsaiWnnZAnqJM.jpg"
+              alt="Dining 2"
+              className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+            />
+          </div>
+          <div
+            className="overflow-hidden rounded"
             data-aos="fade-up"
             data-aos-delay="800"
-          />
+          >
+            <img
+              src="https://framerusercontent.com/images/GfCCHBhlwBouXSNk534AYwiFbw.jpg"
+              alt="Dining 3"
+              className="h-full object-cover rounded transition-transform duration-500 ease-in-out hover:scale-110"
+            />
+          </div>
         </div>
       </section>
 
