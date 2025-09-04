@@ -11,6 +11,7 @@ import {
   // Youtube,
 } from "lucide-react";
 import LanguageSelector from "./LanguageSelector";
+import logo from "../assets/logo.png";
 
 declare global {
   interface Window {
@@ -107,7 +108,7 @@ const Navbar = () => {
         <div className="flex items-center gap-6  ">
           <div className="text-2xl font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
             <a href="/" className="uppercase">
-              Fern Hospitality
+              <img src={logo} alt="" className="w-20 p-2 dark:invert" />
             </a>
           </div>
 
@@ -244,7 +245,9 @@ const Navbar = () => {
       {/* Mobile View */}
       <div className="md:hidden flex justify-between items-center px-4 py-3">
         <div className="text-xl font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
-          <a href="/">Fern Hospitality</a>
+          <a href="/">
+            <img src={logo} alt="" className="w-16 dark:invert" />
+          </a>
         </div>
         <div className="notranslate">
           <LanguageSelector />
@@ -265,7 +268,7 @@ const Navbar = () => {
 
       {mobileMenu && (
         <div
-          className={`md:hidden fixed top-12 left-0 w-full h-[calc(100vh-3rem)] overflow-y-auto px-4 pt-4 pb-4 z-40 ${
+          className={`md:hidden fixed top-20 left-0 w-full h-[calc(100vh-3rem)] overflow-y-auto px-4 pt-4 pb-4 z-40 ${
             darkMode ? "bg-gray-900 text-white" : "bg-white text-black"
           }`}
         >

@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import React, { useState } from "react";
-import img1 from "../assets/team/11.jpg";
+import img1 from "../assets/Fern Hospitality9098.jpg";
 import img2 from "../assets/team/12.jpg";
 import img3 from "../assets/team/13.jpg";
 import img4 from "../assets/team/14.jpg";
