@@ -6,24 +6,7 @@ const Footer = () => {
     <footer className="bg-white dark:bg-black text-black dark:text-white font-raleway text-sm">
       {/* Top horizontal line */}
       <div className="border-t border-gray-300 dark:border-gray-700 w-full" />
-
-      {/* Logo + CONTACTS */}
-      <div className="w-11/12 mx-auto px-3 md:px-8 flex flex-col md:flex-row justify-between items-center">
-        <div className="flex flex-col items-center md:items-start">
-          <div className="flex items-center gap-4">
-            <div className="w-16 border-t border-[var(--primary-color)]" />
-            <p className="text-xl uppercase md:text-3xl py-6 font-bold bg-gradient-to-r from-[#ac7072] via-[#e6d2d1] to-[#ad7173] bg-clip-text text-transparent">
-              Fern Hospitality
-            </p>
-            <div className="w-20 border-t border-[var(--primary-color)]" />
-          </div>
-        </div>
-        <h2 className="text-2xl font-thin md:mt-0">CONTACTS</h2>
-      </div>
-
-      {/* Mid horizontal line */}
-      <div className="w-11/12 mx-auto px-3 md:px-10 border-t border-gray-300 dark:border-gray-700 mb-8" />
-
+      
       {/* Main content */}
       <div className="w-11/12 mx-auto flex flex-col lg:flex-row justify-between px-6 sm:px-12 lg:px-6 gap-10 pb-10 font-light dark:font-thin">
         {/* Logo */}
