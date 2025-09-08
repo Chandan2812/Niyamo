@@ -12,13 +12,15 @@ const PressRelease = () => {
       <section className="w-11/12 md:w-5/6 mx-auto pt-10 pb-16 px-4 space-y-12 font-serif bg-[#f3e2d2] ">
         {/* Headline */}
         <div className="text-center border-b-4 border-black  pb-6">
-          <h2 className="text-xl md:text-4xl  font-extrabold tracking-wide uppercase text-gray-900  mb-4">
-            Dubai Based Fern Hospitality Ventures (FHV) Launches $100m Fund
+          <h2 className="text-xl   font-extrabold  uppercase text-gray-900  mb-4">
+            FERN HOSPITALITY VENTURES, MANAGED OUT OF THE DUBAI INTERNATIONAL
+            FINANCIAL CENTRE (DIFC), PREPARES TO RAISE AN INITIAL $100 MILLION
+            TO INVEST IN THE HIGH-GROWTH GLOBAL HOSPITALITY SECTOR
           </h2>
-          <p className="text-lg italic text-gray-700 ">
+          {/* <p className="text-lg italic text-gray-700 ">
             Initial <span className="text-red-600 font-bold">$100m</span> to be
             invested in high-growth global hospitality sector
-          </p>
+          </p> */}
         </div>
 
         {/* CEO Quote - Image Right */}
@@ -28,12 +30,12 @@ const PressRelease = () => {
             <blockquote className="border-l-4 border-black pl-4">
               <p className="italic text-lg leading-relaxed text-gray-800">
                 “This is a once in a generation moment for hospitality
-                investment,” said <strong>Uday Singh</strong>, CEO of Fern
-                Hospitality Ventures and the entrepreneur behind global
-                successes like OPA and Bagatelle Dubai. “Demand is soaring while
-                supply remains limited. Our fund provides early access to the
-                next generation of premium leisure and lifestyle concepts as
-                they scale across the global social calendar that is driving
+                investment,” said <strong>Uday Singh</strong>, Director of Fern
+                Hospitality Ventures (The Fund) and the entrepreneur behind
+                global successes like OPA and Bagatelle Dubai. “Demand is
+                soaring while supply remains limited. Our fund provides early
+                access to the next generation of premium leisure and lifestyle
+                concepts as they scale across the global social calendar driving
                 demand from Dubai to New York, and London to Bali.”
               </p>
             </blockquote>
@@ -54,71 +56,83 @@ const PressRelease = () => {
             <h3 className="text-xl font-bold text-black mb-4">THE FUND</h3>
             <ul className="list-disc pl-6 space-y-3 text-gray-800 leading-relaxed">
               <li>
-                Raised <strong>$15m</strong> in first 24 hours of launching the
-                fund
+                The Fund, a closed-ended investment vehicle targetting $100
+                million in commitments and net returns of approximately 20%, is
+                managed by Dalma Capital Management Limited, a DFSA-regulated
+                fund manager based in the Dubai International Financial Centre
+                (DIFC). Ahead of its launch, the Fund has already secured $15
+                million in investor commitments.
               </li>
               <li>
-                Leveraging Dubai’s hospitality success to scale brands worldwide
-                as it becomes an exporter of global concepts
+                The Fund leverages Dubai’s hospitality success to scale brands
+                worldwide, as Dubai increasingly becomes an exporter of globally
+                renowned brands.
               </li>
               <li>
-                Offers exposure to technology-led concepts, luxury experiential
-                brands and emerging market operators
+                The Fund is being created to provide investors with exposure to
+                a globally diverse range of hospitality growth prospects,
+                spanning all areas of the hospitality sector including
+                technology -led new concepts, luxury experiential brands and
+                established players entering new emerging destinations.
               </li>
               <li>
-                First-of-its-kind fund in global luxury hospitality &amp;
-                F&amp;B with a dual return model (cashflow + capital upside from
-                real estate)
-              </li>
-              <li>
-                Managed by Dalma Capital, FHV targets{" "}
-                <strong>$100m fund size</strong> with projected{" "}
-                <strong>20% net return</strong>
+                This is a first -of -its -kind investment fund focused on global
+                luxury hospitality and F&B sectors, offering a dual return model
+                that utilises cashflow from operations alongside capital upside
+                from real estate – targeting iconic venues/locations, sector
+                disruptors, and technology -driven innovators.
               </li>
             </ul>
           </div>
 
           {/* The Board */}
           <div className="md:col-span-2  p-6  text-black">
-            <h3 className="text-xl font-bold text-black mb-4">THE BOARD</h3>
+            <h3 className="text-xl font-bold text-black mb-4 uppercase">
+              Leadership
+            </h3>
             <p className="mb-4 ">
-              Comprising hospitality investment veterans and rising young talent
-              in partnership with top global operators. Proven track record of
-              successful, high-growth investments.
+              The Fund will be guided by an experienced leadership team that
+              combines proven hospitality investors with fresh, forward-looking
+              perspectives.
             </p>
 
             <div className="space-y-6">
               {/* Uday Singh */}
               <div>
                 <h4 className="text-lg font-semibold">Uday Singh</h4>
-                <p className="text-gray-700">
-                  Hospitality successes include Bagatelle Dubai and a successful
-                  exit in 2022, creating a new investor base.
-                </p>
+
                 <ul className="list-disc pl-6 mt-2 space-y-1 text-gray-700">
                   <li>
-                    Opa Dubai (2018) and Opa Mumbai (2022) with further
-                    expansion
+                    Hospitality sector success includes Bagatelle Dubai with a
+                    successful exit in 2022 and created subsequent new investor
+                    base.
                   </li>
-                  <li>Raised investment for La Nina Dubai in 2023</li>
+                  <li>
+                    Opa Dubai in 2018 and Opa, Mumbai in 2022, with further
+                    growth plans underway.
+                  </li>
+                  <li>
+                    Raised investment for the opening of La Niña Dubai in 2023.{" "}
+                  </li>
                 </ul>
               </div>
 
               {/* Akshat Tiberwala */}
               <div>
-                <h4 className="text-lg font-semibold">
-                  Akshat Tiberwala (Managing Director)
-                </h4>
-                <p className="text-gray-700">
-                  In his early 20’s, Akshat brings a modern, GenZ-rooted
-                  perspective and assets in the immediate portfolio.
-                </p>
+                <h4 className="text-lg font-semibold">Akshat Tiberwala</h4>
+
                 <ul className="list-disc pl-6 mt-2 space-y-1 text-gray-700">
                   <li>
-                    Founded <strong>Niyamo Capital</strong> in 2024, deploying
-                    capital in early-stage high-growth companies
+                    Brings a young, modern perspective and portfolio assets that
+                    are expected to be included in the Fund.
                   </li>
-                  <li>Currently managing assets worth $25m</li>
+                  <li>
+                    Set up private investment company Niyamo Capital in 2024,
+                    deploying capital into early-stage , high-growth companies.
+                  </li>
+                  <li>
+                    Currently managing assets under management of 25 million.{" "}
+                  </li>
                 </ul>
               </div>
             </div>
