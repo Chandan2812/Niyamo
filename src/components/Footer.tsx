@@ -3,11 +3,9 @@ import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-black text-black dark:text-white font-raleway text-sm">
-      
-      
+    <footer className="bg-white dark:bg-black border-t-2 pt-8 text-black dark:text-white font-raleway text-sm">
       {/* Main content */}
-      <div className="w-11/12 mx-auto flex flex-col lg:flex-row justify-between px-6 sm:px-12 lg:px-6 gap-10 pb-10 font-light dark:font-thin">
+      <div className="w-11/12 mx-auto flex flex-col  lg:flex-row justify-between px-6 sm:px-12 lg:px-6 gap-10 pb-10 font-light dark:font-thin">
         {/* Logo */}
         <div className="md:w-1/4 flex justify-center items-center">
           <img
@@ -18,7 +16,7 @@ const Footer = () => {
         </div>
 
         {/* Navigation Columns */}
-        <div className="grid grid-cols-2 gap-10">
+        <div className=" md:w-1/2 grid grid-cols-2 gap-10">
           {/* Locations */}
           <ul className="space-y-2">
             {[
@@ -71,7 +69,8 @@ const Footer = () => {
         <div className="space-y-4 lg:text-right">
           <h3 className="text-lg font-medium">London, UK</h3>
           <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-            1 Bell Street, London, London, United Kingdom, NW1 5BY
+            ICD Brookfield Place Level 11, Dubai International Financial Centre,
+            Dubai 9361, United Arab Emirates
           </p>
         </div>
       </div>

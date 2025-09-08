@@ -2,17 +2,18 @@ import { ArrowRight } from "lucide-react";
 import React, { useState } from "react";
 import img1 from "../assets/Fern Hospitality9098.jpg";
 import img2 from "../assets/team/12.jpg";
-import img3 from "../assets/team/13.jpg";
+// import img3 from "../assets/team/13.jpg";
 import img4 from "../assets/team/14.jpg";
-import img5 from "../assets/team/15.jpg";
-import img6 from "../assets/team/16.jpg";
+// import img5 from "../assets/team/15.jpg";
+// import img6 from "../assets/team/16.jpg";
 
 const teamMembers = [
-  { name: "Mark Lotenburg", role: "Founder and CEO, DORSIA", image: img5 },
-  { name: "Akshat Tiberwala", role: "MD", image: img2 },
+  // { name: "Mark Lotenburg", role: "Founder and CEO, DORSIA", image: img5 },
   { name: "Uday Singh", role: "CEO", image: img1 },
-  { name: "Bartoélémy Lemoine", role: "Head of Operations", image: img6 },
-  { name: "Alex Cordoba", role: "CEO, Savaya", image: img3 },
+  { name: "Akshat Tiberwala", role: "MD", image: img2 },
+
+  // { name: "Bartoélémy Lemoine", role: "Head of Operations", image: img6 },
+  // { name: "Alex Cordoba", role: "CEO, Savaya", image: img3 },
   {
     name: "Zachary Cefaratti",
     role: "Founder & CEO, Dalma Capital",

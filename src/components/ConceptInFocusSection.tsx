@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
@@ -69,11 +69,19 @@ const ConceptInFocusSection = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const nextSlide = () => {
+    setIndex((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
   const currentSlide = slides[index];
 
   return (
     <section className="relative bg-white dark:bg-black text-black dark:text-white font-raleway font-light dark:font-thin overflow-hidden">
-      <div className="w-11/12 mx-auto px-3 md:px-8 py-10">
+      <div className=" relative w-11/12 mx-auto px-3 md:px-8 py-10">
         {/* Heading */}
         <div className="mb-4 flex flex-col md:flex-row md:items-start md:justify-between gap-6">
           <div className="flex-1">
@@ -141,6 +149,19 @@ const ConceptInFocusSection = () => {
             </AnimatePresence>
           </div>
         </div>
+
+        <button
+          onClick={prevSlide}
+          className="absolute -left-7 top-1/2 -translate-y-1/2 text-[var(--primary-color)] bg-gray-300 hover:bg-[var(--primary-color)] hover:text-white p-2 rounded-full"
+        >
+          <ChevronLeft size={32} />
+        </button>
+        <button
+          onClick={nextSlide}
+          className="absolute -right-7 top-1/2 -translate-y-1/2 text-[var(--primary-color)] bg-gray-300 hover:bg-[var(--primary-color)] hover:text-white p-2 rounded-full"
+        >
+          <ChevronRight size={32} />
+        </button>
       </div>
     </section>
   );

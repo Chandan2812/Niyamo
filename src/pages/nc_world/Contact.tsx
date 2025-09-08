@@ -118,21 +118,21 @@ function Contact() {
             <div className="space-y-6">
               <ContactCard
                 icon={<Mail className="w-8 h-8" />}
-                label="Email Us"
+                label="Investment Enquiries & Proposals"
                 content="Dev@fernhospitalityventures.com"
                 href="mailto:Dev@fernhospitalityventures.com"
               />
               <ContactCard
                 icon={<Mail className="w-8 h-8" />}
-                label="Email Us"
+                label="Subscription Enquiries"
                 content="Jenna@niyamocapital.com"
                 href="mailto:Jenna@niyamocapital.com"
               />
               <ContactCard
                 icon={<MapPin className="w-8 h-8" />}
                 label="Office"
-                content="1 Bell Street, London, United Kingdom, NW1 5BY"
-                href="https://www.google.com/maps/place/1+Bell+St,+London+NW1+5BY"
+                content="ICD Brookfield Place Level 11, Dubai International Financial Centre, Dubai 9361, United Arab Emirates"
+                href="https://maps.app.goo.gl/nwQeUjVGgQeQDPhWA"
               />
             </div>
 
@@ -240,8 +240,7 @@ function Contact() {
           {/* Map */}
           <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-lg mt-16">
             <iframe
-              title="Google Maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.5928692374323!2d-0.17052509999999996!3d51.5206849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab152d94cbd%3A0xbb639c0396f9672b!2s1%20Bell%20St%2C%20London%20NW1%205BY%2C%20UK!5e0!3m2!1sen!2sin!4v1756279718388!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.7534091681187!2d55.277701974025454!3d25.211537131122316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f428e3a5bae17%3A0x1b8a786dcdbe662c!2sICD%20Brookfield%20Place!5e0!3m2!1sen!2sin!4v1757351611328!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

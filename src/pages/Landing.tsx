@@ -1,7 +1,7 @@
 import ConceptInFocusSection from "../components/ConceptInFocusSection";
 import DiningExperienceSection from "../components/DineWithUs";
 import Footer from "../components/Footer";
-import FundamentalsSection from "../components/Fundamental";
+
 import GlobalFootprintSection from "../components/GlobalFootprint";
 import Hero from "../components/Hero";
 import Navbar from "../components/Nav";
@@ -19,7 +19,6 @@ function Landing() {
       <GlobalFootprintSection />
       <DiningExperienceSection />
 
-      <FundamentalsSection />
       {/* Show the popup */}
       {/* <NewsletterPopup />
       <NewsSubscribeSection /> */}

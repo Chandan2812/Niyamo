@@ -58,7 +58,7 @@ const DiningExperienceSection: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-white dark:bg-black text-black dark:text-white font-raleway font-light  relative overflow-hidden"
+      className="bg-white mb-6 dark:bg-black text-black dark:text-white font-raleway font-light  relative overflow-hidden"
     >
       <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-3 md:px-8 py-12">
         <div className="relative w-full h-full z-10">

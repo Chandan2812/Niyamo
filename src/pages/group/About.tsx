@@ -22,23 +22,17 @@ function AboutUs() {
                 Redefining Hospitality with Taste and Vision
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
-                Fern Hospitality is more than a hospitality company, we’re
-                curators of exceptional dining experiences. With a passion for
-                innovation and a commitment to excellence, we create restaurant
-                concepts that blend flavor, service, and ambiance into
-                unforgettable moments.
-              </p>
-              <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
-                Our vision is to elevate dining culture by delivering spaces
-                that are as inspiring as they are inviting. Each venue in our
-                portfolio, whether chic and contemporary or elegantly luxurious,
-                reflects originality, global influence, and meticulous attention
-                to detail.
-              </p>
-              <p className="text-gray-600 dark:text-gray-400 text-base my-6 text-justify font-serif">
-                As we grow across dynamic markets, we remain devoted to crafting
-                hospitality brands that ignite connections, celebrate culinary
-                artistry, and set new benchmarks for guest experience.
+                Fern Hospitality Ventures (FHV) is a Cayman Islands–domiciled
+                investment fund, managed out of the Dubai International
+                Financial Centre (DIFC). We back visionary founders and
+                distinctive concepts, providing them with the capital,
+                expertise, and global network required to scale into the world’s
+                most coveted destinations. Combining operational discipline with
+                forward-looking strategy, we create opportunities that deliver
+                cultural relevance and sustainable value for our investors.
+                Guided by a leadership team that unites proven hospitality
+                experience with entrepreneurial drive, FHV offers early access
+                to high-growth hospitality ventures.
               </p>
 
               <a href="/contact">
