@@ -31,6 +31,8 @@ const navItems = [
       // "24 & 30 Sussex Gardens",
       "The Joyce Restaurant",
       "Dorsia",
+      "Opa-Bali",
+      "Ramen Me",
     ],
   },
   // {

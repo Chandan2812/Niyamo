@@ -50,7 +50,7 @@ function RamenMe() {
             <div>
               <HighlightCard title="High-Margin, Delivery-Optimized Concept" />
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="200"
               >
@@ -59,7 +59,7 @@ function RamenMe() {
                 emphasis on high-volume delivery.
               </p>
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="200"
               >
@@ -67,7 +67,7 @@ function RamenMe() {
                 with low labor and minimal kitchen capex.
               </p>
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="200"
               >
@@ -78,7 +78,7 @@ function RamenMe() {
             <div>
               <HighlightCard title="Explosive Demand for Affordable Premium Asian Cuisine" />
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="400"
               >
@@ -87,7 +87,7 @@ function RamenMe() {
                 especially popular with Gen Z and millennials.
               </p>
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="400"
               >
@@ -96,7 +96,7 @@ function RamenMe() {
                 is surging.
               </p>
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="400"
               >
@@ -107,14 +107,14 @@ function RamenMe() {
             <div>
               <HighlightCard title="Built for Multi-Unit Rollout or Franchising" />
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
                 Modular, compact layout ideal for:
               </p>
               <ul
-                className="list-disc pl-6 mt-2 space-y-2 text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="list-disc pl-6 mt-2 space-y-2 text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
@@ -123,7 +123,7 @@ function RamenMe() {
                 <li>Ghost kitchens</li>
               </ul>
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
@@ -135,7 +135,7 @@ function RamenMe() {
             <div>
               <HighlightCard title="Backed by Experienced Brand Builders" />
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="800"
               >
@@ -143,7 +143,7 @@ function RamenMe() {
                 expertise in:
               </p>
               <ul
-                className="list-disc pl-6 mt-2 space-y-2 text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="list-disc pl-6 mt-2 space-y-2 text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="800"
               >
@@ -152,7 +152,7 @@ function RamenMe() {
                 <li>Scalable back-of-house systems</li>
               </ul>
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="800"
               >
@@ -171,7 +171,7 @@ function RamenMe() {
 }
 
 const HighlightCard = ({ title }: { title: string }) => (
-  <div className="bg-[#111827] text-white rounded-xl shadow-md p-6 font-medium text-center mb-6">
+  <div className="bg-[var(--primary-color)] text-white rounded-xl shadow-md p-6 font-medium text-center mb-6">
     {title}
   </div>
 );

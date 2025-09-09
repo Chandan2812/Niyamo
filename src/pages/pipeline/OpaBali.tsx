@@ -49,7 +49,7 @@ function OpaBali() {
             <div>
               <HighlightCard title="Proven Concept with Strong Performance in Dubai" />
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="200"
               >
@@ -63,7 +63,7 @@ function OpaBali() {
                 covers.
               </p>
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="200"
               >
@@ -74,7 +74,7 @@ function OpaBali() {
             <div>
               <HighlightCard title="First-Mover Advantage in Bali’s Greek Category" />
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="400"
               >
@@ -83,7 +83,7 @@ function OpaBali() {
                 <strong>theatrical dining with nightlife elements</strong>.
               </p>
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="400"
               >
@@ -97,7 +97,7 @@ function OpaBali() {
             <div>
               <HighlightCard title="Premium Location with Low Fixed Costs" />
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
@@ -106,7 +106,7 @@ function OpaBali() {
                 5-star hotels and nightlife corridors.
               </p>
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
@@ -119,7 +119,7 @@ function OpaBali() {
             <div>
               <HighlightCard title="High Yield + Fast Ramp-up" />
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="800"
               >
@@ -127,7 +127,7 @@ function OpaBali() {
                 <strong>USD 85–120 per head</strong>.
               </p>
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="800"
               >
@@ -135,14 +135,14 @@ function OpaBali() {
                 season.
               </p>
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="800"
               >
                 Projected unit-level EBITDA margins: <strong>30–35%</strong>.
               </p>
               <p
-                className="text-gray-600 dark:text-gray-400 text-base mb-6 font-serif text-justify"
+                className="text-gray-800 dark:text-gray-300 text-base mb-6 font-serif text-justify"
                 data-aos="zoom-in"
                 data-aos-delay="800"
               >
@@ -160,7 +160,7 @@ function OpaBali() {
 }
 
 const HighlightCard = ({ title }: { title: string }) => (
-  <div className="bg-[#111827] text-white rounded-xl shadow-md p-6 font-medium text-center mb-6">
+  <div className="bg-[var(--primary-color)] text-white rounded-xl shadow-md p-6 font-medium text-center mb-6">
     {title}
   </div>
 );
