@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -62,12 +62,12 @@ const slides = [
 const ConceptInFocusSection = () => {
   const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % slides.length);
-    }, 5000); // 5 sec per slide
-    return () => clearInterval(interval);
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setIndex((prev) => (prev + 1) % slides.length);
+  //   }, 5000); // 5 sec per slide
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const nextSlide = () => {
     setIndex((prev) => (prev + 1) % slides.length);

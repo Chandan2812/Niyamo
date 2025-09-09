@@ -153,17 +153,17 @@ const PressRelease = () => {
               <li>
                 <strong>16 Charles Street, Mayfair</strong> – Private members
                 club combining high-end dining concepts including the famed
-                Loulou of Paris
+                Loulou Paris
               </li>
               <li>
-                <strong>Ramen Me</strong> – New wave consumer-led Disco-dining
+                <strong>Ramen Me</strong> – new wave consumer-led disco-dining
                 concept successfully launched in Portugal
               </li>
               <li>
                 <strong>The Joyce</strong> – Miami-based American dining
               </li>
               <li>
-                <strong>Opa, Bali</strong> – An experiential, Greek ‘Made in
+                <strong>Opa, Bali</strong> – an experiential, Greek ‘Made in
                 Dubai’ concept that’s become a crowd favourite
               </li>
             </ul>
@@ -176,29 +176,30 @@ const PressRelease = () => {
             </h2>
             <ul className="list-disc pl-6 space-y-3 text-gray-800 leading-relaxed">
               <li>
-                Global luxury hospitality industry changed dramatically over the
-                last 5 years since Covid…
+                The global luxury hospitality industry has changed dramatically
+                over the last five years since Covid and is expected to continue
+                evolving, driven by the next generation, emerging destinations
+                and the dominance of dining in travel and tourism activities.
               </li>
               <li>
                 Spending in luxury hospitality expected to grow to{" "}
-                <strong>$391B</strong> by 2028 from <strong>$239B</strong> in
-                2023
+                <strong>391 billion </strong> by 2028 from{" "}
+                <strong>239 billion</strong> in 2023
               </li>
               <li>
-                Returns in this sector are currently outperforming all others,
-                driven by dining being the No.1 consumer spend ahead of retail
-                globally
-              </li>
-              <li>
-                Fast-growing, ever-changing sector with new concepts,
-                technologies, and destinations emerging every year
+                Returns in this sector are currently outperforming other
+                industries and are expected to continue to be driven by dining,
+                which has become the No.1 category of consumer spend globally,
+                ahead of. This is a fast -growing and constantly evolving
+                sector, with new concepts, technologies and tourist destinations
+                every year.
               </li>
             </ul>
           </div>
 
           <div className="md:col-span-1  p-4 ">
             <h2 className="text-xl font-bold text-black mb-6 uppercase tracking-wide">
-              In Discussion With
+              Investment in the Pipeline
             </h2>
             <ul className="list-disc pl-6 space-y-3 text-gray-800 leading-relaxed">
               <li>
@@ -242,7 +243,8 @@ const PressRelease = () => {
                   </li>
                   <li>Scalable concepts that can be replicated globally</li>
                   <li>
-                    Targeting brands with proven local traction for expansion
+                    o Targeting brands with proven local traction and ability
+                    to expand into emerging hubs
                   </li>
                 </ul>
               </li>
@@ -272,11 +274,11 @@ const PressRelease = () => {
             <blockquote className="space-y-6 font-serif leading-relaxed text-gray-800">
               <p className="text-lg italic">
                 “We invest where global lifestyle trends meet real estate
-                investment opportunity,” said <strong>Akshat Tiberwala</strong>,
-                Managing Director at FHV. “We back cash-flow-positive brands
-                with expansion-ready models and layer in technology to create
-                scalable, efficient platforms. Our investments are not only
-                about great concepts, but about systems that can grow globally.”
+                investment opportunity,” said <strong>Akshat Tiberwala</strong>.
+                “We back cash-flow-positive brands with expansion-ready models
+                and layer in technology to create scalable, efficient platforms.
+                Our investments are not only about great concepts, but about
+                systems that can grow globally.”
               </p>
 
               <p className="text-lg italic">
@@ -297,24 +299,24 @@ const PressRelease = () => {
           {/* Column 1 */}
           <div className="space-y-5">
             <p>
-              <strong>Dubai, UAE – Monday 25, 08, 2025 –</strong> Fern
-              Hospitality Ventures (FHV), the Dubai-based investment platform
-              focused on investing in world-renowned brands on a long-term basis
-              while providing annual return and eventual exit, has launched a{" "}
-              <strong>$100 million fund</strong> targeting high-yield
-              opportunities in the fast-evolving luxury hospitality and
-              experiential leisure sector.
+              <strong>Dubai, UAE – Thursday 28, 08, 2025 –</strong> Fern
+              Hospitality Ventures (the “Fund”), is a DIFC managed, Cayman
+              Islands -based, investment fund is preparing to launch a $100
+              million fund targeting high-yield opportunities in the
+              fast-evolving luxury hospitality and experiential leisure sector.
+              The fund will focus on investing in world-renowned brands with
+              long-term growth potential, while offering investors exposure to
+              annual operating returns and eventual exit opportunities.
             </p>
 
             <p>
-              The fund’s line-up includes serial hospitality entrepreneur{" "}
-              <strong>Uday Singh</strong>, who was behind the fundraising of
-              award winning concepts like Opa, Bagatelle Dubai and La Nina, as
-              well as <strong>Akshat Tiberwala</strong>, one of the youngest
-              entrepreneurs rooted in GenZ and the Managing Director of private
-              investment vehicle <strong>Niyamo Capital</strong>. The fund is
-              managed by <strong>Dalma Capital</strong>, a leading
-              DFSA-regulated investment firm.
+              The Fund’s strategy is spearheaded by serial hospitality
+              entrepreneur Uday Singh, who was behind the fundraising of award
+              -winning concepts such as Opa, Bagatelle Dubai, and La Niña, as
+              well as Akshat Tibrewala, a young entrepreneur representing Gen Z,
+              who brings portfolio assets and experience from his private
+              investment firm, Niyamo Capital. The Fund will be managed by Dalma
+              Capital Management Limited, a DFSA-regulated fund manager.
             </p>
 
             <p>
@@ -324,7 +326,12 @@ const PressRelease = () => {
               dynamic entrepreneurs including Uday Singh, whose portfolio has
               shaped the city’s high-end dining landscape, ‘Made in Dubai’
               brands are not only dominating locally but also expanding into key
-              international markets.
+              international markets. The UAE has firmly established itself as
+              one of the world’s core capitals for luxury dining, generating
+              record revenues year after year and fostering the creation of
+              innovative, scalable hospitality brands. As part of its strategy,
+              the Fund will actively seek out brands that have proven themselves
+              and are ready to take their concepts global.
             </p>
           </div>
 
@@ -332,49 +339,52 @@ const PressRelease = () => {
           <div className="space-y-5">
             <p>
               This is the first of its kind investment fund that focuses on
-              global luxury hospitality sectors while offering a{" "}
-              <strong>dual return model</strong> that utilises cashflow from
-              operations and value creation from global expansion – targeting
-              iconic venues/locations, sector disruptors and technology-driven
-              innovators. The team also has a track record of achieving returns
-              in excess of 30%.
+              global luxury hospitality sectors, offering a dual return model
+              that will utilise cashflow from operations alongside value
+              creation from global expansion – targeting iconic
+              venues/locations, sector disruptors and technology driven
+              innovators. Once open to investors, the Fund will offer:
             </p>
 
             <div>
-              <h3 className="text-lg font-bold uppercase mb-2 border-l-4 border-black pl-3">
-                Investor Benefits
-              </h3>
               <ul className="list-disc pl-6 space-y-1">
-                <li>80% dividend distribution on operating income</li>
+                <li>80% dividend distribution on operating income.</li>
                 <li>
-                  Exposure to iconic global brands in early-stage expansion
+                  Exposure to iconic global brands in early-stage expansion.
                 </li>
                 <li>
-                  Asset-backed investments with strong real estate fundamentals
+                  Asset-backed investments with strong real estate fundamentals.
                 </li>
                 <li>
-                  Dual-layer return strategy via operating income and capital
-                  appreciation on exit
+                  A dual-layer return strategy via operating income and capital
+                  appreciation upon exit.
                 </li>
               </ul>
             </div>
 
             <p>
-              There has never been a better time to set up a fund like this as
-              fine dining guest demands surge together with the need for
-              immersive experiences as well as trends such as{" "}
-              <strong>‘Revenge Dining’</strong> becoming more popular. This has
-              contributed to the growth of the fine dining market to{" "}
-              <strong>$253B in 2025</strong> from <strong>$162B in 2020</strong>
-              .
+              There has never been a better time to launch a Fund like this, as
+              fine dining guests’ demands are surging, alongside the growing
+              appetite for immersive experience and trends such as ‘Revenge
+              Dining’. This has contributed to the growth of the fine dining
+              market to go from $162B in 2020 to $253B in 2025 . Core luxury
+              hospitality sectors from Dubai to Miami and Bali have shown
+              significant potential and rapid growth over the last five years,
+              yet operators continue to face challenges including closures,
+              capital restraints and fragmented ownership . The Fund will
+              closely monitor each project and actively work with brands and
+              operators to expand and create value.
             </p>
 
             <p>
-              Despite the great demand and growth in the luxury hospitality
-              sector, technology is still in its early stages. With a dynamic
-              strategy and an experienced team at the helm, the fund is built to
-              capitalize on the next wave of growth in global lifestyle
-              destinations.
+              Despite strong demand and growth in the luxury hospitality sector,
+              relevant technologies are still in early stages. With a dynamic
+              strategy and an experienced team at the helm, the Fund is designed
+              to capitalise on the next wave of growth in global lifestyle
+              destinations. From culturally relevant F&B brands to digitally
+              driven hospitality platforms, the Fund’s portfolio is positioned
+              to benefit from rising tourism, real estate scarcity, and consumer
+              demand for premium experiences.
             </p>
           </div>
         </div>
@@ -387,38 +397,70 @@ const PressRelease = () => {
           {/* 1. Clear Strategy */}
           <div className="break-inside-avoid mb-10">
             <h3 className="text-xl font-semibold border-b-2 border-black dark:border-black pb-1 mb-4">
-              1. Clarity in a Changing Sector
+              1. A Clear Strategy for a Changing Sector targeting global leisure
+              hotspots
             </h3>
             <p>
-              Targeting global leisure hotspots, the fund’s thesis is driven by
-              fine dining being the top spend category among affluent
-              travellers. Anchored in scaling proven, high-margin concepts
-              across hubs like Dubai, London, and Miami.
-            </p>
-            <ul className="list-disc pl-6 mt-4 space-y-2">
-              <li>World-famous hospitality brands entering new destinations</li>
-              <li>Food, beach clubs, wellness & members-only experiences</li>
-              <li>Tech-powered disruptors using AI for forecasting & yield</li>
-            </ul>
-            <p className="mt-4">
-              FHV’s team unites operators, technologists & investors with proven
-              growth strategies.
+              The fund’s investment thesis is driven by fine dining being the
+              top spending category within affluent travellers and is anchored
+              in acquiring & scaling proven, high-margin concepts in the most
+              in-demand hospitality hubs. With a strong initial pipeline and
+              early-stage access to iconic brands, FHV gives investors exposure
+              to new areas, new concepts and cutting-edge technology:.
             </p>
             <ul className="list-disc pl-6 mt-4 space-y-2">
               <li>
-                <strong>Dubai:</strong>{" "}
-                <span className="text-[var(--secondary-color)] font-bold">
-                  17.15M visitors (+19% YoY)
+                World-famous hospitality brands expanding into emerging leisure
+                destinations.
+              </li>
+              <li>
+                Culturally resonant concepts in food, beach clubs, wellness, and
+                members-only experiences.
+              </li>
+              <li>
+                Tech-powered disruptors that leverage AI and digital platforms
+                for demand forecasting, yield management, and curated guest
+                experiences.
+              </li>
+            </ul>
+            <p className="mt-4">
+              FHV's team brings together veteran operators, technologists, and
+              real estate investors with a proven ability to unlock growth
+              through operational precision and market insight.
+            </p>
+            <ul className="list-disc pl-6 mt-4 space-y-2">
+              <li>
+                <strong>Dubai: </strong>
+                <span className="text-[var(--secondary-color)]">
+                  Dubai’s luxury hospitality sector has reached new heights.
+                  2023 was a record year, with Dubai welcoming 17.15 million
+                  international visitors (⇑19% YoY), finally surpassing its
+                  previous 2019 peak
                 </span>
               </li>
               <li>
-                <strong>London:</strong> Luxury tier recovering strongly
+                <strong>London:</strong> London’s hotel industry suffered during
+                COVID but has rebounded strongly, especially in the luxury tier.
+                By 2023, performance had fully recovered and even exceeded
+                historical norms.
               </li>
               <li>
-                <strong>Bali:</strong> Surpassed pre-pandemic levels
+                <strong>Bali:</strong> Bali’s luxury hospitality sector has not
+                only rebounded but surpassed pre-pandemic performance.
               </li>
               <li>
-                <strong>Miami:</strong> Above 2019 benchmarks
+                <strong> Mykonos (Greece):</strong> Mykonos – a marquee Aegean
+                luxury hotspot – saw record tourism after reopening.
+              </li>
+
+              <li>
+                <strong> Miami (USA): </strong> Miami’s hospitality market
+                experienced a pandemic-era boom and has since stabilized at
+                above 2019 performance.
+              </li>
+              <li>
+                <strong> Tulum: </strong>Tulum, a boutique luxury destination on
+                Mexico’s Riviera Maya, has grown rapidly into a premium hotspot.
               </li>
             </ul>
           </div>
@@ -428,28 +470,91 @@ const PressRelease = () => {
             <h3 className="text-xl font-semibold border-b-2 border-[var(--secondary-color)] pb-1 mb-4">
               2. GenZ: The Future of Hospitality
             </h3>
-            <ul className="list-disc pl-6 space-y-2">
+            <ul className="list-disc pl-6 space-y-2 mb-4">
               <li>
                 <span className="font-bold text-black">79%</span> dine out 5+
                 times a month
               </li>
               <li>
                 <span className="font-bold text-black">88%</span> follow travel
-                influencers
+                influencers, turning TikTok and Instagram into the new booking
+                engines.
               </li>
               <li>
-                <span className="font-bold text-black">73%</span> pay more for
-                sustainable options
+                <span className="font-bold text-black">89%</span> of younger
+                generations prioritizing travel as a top financial priority.
+                This translates into frequent engagement: 79% dine out five or
+                more times per month, significantly outpacing older generations.
+              </li>
+              <li>
+                <span className="font-bold text-black"> 52% </span>
+                prioritizing experiences over material possessions and
+                allocating an average of 29% of their income to travel.
+              </li>
+              <li>
+                <span className="font-bold text-black"> 73% </span>
+                are willing to pay more for sustainable options.
+              </li>
+              <li>
+                Experience beats ownership – 52% prioritise experiences over
+                material goods.
+              </li>
+              <li>
+                "snackification phenomenon" has created new opportunities for
+                hospitality brands to engage consumers throughout the day rather
+                than during traditional meal periods.
               </li>
             </ul>
 
-            <div className="mt-6 border-l-4 border-[var(--secondary-color)] pl-4 italic text-gray-700 ">
-              “Snackification” and TikTok-driven discovery are reshaping
-              hospitality,{" "}
-              <span className="font-semibold">
-                74% of diners choose venues based on social media.
-              </span>
-            </div>
+            <h3 className="text-lg font-semibold  pb-1 mb-2">
+              The Digital Discovery Era
+            </h3>
+            <ul className="list-disc pl-6 space-y-2 mb-4">
+              <li>74% of diners choose venues based on social content.</li>
+              <li>
+                TikTok videos under 30 seconds achieve double the completion
+                rate of similar Instagram Reels.
+              </li>
+              <li>
+                Yet fewer than 5% of upscale restaurants use dynamic pricing or
+                AI booking tools – leaving significant revenue untapped.
+              </li>
+            </ul>
+            <h3 className="text-lg font-semibold  pb-1 mb-2">
+              Experiential & Immersive Formats on the Rise
+            </h3>
+            <ul className="list-disc pl-6 space-y-2 mb-4">
+              <li>
+                Multi-sensory dining experiences, chef’s tables, themed events,
+                and hyperlocal storytelling are becoming must-haves.
+              </li>
+              <li>
+                Hybrid venues that combine dining with co-working, art, and
+                wellness are capturing more guest touchpoints.
+              </li>
+              <li>
+                Hotels offering unique dining concepts see 10% higher F&B
+                revenues than traditional formats.
+              </li>
+            </ul>
+
+            <h3 className="text-lg font-semibold  pb-1 mb-2">
+              Sustainability as Luxury’s New Status Symbol
+            </h3>
+            <p className="mb-4">
+              Eco-responsibility, ethical sourcing, and community collaborations
+              are now premium differentiators. The new ge values-first approach
+              means operators that embed sustainability authentically into their
+              brand DNA win loyalty and advocacy.
+            </p>
+            <h3 className="text-lg font-semibold  pb-1 mb-2">
+              Tech as the Next Hospitality Frontier
+            </h3>
+            <p>
+              AI-driven demand forecasting, personalised guest journeys, and
+              digital membership models like Dorsia are redefining exclusivity
+              while driving operational efficiency.
+            </p>
           </div>
 
           {/* 3. Growth Dynamics */}
@@ -457,36 +562,51 @@ const PressRelease = () => {
             <h3 className="text-xl font-semibold border-b-2 border-black pb-1 mb-4">
               3. Growth Dynamics
             </h3>
+            <p>
+              The fund is being created at a time when top tier leisure markets
+              are enjoying record revenues and returns globally
+            </p>
             <ul className="list-disc pl-6 space-y-2">
+              <li>Fine market dining now valued at 28B Euros globally</li>
+              <li>Culinary tourism is an $11B market growing at 20% a year</li>
               <li>
-                Fine dining valued at{" "}
-                <span className="font-bold text-black">€28B</span>
+                The global luxury travel and tourism market is expected to reach
+                $3 Trillion of revenue over the next five years
               </li>
               <li>
-                Culinary tourism:{" "}
-                <span className="font-bold text-black">$11B</span> (+20%
-                annually)
+                Global spending on luxury leisure hospitality projected to grow
+                to $391B by 2028 (2023 $239B)
               </li>
               <li>
-                Luxury leisure spend to hit{" "}
-                <span className="text-black font-bold">$391B</span> by 2028
+                Guests travelling now stay longer and spend more on dining
+                experience than hotels
+              </li>
+              <li>
+                Global hospitality brands are emerging that combine fixed venues
+                in cornerstone cities like New York or Dubai with global
+                seasonal pop ups in destinations like St. Barts, Courchevel, St.
+                Tropez and Mykonos
+              </li>
+              <li>Entertainment, experience and social cachet drive demand</li>
+              <li>
+                GenZ a key audience and by 2030 expected to account for 40% of
+                global spending
               </li>
             </ul>
 
             <div className="mt-6   border border-gray-200 dark:border-gray-600 p-4 rounded">
               <h4 className="font-semibold mb-2">Bleisure & Digital Nomads</h4>
+              <p>
+                Bleisure travel (business-leisure combination) has exploded in
+                popularity:
+              </p>
               <ul className="list-disc pl-6 space-y-2">
+                <li>60% of corporate travelers extend trips for leisure</li>
+                <li>Global bleisure market reached $430 billion in 2024</li>
+                <li>Expected to reach $731.4 billion by 2032 (8.9% CAGR)</li>
                 <li>
-                  <span className="font-bold text-black">60%</span> extend trips
-                  for leisure
-                </li>
-                <li>
-                  Market hit <span className="font-bold text-black">$430B</span>{" "}
-                  in 2024
-                </li>
-                <li>
-                  Expected to reach{" "}
-                  <span className="font-bold text-black">$731B</span> by 2032
+                  84% of travelers want to include vacation time in business
+                  trips
                 </li>
               </ul>
             </div>
@@ -500,11 +620,11 @@ const PressRelease = () => {
               About Fern Hospitality Ventures
             </h2>
             <p className="leading-relaxed text-gray-800 ">
-              Fern Hospitality Ventures is an investment platform based in
-              Dubai, targeting premium hospitality, wellness, experiential
-              F&amp;B, and tech-driven lifestyle brands. Its focus is on scaling
-              culturally relevant, real estate-backed assets in high-growth
-              destinations across the globe.
+              Fern Hospitality Ventures is an investment fund based in the
+              Cayman Islands and managed in DIFC, targeting premium hospitality,
+              wellness, experiential F&B, and tech-driven lifestyle brands. Its
+              focus is on scaling culturally relevant, real estate-backed assets
+              in high-growth destinations across the globe.
             </p>
           </div>
 
