@@ -6,6 +6,9 @@ import img2 from "../../assets/Akshat.jpg";
 import img4 from "../../assets/team/14.jpg";
 // import img5 from "../../assets/team/15.jpg";
 // import img6 from "../../assets/team/16.jpg";
+import img7 from "../../assets/team/17.jpg";
+import img8 from "../../assets/team/18.jpg";
+import img9 from "../../assets/team/19.jpg";
 
 function Management() {
   const team = [
@@ -51,6 +54,28 @@ function Management() {
     //   description:
     //     "Founder & CEO of DORSIA, redefining restaurant access through venture-backed innovation. Focused on hospitality tech, luxury dining, and curated lifestyle memberships with category-defining impact.",
     // },
+
+    {
+      name: "Mishal Kanoo",
+      designation: "Director",
+      image: img7, // 🔹 Replace with local import if you have
+      description:
+        "Chairman at The Kanoo Group and KAAF Investments, UAE. Former CEO and Managing Director of AXA Gulf. Experienced leader with an MBA from the University of St. Thomas, USA and EMBA from American University of Sharjah.",
+    },
+    {
+      name: "David Gibson-Moore",
+      designation: "Director, Chairman",
+      image: img8, // 🔹 Replace with local import if you have
+      description:
+        "President of Gulf Analytica and Senior Advisor of LGT Group Foundation. Former CEO of LGT Bank covering the GCC and CEO Middle East for the Robeco Group. Holds a BA and MA from Oxford University and MSc in Financial Economics from London University.",
+    },
+    {
+      name: "Amir Anwar",
+      designation: "Senior Executive Officer",
+      image: img9, // 🔹 Replace with local import if you have
+      description:
+        "Financial Officer at Burj Global Capital, UAE and Regulated Financial Officer in DIFC. Former Finance Director at XOJET, USA, and Auditor at PwC. Chartered Financial Consultant, USA.",
+    },
   ];
 
   return (
