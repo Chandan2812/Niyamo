@@ -13,32 +13,32 @@ const slides = [
 
     link: "/16-charles-street",
   },
-  {
-    title: "Biryani Kebab Chai",
-    description1:
-      "At BKC – Biryani Kebab Chai, our story is one of passion, exploration, and the desire to share the unparalleled tastes of Awadhi cuisine with London. Launched in Marble Arch in 2022 and in Soho in 2023, our mission remains the same: to celebrate the culinary wonders of Lucknow...",
+  // {
+  //   title: "Biryani Kebab Chai",
+  //   description1:
+  //     "At BKC – Biryani Kebab Chai, our story is one of passion, exploration, and the desire to share the unparalleled tastes of Awadhi cuisine with London. Launched in Marble Arch in 2022 and in Soho in 2023, our mission remains the same: to celebrate the culinary wonders of Lucknow...",
 
-    image: "https://bkclondon.uk/wp-content/uploads/2024/06/2-1.png",
-    link: "/biryani-kebab-chai-(bkc)",
-  },
-  {
-    title: "Coupette",
-    description1:
-      "We are a forward-thinking hospitality company curating exceptional dining destinations. With a portfolio of vibrant restaurants, we blend culinary artistry with unforgettable ambiance. Our team delivers refined experiences through passion, innovation, and attention to detail, creating places where guests feel inspired and at home.",
+  //   image: "https://bkclondon.uk/wp-content/uploads/2024/06/2-1.png",
+  //   link: "/biryani-kebab-chai-(bkc)",
+  // },
+  // {
+  //   title: "Coupette",
+  //   description1:
+  //     "We are a forward-thinking hospitality company curating exceptional dining destinations. With a portfolio of vibrant restaurants, we blend culinary artistry with unforgettable ambiance. Our team delivers refined experiences through passion, innovation, and attention to detail, creating places where guests feel inspired and at home.",
 
-    image:
-      "https://static.wixstatic.com/media/fe41f9_6900c9bc00ac4705b096d1859135c7bb~mv2.jpg",
-    link: "/coupette",
-  },
-  {
-    title: "24 & 30 Sussex Gardens",
-    description1:
-      "Located in the heart of London's vibrant Paddington district, OYO Townhouse 30 Sussex Hotel offers a perfect blend of comfort, convenience, and affordability. Just a short stroll from Hyde Park and the iconic Paddington Station, this 3-star hotel is an ideal choice for both business and leisure travelers seeking easy access to London's top attractions.",
+  //   image:
+  //     "https://static.wixstatic.com/media/fe41f9_6900c9bc00ac4705b096d1859135c7bb~mv2.jpg",
+  //   link: "/coupette",
+  // },
+  // {
+  //   title: "24 & 30 Sussex Gardens",
+  //   description1:
+  //     "Located in the heart of London's vibrant Paddington district, OYO Townhouse 30 Sussex Hotel offers a perfect blend of comfort, convenience, and affordability. Just a short stroll from Hyde Park and the iconic Paddington Station, this 3-star hotel is an ideal choice for both business and leisure travelers seeking easy access to London's top attractions.",
 
-    image:
-      "https://images.oyoroomscdn.com/uploads/hotel_image/39338/large/4c618879fe13a5be.jpg",
-    link: "/24-&-30-sussex-gardens",
-  },
+  //   image:
+  //     "https://images.oyoroomscdn.com/uploads/hotel_image/39338/large/4c618879fe13a5be.jpg",
+  //   link: "/24-&-30-sussex-gardens",
+  // },
   {
     title: "The Joyce Restaurant",
     description1:

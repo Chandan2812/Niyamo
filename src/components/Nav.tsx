@@ -26,9 +26,9 @@ const navItems = [
     title: "FH Concepts",
     dropdown: [
       "16 Charles Street",
-      "Biryani Kebab Chai (BKC)",
-      "Coupette",
-      "24 & 30 Sussex Gardens",
+      // "Biryani Kebab Chai (BKC)",
+      // "Coupette",
+      // "24 & 30 Sussex Gardens",
       "The Joyce Restaurant",
       "Dorsia",
     ],
