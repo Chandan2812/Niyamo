@@ -53,18 +53,18 @@ const Navbar = () => {
     Record<number, boolean>
   >({});
   const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme")
-      ? localStorage.getItem("theme") === "dark"
+    return sessionStorage.getItem("theme")
+      ? sessionStorage.getItem("theme") === "dark"
       : false;
   });
 
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      sessionStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      sessionStorage.setItem("theme", "light");
     }
   }, [darkMode]);
 
