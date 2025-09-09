@@ -21,15 +21,15 @@ const Footer = () => {
           <ul className="space-y-2">
             {[
               { label: "16 Charles Street", route: "/16-charles-street" },
-              {
-                label: "Biryani Kabab Chai",
-                route: "/biryani-kebab-chai-(bkc)",
-              },
-              { label: "Coupette", route: "/coupette" },
-              {
-                label: "24 & 30 Sussex Gardens",
-                route: "/24-&-30-sussex-gardens",
-              },
+              // {
+              //   label: "Biryani Kabab Chai",
+              //   route: "/biryani-kebab-chai-(bkc)",
+              // },
+              // { label: "Coupette", route: "/coupette" },
+              // {
+              //   label: "24 & 30 Sussex Gardens",
+              //   route: "/24-&-30-sussex-gardens",
+              // },
               { label: "The Joyce Restaurant", route: "/the-joyce-restaurant" },
               { label: "Dorsia", route: "/dorsia" },
             ].map((item, i) => (

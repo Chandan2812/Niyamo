@@ -46,15 +46,16 @@ const GlobalFootprintSection: React.FC = () => {
             <a
               key={index}
               href={location.url}
-              className="relative flex-1 overflow-hidden rounded-sm transition-[flex-grow] duration-1000 ease-in-out hover:flex-grow-[3]"
+              className="relative flex-1 overflow-hidden rounded-sm 
+             transition-all duration-700 ease-in-out 
+             flex-grow hover:flex-grow-[3]"
               style={{
                 backgroundImage: `url(${location.img})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              data-aos="zoom-in"
             >
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-start justify-start transition-transform duration-1000 ease-in-out hover:scale-105">
+              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-start justify-start transition-transform duration-1000 ease-in-out">
                 <h3 className="text-white text-sm font-bold m-4 uppercase">
                   {location.name}
                 </h3>
