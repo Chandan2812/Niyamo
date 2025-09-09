@@ -397,8 +397,7 @@ const PressRelease = () => {
           {/* 1. Clear Strategy */}
           <div className="break-inside-avoid mb-10">
             <h3 className="text-xl font-semibold border-b-2 border-black dark:border-black pb-1 mb-4">
-              1. A Clear Strategy for a Changing Sector targeting global leisure
-              hotspots
+              1. Strategy for Evolving Leisure Markets
             </h3>
             <p>
               The fund’s investment thesis is driven by fine dining being the

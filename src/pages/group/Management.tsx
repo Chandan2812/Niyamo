@@ -42,10 +42,10 @@ function Management() {
     // },
     {
       name: "Zachary Cefaratti",
-      designation: "Founder & CEO, Dalma Capital ",
+      designation: "Founder & CEO, Dalma Capital",
       image: img4,
       description:
-        "Founder & CEO of, managing $50B+ in assets across multiple regions. Known for structuring cross-border deals. Also, the founder of AIM Summit, driving innovation in finance and hospitality platforms.",
+        "Zachary Cefaratti is an experienced portfolio manager, CEO, and investment banker, educated at leading institutions including the London School of Economics, University of Pennsylvania, and Franklin University Switzerland.",
     },
     // {
     //   name: "Mark Lotenburg",
