@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import ramen from "../assets/ramen.jpg";
+import opa from "../assets/opa bali.jpg";
 
 const slides = [
   {
@@ -13,32 +15,7 @@ const slides = [
 
     link: "/16-charles-street",
   },
-  // {
-  //   title: "Biryani Kebab Chai",
-  //   description1:
-  //     "At BKC – Biryani Kebab Chai, our story is one of passion, exploration, and the desire to share the unparalleled tastes of Awadhi cuisine with London. Launched in Marble Arch in 2022 and in Soho in 2023, our mission remains the same: to celebrate the culinary wonders of Lucknow...",
 
-  //   image: "https://bkclondon.uk/wp-content/uploads/2024/06/2-1.png",
-  //   link: "/biryani-kebab-chai-(bkc)",
-  // },
-  // {
-  //   title: "Coupette",
-  //   description1:
-  //     "We are a forward-thinking hospitality company curating exceptional dining destinations. With a portfolio of vibrant restaurants, we blend culinary artistry with unforgettable ambiance. Our team delivers refined experiences through passion, innovation, and attention to detail, creating places where guests feel inspired and at home.",
-
-  //   image:
-  //     "https://static.wixstatic.com/media/fe41f9_6900c9bc00ac4705b096d1859135c7bb~mv2.jpg",
-  //   link: "/coupette",
-  // },
-  // {
-  //   title: "24 & 30 Sussex Gardens",
-  //   description1:
-  //     "Located in the heart of London's vibrant Paddington district, OYO Townhouse 30 Sussex Hotel offers a perfect blend of comfort, convenience, and affordability. Just a short stroll from Hyde Park and the iconic Paddington Station, this 3-star hotel is an ideal choice for both business and leisure travelers seeking easy access to London's top attractions.",
-
-  //   image:
-  //     "https://images.oyoroomscdn.com/uploads/hotel_image/39338/large/4c618879fe13a5be.jpg",
-  //   link: "/24-&-30-sussex-gardens",
-  // },
   {
     title: "The Joyce Restaurant",
     description1:
@@ -56,6 +33,22 @@ const slides = [
     image:
       "https://framerusercontent.com/images/g4sS7ZaoyqeGrz7RPt4j395kkQ.jpg?scale-down-to=2048",
     link: "/dorsia",
+  },
+  {
+    title: "OPA Bali",
+    description1:
+      "OPA Bali is a high-energy Greek dining and entertainment concept bringing Dubai’s proven “dinner-to-party” experience to one of the world’s top tourism destinations. Positioned as Bali’s first major player in the modern Greek category, OPA combines theatrical dining, premium price points, and nightlife appeal to capture demand from global travelers seeking Instagram-worthy experiences. Located in Seminyak-Petitenget among luxury hotels and nightlife hotspots, the venue benefits from low fixed costs, strong CapEx efficiency, and massive tourist inflows from Australia, Europe, and the Middle East. With average checks of USD 85–120 and a target of 300–400 covers per night, OPA Bali is designed for fast ramp-up, high yields, and 30–35% EBITDA margins, with break-even expected in under a year.",
+
+    image: opa,
+    link: "/opa-bali",
+  },
+  {
+    title: "Ramen Me",
+    description1:
+      "Ramen Me is a high-margin, delivery-optimized food concept designed for fast-casual and cloud kitchen scalability. With a tight, craveable menu and low startup costs, it delivers strong EBITDA margins and rapid fit-outs, making it ideal for franchising and multi-unit rollouts. Positioned at the intersection of affordability, premium quality, and social media appeal, Ramen Me taps into the explosive global demand for Asian comfort food, particularly among Gen Z and millennial consumers. Backed by Fern’s hospitality expertise, it combines smart menu engineering, influencer-driven marketing, and scalable systems to create a brand built for growth.",
+
+    image: ramen,
+    link: "/ramen-me",
   },
 ];
 

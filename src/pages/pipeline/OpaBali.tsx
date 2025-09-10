@@ -17,24 +17,23 @@ function OpaBali() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative bg-black text-white h-[50vh] md:h-[90vh] py-60 px-6">
-        <div className="w-11/12 md:w-5/6 mx-auto text-center">
+      <section
+        className="relative h-[50vh] md:h-[80vh] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://res.cloudinary.com/dqrlkbsdq/image/upload/v1756358587/WhatsApp_Image_2025-08-27_at_11.03.24_df16c009_ybkdyp.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/10 dark:bg-black/40"></div>
+        <div className="relative z-10 text-center text-white px-4">
           <h1
-            className="text-4xl md:text-6xl font-bold tracking-wide"
+            className="text-4xl md:text-6xl font-bold mb-6"
             data-aos="fade-up"
             data-aos-delay="200"
           >
             OPA Bali
           </h1>
-          <p
-            className="text-lg md:text-xl mt-6 text-gray-300"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            High-Margin, Experiential Concept with Proven Traction
-          </p>
         </div>
-        <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/dqrlkbsdq/image/upload/v1756358587/WhatsApp_Image_2025-08-27_at_11.03.24_df16c009_ybkdyp.jpg')] bg-cover bg-center opacity-60 dark:opacity-30"></div>
       </section>
 
       {/* Why We Like It Section */}

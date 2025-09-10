@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 const Footer = () => {
@@ -32,14 +31,16 @@ const Footer = () => {
               // },
               { label: "The Joyce Restaurant", route: "/the-joyce-restaurant" },
               { label: "Dorsia", route: "/dorsia" },
+              { label: "OPA Bali", route: "/opa-bali" },
+              { label: "Ramen Me", route: "/ramen-me" },
             ].map((item, i) => (
               <li key={i}>
-                <Link
-                  to={item.route}
+                <a
+                  href={item.route}
                   className="hover:text-[var(--primary-color)] transition duration-300"
                 >
                   {item.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
