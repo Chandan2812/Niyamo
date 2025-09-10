@@ -159,7 +159,7 @@ function OpaBali() {
 }
 
 const HighlightCard = ({ title }: { title: string }) => (
-  <div className="bg-[var(--primary-color)] text-white rounded-xl shadow-md p-6 font-medium text-center mb-6">
+  <div className="bg-[var(--primary-color)] dark:bg-[var(--secondary-color)] text-white rounded-xl shadow-md p-6 font-medium text-center mb-6">
     {title}
   </div>
 );
