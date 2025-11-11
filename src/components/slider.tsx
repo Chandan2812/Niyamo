@@ -2,18 +2,11 @@ import { ArrowRight } from "lucide-react";
 import React, { useState } from "react";
 import img1 from "../assets/Fern Hospitality9098.jpg";
 import img2 from "../assets/team/12.jpg";
-// import img3 from "../assets/team/13.jpg";
 import img4 from "../assets/team/14.jpg";
-// import img5 from "../assets/team/15.jpg";
-// import img6 from "../assets/team/16.jpg";
 
 const teamMembers = [
-  // { name: "Mark Lotenburg", role: "Founder and CEO, DORSIA", image: img5 },
   { name: "Uday Singh", role: "General Partner", image: img1 },
   { name: "Akshat Tiberwala", role: "General Partner", image: img2 },
-
-  // { name: "Bartoélémy Lemoine", role: "Head of Operations", image: img6 },
-  // { name: "Alex Cordoba", role: "CEO, Savaya", image: img3 },
   {
     name: "Zachary Cefaratti",
     role: "Founder & CEO, Dalma Capital",
@@ -38,14 +31,14 @@ const FindYourPartner: React.FC = () => {
       position: "absolute" as const,
       top: "0",
       transition: "all 0.5s ease-in-out",
-      width: "300px", // bigger width
-      height: "450px", // taller box
+      width: "300px",
+      height: "450px",
       borderRadius: "0rem",
       overflow: "hidden",
     };
 
     switch (position) {
-      case 0: // Center
+      case 0:
         return {
           ...baseStyle,
           left: "50%",
@@ -53,7 +46,7 @@ const FindYourPartner: React.FC = () => {
           zIndex: 30,
           opacity: 1,
         };
-      case 1: // Right
+      case 1:
         return {
           ...baseStyle,
           left: "75%",
@@ -61,7 +54,7 @@ const FindYourPartner: React.FC = () => {
           zIndex: 20,
           opacity: 0.6,
         };
-      case total - 1: // Left
+      case total - 1:
         return {
           ...baseStyle,
           left: "25%",
@@ -69,7 +62,7 @@ const FindYourPartner: React.FC = () => {
           zIndex: 20,
           opacity: 0.6,
         };
-      default: // Hidden
+      default:
         return {
           ...baseStyle,
           left: "50%",
@@ -84,7 +77,6 @@ const FindYourPartner: React.FC = () => {
     <section className="relative custom-gradient-lines ">
       <div className="pt-24 px-4 md:px-8 relative bg-white dark:bg-black text-black dark:text-white font-raleway ">
         <div className="w-11/12 mx-auto grid lg:grid-cols-2 gap-10 items-start">
-          {/* Left Text */}
           <div>
             <p
               className="uppercase tracking-widest font-semibold text-xs text-[var(--primary-color)]"
@@ -122,10 +114,7 @@ const FindYourPartner: React.FC = () => {
               </button>
             </a>
           </div>
-
-          {/* Right Slider */}
           <div className="relative w-full flex justify-center items-center h-[400px]">
-            {/* Arrows */}
             <button
               onClick={handlePrev}
               className="absolute left-2 sm:left-0 z-40 bg-white border border-black px-3 py-2 text-black hover:bg-[var(--primary-color)] hover:text-white transition dark:bg-black dark:border-[var(--primary-color)] dark:text-[var(--primary-color)]"
@@ -138,9 +127,6 @@ const FindYourPartner: React.FC = () => {
             >
               →
             </button>
-
-            {/* Slides */}
-            {/* Slides */}
             <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden h-[400px]">
               {teamMembers.map((member, index) => (
                 <div
