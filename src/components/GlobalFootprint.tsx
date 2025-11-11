@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ramen from "../assets/ramen-01.jpg";
+import opa from "../assets/Opa Bali 1.jpg";
 
 const locations = [
   {
@@ -21,7 +22,7 @@ const locations = [
   },
   {
     name: "OPA Bali",
-    img: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noTN5Qaj0ajAwRsVbRpDDJeJVkPZ5Oag88JTRhMuzGOaWTBq7ALWzlo9j2DiY_iGCymgVd-ZLQJEn0v6vJkiARwKed0DlpHPBju-L-0R2_Npsn3Q5Nf1rRzAElFNj43GD7Kgevh=s1360-w1360-h1020-rw",
+    img: opa,
     url: "/opa-bali",
   },
   {
