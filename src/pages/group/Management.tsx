@@ -14,14 +14,14 @@ function Management() {
   const team = [
     {
       name: "Uday Singh",
-      designation: "CEO",
+      designation: "General Partner",
       image: img1,
       description:
         "Serial hospitality entrepreneur with a proven track record of creating and scaling premium F&B and lifestyle concepts globally. Founder of Global Titans Fight Series and recognized for driving high-margin experiential hospitality investments.",
     },
     {
       name: "Akshat Tiberwala",
-      designation: "MD",
+      designation: "General Partner",
       image: img2,
       description:
         "Founder of Niyamo Capital, a UK-based investment firm. Combines financial economics expertise with creative brand insight. Focused on sourcing and scaling next-gen F&B and lifestyle investments worldwide.",

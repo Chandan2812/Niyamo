@@ -9,8 +9,8 @@ import img4 from "../assets/team/14.jpg";
 
 const teamMembers = [
   // { name: "Mark Lotenburg", role: "Founder and CEO, DORSIA", image: img5 },
-  { name: "Uday Singh", role: "CEO", image: img1 },
-  { name: "Akshat Tiberwala", role: "MD", image: img2 },
+  { name: "Uday Singh", role: "General Partner", image: img1 },
+  { name: "Akshat Tiberwala", role: "General Partner", image: img2 },
 
   // { name: "Bartoélémy Lemoine", role: "Head of Operations", image: img6 },
   // { name: "Alex Cordoba", role: "CEO, Savaya", image: img3 },

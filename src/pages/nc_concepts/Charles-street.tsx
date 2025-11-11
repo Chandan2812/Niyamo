@@ -175,7 +175,7 @@ const Charles: React.FC = () => {
               </span>
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div
                 className="overflow-hidden"
                 data-aos="fade-up"
@@ -198,7 +198,7 @@ const Charles: React.FC = () => {
                   className="w-full h-full object-cover rounded transform transition duration-500 hover:scale-105"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Location Section */}
