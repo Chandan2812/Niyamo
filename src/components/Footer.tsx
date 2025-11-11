@@ -29,7 +29,7 @@ const Footer = () => {
               //   label: "24 & 30 Sussex Gardens",
               //   route: "/24-&-30-sussex-gardens",
               // },
-              { label: "The Joyce Restaurant", route: "/the-joyce-restaurant" },
+              { label: "The Joyce", route: "/the-joyce" },
               { label: "Dorsia", route: "/dorsia" },
               { label: "OPA Bali", route: "/opa-bali" },
               { label: "Ramen Me", route: "/ramen-me" },

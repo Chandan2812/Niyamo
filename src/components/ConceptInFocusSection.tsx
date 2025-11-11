@@ -23,7 +23,7 @@ const slides = [
 
     image:
       "https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/dZCWFGjwT0ehKAEc9h4e_TheJoyce_112024_4005.jpg",
-    link: "/the-joyce-restaurant",
+    link: "/the-joyce",
   },
   {
     title: "Dorsia",

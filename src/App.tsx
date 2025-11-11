@@ -52,7 +52,7 @@ function App() {
         <Route path="/group-dinning" element={<GroupDining />} />
         <Route path="/private-events" element={<PrivateEvents />} />
         <Route path="/news" element={<News />} />
-        <Route path="/the-joyce-restaurant" element={<Joyce />} />
+        <Route path="/the-joyce" element={<Joyce />} />
         <Route path="/dorsia" element={<Dorsia />} />
         <Route path="/newsletter" element={<AdminNewsletterSender />} />
         <Route path="/emailer" element={<Emailer />} />

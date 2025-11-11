@@ -29,7 +29,7 @@ const navItems = [
       // "Biryani Kebab Chai (BKC)",
       // "Coupette",
       // "24 & 30 Sussex Gardens",
-      "The Joyce Restaurant",
+      "The Joyce",
       "Dorsia",
       "Opa-Bali",
       "Ramen Me",

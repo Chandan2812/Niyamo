@@ -10,9 +10,9 @@ const locations = [
     url: "/16-charles-street",
   },
   {
-    name: "The Joyce Restaurant",
+    name: "The Joyce",
     img: "https://images.getbento.com/accounts/ca368c28a061a50a6de86598e993a37c/media/images/38694TheJoyce_122024_6462.jpg",
-    url: "/the-joyce-restaurant",
+    url: "/the-joyce",
   },
   {
     name: "Dorsia",
