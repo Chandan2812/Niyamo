@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import charles from "../../assets/charles_1.jpg";
 
 const Charles: React.FC = () => {
   useEffect(() => {
@@ -19,8 +20,7 @@ const Charles: React.FC = () => {
       <section
         className="relative h-[50vh] md:h-[90vh] flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('https://static.wixstatic.com/media/1bd01e_add9a31017b44a3ab08325667cf1864f~mv2.jpg/v1/fill/w_1751,h_1629,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/1bd01e_add9a31017b44a3ab08325667cf1864f~mv2.jpg')",
+          backgroundImage: `url(${charles})`,
         }}
       >
         <div className="absolute inset-0 bg-black/10 dark:bg-black/50"></div>
